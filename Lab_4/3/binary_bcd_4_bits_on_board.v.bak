@@ -1,0 +1,10 @@
+module binary_bcd_4_bits_on_board(
+    input [3:0] SW,
+    output [6:0] HEX1, HEX0);
+
+    wire [3:0] d1, d0;
+    binary_bcd_4_bits converter(SW, d1, d0);
+    decoder_hex_10 dec_di(d1, HEX1);
+    decoder_hex_10 dec_d0(d0, HEX0);
+
+endmodule

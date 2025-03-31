@@ -1,0 +1,94 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dE:/PB/SEM_6/SW/Lab_4/4/simulation/qsim
+vadder_bcd_2_digits
+Z1 !s110 1742407473
+!i10b 1
+!s100 TmJVD3Zb[hlffQ=BlK>?13
+INg>lVL88YaVeA0S<7o7>O3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1742407472
+Z3 8adder_bcd_2_digits_on_board.vo
+Z4 Fadder_bcd_2_digits_on_board.vo
+Z5 L0 31
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1742407473.000000
+Z8 !s107 adder_bcd_2_digits_on_board.vo|
+Z9 !s90 -work|work|adder_bcd_2_digits_on_board.vo|
+!i113 1
+Z10 o-work work
+Z11 tCvgOpt 0
+vadder_bcd_2_digits_on_board
+Z12 !s110 1742417662
+!i10b 1
+!s100 S=?P]R^Pg<@bA5Ancb1_h2
+IG38Ln>aG_:zofkboLhcna2
+R2
+R0
+w1742417662
+R3
+R4
+R5
+R6
+r1
+!s85 0
+31
+Z13 !s108 1742417662.000000
+R8
+R9
+!i113 1
+R10
+R11
+vadder_bcd_2_digits_on_board_vlg_vec_tst
+R12
+!i10b 1
+!s100 eb38KzD@XBe>m`U48iz4H3
+IT68LOm4li0?kG4F^GgAk90
+R2
+R0
+w1742417660
+8Waveform1.vwf.vt
+FWaveform1.vwf.vt
+Z14 L0 29
+R6
+r1
+!s85 0
+31
+R13
+!s107 Waveform1.vwf.vt|
+!s90 -work|work|Waveform1.vwf.vt|
+!i113 1
+R10
+R11
+vadder_bcd_2_digits_vlg_vec_tst
+R1
+!i10b 1
+!s100 S2o2>o]1328@f1Bzz@LRl0
+Ig<><0>l3HQmRoWG?QkAcE3
+R2
+R0
+w1742407471
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+R14
+R6
+r1
+!s85 0
+31
+R7
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R10
+R11

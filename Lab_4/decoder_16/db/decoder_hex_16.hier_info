@@ -1,0 +1,14 @@
+|decoder_hex_16
+x[0] => Decoder0.IN3
+x[1] => Decoder0.IN2
+x[2] => Decoder0.IN1
+x[3] => Decoder0.IN0
+h[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+h[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+h[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+h[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+h[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+h[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+h[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+

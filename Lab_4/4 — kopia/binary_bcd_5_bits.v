@@ -1,0 +1,12 @@
+module binary_bcd_5_bits(
+    input [4:0] v,
+    output [3:0] d1, d0);
+
+    wire v_greater_than_9 = (v > 5'd9); // Comparator > 9
+    wire [3:0] v_minus_10 = v - 5'd10; // circuit A
+    wire [3:0] lower_bcd_digit;
+    mux_2_1_4_bits mux(v[3:0], v_minus_10, v_greater_than_9, lower_bcd_digit);
+
+    assign d1 = {3'b000, v_greater_than_9}; // Pierwsza cyfra BCD (0 lub 1)
+    assign d0 = lower_bcd_digit;            // Druga cyfra BCD
+endmodule

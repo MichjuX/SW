@@ -1,0 +1,12 @@
+module latch_FDDP_FDDN(
+    input D, Clock,
+    output Qa, nQa,
+    output Qb, nQb,
+    output Qc, nQc
+);
+
+D_latch latch(D, Clock, Qa, nQa);
+FDD_posedge FDD_p(D, Clock, Qb, nQb);
+FDD_negedge FDD_n(D, Clock, Qc, nQc);
+
+endmodule

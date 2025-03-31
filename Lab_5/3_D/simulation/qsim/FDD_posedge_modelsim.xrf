@@ -1,0 +1,15 @@
+vendor_name = ModelSim
+source_file = 1, E:/PB/SEM_6/SW/Lab_5/3_D/FDD_posedge.v
+source_file = 1, E:/PB/SEM_6/SW/Lab_5/3_D/T_FF_D.v
+source_file = 1, E:/PB/SEM_6/SW/Lab_5/3_D/Waveform.vwf
+source_file = 1, E:/PB/SEM_6/SW/Lab_5/3_D/db/FDD_posedge.cbx.xml
+design_name = T_FF_D
+instance = comp, \Q~output , Q~output, T_FF_D, 1
+instance = comp, \nQ~output , nQ~output, T_FF_D, 1
+instance = comp, \clk~input , clk~input, T_FF_D, 1
+instance = comp, \T~input , T~input, T_FF_D, 1
+instance = comp, \FDD_p|Q~0 , FDD_p|Q~0, T_FF_D, 1
+instance = comp, \FDD_p|Q~feeder , FDD_p|Q~feeder, T_FF_D, 1
+instance = comp, \aclr~input , aclr~input, T_FF_D, 1
+instance = comp, \FDD_p|Q , FDD_p|Q, T_FF_D, 1
+instance = comp, \~QUARTUS_CREATED_GND~I , ~QUARTUS_CREATED_GND~I, T_FF_D, 1

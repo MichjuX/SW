@@ -1,0 +1,263 @@
+$comment
+	File created using the following command:
+		vcd file mux_4_1_1_bit_on_board.msim.vcd -direction
+$end
+$date
+	Sun Mar 23 17:47:46 2025
+$end
+$version
+	ModelSim Version 10.5b
+$end
+$timescale
+	1ps
+$end
+
+$scope module mux_4_1_1_bit_vlg_vec_tst $end
+$var reg 2 ! s [1:0] $end
+$var reg 1 " u $end
+$var reg 1 # v $end
+$var reg 1 $ w $end
+$var reg 1 % x $end
+$var wire 1 & m $end
+
+$scope module i1 $end
+$var wire 1 ' gnd $end
+$var wire 1 ( vcc $end
+$var wire 1 ) unknown $end
+$var tri1 1 * devclrn $end
+$var tri1 1 + devpor $end
+$var tri1 1 , devoe $end
+$var wire 1 - ~QUARTUS_CREATED_GND~I_combout $end
+$var wire 1 . u~input_o $end
+$var wire 1 / v~input_o $end
+$var wire 1 0 s[0]~input_o $end
+$var wire 1 1 s[1]~input_o $end
+$var wire 1 2 x~input_o $end
+$var wire 1 3 w~input_o $end
+$var wire 1 4 mux_uvWX|m~0_combout $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b0 !
+0"
+0#
+0$
+0%
+0&
+0'
+1(
+x)
+1*
+1+
+1,
+0-
+0.
+0/
+00
+01
+02
+03
+04
+$end
+#2500
+1%
+12
+#5000
+1$
+0%
+13
+02
+#7500
+1#
+1%
+1/
+12
+#10000
+1"
+0$
+0%
+1.
+03
+02
+14
+1&
+#12500
+1%
+12
+#15000
+0#
+1$
+0%
+0/
+13
+02
+#17500
+1%
+12
+#20000
+b1 !
+0"
+0$
+0%
+10
+0.
+03
+02
+04
+0&
+#22500
+1#
+1%
+1/
+12
+14
+1&
+#25000
+1$
+0%
+13
+02
+#27500
+1%
+12
+#30000
+1"
+0#
+0$
+0%
+1.
+0/
+03
+02
+04
+0&
+#32500
+1%
+12
+#35000
+1$
+0%
+13
+02
+#37500
+1#
+1%
+1/
+12
+14
+1&
+#40000
+b11 !
+b10 !
+0"
+0$
+0%
+00
+11
+0.
+03
+02
+04
+0&
+#42500
+1%
+12
+#45000
+0#
+1$
+0%
+0/
+13
+02
+14
+1&
+#47500
+1%
+12
+#50000
+1"
+0$
+0%
+1.
+03
+02
+04
+0&
+#52500
+1#
+1%
+1/
+12
+#55000
+1$
+0%
+13
+02
+14
+1&
+#57500
+1%
+12
+#60000
+b11 !
+0"
+0#
+0$
+0%
+10
+0.
+0/
+03
+02
+04
+0&
+#62500
+1%
+12
+14
+1&
+#65000
+1$
+0%
+13
+02
+04
+0&
+#67500
+1#
+1%
+1/
+12
+14
+1&
+#70000
+1"
+0$
+0%
+1.
+03
+02
+04
+0&
+#72500
+1%
+12
+14
+1&
+#75000
+0#
+1$
+0%
+0/
+13
+02
+04
+0&
+#77500
+1%
+12
+14
+1&
+#80000

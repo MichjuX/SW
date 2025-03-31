@@ -1,0 +1,147 @@
+// Copyright (C) 2018  Intel Corporation. All rights reserved.
+// Your use of Intel Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Intel Program License 
+// Subscription Agreement, the Intel Quartus Prime License Agreement,
+// the Intel FPGA IP License Agreement, or other applicable license
+// agreement, including, without limitation, that your use is for
+// the sole purpose of programming logic devices manufactured by
+// Intel and sold by Intel or its authorized distributors.  Please
+// refer to the applicable agreement for further details.
+
+// *****************************************************************************
+// This file contains a Verilog test bench with test vectors .The test vectors  
+// are exported from a vector file in the Quartus Waveform Editor and apply to  
+// the top level entity of the current Quartus project .The user can use this   
+// testbench to simulate his design using a third-party simulation tool .       
+// *****************************************************************************
+// Generated on "03/21/2025 08:34:35"
+                                                                                
+// Verilog Test Bench (with test vectors) for design :                          adder_bcd_2_digits_b
+// 
+// Simulation tool : 3rd Party
+// 
+
+`timescale 1 ps/ 1 ps
+module adder_bcd_2_digits_b_vlg_vec_tst();
+// constants                                           
+// general purpose registers
+reg [3:0] A;
+reg [3:0] B;
+reg C0;
+// wires                                               
+wire [3:0] S0;
+wire [3:0] S1;
+
+// assign statements (if any)                          
+adder_bcd_2_digits_b i1 (
+// port map - connection between master ports and signals/registers   
+	.A(A),
+	.B(B),
+	.C0(C0),
+	.S0(S0),
+	.S1(S1)
+);
+initial 
+begin 
+#80000 $finish;
+end 
+// A[ 3 ]
+always
+begin
+	A[3] = 1'b0;
+	A[3] = #40000 1'b1;
+	#40000;
+end 
+// A[ 2 ]
+always
+begin
+	A[2] = 1'b0;
+	A[2] = #20000 1'b1;
+	#20000;
+end 
+// A[ 1 ]
+always
+begin
+	A[1] = 1'b0;
+	A[1] = #10000 1'b1;
+	#10000;
+end 
+// A[ 0 ]
+always
+begin
+	A[0] = 1'b0;
+	A[0] = #5000 1'b1;
+	#5000;
+end 
+// B[ 3 ]
+initial
+begin
+	B[3] = 1'b1;
+	B[3] = #20000 1'b0;
+	B[3] = #30000 1'b1;
+end 
+// B[ 2 ]
+initial
+begin
+	B[2] = 1'b0;
+	B[2] = #20000 1'b1;
+	B[2] = #10000 1'b0;
+	B[2] = #15000 1'b1;
+	B[2] = #5000 1'b0;
+	B[2] = #25000 1'b1;
+end 
+// B[ 1 ]
+initial
+begin
+	B[1] = 1'b0;
+	B[1] = #25000 1'b1;
+	B[1] = #25000 1'b0;
+	B[1] = #25000 1'b1;
+end 
+// B[ 0 ]
+initial
+begin
+	repeat(3)
+	begin
+		B[0] = 1'b0;
+		B[0] = #5000 1'b1;
+		# 5000;
+	end
+	B[0] = 1'b0;
+	B[0] = #10000 1'b1;
+	B[0] = #10000 1'b0;
+	B[0] = #5000 1'b1;
+	# 5000;
+	repeat(2)
+	begin
+		B[0] = 1'b0;
+		B[0] = #5000 1'b1;
+		# 5000;
+	end
+end 
+
+// C0
+initial
+begin
+	repeat(3)
+	begin
+		C0 = 1'b0;
+		C0 = #5000 1'b1;
+		# 5000;
+	end
+	C0 = 1'b0;
+	C0 = #15000 1'b1;
+	# 5000;
+	repeat(3)
+	begin
+		C0 = 1'b0;
+		C0 = #5000 1'b1;
+		# 5000;
+	end
+end 
+endmodule
+

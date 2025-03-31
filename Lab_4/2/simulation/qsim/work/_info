@@ -1,0 +1,52 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dE:/PB/SEM_6/SW/Lab_4/2/simulation/qsim
+vhex_2_digit
+Z1 !s110 1742825146
+!i10b 1
+!s100 m2ShYKR@N1WXV4d7WJ6KD0
+IMNIh@OMPZ@e5U7AXielG<3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1742825146
+8hex_2_digit.vo
+Fhex_2_digit.vo
+L0 31
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1742825146.000000
+!s107 hex_2_digit.vo|
+!s90 -work|work|hex_2_digit.vo|
+!i113 1
+Z5 o-work work
+Z6 tCvgOpt 0
+vhex_2_digit_vlg_vec_tst
+R1
+!i10b 1
+!s100 z:]@4If5fbe2K59eo6S_D2
+Ie0U8oXc3@Q`VfLeY]cm?^0
+R2
+R0
+w1742825144
+8Waveform1.vwf.vt
+FWaveform1.vwf.vt
+L0 29
+R3
+r1
+!s85 0
+31
+R4
+!s107 Waveform1.vwf.vt|
+!s90 -work|work|Waveform1.vwf.vt|
+!i113 1
+R5
+R6

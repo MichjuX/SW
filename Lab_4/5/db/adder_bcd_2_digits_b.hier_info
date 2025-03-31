@@ -1,0 +1,20 @@
+|adder_bcd_2_digits_b
+A[0] => Add0.IN4
+A[1] => Add0.IN3
+A[2] => Add0.IN2
+A[3] => Add0.IN1
+B[0] => Add0.IN8
+B[1] => Add0.IN7
+B[2] => Add0.IN6
+B[3] => Add0.IN5
+C0 => Add1.IN10
+S1[0] <= LessThan0.DB_MAX_OUTPUT_PORT_TYPE
+S1[1] <= <GND>
+S1[2] <= <GND>
+S1[3] <= <GND>
+S0[0] <= Add2.DB_MAX_OUTPUT_PORT_TYPE
+S0[1] <= Add2.DB_MAX_OUTPUT_PORT_TYPE
+S0[2] <= Add2.DB_MAX_OUTPUT_PORT_TYPE
+S0[3] <= Add2.DB_MAX_OUTPUT_PORT_TYPE
+
+

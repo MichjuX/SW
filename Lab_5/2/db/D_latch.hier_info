@@ -1,0 +1,32 @@
+|latch_FDDP_FDDN
+D => D.IN3
+clk => clk.IN3
+Qa <= D_latch:latch.port2
+nQa <= D_latch:latch.port3
+Qb <= FDD_posedge:FDD_p.port2
+nQb <= FDD_posedge:FDD_p.port3
+Qc <= FDD_negedge:FDD_n.port2
+nQc <= FDD_negedge:FDD_n.port3
+
+
+|latch_FDDP_FDDN|D_latch:latch
+D => Q$latch.DATAIN
+Clk => Q$latch.LATCH_ENABLE
+Q <= Q$latch.DB_MAX_OUTPUT_PORT_TYPE
+nQ <= Q$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|latch_FDDP_FDDN|FDD_posedge:FDD_p
+D => Q~reg0.DATAIN
+Clk => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+nQ <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|latch_FDDP_FDDN|FDD_negedge:FDD_n
+D => Q~reg0.DATAIN
+Clk => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+nQ <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

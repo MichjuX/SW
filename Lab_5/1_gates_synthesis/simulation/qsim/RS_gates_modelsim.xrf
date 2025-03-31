@@ -1,0 +1,9 @@
+vendor_name = ModelSim
+source_file = 1, E:/PB/SEM_6/SW/Lab_5/1_gates_synthesis/RS_gates.v
+source_file = 1, E:/PB/SEM_6/SW/Lab_5/1_gates_synthesis/db/RS_gates.cbx.xml
+design_name = RS_gates
+instance = comp, \Q~output , Q~output, RS_gates, 1
+instance = comp, \Clk~input , Clk~input, RS_gates, 1
+instance = comp, \R~input , R~input, RS_gates, 1
+instance = comp, \S~input , S~input, RS_gates, 1
+instance = comp, \~QUARTUS_CREATED_GND~I , ~QUARTUS_CREATED_GND~I, RS_gates, 1

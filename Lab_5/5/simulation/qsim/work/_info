@@ -1,0 +1,98 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Patryk/Desktop/SW5/SW5_5/simulation/qsim
+vadder_A_B_8_bits
+Z1 !s110 1743012760
+!i10b 1
+!s100 =3WmQeD<V:PP[lCN=Fj5Q1
+I>Jk[4g=dmkBoMc?z`I_5[3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+Z3 dE:/PB/SEM_6/SW/Lab_5/5/simulation/qsim
+w1743012759
+Z4 8reg_N_bits_with_areset.vo
+Z5 Freg_N_bits_with_areset.vo
+L0 31
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1743012760.000000
+Z8 !s107 reg_N_bits_with_areset.vo|
+Z9 !s90 -work|work|reg_N_bits_with_areset.vo|
+!i113 1
+Z10 o-work work
+Z11 tCvgOpt 0
+nadder_@a_@b_8_bits
+vadder_A_B_8_bits_board
+Z12 !s110 1742991308
+!i10b 1
+!s100 Wh]41b27c?^MS7kRgPl:71
+I_fU67`Ba>RF6DfeQ]UAVz2
+R2
+R0
+w1742991307
+R4
+R5
+L0 32
+R6
+r1
+!s85 0
+31
+Z13 !s108 1742991308.000000
+R8
+R9
+!i113 1
+R10
+R11
+nadder_@a_@b_8_bits_board
+vadder_A_B_8_bits_board_vlg_vec_tst
+R12
+!i10b 1
+!s100 AMH9ShG90Nl_AH@?kX2F21
+IgONC`^HUz5jG7PC^[ja110
+R2
+R0
+w1742991305
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+L0 30
+R6
+r1
+!s85 0
+31
+R13
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R10
+R11
+nadder_@a_@b_8_bits_board_vlg_vec_tst
+vadder_A_B_8_bits_vlg_vec_tst
+R1
+!i10b 1
+!s100 =<2fFgFo>QB^2<d^BnMV?3
+I[=4`^5D@U<mF_J^99egij3
+R2
+R3
+w1743012758
+8Waveform1.vwf.vt
+FWaveform1.vwf.vt
+L0 29
+R6
+r1
+!s85 0
+31
+R7
+!s107 Waveform1.vwf.vt|
+!s90 -work|work|Waveform1.vwf.vt|
+!i113 1
+R10
+R11
+nadder_@a_@b_8_bits_vlg_vec_tst

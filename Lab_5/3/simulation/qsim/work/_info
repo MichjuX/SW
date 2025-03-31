@@ -1,0 +1,54 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Users/Patryk/Desktop/SW5/SW5_3/simulation/qsim
+vT_FF_behavioral
+Z0 !s110 1743010268
+!i10b 1
+!s100 UYWdBL?;GmGz?^S>L@8O>2
+IciBkHYA9?EOl>2HdWSOgg1
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dE:/PB/SEM_6/SW/Lab_5/3/simulation/qsim
+w1743010267
+8T_FF_behavioral.vo
+FT_FF_behavioral.vo
+L0 31
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1743010267.000000
+!s107 T_FF_behavioral.vo|
+!s90 -work|work|T_FF_behavioral.vo|
+!i113 1
+Z4 o-work work
+Z5 tCvgOpt 0
+n@t_@f@f_behavioral
+vT_FF_behavioral_vlg_vec_tst
+R0
+!i10b 1
+!s100 <Bh:jgWFbcXggP7[gLPgd2
+I0SB?doPCP9`gDKh2VYe4T2
+R1
+R2
+w1743010266
+8Waveform2.vwf.vt
+FWaveform2.vwf.vt
+L0 29
+R3
+r1
+!s85 0
+31
+!s108 1743010268.000000
+!s107 Waveform2.vwf.vt|
+!s90 -work|work|Waveform2.vwf.vt|
+!i113 1
+R4
+R5
+n@t_@f@f_behavioral_vlg_vec_tst

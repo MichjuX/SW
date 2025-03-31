@@ -1,0 +1,54 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dE:/PB/SEM_6/SW/Lab_5/1_gates/simulation/qsim
+vRS_gates
+Z1 !s110 1743008837
+!i10b 1
+!s100 5`lcF>4LB@E5=gm31?O]=2
+ImeJGoUTRKRTcO4l2KAHLB3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1743008836
+8RS_gates.vo
+FRS_gates.vo
+L0 31
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1743008837.000000
+!s107 RS_gates.vo|
+!s90 -work|work|RS_gates.vo|
+!i113 1
+Z5 o-work work
+Z6 tCvgOpt 0
+n@r@s_gates
+vRS_gates_vlg_vec_tst
+R1
+!i10b 1
+!s100 L<M]W^JZdmnW@A8CNZnda0
+I=In>Ubo9^i0;]zNEmm0]T0
+R2
+R0
+w1743008835
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+L0 29
+R3
+r1
+!s85 0
+31
+R4
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R5
+R6
+n@r@s_gates_vlg_vec_tst

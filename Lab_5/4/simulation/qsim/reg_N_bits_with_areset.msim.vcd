@@ -1,0 +1,277 @@
+$comment
+	File created using the following command:
+		vcd file reg_N_bits_with_areset.msim.vcd -direction
+$end
+$date
+	Wed Mar 26 19:04:12 2025
+$end
+$version
+	ModelSim Version 10.5b
+$end
+$timescale
+	1ps
+$end
+
+$scope module reg_N_bits_with_areset_vlg_vec_tst $end
+$var reg 4 ! D [3:0] $end
+$var reg 1 " areset $end
+$var reg 1 # clk $end
+$var wire 1 $ Q [3] $end
+$var wire 1 % Q [2] $end
+$var wire 1 & Q [1] $end
+$var wire 1 ' Q [0] $end
+
+$scope module i1 $end
+$var wire 1 ( gnd $end
+$var wire 1 ) vcc $end
+$var wire 1 * unknown $end
+$var tri1 1 + devclrn $end
+$var tri1 1 , devpor $end
+$var tri1 1 - devoe $end
+$var wire 1 . ~QUARTUS_CREATED_GND~I_combout $end
+$var wire 1 / clk~input_o $end
+$var wire 1 0 clk~inputCLKENA0_outclk $end
+$var wire 1 1 D[0]~input_o $end
+$var wire 1 2 Q[0]~reg0feeder_combout $end
+$var wire 1 3 areset~input_o $end
+$var wire 1 4 Q[0]~reg0_q $end
+$var wire 1 5 D[1]~input_o $end
+$var wire 1 6 Q[1]~reg0feeder_combout $end
+$var wire 1 7 Q[1]~reg0_q $end
+$var wire 1 8 D[2]~input_o $end
+$var wire 1 9 Q[2]~reg0_q $end
+$var wire 1 : D[3]~input_o $end
+$var wire 1 ; Q[3]~reg0feeder_combout $end
+$var wire 1 < Q[3]~reg0_q $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b110 !
+0"
+0#
+0'
+0&
+0%
+0$
+0(
+1)
+x*
+1+
+1,
+1-
+0.
+0/
+00
+01
+02
+03
+04
+15
+16
+07
+18
+09
+0:
+0;
+0<
+$end
+#4524
+b1110 !
+b1111 !
+11
+1:
+1;
+12
+#5000
+1#
+1/
+10
+1<
+19
+17
+14
+1'
+1&
+1%
+1$
+#10000
+b1011 !
+b1001 !
+b1 !
+b0 !
+0#
+01
+05
+08
+0:
+0/
+00
+0;
+06
+02
+#15000
+1#
+1/
+10
+0<
+09
+07
+04
+0'
+0&
+0%
+0$
+#15229
+b10 !
+b11 !
+11
+15
+16
+12
+#20000
+1"
+b111 !
+b1111 !
+0#
+b1101 !
+13
+05
+18
+1:
+0/
+00
+1;
+06
+#25000
+b1100 !
+b1000 !
+b0 !
+1#
+b10 !
+01
+15
+08
+0:
+1/
+10
+0;
+16
+02
+#30000
+0"
+b1010 !
+0#
+b1000 !
+03
+05
+1:
+0/
+00
+1;
+06
+#35000
+1#
+1/
+10
+1<
+1$
+#35490
+b1100 !
+b100 !
+18
+0:
+0;
+#40000
+b101 !
+0#
+11
+0/
+00
+12
+#45000
+1#
+1/
+10
+0<
+19
+14
+1'
+1%
+0$
+#45435
+b1 !
+b1001 !
+b1000 !
+01
+08
+1:
+1;
+02
+#50000
+1"
+0#
+13
+0/
+00
+04
+09
+0%
+0'
+#55000
+1#
+1/
+10
+#55419
+b1010 !
+15
+16
+#60000
+0"
+0#
+03
+0/
+00
+#60372
+b1011 !
+b1001 !
+11
+05
+06
+12
+#64125
+1"
+13
+#65000
+1#
+1/
+10
+#65700
+0"
+03
+#70000
+0#
+0/
+00
+#70278
+b1101 !
+b101 !
+b100 !
+b110 !
+01
+15
+18
+0:
+0;
+16
+02
+#75000
+1#
+1/
+10
+19
+17
+1&
+1%
+#80000

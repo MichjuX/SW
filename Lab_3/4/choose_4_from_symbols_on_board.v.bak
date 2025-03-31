@@ -1,0 +1,11 @@
+module choose_4_from_symbols_on_board(
+	input [9:0] SW,
+	output [9:0] LEDR,
+	output [6:0] HEX0);
+
+	assign LEDR = SW;
+	wire [1:0] c;
+	mux_4_1_2_bits mux(SW[7:6], SW[5:4], SW[3:2], SW[1:0], SW[9:8], c[1:0]);
+	decoder_7_seg decoder(c[1:0], HEX0[6:0]);
+
+endmodule

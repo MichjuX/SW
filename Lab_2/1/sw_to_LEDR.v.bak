@@ -1,0 +1,6 @@
+module sw_to_LEDR(
+	input [9:0) sw,
+	output [9:0] LEDR);
+	
+	assign LEDR = SW;
+endmodule

@@ -1,0 +1,94 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dE:/PB/SEM_6/SW/Lab_3/2/simulation/qsim
+vmux_4_1_2_bits
+Z1 !s110 1742748564
+!i10b 1
+!s100 _KJ8=6f?PHUZR68KXmiBh1
+IBPlcGZS]<nS3=f2NczFfi1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1742748563
+Z3 8mux_4_1_2_bits_on_board.vo
+Z4 Fmux_4_1_2_bits_on_board.vo
+Z5 L0 31
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1742748564.000000
+Z8 !s107 mux_4_1_2_bits_on_board.vo|
+Z9 !s90 -work|work|mux_4_1_2_bits_on_board.vo|
+!i113 1
+Z10 o-work work
+Z11 tCvgOpt 0
+vmux_4_1_2_bits_on_board
+Z12 !s110 1741560477
+!i10b 1
+!s100 PZ_Od_Szok<:k63O_0eG62
+IlS44a]CRAL`:G:Kg2E_JI1
+R2
+R0
+w1741560476
+R3
+R4
+R5
+R6
+r1
+!s85 0
+31
+Z13 !s108 1741560477.000000
+R8
+R9
+!i113 1
+R10
+R11
+vmux_4_1_2_bits_on_board_vlg_vec_tst
+R12
+!i10b 1
+!s100 flJ:BVNGmQ3mamn3AejDk3
+IkfSW8H@Y?c[R5;P9V4@021
+R2
+R0
+w1741560473
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+Z14 L0 29
+R6
+r1
+!s85 0
+31
+R13
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R10
+R11
+vmux_4_1_2_bits_vlg_vec_tst
+R1
+!i10b 1
+!s100 99Zbk]R8TVL4I02Re>_Na2
+Ilz2<aWDna`K_^U:lW@@aa3
+R2
+R0
+w1742748562
+8Waveform1.vwf.vt
+FWaveform1.vwf.vt
+R14
+R6
+r1
+!s85 0
+31
+R7
+!s107 Waveform1.vwf.vt|
+!s90 -work|work|Waveform1.vwf.vt|
+!i113 1
+R10
+R11

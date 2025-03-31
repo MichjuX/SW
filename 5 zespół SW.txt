@@ -1,0 +1,55 @@
+5 zespół SW
+
+Sprawka wysyłamy na maila v.salayou@pb.edu.pl
+MAMY CZAS DO WTORKU 23.59!!! INACZEJ MINUS
+Nazwa pliku: PS7_ZESP5_SW1
+
+Zawartość sprawka:
+SW<n>
+Temat:
+Imię Nazwisko 1
+Imię Nazwisko 2
+1. Zadanie 1
+  <Treść>
+    Kod w języku Verilog
+    Wyniki syntezy
+    Wyniki symulacji
+    Wnioski
+2. Zadanie 2
+...
+
+
+
+Quartus pobrać z intel.com
+
+Układ: Cyclone V
+Układ: 5CSEMA5F31C6
+
+
+W quartus wybieramy new file -> Verilog HDL file
+
+JEDEN MODUŁ W JEDNYM PLIKU, JEDEN PROJEKT W JEDNYM KATALOGU
+
+module adder_1_bit (
+	input cin, a, b,
+	output s, cout);
+
+	assign = {cout,s} = cin + a + b;
+	
+endmodule
+
+Kompilujemy
+Po kompilacji klikamy w tools potem Rozwijamy coś tam i RTL Viewer
+New University program VWF do wykresów:
+ - ustawiamy 80ns
+ - Klikemy i insertujemy klikając Node Finder w tym oknie pins: all i list, i przerzucamy z lewej strony na prawą co chcemy widzieć.
+
+Dajemy najpierw cin, potem a,b,s, cout na końcu
+
+Wybieramy np cin i klikamy zegar na 10ns
+potem w a zegar i ustawiamy na 20ns
+w b zegar na 40ns
+
+
+Potem nakurwiamy sprawko w wordze:
+Kod, potem wyniki syntezy (schemat), potem wyniki symulacji (wykres)

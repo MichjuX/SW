@@ -1,0 +1,15 @@
+vendor_name = ModelSim
+source_file = 1, E:/PB/SEM_6/SW/Lab_5/3/T_FF_behavioral.v
+source_file = 1, E:/PB/SEM_6/SW/Lab_5/3/Waveform.vwf
+source_file = 1, E:/PB/SEM_6/SW/Lab_5/3/Waveform1.vwf
+source_file = 1, E:/PB/SEM_6/SW/Lab_5/3/db/T_FF_behavioral.cbx.xml
+design_name = T_FF_behavioral
+instance = comp, \Q~output , Q~output, T_FF_behavioral, 1
+instance = comp, \nQ~output , nQ~output, T_FF_behavioral, 1
+instance = comp, \clk~input , clk~input, T_FF_behavioral, 1
+instance = comp, \T~input , T~input, T_FF_behavioral, 1
+instance = comp, \Q~0 , Q~0, T_FF_behavioral, 1
+instance = comp, \Q~reg0feeder , Q~reg0feeder, T_FF_behavioral, 1
+instance = comp, \aclr~input , aclr~input, T_FF_behavioral, 1
+instance = comp, \Q~reg0 , Q~reg0, T_FF_behavioral, 1
+instance = comp, \~QUARTUS_CREATED_GND~I , ~QUARTUS_CREATED_GND~I, T_FF_behavioral, 1

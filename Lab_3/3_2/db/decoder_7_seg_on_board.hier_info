@@ -1,0 +1,31 @@
+|decoder_7_seg_on_board
+SW[5] => SW[5].IN1
+SW[6] => SW[6].IN1
+HEX5[0] <= decoder_7_seg:decoder.port1
+HEX5[1] <= decoder_7_seg:decoder.port1
+HEX5[2] <= decoder_7_seg:decoder.port1
+HEX5[3] <= decoder_7_seg:decoder.port1
+HEX5[4] <= decoder_7_seg:decoder.port1
+HEX5[5] <= decoder_7_seg:decoder.port1
+HEX5[6] <= decoder_7_seg:decoder.port1
+
+
+|decoder_7_seg_on_board|decoder_7_seg:decoder
+c[0] => h.IN0
+c[0] => h.IN0
+c[0] => h.IN0
+c[0] => h.IN0
+c[0] => h[3].DATAIN
+c[1] => h.IN1
+c[1] => h.IN1
+c[1] => h.IN1
+c[1] => h.IN1
+h[0] <= h.DB_MAX_OUTPUT_PORT_TYPE
+h[1] <= <VCC>
+h[2] <= h.DB_MAX_OUTPUT_PORT_TYPE
+h[3] <= c[0].DB_MAX_OUTPUT_PORT_TYPE
+h[4] <= h.DB_MAX_OUTPUT_PORT_TYPE
+h[5] <= <GND>
+h[6] <= h.DB_MAX_OUTPUT_PORT_TYPE
+
+

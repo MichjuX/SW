@@ -1,0 +1,16 @@
+|T_FF_D
+T => D.IN1
+clk => clk.IN1
+aclr => aclr.IN1
+Q <= FDD_posedge:FDD_p.port3
+nQ <= FDD_posedge:FDD_p.port4
+
+
+|T_FF_D|FDD_posedge:FDD_p
+D => Q~reg0.DATAIN
+Clk => Q~reg0.CLK
+aclr => Q~reg0.ACLR
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+nQ <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

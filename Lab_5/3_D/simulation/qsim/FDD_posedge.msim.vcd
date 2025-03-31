@@ -1,0 +1,187 @@
+$comment
+	File created using the following command:
+		vcd file FDD_posedge.msim.vcd -direction
+$end
+$date
+	Wed Mar 26 18:37:10 2025
+$end
+$version
+	ModelSim Version 10.5b
+$end
+$timescale
+	1ps
+$end
+
+$scope module T_FF_D_vlg_vec_tst $end
+$var reg 1 ! T $end
+$var reg 1 " aclr $end
+$var reg 1 # clk $end
+$var wire 1 $ Q $end
+$var wire 1 % nQ $end
+
+$scope module i1 $end
+$var wire 1 & gnd $end
+$var wire 1 ' vcc $end
+$var wire 1 ( unknown $end
+$var tri1 1 ) devclrn $end
+$var tri1 1 * devpor $end
+$var tri1 1 + devoe $end
+$var wire 1 , ~QUARTUS_CREATED_GND~I_combout $end
+$var wire 1 - clk~input_o $end
+$var wire 1 . T~input_o $end
+$var wire 1 / FDD_p|Q~0_combout $end
+$var wire 1 0 FDD_p|Q~feeder_combout $end
+$var wire 1 1 aclr~input_o $end
+$var wire 1 2 FDD_p|Q~q $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0!
+0"
+0#
+0$
+1%
+0&
+1'
+x(
+1)
+1*
+1+
+0,
+0-
+0.
+0/
+00
+01
+02
+$end
+#2275
+1!
+1.
+1/
+10
+#4355
+1"
+11
+#5000
+1#
+1-
+12
+0%
+1$
+0/
+00
+#6500
+0"
+01
+02
+1%
+0$
+1/
+10
+#10000
+0#
+0-
+#13975
+1"
+11
+#15000
+1#
+1-
+12
+0%
+1$
+0/
+00
+#16055
+0!
+0.
+1/
+10
+#17680
+0"
+01
+02
+1%
+0$
+0/
+00
+#20000
+0#
+0-
+#22555
+1"
+11
+#24569
+1!
+1.
+1/
+10
+#25000
+1#
+1-
+12
+0%
+1$
+0/
+00
+#27625
+0!
+0.
+1/
+10
+#30000
+0#
+0-
+#35000
+1#
+1-
+#39130
+1!
+1.
+0/
+00
+#40000
+0#
+0-
+#42250
+0!
+0.
+1/
+10
+#45000
+1#
+1-
+#50000
+0#
+0-
+#50764
+0"
+01
+02
+1%
+0$
+0/
+00
+#55000
+1#
+1-
+#58695
+1!
+1.
+1/
+10
+#60000
+0#
+0-
+#61620
+0!
+0.
+0/
+00
+#65000
+1#
+1-
+#70000

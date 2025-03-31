@@ -1,0 +1,54 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Users/Patryk/Desktop/SW5/SW5_3_2/simulation/qsim
+vT_FF_D
+Z0 !s110 1743010630
+!i10b 1
+!s100 ^Zgh[[TWDfhJ<QZc99a722
+I8LEZZPj1OW7WfJnBDBY^73
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dE:/PB/SEM_6/SW/Lab_5/3_D/simulation/qsim
+w1743010629
+8FDD_posedge.vo
+FFDD_posedge.vo
+L0 31
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1743010630.000000
+!s107 FDD_posedge.vo|
+!s90 -work|work|FDD_posedge.vo|
+!i113 1
+Z5 o-work work
+Z6 tCvgOpt 0
+n@t_@f@f_@d
+vT_FF_D_vlg_vec_tst
+R0
+!i10b 1
+!s100 OmW1O7gCUH:D@RR@UaaIh2
+I?ciUZfM[S7]Uk;PAScE`60
+R1
+R2
+w1743010628
+8Waveform1.vwf.vt
+FWaveform1.vwf.vt
+L0 29
+R3
+r1
+!s85 0
+31
+R4
+!s107 Waveform1.vwf.vt|
+!s90 -work|work|Waveform1.vwf.vt|
+!i113 1
+R5
+R6
+n@t_@f@f_@d_vlg_vec_tst

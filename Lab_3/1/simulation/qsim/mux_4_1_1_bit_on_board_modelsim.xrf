@@ -1,0 +1,17 @@
+vendor_name = ModelSim
+source_file = 1, E:/PB/SEM_6/SW/Lab_3/1/mux_4_1_1_bit_on_board.v
+source_file = 1, E:/PB/SEM_6/SW/Lab_3/1/mux_4_1_1_bit.v
+source_file = 1, E:/PB/SEM_6/SW/Lab_3/1/mux_2_1_1_bit.v
+source_file = 1, E:/PB/SEM_6/SW/Lab_3/1/Waveform.vwf
+source_file = 1, E:/PB/SEM_6/SW/Lab_3/1/Waveform1.vwf
+source_file = 1, E:/PB/SEM_6/SW/Lab_3/1/db/mux_4_1_1_bit_on_board.cbx.xml
+design_name = mux_4_1_1_bit
+instance = comp, \m~output , m~output, mux_4_1_1_bit, 1
+instance = comp, \u~input , u~input, mux_4_1_1_bit, 1
+instance = comp, \v~input , v~input, mux_4_1_1_bit, 1
+instance = comp, \s[0]~input , s[0]~input, mux_4_1_1_bit, 1
+instance = comp, \s[1]~input , s[1]~input, mux_4_1_1_bit, 1
+instance = comp, \x~input , x~input, mux_4_1_1_bit, 1
+instance = comp, \w~input , w~input, mux_4_1_1_bit, 1
+instance = comp, \mux_uvWX|m~0 , mux_uvWX|m~0, mux_4_1_1_bit, 1
+instance = comp, \~QUARTUS_CREATED_GND~I , ~QUARTUS_CREATED_GND~I, mux_4_1_1_bit, 1

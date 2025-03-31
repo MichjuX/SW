@@ -1,0 +1,447 @@
+$comment
+	File created using the following command:
+		vcd file reg_N_bits_with_areset.msim.vcd -direction
+$end
+$date
+	Wed Mar 26 19:12:40 2025
+$end
+$version
+	ModelSim Version 10.5b
+$end
+$timescale
+	1ps
+$end
+
+$scope module adder_A_B_8_bits_vlg_vec_tst $end
+$var reg 8 ! A_B [7:0] $end
+$var reg 1 " reg_clock $end
+$var reg 1 # reg_reset $end
+$var wire 1 $ S [7] $end
+$var wire 1 % S [6] $end
+$var wire 1 & S [5] $end
+$var wire 1 ' S [4] $end
+$var wire 1 ( S [3] $end
+$var wire 1 ) S [2] $end
+$var wire 1 * S [1] $end
+$var wire 1 + S [0] $end
+$var wire 1 , cout $end
+$var wire 1 - reg_value [7] $end
+$var wire 1 . reg_value [6] $end
+$var wire 1 / reg_value [5] $end
+$var wire 1 0 reg_value [4] $end
+$var wire 1 1 reg_value [3] $end
+$var wire 1 2 reg_value [2] $end
+$var wire 1 3 reg_value [1] $end
+$var wire 1 4 reg_value [0] $end
+
+$scope module i1 $end
+$var wire 1 5 gnd $end
+$var wire 1 6 vcc $end
+$var wire 1 7 unknown $end
+$var tri1 1 8 devclrn $end
+$var tri1 1 9 devpor $end
+$var tri1 1 : devoe $end
+$var wire 1 ; ~QUARTUS_CREATED_GND~I_combout $end
+$var wire 1 < reg_clock~input_o $end
+$var wire 1 = reg_clock~inputCLKENA0_outclk $end
+$var wire 1 > A_B[0]~input_o $end
+$var wire 1 ? reg_reset~input_o $end
+$var wire 1 @ A_B[1]~input_o $end
+$var wire 1 A A_B[2]~input_o $end
+$var wire 1 B A_B[3]~input_o $end
+$var wire 1 C A_B[4]~input_o $end
+$var wire 1 D A_B[5]~input_o $end
+$var wire 1 E A_B[6]~input_o $end
+$var wire 1 F A_B[7]~input_o $end
+$var wire 1 G Add0~6 $end
+$var wire 1 H Add0~10 $end
+$var wire 1 I Add0~14 $end
+$var wire 1 J Add0~18 $end
+$var wire 1 K Add0~22 $end
+$var wire 1 L Add0~26 $end
+$var wire 1 M Add0~30 $end
+$var wire 1 N Add0~34 $end
+$var wire 1 O Add0~1_sumout $end
+$var wire 1 P Add0~5_sumout $end
+$var wire 1 Q Add0~9_sumout $end
+$var wire 1 R Add0~13_sumout $end
+$var wire 1 S Add0~17_sumout $end
+$var wire 1 T Add0~21_sumout $end
+$var wire 1 U Add0~25_sumout $end
+$var wire 1 V Add0~29_sumout $end
+$var wire 1 W Add0~33_sumout $end
+$var wire 1 X reg_A|Q [7] $end
+$var wire 1 Y reg_A|Q [6] $end
+$var wire 1 Z reg_A|Q [5] $end
+$var wire 1 [ reg_A|Q [4] $end
+$var wire 1 \ reg_A|Q [3] $end
+$var wire 1 ] reg_A|Q [2] $end
+$var wire 1 ^ reg_A|Q [1] $end
+$var wire 1 _ reg_A|Q [0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b0 !
+0"
+0#
+0+
+0*
+0)
+0(
+0'
+0&
+0%
+0$
+0,
+04
+03
+02
+01
+00
+0/
+0.
+0-
+05
+16
+x7
+18
+19
+1:
+0;
+0<
+0=
+0>
+0?
+0@
+0A
+0B
+0C
+0D
+0E
+0F
+0G
+0H
+0I
+0J
+0K
+0L
+0M
+0N
+0O
+0P
+0Q
+0R
+0S
+0T
+0U
+0V
+0W
+0_
+0^
+0]
+0\
+0[
+0Z
+0Y
+0X
+$end
+#5000
+b1 !
+1>
+1P
+1+
+#6206
+1"
+1<
+1=
+1_
+14
+1G
+0P
+0+
+1Q
+1*
+#9164
+0"
+0<
+0=
+#10000
+b11 !
+b10 !
+0>
+1@
+1H
+0G
+0Q
+1P
+1+
+0*
+0H
+1R
+1Q
+1*
+1)
+0R
+0)
+#15000
+b11 !
+1>
+1G
+0P
+0+
+1H
+0Q
+0*
+1R
+1)
+#20000
+b111 !
+b101 !
+b100 !
+0>
+0@
+1A
+1I
+0H
+0G
+0R
+1Q
+1P
+1+
+1*
+0)
+0I
+1S
+1R
+0Q
+0*
+1)
+1(
+0S
+0(
+#21866
+1#
+1?
+0_
+04
+0P
+0+
+#24070
+0#
+0?
+#25000
+b101 !
+1>
+1P
+1+
+#30000
+b111 !
+b110 !
+0>
+1@
+1Q
+0P
+0+
+1*
+#31204
+1"
+1<
+1=
+1]
+1^
+13
+12
+1H
+1I
+0Q
+0R
+0)
+0*
+1R
+1S
+1(
+1)
+#34336
+0"
+0<
+0=
+#35000
+b111 !
+1>
+1P
+1+
+#40000
+b1111 !
+b1011 !
+b1001 !
+b1000 !
+0>
+0@
+0A
+1B
+1J
+0H
+0S
+0R
+1Q
+0P
+0+
+1*
+0)
+0(
+0I
+1T
+1R
+1)
+1'
+0J
+1S
+1(
+0T
+0'
+#45000
+b1001 !
+1>
+1P
+1+
+#50000
+b1011 !
+b1010 !
+0>
+1@
+1H
+0Q
+0P
+0+
+0*
+1I
+0R
+0)
+1J
+0S
+0(
+1T
+1'
+#55000
+b1011 !
+1>
+1P
+1+
+#60000
+b1001011 !
+b1001111 !
+b1001101 !
+b1001100 !
+0>
+0@
+1A
+1E
+0H
+1V
+1R
+1Q
+0P
+0+
+1*
+1)
+1%
+0R
+0)
+#61712
+1"
+1<
+1=
+1Y
+1\
+0^
+03
+11
+1.
+1M
+0Q
+1S
+0V
+0%
+1(
+0*
+1W
+1$
+#63858
+0"
+0<
+0=
+#65000
+b11001100 !
+b11001101 !
+1>
+1F
+1N
+0W
+1P
+1+
+0$
+1O
+1,
+#70000
+b11101101 !
+b10101101 !
+b10101111 !
+b10101110 !
+0>
+1@
+1D
+0E
+0M
+1V
+1U
+1Q
+0P
+0+
+1*
+1&
+1%
+0N
+1W
+1$
+0O
+0,
+#71804
+1#
+1?
+0]
+0\
+0Y
+0.
+01
+02
+0I
+0V
+0S
+1R
+1)
+0(
+0%
+0J
+1S
+1(
+0T
+0'
+#73602
+0#
+0?
+#75000
+b10111110 !
+b10011110 !
+b10011111 !
+1>
+1C
+0D
+0U
+1T
+1P
+1+
+1'
+0&
+#80000

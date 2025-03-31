@@ -1,0 +1,253 @@
+|adder_BCD_2_digits
+X[0] => X[0].IN1
+X[1] => X[1].IN1
+X[2] => X[2].IN1
+X[3] => X[3].IN1
+Y[0] => Y[0].IN1
+Y[1] => Y[1].IN1
+Y[2] => Y[2].IN1
+Y[3] => Y[3].IN1
+cin => cin.IN1
+S0[6] << decoder_hex_10:dec0.port1
+S0[5] << decoder_hex_10:dec0.port1
+S0[4] << decoder_hex_10:dec0.port1
+S0[3] << decoder_hex_10:dec0.port1
+S0[2] << decoder_hex_10:dec0.port1
+S0[1] << decoder_hex_10:dec0.port1
+S0[0] << decoder_hex_10:dec0.port1
+S1[6] << decoder_hex_10:dec1.port1
+S1[5] << decoder_hex_10:dec1.port1
+S1[4] << decoder_hex_10:dec1.port1
+S1[3] << decoder_hex_10:dec1.port1
+S1[2] << decoder_hex_10:dec1.port1
+S1[1] << decoder_hex_10:dec1.port1
+S1[0] << decoder_hex_10:dec1.port1
+error << always0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder_BCD_2_digits|ripple_carry_adder_4_bit:ripp
+A[0] => A[0].IN1
+A[1] => A[1].IN1
+A[2] => A[2].IN1
+A[3] => A[3].IN1
+B[0] => B[0].IN1
+B[1] => B[1].IN1
+B[2] => B[2].IN1
+B[3] => B[3].IN1
+cin => cin.IN1
+S[0] <= full_adder:f0.port3
+S[1] <= full_adder:f1.port3
+S[2] <= full_adder:f2.port3
+S[3] <= full_adder:f3.port3
+cout <= full_adder:f3.port4
+
+
+|adder_BCD_2_digits|ripple_carry_adder_4_bit:ripp|full_adder:f0
+A => S.IN0
+A => cout.IN0
+B => S.IN1
+B => cout.IN1
+cin => S.IN1
+cin => cout.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder_BCD_2_digits|ripple_carry_adder_4_bit:ripp|full_adder:f1
+A => S.IN0
+A => cout.IN0
+B => S.IN1
+B => cout.IN1
+cin => S.IN1
+cin => cout.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder_BCD_2_digits|ripple_carry_adder_4_bit:ripp|full_adder:f2
+A => S.IN0
+A => cout.IN0
+B => S.IN1
+B => cout.IN1
+cin => S.IN1
+cin => cout.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder_BCD_2_digits|ripple_carry_adder_4_bit:ripp|full_adder:f3
+A => S.IN0
+A => cout.IN0
+B => S.IN1
+B => cout.IN1
+cin => S.IN1
+cin => cout.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder_BCD_2_digits|comparator_greater_than_9:comp
+V[0] => LessThan0.IN8
+V[1] => LessThan0.IN7
+V[2] => LessThan0.IN6
+V[3] => LessThan0.IN5
+z <= LessThan0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder_BCD_2_digits|circuit_A_19:circ
+S[0] => Mux3.IN4
+S[0] => Mux3.IN5
+S[0] => Mux3.IN6
+S[0] => Mux3.IN7
+S[0] => Mux3.IN8
+S[0] => Mux3.IN9
+S[0] => Mux3.IN10
+S[0] => Mux6.IN9
+S[0] => Mux6.IN10
+S[0] => Mux6.IN11
+S[0] => Mux6.IN12
+S[0] => Mux6.IN13
+S[0] => Mux6.IN14
+S[0] => Mux6.IN15
+S[0] => Mux6.IN16
+S[0] => Mux6.IN17
+S[0] => Mux6.IN18
+S[0] => Mux6.IN19
+S[1] => Mux0.IN10
+S[1] => Mux1.IN10
+S[1] => Mux2.IN4
+S[1] => Mux2.IN5
+S[1] => Mux2.IN6
+S[1] => Mux2.IN7
+S[1] => Mux2.IN8
+S[1] => Mux2.IN9
+S[1] => Mux2.IN10
+S[1] => Decoder0.IN2
+S[1] => Mux4.IN10
+S[1] => Mux5.IN5
+S[1] => Mux5.IN6
+S[1] => Mux5.IN7
+S[1] => Mux5.IN8
+S[1] => Mux5.IN9
+S[1] => Mux5.IN10
+S[1] => Mux6.IN8
+S[2] => Mux0.IN9
+S[2] => Mux1.IN3
+S[2] => Mux1.IN4
+S[2] => Mux1.IN5
+S[2] => Mux1.IN6
+S[2] => Mux1.IN7
+S[2] => Mux1.IN8
+S[2] => Mux1.IN9
+S[2] => Mux2.IN3
+S[2] => Mux3.IN3
+S[2] => Decoder0.IN1
+S[2] => Mux4.IN4
+S[2] => Mux4.IN5
+S[2] => Mux4.IN6
+S[2] => Mux4.IN7
+S[2] => Mux4.IN8
+S[2] => Mux4.IN9
+S[2] => Mux5.IN4
+S[2] => Mux6.IN7
+S[3] => Mux0.IN2
+S[3] => Mux0.IN3
+S[3] => Mux0.IN4
+S[3] => Mux0.IN5
+S[3] => Mux0.IN6
+S[3] => Mux0.IN7
+S[3] => Mux0.IN8
+S[3] => Mux1.IN2
+S[3] => Mux2.IN2
+S[3] => Mux3.IN2
+S[3] => Decoder0.IN0
+S[3] => A.DATAA
+S[3] => Mux4.IN3
+S[3] => Mux5.IN3
+S[3] => Mux6.IN6
+cout => A.OUTPUTSELECT
+cout => A.OUTPUTSELECT
+cout => A.OUTPUTSELECT
+cout => A.OUTPUTSELECT
+A[0] <= A.DB_MAX_OUTPUT_PORT_TYPE
+A[1] <= A.DB_MAX_OUTPUT_PORT_TYPE
+A[2] <= A.DB_MAX_OUTPUT_PORT_TYPE
+A[3] <= A.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder_BCD_2_digits|mux_2_1_4_bits:mux
+X[0] => X[0].IN1
+X[1] => X[1].IN1
+X[2] => X[2].IN1
+X[3] => X[3].IN1
+Y[0] => Y[0].IN1
+Y[1] => Y[1].IN1
+Y[2] => Y[2].IN1
+Y[3] => Y[3].IN1
+s => s.IN4
+M[0] <= mux_2_1_1_bit:m0.port3
+M[1] <= mux_2_1_1_bit:m1.port3
+M[2] <= mux_2_1_1_bit:m2.port3
+M[3] <= mux_2_1_1_bit:m3.port3
+
+
+|adder_BCD_2_digits|mux_2_1_4_bits:mux|mux_2_1_1_bit:m0
+x => m.IN0
+y => m.IN0
+s => m.IN1
+s => m.IN1
+m <= m.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder_BCD_2_digits|mux_2_1_4_bits:mux|mux_2_1_1_bit:m1
+x => m.IN0
+y => m.IN0
+s => m.IN1
+s => m.IN1
+m <= m.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder_BCD_2_digits|mux_2_1_4_bits:mux|mux_2_1_1_bit:m2
+x => m.IN0
+y => m.IN0
+s => m.IN1
+s => m.IN1
+m <= m.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder_BCD_2_digits|mux_2_1_4_bits:mux|mux_2_1_1_bit:m3
+x => m.IN0
+y => m.IN0
+s => m.IN1
+s => m.IN1
+m <= m.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder_BCD_2_digits|decoder_hex_10:dec0
+x[0] => Decoder0.IN3
+x[1] => Decoder0.IN2
+x[2] => Decoder0.IN1
+x[3] => Decoder0.IN0
+h[6] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+h[5] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+h[4] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+h[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+h[2] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+h[1] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+h[0] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder_BCD_2_digits|decoder_hex_10:dec1
+x[0] => Decoder0.IN3
+x[1] => Decoder0.IN2
+x[2] => Decoder0.IN1
+x[3] => Decoder0.IN0
+h[6] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+h[5] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+h[4] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+h[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+h[2] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+h[1] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+h[0] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+

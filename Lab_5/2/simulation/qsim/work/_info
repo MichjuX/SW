@@ -1,0 +1,54 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Users/Patryk/Desktop/SW5/SW5_2/simulation/qsim
+vlatch_FDDP_FDDN
+Z0 !s110 1743009742
+!i10b 1
+!s100 ee:RDkI?dQD1A@>hZmTDG1
+IBnTeDaj2_hELU:`Xl2S?z2
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dE:/PB/SEM_6/SW/Lab_5/2/simulation/qsim
+w1743009741
+8D_latch.vo
+FD_latch.vo
+L0 31
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1743009742.000000
+!s107 D_latch.vo|
+!s90 -work|work|D_latch.vo|
+!i113 1
+Z5 o-work work
+Z6 tCvgOpt 0
+nlatch_@f@d@d@p_@f@d@d@n
+vlatch_FDDP_FDDN_vlg_vec_tst
+R0
+!i10b 1
+!s100 hmk<PL:mf`X8>Y<2meJXP3
+IgBR4f:LYz?ah0h:=28Jz`1
+R1
+R2
+w1743009740
+8Waveform1.vwf.vt
+FWaveform1.vwf.vt
+L0 29
+R3
+r1
+!s85 0
+31
+R4
+!s107 Waveform1.vwf.vt|
+!s90 -work|work|Waveform1.vwf.vt|
+!i113 1
+R5
+R6
+nlatch_@f@d@d@p_@f@d@d@n_vlg_vec_tst
