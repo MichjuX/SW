@@ -1,0 +1,65 @@
+|counter_T_4_bits_on_board
+KEY[0] => KEY[0].IN1
+SW[0] => SW[0].IN1
+SW[1] => SW[1].IN1
+HEX0[0] <= decoder_hex_16:decoder.port1
+HEX0[1] <= decoder_hex_16:decoder.port1
+HEX0[2] <= decoder_hex_16:decoder.port1
+HEX0[3] <= decoder_hex_16:decoder.port1
+HEX0[4] <= decoder_hex_16:decoder.port1
+HEX0[5] <= decoder_hex_16:decoder.port1
+HEX0[6] <= decoder_hex_16:decoder.port1
+
+
+|counter_T_4_bits_on_board|counter_T_4_bits:counter
+clk => clk.IN4
+areset => areset.IN4
+enable => enable.IN1
+Q[0] <= FFT_areset:fft0.port3
+Q[1] <= FFT_areset:fft1.port3
+Q[2] <= FFT_areset:fft2.port3
+Q[3] <= FFT_areset:fft3.port3
+
+
+|counter_T_4_bits_on_board|counter_T_4_bits:counter|FFT_areset:fft0
+T => Q~reg0.ENA
+clk => Q~reg0.CLK
+aclr => Q~reg0.ACLR
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter_T_4_bits_on_board|counter_T_4_bits:counter|FFT_areset:fft1
+T => Q~reg0.ENA
+clk => Q~reg0.CLK
+aclr => Q~reg0.ACLR
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter_T_4_bits_on_board|counter_T_4_bits:counter|FFT_areset:fft2
+T => Q~reg0.ENA
+clk => Q~reg0.CLK
+aclr => Q~reg0.ACLR
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter_T_4_bits_on_board|counter_T_4_bits:counter|FFT_areset:fft3
+T => Q~reg0.ENA
+clk => Q~reg0.CLK
+aclr => Q~reg0.ACLR
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter_T_4_bits_on_board|decoder_hex_16:decoder
+binary[0] => Decoder0.IN3
+binary[1] => Decoder0.IN2
+binary[2] => Decoder0.IN1
+binary[3] => Decoder0.IN0
+h[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+h[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+h[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+h[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+h[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+h[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+h[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+

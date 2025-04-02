@@ -1,0 +1,101 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1100mV 85C Model Setup 'CLOCK_50'
+Slack : -2.866
+TNS   : -8.290
+
+Type  : Slow 1100mV 85C Model Setup 'word_rotate:wr|counter_mod_M:fast_counter|Q[0]'
+Slack : -1.096
+TNS   : -8.458
+
+Type  : Slow 1100mV 85C Model Hold 'CLOCK_50'
+Slack : 0.296
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'word_rotate:wr|counter_mod_M:fast_counter|Q[0]'
+Slack : 0.938
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'word_rotate:wr|counter_mod_M:fast_counter|Q[0]'
+Slack : -0.394
+TNS   : -4.288
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'CLOCK_50'
+Slack : -0.394
+TNS   : -1.557
+
+Type  : Slow 1100mV 0C Model Setup 'CLOCK_50'
+Slack : -2.502
+TNS   : -7.277
+
+Type  : Slow 1100mV 0C Model Setup 'word_rotate:wr|counter_mod_M:fast_counter|Q[0]'
+Slack : -1.091
+TNS   : -8.286
+
+Type  : Slow 1100mV 0C Model Hold 'CLOCK_50'
+Slack : -0.045
+TNS   : -0.078
+
+Type  : Slow 1100mV 0C Model Hold 'word_rotate:wr|counter_mod_M:fast_counter|Q[0]'
+Slack : 0.877
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'word_rotate:wr|counter_mod_M:fast_counter|Q[0]'
+Slack : -0.394
+TNS   : -4.456
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'CLOCK_50'
+Slack : -0.394
+TNS   : -1.687
+
+Type  : Fast 1100mV 85C Model Setup 'CLOCK_50'
+Slack : -2.531
+TNS   : -6.978
+
+Type  : Fast 1100mV 85C Model Setup 'word_rotate:wr|counter_mod_M:fast_counter|Q[0]'
+Slack : -0.473
+TNS   : -3.012
+
+Type  : Fast 1100mV 85C Model Hold 'CLOCK_50'
+Slack : 0.201
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'word_rotate:wr|counter_mod_M:fast_counter|Q[0]'
+Slack : 0.462
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'CLOCK_50'
+Slack : -0.084
+TNS   : -0.251
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'word_rotate:wr|counter_mod_M:fast_counter|Q[0]'
+Slack : 0.127
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Setup 'CLOCK_50'
+Slack : -1.960
+TNS   : -5.391
+
+Type  : Fast 1100mV 0C Model Setup 'word_rotate:wr|counter_mod_M:fast_counter|Q[0]'
+Slack : -0.353
+TNS   : -2.299
+
+Type  : Fast 1100mV 0C Model Hold 'CLOCK_50'
+Slack : 0.190
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'word_rotate:wr|counter_mod_M:fast_counter|Q[0]'
+Slack : 0.418
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'CLOCK_50'
+Slack : -0.084
+TNS   : -0.251
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'word_rotate:wr|counter_mod_M:fast_counter|Q[0]'
+Slack : 0.126
+TNS   : 0.000
+
+------------------------------------------------------------

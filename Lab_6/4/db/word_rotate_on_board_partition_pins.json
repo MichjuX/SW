@@ -1,0 +1,45 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "char_codes[0]",
+					"strict" : false
+				},
+				{
+					"name" : "char_codes[1]",
+					"strict" : false
+				},
+				{
+					"name" : "char_codes[2]",
+					"strict" : false
+				},
+				{
+					"name" : "char_codes[3]",
+					"strict" : false
+				},
+				{
+					"name" : "char_codes[4]",
+					"strict" : false
+				},
+				{
+					"name" : "char_codes[5]",
+					"strict" : false
+				},
+				{
+					"name" : "char_codes[6]",
+					"strict" : false
+				},
+				{
+					"name" : "char_codes[7]",
+					"strict" : false
+				},
+				{
+					"name" : "clock",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

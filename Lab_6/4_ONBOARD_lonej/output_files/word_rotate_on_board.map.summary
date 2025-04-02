@@ -1,0 +1,17 @@
+Analysis & Synthesis Status : Successful - Wed Apr 02 18:05:02 2025
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+Revision Name : word_rotate_on_board
+Top-level Entity Name : word_rotate_on_board
+Family : Cyclone V
+Logic utilization (in ALMs) : N/A
+Total registers : 38
+Total pins : 29
+Total virtual pins : 0
+Total block memory bits : 0
+Total DSP Blocks : 0
+Total HSSI RX PCSs : 0
+Total HSSI PMA RX Deserializers : 0
+Total HSSI TX PCSs : 0
+Total HSSI PMA TX Serializers : 0
+Total PLLs : 0
+Total DLLs : 0

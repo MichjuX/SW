@@ -1,0 +1,10 @@
+module counter_T_4_bits_on_board(
+	input [0:0] KEY,
+	input [1:0] SW,
+	output [6:0] HEX0);
+
+	wire [3:0] q;
+	counter_T_4_bits counter(KEY[0], SW[0], SW[1], q);
+	decoder_hex_16 decoder(q, HEX0);
+
+endmodule
