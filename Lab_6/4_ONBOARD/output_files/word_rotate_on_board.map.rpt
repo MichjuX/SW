@@ -1,5 +1,5 @@
 Analysis & Synthesis report for word_rotate_on_board
-Wed Apr 02 18:14:30 2025
+Thu Apr 03 13:54:18 2025
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -46,13 +46,13 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Wed Apr 02 18:14:30 2025       ;
+; Analysis & Synthesis Status     ; Successful - Thu Apr 03 13:54:18 2025       ;
 ; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                   ; word_rotate_on_board                        ;
 ; Top-level Entity Name           ; word_rotate_on_board                        ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 9                                           ;
+; Total registers                 ; 32                                          ;
 ; Total pins                      ; 29                                          ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0                                           ;
@@ -182,31 +182,31 @@ refer to the applicable agreement for further details.
 +----------------------------------+-----------------+------------------------+-------------------------------------------------------+---------+
 
 
-+----------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                                ;
-+---------------------------------------------+------------------------------+
-; Resource                                    ; Usage                        ;
-+---------------------------------------------+------------------------------+
-; Estimate of Logic utilization (ALMs needed) ; 13                           ;
-;                                             ;                              ;
-; Combinational ALUT usage for logic          ; 24                           ;
-;     -- 7 input functions                    ; 0                            ;
-;     -- 6 input functions                    ; 0                            ;
-;     -- 5 input functions                    ; 0                            ;
-;     -- 4 input functions                    ; 0                            ;
-;     -- <=3 input functions                  ; 24                           ;
-;                                             ;                              ;
-; Dedicated logic registers                   ; 9                            ;
-;                                             ;                              ;
-; I/O pins                                    ; 29                           ;
-;                                             ;                              ;
-; Total DSP Blocks                            ; 0                            ;
-;                                             ;                              ;
-; Maximum fan-out node                        ; word_rotate:wr|char_codes[2] ;
-; Maximum fan-out                             ; 11                           ;
-; Total fan-out                               ; 114                          ;
-; Average fan-out                             ; 1.25                         ;
-+---------------------------------------------+------------------------------+
++--------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                                                      ;
++---------------------------------------------+----------------------------------------------------+
+; Resource                                    ; Usage                                              ;
++---------------------------------------------+----------------------------------------------------+
+; Estimate of Logic utilization (ALMs needed) ; 33                                                 ;
+;                                             ;                                                    ;
+; Combinational ALUT usage for logic          ; 55                                                 ;
+;     -- 7 input functions                    ; 0                                                  ;
+;     -- 6 input functions                    ; 9                                                  ;
+;     -- 5 input functions                    ; 0                                                  ;
+;     -- 4 input functions                    ; 0                                                  ;
+;     -- <=3 input functions                  ; 46                                                 ;
+;                                             ;                                                    ;
+; Dedicated logic registers                   ; 32                                                 ;
+;                                             ;                                                    ;
+; I/O pins                                    ; 29                                                 ;
+;                                             ;                                                    ;
+; Total DSP Blocks                            ; 0                                                  ;
+;                                             ;                                                    ;
+; Maximum fan-out node                        ; word_rotate:wr|counter_mod_M:fast_counter|Equal0~4 ;
+; Maximum fan-out                             ; 26                                                 ;
+; Total fan-out                               ; 280                                                ;
+; Average fan-out                             ; 1.93                                               ;
++---------------------------------------------+----------------------------------------------------+
 
 
 +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -214,13 +214,13 @@ refer to the applicable agreement for further details.
 +------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------------------------------------------------+----------------------+--------------+
 ; Compilation Hierarchy Node         ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                             ; Entity Name          ; Library Name ;
 +------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------------------------------------------------+----------------------+--------------+
-; |word_rotate_on_board              ; 24 (0)              ; 9 (0)                     ; 0                 ; 0          ; 29   ; 0            ; |word_rotate_on_board                                           ; word_rotate_on_board ; work         ;
+; |word_rotate_on_board              ; 55 (0)              ; 32 (0)                    ; 0                 ; 0          ; 29   ; 0            ; |word_rotate_on_board                                           ; word_rotate_on_board ; work         ;
 ;    |decoder_7_seg:dec0|            ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |word_rotate_on_board|decoder_7_seg:dec0                        ; decoder_7_seg        ; work         ;
 ;    |decoder_7_seg:dec1|            ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |word_rotate_on_board|decoder_7_seg:dec1                        ; decoder_7_seg        ; work         ;
 ;    |decoder_7_seg:dec2|            ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |word_rotate_on_board|decoder_7_seg:dec2                        ; decoder_7_seg        ; work         ;
 ;    |decoder_7_seg:dec3|            ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |word_rotate_on_board|decoder_7_seg:dec3                        ; decoder_7_seg        ; work         ;
-;    |word_rotate:wr|                ; 8 (5)               ; 9 (6)                     ; 0                 ; 0          ; 0    ; 0            ; |word_rotate_on_board|word_rotate:wr                            ; word_rotate          ; work         ;
-;       |counter_mod_M:fast_counter| ; 3 (3)               ; 3 (3)                     ; 0                 ; 0          ; 0    ; 0            ; |word_rotate_on_board|word_rotate:wr|counter_mod_M:fast_counter ; counter_mod_M        ; work         ;
+;    |word_rotate:wr|                ; 39 (8)              ; 32 (6)                    ; 0                 ; 0          ; 0    ; 0            ; |word_rotate_on_board|word_rotate:wr                            ; word_rotate          ; work         ;
+;       |counter_mod_M:fast_counter| ; 31 (31)             ; 26 (26)                   ; 0                 ; 0          ; 0    ; 0            ; |word_rotate_on_board|word_rotate:wr|counter_mod_M:fast_counter ; counter_mod_M        ; work         ;
 +------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------------------------------------------------+----------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -241,8 +241,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 9     ;
-; Number of registers using Synchronous Clear  ; 0     ;
+; Total registers                              ; 32    ;
+; Number of registers using Synchronous Clear  ; 26    ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
@@ -265,11 +265,11 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 
 +----------------------------------------------------------------------------------------+
 ; Parameter Settings for User Entity Instance: word_rotate:wr|counter_mod_M:fast_counter ;
-+----------------+-------+---------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                          ;
-+----------------+-------+---------------------------------------------------------------+
-; M              ; 5     ; Signed Integer                                                ;
-+----------------+-------+---------------------------------------------------------------+
++----------------+----------+------------------------------------------------------------+
+; Parameter Name ; Value    ; Type                                                       ;
++----------------+----------+------------------------------------------------------------+
+; M              ; 50000000 ; Signed Integer                                             ;
++----------------+----------+------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -288,18 +288,21 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_ff             ; 9                           ;
-;     plain             ; 9                           ;
-; arriav_lcell_comb     ; 31                          ;
-;     normal            ; 31                          ;
+; arriav_ff             ; 32                          ;
+;     SCLR              ; 26                          ;
+;     plain             ; 6                           ;
+; arriav_lcell_comb     ; 62                          ;
+;     arith             ; 26                          ;
+;         1 data inputs ; 26                          ;
+;     normal            ; 36                          ;
 ;         0 data inputs ; 2                           ;
 ;         1 data inputs ; 9                           ;
-;         2 data inputs ; 17                          ;
-;         3 data inputs ; 3                           ;
+;         2 data inputs ; 16                          ;
+;         6 data inputs ; 9                           ;
 ; boundary_port         ; 29                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 2.00                        ;
-; Average LUT depth     ; 1.27                        ;
+; Max LUT depth         ; 3.50                        ;
+; Average LUT depth     ; 2.27                        ;
 +-----------------------+-----------------------------+
 
 
@@ -318,7 +321,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Wed Apr 02 18:14:24 2025
+    Info: Processing started: Thu Apr 03 13:54:11 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off word_rotate_on_board -c word_rotate_on_board
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
@@ -346,14 +349,14 @@ Warning (13024): Output pins are stuck at VCC or GND
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 55 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 86 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 1 input pins
     Info (21059): Implemented 28 output pins
-    Info (21061): Implemented 26 logic cells
+    Info (21061): Implemented 57 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 10 warnings
-    Info: Peak virtual memory: 4884 megabytes
-    Info: Processing ended: Wed Apr 02 18:14:30 2025
-    Info: Elapsed time: 00:00:06
-    Info: Total CPU time (on all processors): 00:00:12
+    Info: Peak virtual memory: 4907 megabytes
+    Info: Processing ended: Thu Apr 03 13:54:18 2025
+    Info: Elapsed time: 00:00:07
+    Info: Total CPU time (on all processors): 00:00:13
 
 

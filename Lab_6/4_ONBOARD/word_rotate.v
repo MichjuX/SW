@@ -10,10 +10,10 @@ module word_rotate(
 	endfunction
 
 	// ceil(log2(50_000_000)) bitów
-	localparam FAST_COUNTER_BITS = clogb2(5 - 1);
+	localparam FAST_COUNTER_BITS = clogb2(50_000_000 - 1);
 
 	wire [FAST_COUNTER_BITS-1:0] A;
-	counter_mod_M #(5) fast_counter(clock, 1'b1, 1'b1, A);
+	counter_mod_M #(50_000_000) fast_counter(clock, 1'b1, 1'b1, A);
 	// przy zmianie A = 4 -> 0 slow_counter = 1 -> 0
 	// przy zmianie A = 0 -> 1 slow_counter = 0 -> 1
 	wire slow_clock = |A; // e = or(A[0], A[1], ...);
