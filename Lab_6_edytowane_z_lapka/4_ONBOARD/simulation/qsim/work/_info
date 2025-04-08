@@ -1,0 +1,52 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dE:/PB/SEM_6/SW/Lab_6/4_ONBOARD/simulation/qsim
+vword_rotate_on_board
+Z0 !s110 1743692732
+!i10b 1
+!s100 ZfKmmNP>8jSQE=neZN1M^1
+IB?d2HINc<@dohFUD]`D[20
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dC:/Users/mks20/Desktop/Lab_6/4_ONBOARD/simulation/qsim
+w1743692730
+8word_rotate_on_board.vo
+Fword_rotate_on_board.vo
+L0 31
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1743692732.000000
+!s107 word_rotate_on_board.vo|
+!s90 -work|work|word_rotate_on_board.vo|
+!i113 1
+Z5 o-work work
+Z6 tCvgOpt 0
+vword_rotate_on_board_vlg_vec_tst
+R0
+!i10b 1
+!s100 WlXYPE=JOMlgK92Xc1H@c1
+InK;FO?86XXQb^H3R_20LK3
+R1
+R2
+w1743692728
+8Waveform1.vwf.vt
+FWaveform1.vwf.vt
+L0 29
+R3
+r1
+!s85 0
+31
+R4
+!s107 Waveform1.vwf.vt|
+!s90 -work|work|Waveform1.vwf.vt|
+!i113 1
+R5
+R6

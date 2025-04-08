@@ -1,5 +1,5 @@
 Flow report for counter_T_4_bits_on_board
-Wed Apr 02 15:54:56 2025
+Tue Apr 08 15:33:38 2025
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -40,7 +40,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Flow Summary                                                                  ;
 +---------------------------------+---------------------------------------------+
-; Flow Status                     ; Successful - Wed Apr 02 15:54:56 2025       ;
+; Flow Status                     ; Successful - Tue Apr 08 15:33:38 2025       ;
 ; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                   ; counter_T_4_bits_on_board                   ;
 ; Top-level Entity Name           ; counter_T_4_bits                            ;
@@ -128,7 +128,8 @@ refer to the applicable agreement for further details.
 ; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4721 MB             ; 00:00:01                           ;
 ; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 4713 MB             ; 00:00:01                           ;
 ; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4721 MB             ; 00:00:01                           ;
-; Total                ; 00:01:45     ; --                      ; --                  ; 00:09:53                           ;
+; EDA Netlist Writer   ; 00:00:02     ; 1.0                     ; 4714 MB             ; 00:00:01                           ;
+; Total                ; 00:01:47     ; --                      ; --                  ; 00:09:54                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -141,6 +142,7 @@ refer to the applicable agreement for further details.
 ; Fitter               ; DESKTOP-BEQUIET  ; Windows 10 ; 10.0       ; x86_64         ;
 ; Assembler            ; DESKTOP-BEQUIET  ; Windows 10 ; 10.0       ; x86_64         ;
 ; Timing Analyzer      ; DESKTOP-BEQUIET  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; DESKTOP-BEQUIET  ; Windows 10 ; 10.0       ; x86_64         ;
 ; EDA Netlist Writer   ; DESKTOP-BEQUIET  ; Windows 10 ; 10.0       ; x86_64         ;
 ; EDA Netlist Writer   ; DESKTOP-BEQUIET  ; Windows 10 ; 10.0       ; x86_64         ;
 ; EDA Netlist Writer   ; DESKTOP-BEQUIET  ; Windows 10 ; 10.0       ; x86_64         ;
@@ -207,6 +209,7 @@ quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_setting
 quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=E:/PB/SEM_6/SW/Lab_6/1/simulation/qsim/ counter_T_4_bits_on_board -c counter_T_4_bits_on_board
 quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off counter_T_4_bits_on_board -c counter_T_4_bits_on_board --vector_source=E:/PB/SEM_6/SW/Lab_6/1/Waveform.vwf --testbench_file=E:/PB/SEM_6/SW/Lab_6/1/simulation/qsim/Waveform.vwf.vt
 quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=E:/PB/SEM_6/SW/Lab_6/1/simulation/qsim/ counter_T_4_bits_on_board -c counter_T_4_bits_on_board
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off counter_T_4_bits_on_board -c counter_T_4_bits_on_board --vector_source=E:/PB/SEM_6/SW/Lab_6/1/Waveform.vwf --testbench_file=E:/PB/SEM_6/SW/Lab_6/1/simulation/qsim/Waveform.vwf.vt
 
 
 

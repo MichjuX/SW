@@ -1,0 +1,52 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dE:/PB/SEM_6/SW/Lab_6/3/simulation/qsim
+vslow_counter_mod_10
+Z0 !s110 1743690765
+!i10b 1
+!s100 hWZ^AiQXB2]YRC^N:nTTN0
+IHgzn6ZWJcb`Wz[FLJ@M3X1
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dC:/Users/mks20/Desktop/Lab_6/3/simulation/qsim
+w1743690764
+8slow_counter_mod_10_on_board.vo
+Fslow_counter_mod_10_on_board.vo
+L0 31
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1743690765.000000
+!s107 slow_counter_mod_10_on_board.vo|
+!s90 -work|work|slow_counter_mod_10_on_board.vo|
+!i113 1
+Z5 o-work work
+Z6 tCvgOpt 0
+vslow_counter_mod_10_vlg_vec_tst
+R0
+!i10b 1
+!s100 IWUcmVjG7PK^:SQll5khX0
+I95>iT9l<S;?11WeATRQl_2
+R1
+R2
+w1743690761
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+L0 29
+R3
+r1
+!s85 0
+31
+R4
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R5
+R6

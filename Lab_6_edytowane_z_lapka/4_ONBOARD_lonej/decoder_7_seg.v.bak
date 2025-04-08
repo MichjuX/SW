@@ -1,0 +1,14 @@
+module decoder_7_seg(
+	input [1:0] binary,
+	output reg [6:0] h);
+
+	always @ (*)
+		case (binary)
+			2'b00: h = 7'b0100011; // 35; 'o'
+			2'b01: h = 7'b0100001; // 33; 'd'
+			2'b10: h = 7'b0000110; // 6; 'E'
+			2'b11: h = 7'b0010010; // 18; 'S'
+			default: h = 7'b1111111; // 127; ' '
+		endcase
+
+endmodule
