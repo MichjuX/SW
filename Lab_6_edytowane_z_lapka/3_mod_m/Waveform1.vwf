@@ -1,8 +1,8 @@
 /*<simulation_settings>
-<ftestbench_cmd>quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off slow_counter_mod_10_on_board -c slow_counter_mod_10_on_board --vector_source="C:/Users/mks20/Desktop/Lab_6/3_mod_m/Waveform1.vwf" --testbench_file="C:/Users/mks20/Desktop/Lab_6/3_mod_m/simulation/qsim/Waveform1.vwf.vt"</ftestbench_cmd>
-<ttestbench_cmd>quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off slow_counter_mod_10_on_board -c slow_counter_mod_10_on_board --vector_source="C:/Users/mks20/Desktop/Lab_6/3_mod_m/Waveform1.vwf" --testbench_file="C:/Users/mks20/Desktop/Lab_6/3_mod_m/simulation/qsim/Waveform1.vwf.vt"</ttestbench_cmd>
-<fnetlist_cmd>quartus_eda --write_settings_files=off --simulation --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory="C:/Users/mks20/Desktop/Lab_6/3_mod_m/simulation/qsim/" slow_counter_mod_10_on_board -c slow_counter_mod_10_on_board</fnetlist_cmd>
-<tnetlist_cmd>quartus_eda --write_settings_files=off --simulation --functional=off --flatten_buses=off --timescale=1ps --tool=modelsim_oem --format=verilog --output_directory="C:/Users/mks20/Desktop/Lab_6/3_mod_m/simulation/qsim/" slow_counter_mod_10_on_board -c slow_counter_mod_10_on_board</tnetlist_cmd>
+<ftestbench_cmd>quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off slow_counter_mod_10_on_board -c slow_counter_mod_10_on_board --vector_source="E:/PB/SEM_6/SW/Lab_6_edytowane_z_lapka/3_mod_m/Waveform1.vwf" --testbench_file="E:/PB/SEM_6/SW/Lab_6_edytowane_z_lapka/3_mod_m/simulation/qsim/Waveform1.vwf.vt"</ftestbench_cmd>
+<ttestbench_cmd>quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off slow_counter_mod_10_on_board -c slow_counter_mod_10_on_board --vector_source="E:/PB/SEM_6/SW/Lab_6_edytowane_z_lapka/3_mod_m/Waveform1.vwf" --testbench_file="E:/PB/SEM_6/SW/Lab_6_edytowane_z_lapka/3_mod_m/simulation/qsim/Waveform1.vwf.vt"</ttestbench_cmd>
+<fnetlist_cmd>quartus_eda --write_settings_files=off --simulation --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory="E:/PB/SEM_6/SW/Lab_6_edytowane_z_lapka/3_mod_m/simulation/qsim/" slow_counter_mod_10_on_board -c slow_counter_mod_10_on_board</fnetlist_cmd>
+<tnetlist_cmd>quartus_eda --write_settings_files=off --simulation --functional=off --flatten_buses=off --timescale=1ps --tool=modelsim_oem --format=verilog --output_directory="E:/PB/SEM_6/SW/Lab_6_edytowane_z_lapka/3_mod_m/simulation/qsim/" slow_counter_mod_10_on_board -c slow_counter_mod_10_on_board</tnetlist_cmd>
 <modelsim_script>onerror {exit -code 1}
 vlib work
 vlog -work work slow_counter_mod_10_on_board.vo
@@ -68,7 +68,7 @@ HEADER
 	VERSION = 1;
 	TIME_UNIT = ns;
 	DATA_OFFSET = 0.0;
-	DATA_DURATION = 80.0;
+	DATA_DURATION = 35.0;
 	SIMULATION_TIME = 0.0;
 	GRID_PHASE = 0.0;
 	GRID_PERIOD = 10.0;
@@ -160,7 +160,7 @@ TRANSITION_LIST("Q[3]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 80.0;
+		LEVEL X FOR 35.0;
 	}
 }
 
@@ -169,7 +169,7 @@ TRANSITION_LIST("Q[2]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 80.0;
+		LEVEL X FOR 35.0;
 	}
 }
 
@@ -178,7 +178,7 @@ TRANSITION_LIST("Q[1]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 80.0;
+		LEVEL X FOR 35.0;
 	}
 }
 
@@ -187,7 +187,7 @@ TRANSITION_LIST("Q[0]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 80.0;
+		LEVEL X FOR 35.0;
 	}
 }
 
@@ -196,14 +196,15 @@ TRANSITION_LIST("aclr")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 21.385;
-		LEVEL 0 FOR 9.823;
-		LEVEL 1 FOR 11.656;
-		LEVEL 0 FOR 10.434;
-		LEVEL 1 FOR 2.82;
-		LEVEL 0 FOR 8.319;
-		LEVEL 1 FOR 4.277;
-		LEVEL 0 FOR 11.286;
+		LEVEL 1 FOR 13.475;
+		LEVEL 0 FOR 3.739;
+		LEVEL 1 FOR 4.142;
+		LEVEL 0 FOR 2.812;
+		LEVEL 1 FOR 1.976;
+		LEVEL 0 FOR 3.99;
+		LEVEL 1 FOR 2.85;
+		LEVEL 0 FOR 1.512;
+		LEVEL 1 FOR 0.504;
 	}
 }
 
@@ -214,10 +215,14 @@ TRANSITION_LIST("clk")
 		REPEAT = 1;
 		NODE
 		{
-			REPEAT = 80;
+			REPEAT = 33;
 			LEVEL 0 FOR 0.5;
 			LEVEL 1 FOR 0.5;
 		}
+		LEVEL 0 FOR 0.696;
+		LEVEL 1 FOR 0.304;
+		LEVEL 0 FOR 0.5;
+		LEVEL 1 FOR 0.5;
 	}
 }
 
@@ -226,10 +231,11 @@ TRANSITION_LIST("enable")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 25.991;
-		LEVEL 0 FOR 13.16;
-		LEVEL 1 FOR 21.15;
-		LEVEL 0 FOR 19.699;
+		LEVEL 1 FOR 15.618;
+		LEVEL 0 FOR 3.268;
+		LEVEL 1 FOR 10.184;
+		LEVEL 0 FOR 5.394;
+		LEVEL 1 FOR 0.536;
 	}
 }
 
@@ -237,7 +243,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "clk";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
+	RADIX = Unsigned;
 	TREE_INDEX = 0;
 	TREE_LEVEL = 0;
 }
@@ -246,7 +252,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "aclr";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
+	RADIX = Unsigned;
 	TREE_INDEX = 1;
 	TREE_LEVEL = 0;
 }
@@ -255,7 +261,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "enable";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
+	RADIX = Unsigned;
 	TREE_INDEX = 2;
 	TREE_LEVEL = 0;
 }
@@ -264,7 +270,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "Q";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
+	RADIX = Unsigned;
 	TREE_INDEX = 3;
 	TREE_LEVEL = 0;
 	CHILDREN = 4, 5, 6, 7;
@@ -274,7 +280,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "Q[3]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
+	RADIX = Unsigned;
 	TREE_INDEX = 4;
 	TREE_LEVEL = 1;
 	PARENT = 3;
@@ -284,7 +290,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "Q[2]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
+	RADIX = Unsigned;
 	TREE_INDEX = 5;
 	TREE_LEVEL = 1;
 	PARENT = 3;
@@ -294,7 +300,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "Q[1]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
+	RADIX = Unsigned;
 	TREE_INDEX = 6;
 	TREE_LEVEL = 1;
 	PARENT = 3;
@@ -304,7 +310,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "Q[0]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
+	RADIX = Unsigned;
 	TREE_INDEX = 7;
 	TREE_LEVEL = 1;
 	PARENT = 3;

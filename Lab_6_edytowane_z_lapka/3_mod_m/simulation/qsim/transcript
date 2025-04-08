@@ -1,25 +1,25 @@
 # do slow_counter_mod_10_on_board.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:43:24 on Apr 03,2025
+# Start time: 15:55:25 on Apr 08,2025
 # vlog -work work slow_counter_mod_10_on_board.vo 
 # -- Compiling module counter_mod_M
 # 
 # Top level modules:
 # 	counter_mod_M
-# End time: 16:43:24 on Apr 03,2025, Elapsed time: 0:00:00
+# End time: 15:55:25 on Apr 08,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:43:24 on Apr 03,2025
+# Start time: 15:55:25 on Apr 08,2025
 # vlog -work work Waveform1.vwf.vt 
 # -- Compiling module counter_mod_M_vlg_vec_tst
 # 
 # Top level modules:
 # 	counter_mod_M_vlg_vec_tst
-# End time: 16:43:24 on Apr 03,2025, Elapsed time: 0:00:00
+# End time: 15:55:25 on Apr 08,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vsim -novopt -c -t 1ps -L cyclonev_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.counter_mod_M_vlg_vec_tst 
-# Start time: 16:43:24 on Apr 03,2025
+# Start time: 15:55:25 on Apr 08,2025
 # Loading work.counter_mod_M_vlg_vec_tst
 # Loading work.counter_mod_M
 # Loading cyclonev_ver.cyclonev_io_obuf
@@ -30,8 +30,8 @@
 # Loading altera_ver.PRIM_GDFF_LOW
 # after#25
 # ** Note: $stop    : Waveform1.vwf.vt(48)
-#    Time: 80 ns  Iteration: 0  Instance: /counter_mod_M_vlg_vec_tst
+#    Time: 35 ns  Iteration: 0  Instance: /counter_mod_M_vlg_vec_tst
 # Break in Module counter_mod_M_vlg_vec_tst at Waveform1.vwf.vt line 48
 # Stopped at Waveform1.vwf.vt line 48
-# End time: 16:43:25 on Apr 03,2025, Elapsed time: 0:00:01
+# End time: 15:55:26 on Apr 08,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0

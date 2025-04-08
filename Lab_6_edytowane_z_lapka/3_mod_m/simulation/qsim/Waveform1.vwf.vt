@@ -18,7 +18,7 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "04/03/2025 16:43:20"
+// Generated on "04/08/2025 15:55:24"
                                                                                 
 // Verilog Test Bench (with test vectors) for design :                          counter_mod_M
 // 
@@ -45,37 +45,46 @@ counter_mod_M i1 (
 );
 initial 
 begin 
-#80000 $stop;
+#35000 $stop;
 end 
 
 // clk
-always
+initial
 begin
+	repeat(33)
+	begin
+		clk = 1'b0;
+		clk = #500 1'b1;
+		# 500;
+	end
 	clk = 1'b0;
+	clk = #696 1'b1;
+	clk = #304 1'b0;
 	clk = #500 1'b1;
-	#500;
 end 
 
 // aclr
 initial
 begin
 	aclr = 1'b1;
-	aclr = #21385 1'b0;
-	aclr = #9823 1'b1;
-	aclr = #11656 1'b0;
-	aclr = #10434 1'b1;
-	aclr = #2820 1'b0;
-	aclr = #8319 1'b1;
-	aclr = #4277 1'b0;
+	aclr = #13475 1'b0;
+	aclr = #3739 1'b1;
+	aclr = #4142 1'b0;
+	aclr = #2812 1'b1;
+	aclr = #1976 1'b0;
+	aclr = #3990 1'b1;
+	aclr = #2850 1'b0;
+	aclr = #1512 1'b1;
 end 
 
 // enable
 initial
 begin
 	enable = 1'b1;
-	enable = #25991 1'b0;
-	enable = #13160 1'b1;
-	enable = #21150 1'b0;
+	enable = #15618 1'b0;
+	enable = #3268 1'b1;
+	enable = #10184 1'b0;
+	enable = #5394 1'b1;
 end 
 endmodule
 

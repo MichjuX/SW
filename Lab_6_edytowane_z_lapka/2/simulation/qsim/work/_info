@@ -9,13 +9,13 @@ z2
 cModel Technology
 dE:/PB/SEM_6/SW/Lab_6/2/simulation/qsim
 vcounter_16_bits
-Z0 !s110 1743690641
+Z0 !s110 1744119736
 !i10b 1
 !s100 jdZc=R]a<hkP<HZfH?23^3
 ILFcDQ357e@Xd3=;Mj]S7Q0
 Z1 VDg1SIo80bB@j0V0VzS_@n1
-Z2 dC:/Users/mks20/Desktop/Lab_6/2/simulation/qsim
-w1743690640
+Z2 dE:/PB/SEM_6/SW/Lab_6_edytowane_z_lapka/2/simulation/qsim
+w1744119736
 8counter_16_bits_on_board.vo
 Fcounter_16_bits_on_board.vo
 L0 31
@@ -23,7 +23,7 @@ Z3 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z4 !s108 1743690641.000000
+Z4 !s108 1744119736.000000
 !s107 counter_16_bits_on_board.vo|
 !s90 -work|work|counter_16_bits_on_board.vo|
 !i113 1
@@ -36,7 +36,7 @@ R0
 I@60iD0gBBPV<WdPSH^0ZR0
 R1
 R2
-w1743690637
+w1744119735
 8Waveform.vwf.vt
 FWaveform.vwf.vt
 L0 29

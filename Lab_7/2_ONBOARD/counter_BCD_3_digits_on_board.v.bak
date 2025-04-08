@@ -1,0 +1,98 @@
+module counter_BCD_3_digits_on_board(
+	input CLOCK_50,
+	input [0:0] KEY,
+	output [6:0] HEX2, HEX1, HEX0,
+	output [0:0] LEDR);
+
+	wire c0;
+	delay_1_sec delay(CLOCK_50, c0);
+	wire [11:0] bcd;
+	counter_BCD_3_digits counter(c0, KEY[0], bcd, LEDR[0]);
+	decoder_hex_10 dec2(bcd[11:8], HEX2);
+	decoder_hex_10 dec1(bcd[7:4], HEX1);
+	decoder_hex_10 dec0(bcd[3:0], HEX0);
+
+endmodule
+
+module decoder_hex_10(
+	input [3:0] binary,
+	output reg [6:0] h);
+
+	always @ (*)
+		case (binary)
+			4'd0: h = 7'b1000000; // 64
+			4'd1: h = 7'b1111001; // 121
+			4'd2: h = 7'b0100100; // 36
+			4'd3: h = 7'b0110000; // 48
+			4'd4: h = 7'b0011001; // 25
+			4'd5: h = 7'b0010010; // 18
+			4'd6: h = 7'b0000010; // 2
+			4'd7: h = 7'b1111000; // 120
+			4'd8: h = 7'b0000000; // 0
+			4'd9: h = 7'b0010000; // 16
+			default: h = 7'b1111111; // 127
+		endcase
+
+endmodule
+
+module counter_BCD_3_digits(
+	input c0,
+	input areset,
+	output [11:0] bcd, // 3 cyfry BCD po 4 bity
+	output max);
+
+	wire c1, c2;
+	counter_modulo_k #(10) counter0(c0, areset, 1'b1, bcd[3:0], c1);
+	counter_modulo_k #(10) counter1(~c1, areset, 1'b1, bcd[7:4], c2);
+	counter_modulo_k #(10) counter2(~c2, areset, 1'b1, bcd[11:8], max);
+
+endmodule
+
+module counter_modulo_k
+	#(parameter k = 20)( // okres licznika
+	input clk, aclr, enable,
+	output reg [N-1:0] Q,
+	output rollover);
+
+	function integer clogb2(input [31:0] v);
+		for (clogb2 = 0; v > 0; clogb2 = clogb2 + 1)
+			v = v >> 1;
+	endfunction
+
+	localparam N = clogb2(k-1); // długość licznika w bitach
+
+	always @ (posedge clk, negedge aclr)
+		if (!aclr) Q <= {N{1'b0}};
+		else begin
+			// zanim sprawdzimy, czy Q == M-1 i ewentualnie wyzerujemy licznik, sprawdzamy, czy na wejściu zezwalającym jest 1
+			if (enable) begin
+				if (Q == k-1) Q <= {N{1'b0}};
+				else Q <= Q + 1'b1;
+			end
+			else Q <= Q;
+		end
+		
+	assign rollover = (Q == k-1);
+
+endmodule
+
+module delay_1_sec(
+	input clock
+	output q);
+	
+	function integer clogb2(input [31:0] v);
+		for (clogb2 = 0; v > 0; clogb2 = clogb2 + 1)
+			v = v >> 1;
+	endfunction
+
+	// ceil(log2(50_000_000)) bitów
+	localparam FAST_COUNTER_BITS = clogb2(50_000_000 - 1);
+
+	wire [FAST_COUNTER_BITS-1:0] A;
+	counter_modulo_k #(50_000_000) fast_counter(clock, 1'b1, 1'b1, A);
+	// przy zmianie A = 4 -> 0 slow_counter = 1 -> 0
+	// przy zmianie A = 0 -> 1 slow_counter = 0 -> 1
+	q = |A; // q = or(A[0], A[1], ...);
+	
+
+endmodule

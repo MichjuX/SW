@@ -1,0 +1,54 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/Storage/temp/semestr_6/sw/7/projekty/counter_BCD_3_digits_on_board/simulation/qsim
+vcounter_BCD_3_digits_on_board
+!s110 1650499905
+!i10b 1
+!s100 ENA0JIBjLMSKHjcK[cg@_2
+Iz65PMOE2YoN3GjK3D[@aS3
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1650499904
+8counter_BCD_3_digits_on_board.vo
+Fcounter_BCD_3_digits_on_board.vo
+L0 31
+Z2 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z3 !s108 1650499905.000000
+!s107 counter_BCD_3_digits_on_board.vo|
+!s90 -work|work|counter_BCD_3_digits_on_board.vo|
+!i113 1
+Z4 o-work work
+Z5 tCvgOpt 0
+ncounter_@b@c@d_3_digits_on_board
+vcounter_BCD_3_digits_on_board_vlg_vec_tst
+!s110 1650499906
+!i10b 1
+!s100 He`F>eLZ1Qzhhg2^[83]b3
+Id@ULOn?KB3X8m430RZJ2X0
+R1
+R0
+w1650499902
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+L0 29
+R2
+r1
+!s85 0
+31
+R3
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R4
+R5
+ncounter_@b@c@d_3_digits_on_board_vlg_vec_tst

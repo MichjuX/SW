@@ -1,5 +1,5 @@
 Flow report for slow_counter_mod_10_on_board
-Thu Apr 03 16:43:23 2025
+Tue Apr 08 15:55:25 2025
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -40,7 +40,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Flow Summary                                                                  ;
 +---------------------------------+---------------------------------------------+
-; Flow Status                     ; Successful - Thu Apr 03 16:43:23 2025       ;
+; Flow Status                     ; Successful - Tue Apr 08 15:55:25 2025       ;
 ; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                   ; slow_counter_mod_10_on_board                ;
 ; Top-level Entity Name           ; counter_mod_M                               ;
@@ -104,7 +104,26 @@ refer to the applicable agreement for further details.
 ; EDA Netlist Writer   ; 00:00:02     ; 1.0                     ; 4721 MB             ; 00:00:03                           ;
 ; EDA Netlist Writer   ; 00:00:03     ; 1.0                     ; 4712 MB             ; 00:00:02                           ;
 ; EDA Netlist Writer   ; 00:00:03     ; 1.0                     ; 4721 MB             ; 00:00:03                           ;
-; Total                ; 00:03:42     ; --                      ; --                  ; 00:19:03                           ;
+; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 4711 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4711 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4724 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4712 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4720 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4712 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4720 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4712 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4720 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4712 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4720 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4712 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4720 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4712 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4720 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 4712 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 4720 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4712 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4724 MB             ; 00:00:01                           ;
+; Total                ; 00:03:58     ; --                      ; --                  ; 00:19:22                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -121,6 +140,25 @@ refer to the applicable agreement for further details.
 ; EDA Netlist Writer   ; DESKTOP-692137   ; Windows 10 ; 10.0       ; x86_64         ;
 ; EDA Netlist Writer   ; DESKTOP-692137   ; Windows 10 ; 10.0       ; x86_64         ;
 ; EDA Netlist Writer   ; DESKTOP-692137   ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; DESKTOP-BEQUIET  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; DESKTOP-BEQUIET  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; DESKTOP-BEQUIET  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; DESKTOP-BEQUIET  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; DESKTOP-BEQUIET  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; DESKTOP-BEQUIET  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; DESKTOP-BEQUIET  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; DESKTOP-BEQUIET  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; DESKTOP-BEQUIET  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; DESKTOP-BEQUIET  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; DESKTOP-BEQUIET  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; DESKTOP-BEQUIET  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; DESKTOP-BEQUIET  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; DESKTOP-BEQUIET  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; DESKTOP-BEQUIET  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; DESKTOP-BEQUIET  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; DESKTOP-BEQUIET  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; DESKTOP-BEQUIET  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; DESKTOP-BEQUIET  ; Windows 10 ; 10.0       ; x86_64         ;
 +----------------------+------------------+------------+------------+----------------+
 
 
@@ -135,6 +173,25 @@ quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_setting
 quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=C:/Users/mks20/Desktop/Lab_6/3/simulation/qsim/ slow_counter_mod_10_on_board -c slow_counter_mod_10_on_board
 quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off slow_counter_mod_10_on_board -c slow_counter_mod_10_on_board --vector_source=C:/Users/mks20/Desktop/Lab_6/3_mod_m/Waveform1.vwf --testbench_file=C:/Users/mks20/Desktop/Lab_6/3_mod_m/simulation/qsim/Waveform1.vwf.vt
 quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=C:/Users/mks20/Desktop/Lab_6/3_mod_m/simulation/qsim/ slow_counter_mod_10_on_board -c slow_counter_mod_10_on_board
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off slow_counter_mod_10_on_board -c slow_counter_mod_10_on_board --vector_source=C:/Users/mks20/Desktop/Lab_6/3_mod_m/Waveform1.vwf --testbench_file=C:/Users/mks20/Desktop/Lab_6/3_mod_m/simulation/qsim/Waveform1.vwf.vt
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off slow_counter_mod_10_on_board -c slow_counter_mod_10_on_board --vector_source=E:/PB/SEM_6/SW/Lab_6_edytowane_z_lapka/3_mod_m/Waveform1.vwf --testbench_file=E:/PB/SEM_6/SW/Lab_6_edytowane_z_lapka/3_mod_m/simulation/qsim/Waveform1.vwf.vt
+quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=E:/PB/SEM_6/SW/Lab_6_edytowane_z_lapka/3_mod_m/simulation/qsim/ slow_counter_mod_10_on_board -c slow_counter_mod_10_on_board
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off slow_counter_mod_10_on_board -c slow_counter_mod_10_on_board --vector_source=E:/PB/SEM_6/SW/Lab_6_edytowane_z_lapka/3_mod_m/Waveform1.vwf --testbench_file=E:/PB/SEM_6/SW/Lab_6_edytowane_z_lapka/3_mod_m/simulation/qsim/Waveform1.vwf.vt
+quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=E:/PB/SEM_6/SW/Lab_6_edytowane_z_lapka/3_mod_m/simulation/qsim/ slow_counter_mod_10_on_board -c slow_counter_mod_10_on_board
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off slow_counter_mod_10_on_board -c slow_counter_mod_10_on_board --vector_source=E:/PB/SEM_6/SW/Lab_6_edytowane_z_lapka/3_mod_m/Waveform1.vwf --testbench_file=E:/PB/SEM_6/SW/Lab_6_edytowane_z_lapka/3_mod_m/simulation/qsim/Waveform1.vwf.vt
+quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=E:/PB/SEM_6/SW/Lab_6_edytowane_z_lapka/3_mod_m/simulation/qsim/ slow_counter_mod_10_on_board -c slow_counter_mod_10_on_board
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off slow_counter_mod_10_on_board -c slow_counter_mod_10_on_board --vector_source=E:/PB/SEM_6/SW/Lab_6_edytowane_z_lapka/3_mod_m/Waveform1.vwf --testbench_file=E:/PB/SEM_6/SW/Lab_6_edytowane_z_lapka/3_mod_m/simulation/qsim/Waveform1.vwf.vt
+quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=E:/PB/SEM_6/SW/Lab_6_edytowane_z_lapka/3_mod_m/simulation/qsim/ slow_counter_mod_10_on_board -c slow_counter_mod_10_on_board
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off slow_counter_mod_10_on_board -c slow_counter_mod_10_on_board --vector_source=E:/PB/SEM_6/SW/Lab_6_edytowane_z_lapka/3_mod_m/Waveform1.vwf --testbench_file=E:/PB/SEM_6/SW/Lab_6_edytowane_z_lapka/3_mod_m/simulation/qsim/Waveform1.vwf.vt
+quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=E:/PB/SEM_6/SW/Lab_6_edytowane_z_lapka/3_mod_m/simulation/qsim/ slow_counter_mod_10_on_board -c slow_counter_mod_10_on_board
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off slow_counter_mod_10_on_board -c slow_counter_mod_10_on_board --vector_source=E:/PB/SEM_6/SW/Lab_6_edytowane_z_lapka/3_mod_m/Waveform1.vwf --testbench_file=E:/PB/SEM_6/SW/Lab_6_edytowane_z_lapka/3_mod_m/simulation/qsim/Waveform1.vwf.vt
+quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=E:/PB/SEM_6/SW/Lab_6_edytowane_z_lapka/3_mod_m/simulation/qsim/ slow_counter_mod_10_on_board -c slow_counter_mod_10_on_board
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off slow_counter_mod_10_on_board -c slow_counter_mod_10_on_board --vector_source=E:/PB/SEM_6/SW/Lab_6_edytowane_z_lapka/3_mod_m/Waveform1.vwf --testbench_file=E:/PB/SEM_6/SW/Lab_6_edytowane_z_lapka/3_mod_m/simulation/qsim/Waveform1.vwf.vt
+quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=E:/PB/SEM_6/SW/Lab_6_edytowane_z_lapka/3_mod_m/simulation/qsim/ slow_counter_mod_10_on_board -c slow_counter_mod_10_on_board
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off slow_counter_mod_10_on_board -c slow_counter_mod_10_on_board --vector_source=E:/PB/SEM_6/SW/Lab_6_edytowane_z_lapka/3_mod_m/Waveform1.vwf --testbench_file=E:/PB/SEM_6/SW/Lab_6_edytowane_z_lapka/3_mod_m/simulation/qsim/Waveform1.vwf.vt
+quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=E:/PB/SEM_6/SW/Lab_6_edytowane_z_lapka/3_mod_m/simulation/qsim/ slow_counter_mod_10_on_board -c slow_counter_mod_10_on_board
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off slow_counter_mod_10_on_board -c slow_counter_mod_10_on_board --vector_source=E:/PB/SEM_6/SW/Lab_6_edytowane_z_lapka/3_mod_m/Waveform1.vwf --testbench_file=E:/PB/SEM_6/SW/Lab_6_edytowane_z_lapka/3_mod_m/simulation/qsim/Waveform1.vwf.vt
+quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=E:/PB/SEM_6/SW/Lab_6_edytowane_z_lapka/3_mod_m/simulation/qsim/ slow_counter_mod_10_on_board -c slow_counter_mod_10_on_board
 
 
 
