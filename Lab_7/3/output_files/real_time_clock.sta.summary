@@ -2,580 +2,580 @@
 Timing Analyzer Summary
 ------------------------------------------------------------
 
+Type  : Slow 1100mV 85C Model Setup 'data[4]'
+Slack : -7.672
+TNS   : -50.464
+
 Type  : Slow 1100mV 85C Model Setup 's_aload'
-Slack : -7.318
-TNS   : -45.232
+Slack : -7.286
+TNS   : -41.305
 
 Type  : Slow 1100mV 85C Model Setup 'cs_aload'
-Slack : -7.047
-TNS   : -44.680
-
-Type  : Slow 1100mV 85C Model Setup 'delay_10ms:delay|counter_modulo_k:counter|Q[0]'
-Slack : -5.960
-TNS   : -23.528
-
-Type  : Slow 1100mV 85C Model Setup 'm_aload'
-Slack : -4.798
-TNS   : -18.968
+Slack : -7.066
+TNS   : -45.591
 
 Type  : Slow 1100mV 85C Model Setup 'data[0]'
-Slack : -4.619
-TNS   : -34.498
-
-Type  : Slow 1100mV 85C Model Setup 'data[4]'
-Slack : -4.291
-TNS   : -20.805
+Slack : -6.533
+TNS   : -37.700
 
 Type  : Slow 1100mV 85C Model Setup 'clock'
-Slack : -0.746
-TNS   : -0.862
+Slack : -5.721
+TNS   : -9.391
+
+Type  : Slow 1100mV 85C Model Setup 'delay_10ms:delay|counter_modulo_k:counter|Q[0]'
+Slack : -4.646
+TNS   : -18.136
+
+Type  : Slow 1100mV 85C Model Setup 'm_aload'
+Slack : -3.375
+TNS   : -12.719
 
 Type  : Slow 1100mV 85C Model Setup 'toggle_enable'
-Slack : -0.503
-TNS   : -0.503
+Slack : -0.629
+TNS   : -0.629
 
 Type  : Slow 1100mV 85C Model Hold 'data[0]'
-Slack : -4.267
-TNS   : -35.232
-
-Type  : Slow 1100mV 85C Model Hold 'clock'
-Slack : -3.738
-TNS   : -6.688
-
-Type  : Slow 1100mV 85C Model Hold 'data[4]'
-Slack : -3.573
-TNS   : -28.198
-
-Type  : Slow 1100mV 85C Model Hold 'm_aload'
-Slack : -3.226
-TNS   : -12.351
-
-Type  : Slow 1100mV 85C Model Hold 'cs_aload'
-Slack : -2.203
-TNS   : -15.334
+Slack : -2.596
+TNS   : -20.515
 
 Type  : Slow 1100mV 85C Model Hold 's_aload'
-Slack : -2.036
-TNS   : -13.615
+Slack : -2.523
+TNS   : -15.184
+
+Type  : Slow 1100mV 85C Model Hold 'cs_aload'
+Slack : -2.424
+TNS   : -18.343
+
+Type  : Slow 1100mV 85C Model Hold 'data[4]'
+Slack : -2.207
+TNS   : -14.124
+
+Type  : Slow 1100mV 85C Model Hold 'm_aload'
+Slack : -2.032
+TNS   : -5.975
+
+Type  : Slow 1100mV 85C Model Hold 'clock'
+Slack : -1.221
+TNS   : -1.221
 
 Type  : Slow 1100mV 85C Model Hold 'toggle_enable'
-Slack : 0.519
+Slack : 0.057
 TNS   : 0.000
 
 Type  : Slow 1100mV 85C Model Hold 'delay_10ms:delay|counter_modulo_k:counter|Q[0]'
-Slack : 1.070
+Slack : 0.983
 TNS   : 0.000
-
-Type  : Slow 1100mV 85C Model Recovery 's_aload'
-Slack : -4.089
-TNS   : -16.343
-
-Type  : Slow 1100mV 85C Model Recovery 'delay_10ms:delay|counter_modulo_k:counter|Q[0]'
-Slack : -2.307
-TNS   : -9.218
 
 Type  : Slow 1100mV 85C Model Recovery 'data[4]'
-Slack : -1.810
-TNS   : -7.227
-
-Type  : Slow 1100mV 85C Model Recovery 'm_aload'
-Slack : -0.951
-TNS   : -2.847
-
-Type  : Slow 1100mV 85C Model Recovery 'data[0]'
-Slack : -0.581
-TNS   : -1.737
+Slack : -4.553
+TNS   : -18.202
 
 Type  : Slow 1100mV 85C Model Recovery 'cs_aload'
-Slack : 0.151
-TNS   : 0.000
+Slack : -4.266
+TNS   : -31.882
 
-Type  : Slow 1100mV 85C Model Removal 'data[0]'
-Slack : -4.314
-TNS   : -38.079
+Type  : Slow 1100mV 85C Model Recovery 's_aload'
+Slack : -4.122
+TNS   : -12.366
 
-Type  : Slow 1100mV 85C Model Removal 'data[4]'
-Slack : -3.634
-TNS   : -18.708
+Type  : Slow 1100mV 85C Model Recovery 'data[0]'
+Slack : -3.432
+TNS   : -28.327
 
-Type  : Slow 1100mV 85C Model Removal 'm_aload'
-Slack : -3.293
-TNS   : -9.873
+Type  : Slow 1100mV 85C Model Recovery 'delay_10ms:delay|counter_modulo_k:counter|Q[0]'
+Slack : -1.887
+TNS   : -7.544
 
-Type  : Slow 1100mV 85C Model Removal 'cs_aload'
-Slack : -2.203
-TNS   : -15.776
+Type  : Slow 1100mV 85C Model Recovery 'm_aload'
+Slack : -1.624
+TNS   : -4.862
 
 Type  : Slow 1100mV 85C Model Removal 's_aload'
-Slack : -2.050
-TNS   : -6.150
+Slack : -2.707
+TNS   : -10.811
+
+Type  : Slow 1100mV 85C Model Removal 'data[4]'
+Slack : -2.391
+TNS   : -9.547
+
+Type  : Slow 1100mV 85C Model Removal 'data[0]'
+Slack : -0.136
+TNS   : -0.404
+
+Type  : Slow 1100mV 85C Model Removal 'm_aload'
+Slack : -0.083
+TNS   : -0.245
 
 Type  : Slow 1100mV 85C Model Removal 'delay_10ms:delay|counter_modulo_k:counter|Q[0]'
-Slack : 1.126
+Slack : 0.941
 TNS   : 0.000
 
-Type  : Slow 1100mV 85C Model Minimum Pulse Width 'm_aload'
-Slack : -2.323
-TNS   : -29.992
+Type  : Slow 1100mV 85C Model Removal 'cs_aload'
+Slack : 1.067
+TNS   : 0.000
 
 Type  : Slow 1100mV 85C Model Minimum Pulse Width 's_aload'
-Slack : -0.959
-TNS   : -22.284
+Slack : -1.039
+TNS   : -17.281
 
 Type  : Slow 1100mV 85C Model Minimum Pulse Width 'cs_aload'
-Slack : -0.934
-TNS   : -27.135
+Slack : -0.869
+TNS   : -15.510
 
-Type  : Slow 1100mV 85C Model Minimum Pulse Width 'data[4]'
-Slack : -0.405
-TNS   : -6.300
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'm_aload'
+Slack : -0.846
+TNS   : -5.294
 
 Type  : Slow 1100mV 85C Model Minimum Pulse Width 'data[0]'
+Slack : -0.520
+TNS   : -8.162
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'data[4]'
 Slack : -0.394
-TNS   : -6.166
+TNS   : -5.243
 
 Type  : Slow 1100mV 85C Model Minimum Pulse Width 'delay_10ms:delay|counter_modulo_k:counter|Q[0]'
 Slack : -0.394
-TNS   : -2.156
+TNS   : -2.123
 
 Type  : Slow 1100mV 85C Model Minimum Pulse Width 'clock'
 Slack : -0.394
-TNS   : -1.044
+TNS   : -1.048
 
 Type  : Slow 1100mV 85C Model Minimum Pulse Width 'toggle_enable'
 Slack : -0.394
-TNS   : -0.642
-
-Type  : Slow 1100mV 0C Model Setup 's_aload'
-Slack : -6.955
-TNS   : -43.499
-
-Type  : Slow 1100mV 0C Model Setup 'cs_aload'
-Slack : -6.627
-TNS   : -43.451
-
-Type  : Slow 1100mV 0C Model Setup 'delay_10ms:delay|counter_modulo_k:counter|Q[0]'
-Slack : -5.892
-TNS   : -23.320
-
-Type  : Slow 1100mV 0C Model Setup 'm_aload'
-Slack : -4.612
-TNS   : -18.216
-
-Type  : Slow 1100mV 0C Model Setup 'data[0]'
-Slack : -4.460
-TNS   : -33.625
+TNS   : -0.661
 
 Type  : Slow 1100mV 0C Model Setup 'data[4]'
-Slack : -4.137
-TNS   : -20.461
+Slack : -7.498
+TNS   : -49.324
+
+Type  : Slow 1100mV 0C Model Setup 's_aload'
+Slack : -7.070
+TNS   : -40.184
+
+Type  : Slow 1100mV 0C Model Setup 'cs_aload'
+Slack : -6.898
+TNS   : -44.567
+
+Type  : Slow 1100mV 0C Model Setup 'data[0]'
+Slack : -6.165
+TNS   : -36.388
 
 Type  : Slow 1100mV 0C Model Setup 'clock'
-Slack : -0.726
-TNS   : -0.807
+Slack : -5.478
+TNS   : -8.981
+
+Type  : Slow 1100mV 0C Model Setup 'delay_10ms:delay|counter_modulo_k:counter|Q[0]'
+Slack : -4.707
+TNS   : -18.324
+
+Type  : Slow 1100mV 0C Model Setup 'm_aload'
+Slack : -3.350
+TNS   : -12.457
 
 Type  : Slow 1100mV 0C Model Setup 'toggle_enable'
-Slack : -0.487
-TNS   : -0.487
+Slack : -0.589
+TNS   : -0.589
 
 Type  : Slow 1100mV 0C Model Hold 'data[0]'
-Slack : -4.192
-TNS   : -34.411
-
-Type  : Slow 1100mV 0C Model Hold 'clock'
-Slack : -3.774
-TNS   : -6.738
-
-Type  : Slow 1100mV 0C Model Hold 'data[4]'
-Slack : -3.304
-TNS   : -25.779
-
-Type  : Slow 1100mV 0C Model Hold 'm_aload'
-Slack : -3.064
-TNS   : -11.907
-
-Type  : Slow 1100mV 0C Model Hold 'cs_aload'
-Slack : -2.090
-TNS   : -14.563
+Slack : -2.542
+TNS   : -19.751
 
 Type  : Slow 1100mV 0C Model Hold 's_aload'
-Slack : -1.958
-TNS   : -13.085
+Slack : -2.479
+TNS   : -14.762
+
+Type  : Slow 1100mV 0C Model Hold 'cs_aload'
+Slack : -2.329
+TNS   : -17.806
+
+Type  : Slow 1100mV 0C Model Hold 'data[4]'
+Slack : -2.109
+TNS   : -13.126
+
+Type  : Slow 1100mV 0C Model Hold 'm_aload'
+Slack : -1.969
+TNS   : -5.716
+
+Type  : Slow 1100mV 0C Model Hold 'clock'
+Slack : -1.378
+TNS   : -1.378
 
 Type  : Slow 1100mV 0C Model Hold 'toggle_enable'
-Slack : 0.501
+Slack : 0.046
 TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Hold 'delay_10ms:delay|counter_modulo_k:counter|Q[0]'
-Slack : 0.996
+Slack : 0.966
 TNS   : 0.000
-
-Type  : Slow 1100mV 0C Model Recovery 's_aload'
-Slack : -4.000
-TNS   : -15.987
-
-Type  : Slow 1100mV 0C Model Recovery 'delay_10ms:delay|counter_modulo_k:counter|Q[0]'
-Slack : -2.243
-TNS   : -8.965
 
 Type  : Slow 1100mV 0C Model Recovery 'data[4]'
-Slack : -1.891
-TNS   : -7.551
-
-Type  : Slow 1100mV 0C Model Recovery 'm_aload'
-Slack : -0.975
-TNS   : -2.916
-
-Type  : Slow 1100mV 0C Model Recovery 'data[0]'
-Slack : -0.575
-TNS   : -1.716
+Slack : -4.474
+TNS   : -17.886
 
 Type  : Slow 1100mV 0C Model Recovery 'cs_aload'
-Slack : 0.131
-TNS   : 0.000
+Slack : -4.179
+TNS   : -31.266
 
-Type  : Slow 1100mV 0C Model Removal 'data[0]'
-Slack : -4.235
-TNS   : -37.157
+Type  : Slow 1100mV 0C Model Recovery 's_aload'
+Slack : -4.028
+TNS   : -12.084
 
-Type  : Slow 1100mV 0C Model Removal 'data[4]'
-Slack : -3.331
-TNS   : -17.156
+Type  : Slow 1100mV 0C Model Recovery 'data[0]'
+Slack : -3.316
+TNS   : -27.443
 
-Type  : Slow 1100mV 0C Model Removal 'm_aload'
-Slack : -3.138
-TNS   : -9.408
+Type  : Slow 1100mV 0C Model Recovery 'delay_10ms:delay|counter_modulo_k:counter|Q[0]'
+Slack : -1.876
+TNS   : -7.500
 
-Type  : Slow 1100mV 0C Model Removal 'cs_aload'
-Slack : -2.106
-TNS   : -15.268
+Type  : Slow 1100mV 0C Model Recovery 'm_aload'
+Slack : -1.604
+TNS   : -4.802
 
 Type  : Slow 1100mV 0C Model Removal 's_aload'
-Slack : -1.994
-TNS   : -5.982
+Slack : -2.666
+TNS   : -10.648
+
+Type  : Slow 1100mV 0C Model Removal 'data[4]'
+Slack : -2.296
+TNS   : -9.168
+
+Type  : Slow 1100mV 0C Model Removal 'data[0]'
+Slack : -0.221
+TNS   : -0.658
+
+Type  : Slow 1100mV 0C Model Removal 'm_aload'
+Slack : -0.164
+TNS   : -0.487
 
 Type  : Slow 1100mV 0C Model Removal 'delay_10ms:delay|counter_modulo_k:counter|Q[0]'
-Slack : 1.065
+Slack : 0.887
 TNS   : 0.000
 
-Type  : Slow 1100mV 0C Model Minimum Pulse Width 'm_aload'
-Slack : -2.241
-TNS   : -29.240
+Type  : Slow 1100mV 0C Model Removal 'cs_aload'
+Slack : 0.920
+TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Minimum Pulse Width 's_aload'
-Slack : -0.983
-TNS   : -23.096
+Slack : -1.061
+TNS   : -18.542
 
 Type  : Slow 1100mV 0C Model Minimum Pulse Width 'cs_aload'
-Slack : -0.903
-TNS   : -27.026
+Slack : -0.921
+TNS   : -17.231
 
-Type  : Slow 1100mV 0C Model Minimum Pulse Width 'data[4]'
-Slack : -0.436
-TNS   : -6.472
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'm_aload'
+Slack : -0.862
+TNS   : -5.582
 
 Type  : Slow 1100mV 0C Model Minimum Pulse Width 'data[0]'
+Slack : -0.553
+TNS   : -8.245
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'data[4]'
 Slack : -0.394
-TNS   : -5.904
+TNS   : -5.140
 
 Type  : Slow 1100mV 0C Model Minimum Pulse Width 'delay_10ms:delay|counter_modulo_k:counter|Q[0]'
 Slack : -0.394
-TNS   : -2.170
+TNS   : -2.194
 
 Type  : Slow 1100mV 0C Model Minimum Pulse Width 'clock'
 Slack : -0.394
-TNS   : -1.144
+TNS   : -1.145
 
 Type  : Slow 1100mV 0C Model Minimum Pulse Width 'toggle_enable'
 Slack : -0.394
-TNS   : -0.627
-
-Type  : Fast 1100mV 85C Model Setup 's_aload'
-Slack : -4.770
-TNS   : -29.216
-
-Type  : Fast 1100mV 85C Model Setup 'cs_aload'
-Slack : -4.579
-TNS   : -26.121
-
-Type  : Fast 1100mV 85C Model Setup 'delay_10ms:delay|counter_modulo_k:counter|Q[0]'
-Slack : -3.540
-TNS   : -13.910
-
-Type  : Fast 1100mV 85C Model Setup 'm_aload'
-Slack : -3.259
-TNS   : -11.228
-
-Type  : Fast 1100mV 85C Model Setup 'data[0]'
-Slack : -2.903
-TNS   : -19.740
+TNS   : -0.676
 
 Type  : Fast 1100mV 85C Model Setup 'data[4]'
-Slack : -2.565
-TNS   : -11.031
+Slack : -4.789
+TNS   : -30.314
+
+Type  : Fast 1100mV 85C Model Setup 's_aload'
+Slack : -4.614
+TNS   : -24.193
+
+Type  : Fast 1100mV 85C Model Setup 'cs_aload'
+Slack : -4.612
+TNS   : -26.764
+
+Type  : Fast 1100mV 85C Model Setup 'data[0]'
+Slack : -3.922
+TNS   : -24.499
 
 Type  : Fast 1100mV 85C Model Setup 'clock'
-Slack : -0.494
-TNS   : -0.494
+Slack : -3.663
+TNS   : -5.774
+
+Type  : Fast 1100mV 85C Model Setup 'delay_10ms:delay|counter_modulo_k:counter|Q[0]'
+Slack : -2.844
+TNS   : -11.145
+
+Type  : Fast 1100mV 85C Model Setup 'm_aload'
+Slack : -2.629
+TNS   : -8.678
 
 Type  : Fast 1100mV 85C Model Setup 'toggle_enable'
-Slack : -0.005
-TNS   : -0.005
+Slack : -0.089
+TNS   : -0.089
 
 Type  : Fast 1100mV 85C Model Hold 'data[0]'
-Slack : -2.375
-TNS   : -20.275
-
-Type  : Fast 1100mV 85C Model Hold 'clock'
-Slack : -2.145
-TNS   : -3.893
-
-Type  : Fast 1100mV 85C Model Hold 'data[4]'
-Slack : -2.071
-TNS   : -16.205
-
-Type  : Fast 1100mV 85C Model Hold 'm_aload'
-Slack : -1.997
-TNS   : -7.588
+Slack : -1.546
+TNS   : -11.910
 
 Type  : Fast 1100mV 85C Model Hold 'cs_aload'
-Slack : -1.439
-TNS   : -10.248
+Slack : -1.459
+TNS   : -10.895
 
 Type  : Fast 1100mV 85C Model Hold 's_aload'
-Slack : -1.342
-TNS   : -8.625
+Slack : -1.434
+TNS   : -8.517
+
+Type  : Fast 1100mV 85C Model Hold 'data[4]'
+Slack : -1.301
+TNS   : -8.789
+
+Type  : Fast 1100mV 85C Model Hold 'm_aload'
+Slack : -1.213
+TNS   : -3.788
+
+Type  : Fast 1100mV 85C Model Hold 'clock'
+Slack : -0.386
+TNS   : -0.386
 
 Type  : Fast 1100mV 85C Model Hold 'toggle_enable'
-Slack : 0.267
-TNS   : 0.000
+Slack : -0.004
+TNS   : -0.004
 
 Type  : Fast 1100mV 85C Model Hold 'delay_10ms:delay|counter_modulo_k:counter|Q[0]'
-Slack : 0.504
+Slack : 0.466
 TNS   : 0.000
-
-Type  : Fast 1100mV 85C Model Recovery 's_aload'
-Slack : -2.878
-TNS   : -11.700
-
-Type  : Fast 1100mV 85C Model Recovery 'delay_10ms:delay|counter_modulo_k:counter|Q[0]'
-Slack : -1.666
-TNS   : -6.660
 
 Type  : Fast 1100mV 85C Model Recovery 'data[4]'
-Slack : -1.037
-TNS   : -4.144
-
-Type  : Fast 1100mV 85C Model Recovery 'm_aload'
-Slack : -0.809
-TNS   : -2.424
+Slack : -3.531
+TNS   : -14.120
 
 Type  : Fast 1100mV 85C Model Recovery 'cs_aload'
-Slack : -0.225
-TNS   : -0.894
+Slack : -3.354
+TNS   : -25.288
+
+Type  : Fast 1100mV 85C Model Recovery 's_aload'
+Slack : -3.346
+TNS   : -10.038
 
 Type  : Fast 1100mV 85C Model Recovery 'data[0]'
-Slack : 0.093
-TNS   : 0.000
+Slack : -2.950
+TNS   : -24.450
 
-Type  : Fast 1100mV 85C Model Removal 'data[0]'
-Slack : -2.410
-TNS   : -21.691
+Type  : Fast 1100mV 85C Model Recovery 'm_aload'
+Slack : -1.536
+TNS   : -4.604
 
-Type  : Fast 1100mV 85C Model Removal 'data[4]'
-Slack : -2.084
-TNS   : -11.240
-
-Type  : Fast 1100mV 85C Model Removal 'm_aload'
-Slack : -2.029
-TNS   : -6.084
-
-Type  : Fast 1100mV 85C Model Removal 'cs_aload'
-Slack : -1.474
-TNS   : -10.464
+Type  : Fast 1100mV 85C Model Recovery 'delay_10ms:delay|counter_modulo_k:counter|Q[0]'
+Slack : -1.325
+TNS   : -5.299
 
 Type  : Fast 1100mV 85C Model Removal 's_aload'
-Slack : -1.378
-TNS   : -4.134
+Slack : -1.570
+TNS   : -6.276
+
+Type  : Fast 1100mV 85C Model Removal 'data[4]'
+Slack : -1.437
+TNS   : -5.744
+
+Type  : Fast 1100mV 85C Model Removal 'data[0]'
+Slack : -0.060
+TNS   : -0.179
+
+Type  : Fast 1100mV 85C Model Removal 'm_aload'
+Slack : 0.110
+TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Removal 'delay_10ms:delay|counter_modulo_k:counter|Q[0]'
-Slack : 0.563
+Slack : 0.392
 TNS   : 0.000
 
-Type  : Fast 1100mV 85C Model Minimum Pulse Width 'm_aload'
-Slack : -1.425
-TNS   : -13.898
-
-Type  : Fast 1100mV 85C Model Minimum Pulse Width 'cs_aload'
-Slack : -0.671
-TNS   : -20.534
+Type  : Fast 1100mV 85C Model Removal 'cs_aload'
+Slack : 0.858
+TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Minimum Pulse Width 's_aload'
-Slack : -0.667
-TNS   : -14.072
+Slack : -0.719
+TNS   : -7.609
 
-Type  : Fast 1100mV 85C Model Minimum Pulse Width 'data[4]'
-Slack : -0.393
-TNS   : -4.075
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'cs_aload'
+Slack : -0.642
+TNS   : -7.410
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'm_aload'
+Slack : -0.602
+TNS   : -2.985
 
 Type  : Fast 1100mV 85C Model Minimum Pulse Width 'data[0]'
-Slack : -0.353
-TNS   : -3.115
+Slack : -0.530
+TNS   : -6.267
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'data[4]'
+Slack : -0.363
+TNS   : -2.674
 
 Type  : Fast 1100mV 85C Model Minimum Pulse Width 'toggle_enable'
-Slack : -0.287
-TNS   : -0.287
+Slack : -0.297
+TNS   : -0.297
 
 Type  : Fast 1100mV 85C Model Minimum Pulse Width 'clock'
-Slack : -0.074
-TNS   : -0.148
+Slack : -0.078
+TNS   : -0.155
 
 Type  : Fast 1100mV 85C Model Minimum Pulse Width 'delay_10ms:delay|counter_modulo_k:counter|Q[0]'
-Slack : 0.158
+Slack : 0.097
 TNS   : 0.000
-
-Type  : Fast 1100mV 0C Model Setup 's_aload'
-Slack : -4.455
-TNS   : -27.038
-
-Type  : Fast 1100mV 0C Model Setup 'cs_aload'
-Slack : -4.279
-TNS   : -25.026
-
-Type  : Fast 1100mV 0C Model Setup 'delay_10ms:delay|counter_modulo_k:counter|Q[0]'
-Slack : -3.453
-TNS   : -13.620
-
-Type  : Fast 1100mV 0C Model Setup 'm_aload'
-Slack : -2.982
-TNS   : -10.374
-
-Type  : Fast 1100mV 0C Model Setup 'data[0]'
-Slack : -2.498
-TNS   : -17.077
 
 Type  : Fast 1100mV 0C Model Setup 'data[4]'
-Slack : -2.232
-TNS   : -9.400
+Slack : -4.303
+TNS   : -27.080
+
+Type  : Fast 1100mV 0C Model Setup 's_aload'
+Slack : -4.176
+TNS   : -21.935
+
+Type  : Fast 1100mV 0C Model Setup 'cs_aload'
+Slack : -4.112
+TNS   : -23.731
+
+Type  : Fast 1100mV 0C Model Setup 'data[0]'
+Slack : -3.506
+TNS   : -22.180
 
 Type  : Fast 1100mV 0C Model Setup 'clock'
-Slack : -0.239
-TNS   : -0.239
+Slack : -3.103
+TNS   : -4.882
+
+Type  : Fast 1100mV 0C Model Setup 'delay_10ms:delay|counter_modulo_k:counter|Q[0]'
+Slack : -2.783
+TNS   : -10.895
+
+Type  : Fast 1100mV 0C Model Setup 'm_aload'
+Slack : -2.348
+TNS   : -7.732
 
 Type  : Fast 1100mV 0C Model Setup 'toggle_enable'
-Slack : 0.033
-TNS   : 0.000
+Slack : -0.043
+TNS   : -0.043
 
 Type  : Fast 1100mV 0C Model Hold 'data[0]'
-Slack : -2.284
-TNS   : -19.499
-
-Type  : Fast 1100mV 0C Model Hold 'clock'
-Slack : -2.106
-TNS   : -3.834
-
-Type  : Fast 1100mV 0C Model Hold 'data[4]'
-Slack : -2.024
-TNS   : -15.843
-
-Type  : Fast 1100mV 0C Model Hold 'm_aload'
-Slack : -1.902
-TNS   : -7.252
+Slack : -1.444
+TNS   : -11.167
 
 Type  : Fast 1100mV 0C Model Hold 'cs_aload'
-Slack : -1.323
-TNS   : -9.385
+Slack : -1.376
+TNS   : -10.497
 
 Type  : Fast 1100mV 0C Model Hold 's_aload'
-Slack : -1.270
-TNS   : -8.148
+Slack : -1.329
+TNS   : -7.984
+
+Type  : Fast 1100mV 0C Model Hold 'data[4]'
+Slack : -1.188
+TNS   : -7.999
+
+Type  : Fast 1100mV 0C Model Hold 'm_aload'
+Slack : -1.170
+TNS   : -3.680
+
+Type  : Fast 1100mV 0C Model Hold 'clock'
+Slack : -0.564
+TNS   : -0.564
 
 Type  : Fast 1100mV 0C Model Hold 'toggle_enable'
-Slack : 0.238
-TNS   : 0.000
+Slack : -0.023
+TNS   : -0.023
 
 Type  : Fast 1100mV 0C Model Hold 'delay_10ms:delay|counter_modulo_k:counter|Q[0]'
-Slack : 0.458
+Slack : 0.420
 TNS   : 0.000
-
-Type  : Fast 1100mV 0C Model Recovery 's_aload'
-Slack : -2.667
-TNS   : -11.044
-
-Type  : Fast 1100mV 0C Model Recovery 'delay_10ms:delay|counter_modulo_k:counter|Q[0]'
-Slack : -1.637
-TNS   : -6.544
-
-Type  : Fast 1100mV 0C Model Recovery 'm_aload'
-Slack : -0.855
-TNS   : -2.564
 
 Type  : Fast 1100mV 0C Model Recovery 'data[4]'
-Slack : -0.795
-TNS   : -3.175
+Slack : -3.149
+TNS   : -12.594
+
+Type  : Fast 1100mV 0C Model Recovery 's_aload'
+Slack : -2.967
+TNS   : -8.901
 
 Type  : Fast 1100mV 0C Model Recovery 'cs_aload'
-Slack : -0.275
-TNS   : -1.100
+Slack : -2.958
+TNS   : -22.426
 
 Type  : Fast 1100mV 0C Model Recovery 'data[0]'
-Slack : 0.035
-TNS   : 0.000
+Slack : -2.593
+TNS   : -21.873
 
-Type  : Fast 1100mV 0C Model Removal 'data[0]'
-Slack : -2.318
-TNS   : -20.801
+Type  : Fast 1100mV 0C Model Recovery 'm_aload'
+Slack : -1.410
+TNS   : -4.226
 
-Type  : Fast 1100mV 0C Model Removal 'data[4]'
-Slack : -2.042
-TNS   : -11.703
-
-Type  : Fast 1100mV 0C Model Removal 'm_aload'
-Slack : -1.931
-TNS   : -5.790
-
-Type  : Fast 1100mV 0C Model Removal 'cs_aload'
+Type  : Fast 1100mV 0C Model Recovery 'delay_10ms:delay|counter_modulo_k:counter|Q[0]'
 Slack : -1.357
-TNS   : -9.596
+TNS   : -5.427
 
 Type  : Fast 1100mV 0C Model Removal 's_aload'
-Slack : -1.303
-TNS   : -3.909
+Slack : -1.448
+TNS   : -5.788
 
-Type  : Fast 1100mV 0C Model Removal 'delay_10ms:delay|counter_modulo_k:counter|Q[0]'
-Slack : 0.563
+Type  : Fast 1100mV 0C Model Removal 'data[4]'
+Slack : -1.307
+TNS   : -5.224
+
+Type  : Fast 1100mV 0C Model Removal 'data[0]'
+Slack : -0.124
+TNS   : -0.370
+
+Type  : Fast 1100mV 0C Model Removal 'm_aload'
+Slack : 0.038
 TNS   : 0.000
 
-Type  : Fast 1100mV 0C Model Minimum Pulse Width 'm_aload'
-Slack : -1.392
-TNS   : -12.942
+Type  : Fast 1100mV 0C Model Removal 'delay_10ms:delay|counter_modulo_k:counter|Q[0]'
+Slack : 0.414
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Removal 'cs_aload'
+Slack : 0.622
+TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Minimum Pulse Width 's_aload'
-Slack : -0.656
-TNS   : -13.472
+Slack : -0.712
+TNS   : -7.526
 
 Type  : Fast 1100mV 0C Model Minimum Pulse Width 'cs_aload'
-Slack : -0.635
-TNS   : -18.158
+Slack : -0.626
+TNS   : -7.285
 
-Type  : Fast 1100mV 0C Model Minimum Pulse Width 'data[4]'
-Slack : -0.397
-TNS   : -4.068
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'm_aload'
+Slack : -0.590
+TNS   : -2.899
 
 Type  : Fast 1100mV 0C Model Minimum Pulse Width 'data[0]'
-Slack : -0.341
-TNS   : -2.942
+Slack : -0.506
+TNS   : -5.852
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'data[4]'
+Slack : -0.355
+TNS   : -2.670
 
 Type  : Fast 1100mV 0C Model Minimum Pulse Width 'toggle_enable'
-Slack : -0.281
-TNS   : -0.281
+Slack : -0.301
+TNS   : -0.301
 
 Type  : Fast 1100mV 0C Model Minimum Pulse Width 'clock'
 Slack : -0.077
-TNS   : -0.154
+TNS   : -0.152
 
 Type  : Fast 1100mV 0C Model Minimum Pulse Width 'delay_10ms:delay|counter_modulo_k:counter|Q[0]'
-Slack : 0.156
+Slack : 0.105
 TNS   : 0.000
 
 ------------------------------------------------------------

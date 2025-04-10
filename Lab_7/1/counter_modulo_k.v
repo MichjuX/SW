@@ -1,14 +1,5 @@
-/* module counter_modulo_20_on_board(
-	input [2:0] KEY,
-	output [4:0] LEDR,
-	output [9:9] LEDR);
-
-	counter_modulo_k #(20) counter(KEY[0], KEY[1], KEY[2], LEDR, LEDR[9]);
-
-endmodule */
-
 module counter_modulo_k
-	#(parameter k = 20)( // okres licznika
+	#(parameter k = 20)(
 	input clk, aclr, enable,
 	output reg [N-1:0] Q,
 	output rollover);
@@ -18,7 +9,7 @@ module counter_modulo_k
 			v = v >> 1;
 	endfunction
 
-	localparam N = clogb2(k-1); // długość licznika w bitach
+	localparam N = clogb2(k-1);
 
 	always @ (posedge clk, negedge aclr)
 		if (!aclr) Q <= {N{1'b0}};

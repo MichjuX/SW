@@ -25,7 +25,7 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: the sole purpose of programming logic devices manufactured by
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details.
-    Info: Processing started: Tue Apr 08 16:33:10 2025
+    Info: Processing started: Thu Apr 10 12:39:32 2025
 Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off counter_modulo_k -c counter_modulo_k --vector_source=E:/PB/SEM_6/SW/Lab_7/1/Waveform.vwf --testbench_file=E:/PB/SEM_6/SW/Lab_7/1/simulation/qsim/Waveform.vwf.vt
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 
@@ -53,13 +53,13 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: the sole purpose of programming logic devices manufactured by
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details.
-    Info: Processing started: Tue Apr 08 16:33:11 2025
+    Info: Processing started: Thu Apr 10 12:39:35 2025
 Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=E:/PB/SEM_6/SW/Lab_7/1/simulation/qsim/ counter_modulo_k -c counter_modulo_k
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (204019): Generated file counter_modulo_k.vo in folder "E:/PB/SEM_6/SW/Lab_7/1/simulation/qsim//" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
     Info: Peak virtual memory: 4720 megabytes
-    Info: Processing ended: Tue Apr 08 16:33:12 2025
+    Info: Processing ended: Thu Apr 10 12:39:36 2025
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
@@ -82,27 +82,29 @@ Reading C:/intelFPGA_lite/18.1/modelsim_ase/tcl/vsim/pref.tcl
 # do counter_modulo_k.do
 
 # ** Warning: (vlib-34) Library already exists at "work".
+
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:33:12 on Apr 08,2025
+# Start time: 12:39:37 on Apr 10,2025
 # vlog -work work counter_modulo_k.vo 
 # -- Compiling module counter_modulo_k
 # 
 # Top level modules:
 # 	counter_modulo_k
-# End time: 16:33:12 on Apr 08,2025, Elapsed time: 0:00:00
+# End time: 12:39:37 on Apr 10,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
+
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:33:12 on Apr 08,2025
+# Start time: 12:39:37 on Apr 10,2025
 # vlog -work work Waveform.vwf.vt 
 # -- Compiling module counter_modulo_k_vlg_vec_tst
 # 
 # Top level modules:
 # 	counter_modulo_k_vlg_vec_tst
-# End time: 16:33:12 on Apr 08,2025, Elapsed time: 0:00:00
+# End time: 12:39:37 on Apr 10,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 
 # vsim -novopt -c -t 1ps -L cyclonev_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.counter_modulo_k_vlg_vec_tst 
-# Start time: 16:33:12 on Apr 08,2025
+# Start time: 12:39:37 on Apr 10,2025
 # Loading work.counter_modulo_k_vlg_vec_tst
 # Loading work.counter_modulo_k
 # Loading cyclonev_ver.cyclonev_io_obuf
@@ -114,7 +116,7 @@ Reading C:/intelFPGA_lite/18.1/modelsim_ase/tcl/vsim/pref.tcl
 # after#25
 # ** Note: $finish    : Waveform.vwf.vt(50)
 #    Time: 90 ns  Iteration: 0  Instance: /counter_modulo_k_vlg_vec_tst
-# End time: 16:33:13 on Apr 08,2025, Elapsed time: 0:00:01
+# End time: 12:39:37 on Apr 10,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 
 Completed successfully. 
@@ -127,7 +129,7 @@ Reading E:/PB/SEM_6/SW/Lab_7/1/simulation/qsim/counter_modulo_k.msim.vcd...
 
 Processing channel transitions... 
 
-Writing the resulting VWF to E:/PB/SEM_6/SW/Lab_7/1/simulation/qsim/counter_modulo_k_20250408163313.sim.vwf
+Writing the resulting VWF to E:/PB/SEM_6/SW/Lab_7/1/simulation/qsim/counter_modulo_k_20250410123937.sim.vwf
 
 Finished VCD to VWF conversion.
 

@@ -7,15 +7,15 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 dD:/Storage/temp/semestr_6/sw/7/projekty/real_time_clock_on_board/simulation/qsim
+dD:/Storage/temp/semestr_6/sw/7/projekty/real_time_clock_on_board/simulation/qsim
 vreal_time_clock_on_board
-Z1 !s110 1650916649
+Z0 !s110 1744215286
 !i10b 1
-!s100 Q1OeLR]cPQDLMmD1Y_0`A1
-IQXR@54LRN_6Ud<niQ_C=S0
-Z2 VDg1SIo80bB@j0V0VzS_@n1
-R0
-w1650916642
+!s100 :TlCUYBIF39_YQdiaI9hF3
+I5eoh@P5WW:LaSO<?Po;lM0
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dE:/PB/SEM_6/SW/Lab_7/3_ONBOARD/simulation/qsim
+w1744215285
 8real_time_clock_on_board.vo
 Freal_time_clock_on_board.vo
 L0 31
@@ -23,20 +23,20 @@ Z3 OV;L;10.5b;63
 r1
 !s85 0
 31
-!s108 1650916648.000000
+Z4 !s108 1744215286.000000
 !s107 real_time_clock_on_board.vo|
 !s90 -work|work|real_time_clock_on_board.vo|
 !i113 1
-Z4 o-work work
-Z5 tCvgOpt 0
+Z5 o-work work
+Z6 tCvgOpt 0
 vreal_time_clock_on_board_vlg_vec_tst
-R1
+R0
 !i10b 1
 !s100 Zd4OZg8dY];PCmO;O9[Ba3
 IbR3T@1GM2U4FdcBPzoJ]X2
+R1
 R2
-R0
-w1650916640
+w1744215284
 8Waveform.vwf.vt
 FWaveform.vwf.vt
 L0 29
@@ -44,9 +44,9 @@ R3
 r1
 !s85 0
 31
-!s108 1650916649.000000
+R4
 !s107 Waveform.vwf.vt|
 !s90 -work|work|Waveform.vwf.vt|
 !i113 1
-R4
 R5
+R6

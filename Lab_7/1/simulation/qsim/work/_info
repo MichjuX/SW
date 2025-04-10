@@ -9,26 +9,26 @@ z2
 cModel Technology
 dD:/Storage/temp/semestr_6/sw/7/projekty/counter_modulo_k/simulation/qsim
 vcounter_modulo_k
-Z0 !s110 1744122792
+Z0 !s110 1744281577
 !i10b 1
 !s100 QC^z5?lz7HHZ>2SIk=KRS2
 IEN]d5mNLUXK8AUbAPbG8a0
 Z1 VDg1SIo80bB@j0V0VzS_@n1
 Z2 dE:/PB/SEM_6/SW/Lab_7/1/simulation/qsim
-w1744122792
+Z3 w1744281575
 8counter_modulo_k.vo
 Fcounter_modulo_k.vo
 L0 31
-Z3 OV;L;10.5b;63
+Z4 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z4 !s108 1744122792.000000
+Z5 !s108 1744281577.000000
 !s107 counter_modulo_k.vo|
 !s90 -work|work|counter_modulo_k.vo|
 !i113 1
-Z5 o-work work
-Z6 tCvgOpt 0
+Z6 o-work work
+Z7 tCvgOpt 0
 vcounter_modulo_k_vlg_vec_tst
 R0
 !i10b 1
@@ -36,17 +36,17 @@ R0
 If]=j;9J`ZBC2W>ijkQi@P1
 R1
 R2
-w1744122791
+R3
 8Waveform.vwf.vt
 FWaveform.vwf.vt
 L0 29
-R3
+R4
 r1
 !s85 0
 31
-R4
+R5
 !s107 Waveform.vwf.vt|
 !s90 -work|work|Waveform.vwf.vt|
 !i113 1
-R5
 R6
+R7

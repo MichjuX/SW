@@ -3,7 +3,7 @@ $comment
 		vcd file counter_modulo_k.msim.vcd -direction
 $end
 $date
-	Tue Apr 08 16:33:13 2025
+	Thu Apr 10 12:39:37 2025
 $end
 $version
 	ModelSim Version 10.5b

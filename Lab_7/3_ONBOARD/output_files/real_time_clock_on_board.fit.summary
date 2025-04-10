@@ -1,11 +1,11 @@
-Fitter Status : Successful - Thu Apr 21 12:30:18 2022
+Fitter Status : Successful - Thu Apr 10 12:48:34 2025
 Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 Revision Name : real_time_clock_on_board
 Top-level Entity Name : real_time_clock_on_board
 Family : Cyclone V
 Device : 5CSEMA5F31C6
 Timing Models : Final
-Logic utilization (in ALMs) : 75 / 32,070 ( < 1 % )
+Logic utilization (in ALMs) : 79 / 32,070 ( < 1 % )
 Total registers : 42
 Total pins : 55 / 457 ( 12 % )
 Total virtual pins : 0

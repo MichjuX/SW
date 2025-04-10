@@ -1,5 +1,5 @@
 Analysis & Synthesis report for counter_BCD_3_digits_on_board
-Thu Apr 21 12:19:23 2022
+Thu Apr 10 12:45:52 2025
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -51,7 +51,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Thu Apr 21 12:19:23 2022       ;
+; Analysis & Synthesis Status     ; Successful - Thu Apr 10 12:45:52 2025       ;
 ; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                   ; counter_BCD_3_digits_on_board               ;
 ; Top-level Entity Name           ; counter_BCD_3_digits_on_board               ;
@@ -163,25 +163,29 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 8           ;
-; Maximum allowed            ; 4           ;
+; Number detected on machine ; 16          ;
+; Maximum allowed            ; 16          ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 4           ;
+; Maximum used               ; 16          ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-4         ;   0.0%      ;
+;     Processors 2-16        ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                        ;
-+----------------------------------+-----------------+------------------------+-------------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                                                          ; Library ;
-+----------------------------------+-----------------+------------------------+-------------------------------------------------------------------------------------------------------+---------+
-; counter_BCD_3_digits_on_board.v  ; yes             ; User Verilog HDL File  ; D:/Storage/temp/semestr_6/sw/7/projekty/counter_BCD_3_digits_on_board/counter_BCD_3_digits_on_board.v ;         ;
-+----------------------------------+-----------------+------------------------+-------------------------------------------------------------------------------------------------------+---------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                 ;
++----------------------------------+-----------------+------------------------+----------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                   ; Library ;
++----------------------------------+-----------------+------------------------+----------------------------------------------------------------+---------+
+; counter_BCD_3_digits_on_board.v  ; yes             ; User Verilog HDL File  ; E:/PB/SEM_6/SW/Lab_7/2_ONBOARD/counter_BCD_3_digits_on_board.v ;         ;
+; decoder_hex_10.v                 ; yes             ; User Verilog HDL File  ; E:/PB/SEM_6/SW/Lab_7/2_ONBOARD/decoder_hex_10.v                ;         ;
+; delay_1_sec.v                    ; yes             ; User Verilog HDL File  ; E:/PB/SEM_6/SW/Lab_7/2_ONBOARD/delay_1_sec.v                   ;         ;
+; counter_BCD_3_digits.v           ; yes             ; User Verilog HDL File  ; E:/PB/SEM_6/SW/Lab_7/2_ONBOARD/counter_BCD_3_digits.v          ;         ;
+; counter_modulo_k.v               ; yes             ; User Verilog HDL File  ; E:/PB/SEM_6/SW/Lab_7/2_ONBOARD/counter_modulo_k.v              ;         ;
++----------------------------------+-----------------+------------------------+----------------------------------------------------------------+---------+
 
 
 +------------------------------------------------------------------------------------------------------------------------------+
@@ -385,7 +389,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:02     ;
+; Top            ; 00:00:00     ;
 +----------------+--------------+
 
 
@@ -395,37 +399,41 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Thu Apr 21 12:19:01 2022
+    Info: Processing started: Thu Apr 10 12:45:46 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off counter_BCD_3_digits_on_board -c counter_BCD_3_digits_on_board
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
-Info (12021): Found 5 design units, including 5 entities, in source file counter_bcd_3_digits_on_board.v
-    Info (12023): Found entity 1: counter_BCD_3_digits_on_board File: D:/Storage/temp/semestr_6/sw/7/projekty/counter_BCD_3_digits_on_board/counter_BCD_3_digits_on_board.v Line: 1
-    Info (12023): Found entity 2: decoder_hex_10 File: D:/Storage/temp/semestr_6/sw/7/projekty/counter_BCD_3_digits_on_board/counter_BCD_3_digits_on_board.v Line: 15
-    Info (12023): Found entity 3: delay_1_sec File: D:/Storage/temp/semestr_6/sw/7/projekty/counter_BCD_3_digits_on_board/counter_BCD_3_digits_on_board.v Line: 36
-    Info (12023): Found entity 4: counter_BCD_3_digits File: D:/Storage/temp/semestr_6/sw/7/projekty/counter_BCD_3_digits_on_board/counter_BCD_3_digits_on_board.v Line: 46
-    Info (12023): Found entity 5: counter_modulo_k File: D:/Storage/temp/semestr_6/sw/7/projekty/counter_BCD_3_digits_on_board/counter_BCD_3_digits_on_board.v Line: 61
+Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file counter_bcd_3_digits_on_board.v
+    Info (12023): Found entity 1: counter_BCD_3_digits_on_board File: E:/PB/SEM_6/SW/Lab_7/2_ONBOARD/counter_BCD_3_digits_on_board.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file decoder_hex_10.v
+    Info (12023): Found entity 1: decoder_hex_10 File: E:/PB/SEM_6/SW/Lab_7/2_ONBOARD/decoder_hex_10.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file delay_1_sec.v
+    Info (12023): Found entity 1: delay_1_sec File: E:/PB/SEM_6/SW/Lab_7/2_ONBOARD/delay_1_sec.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file counter_bcd_3_digits.v
+    Info (12023): Found entity 1: counter_BCD_3_digits File: E:/PB/SEM_6/SW/Lab_7/2_ONBOARD/counter_BCD_3_digits.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file counter_modulo_k.v
+    Info (12023): Found entity 1: counter_modulo_k File: E:/PB/SEM_6/SW/Lab_7/2_ONBOARD/counter_modulo_k.v Line: 1
 Info (12127): Elaborating entity "counter_BCD_3_digits_on_board" for the top level hierarchy
-Info (12128): Elaborating entity "counter_BCD_3_digits" for hierarchy "counter_BCD_3_digits:counter" File: D:/Storage/temp/semestr_6/sw/7/projekty/counter_BCD_3_digits_on_board/counter_BCD_3_digits_on_board.v Line: 8
-Info (12128): Elaborating entity "delay_1_sec" for hierarchy "counter_BCD_3_digits:counter|delay_1_sec:delay" File: D:/Storage/temp/semestr_6/sw/7/projekty/counter_BCD_3_digits_on_board/counter_BCD_3_digits_on_board.v Line: 53
-Info (12128): Elaborating entity "counter_modulo_k" for hierarchy "counter_BCD_3_digits:counter|delay_1_sec:delay|counter_modulo_k:counter" File: D:/Storage/temp/semestr_6/sw/7/projekty/counter_BCD_3_digits_on_board/counter_BCD_3_digits_on_board.v Line: 41
-Info (12128): Elaborating entity "counter_modulo_k" for hierarchy "counter_BCD_3_digits:counter|counter_modulo_k:counter0" File: D:/Storage/temp/semestr_6/sw/7/projekty/counter_BCD_3_digits_on_board/counter_BCD_3_digits_on_board.v Line: 54
-Info (12128): Elaborating entity "decoder_hex_10" for hierarchy "decoder_hex_10:dec0" File: D:/Storage/temp/semestr_6/sw/7/projekty/counter_BCD_3_digits_on_board/counter_BCD_3_digits_on_board.v Line: 9
+Info (12128): Elaborating entity "counter_BCD_3_digits" for hierarchy "counter_BCD_3_digits:counter" File: E:/PB/SEM_6/SW/Lab_7/2_ONBOARD/counter_BCD_3_digits_on_board.v Line: 8
+Info (12128): Elaborating entity "delay_1_sec" for hierarchy "counter_BCD_3_digits:counter|delay_1_sec:delay" File: E:/PB/SEM_6/SW/Lab_7/2_ONBOARD/counter_BCD_3_digits.v Line: 8
+Info (12128): Elaborating entity "counter_modulo_k" for hierarchy "counter_BCD_3_digits:counter|delay_1_sec:delay|counter_modulo_k:counter" File: E:/PB/SEM_6/SW/Lab_7/2_ONBOARD/delay_1_sec.v Line: 6
+Info (12128): Elaborating entity "counter_modulo_k" for hierarchy "counter_BCD_3_digits:counter|counter_modulo_k:counter0" File: E:/PB/SEM_6/SW/Lab_7/2_ONBOARD/counter_BCD_3_digits.v Line: 9
+Info (12128): Elaborating entity "decoder_hex_10" for hierarchy "decoder_hex_10:dec0" File: E:/PB/SEM_6/SW/Lab_7/2_ONBOARD/counter_BCD_3_digits_on_board.v Line: 9
 Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Info (286030): Timing-Driven Synthesis is running
 Info (17016): Found the following redundant logic cells in design
-    Info (17048): Logic cell "bcd[8]" File: D:/Storage/temp/semestr_6/sw/7/projekty/counter_BCD_3_digits_on_board/counter_BCD_3_digits_on_board.v Line: 7
-    Info (17048): Logic cell "bcd[9]" File: D:/Storage/temp/semestr_6/sw/7/projekty/counter_BCD_3_digits_on_board/counter_BCD_3_digits_on_board.v Line: 7
-    Info (17048): Logic cell "bcd[10]" File: D:/Storage/temp/semestr_6/sw/7/projekty/counter_BCD_3_digits_on_board/counter_BCD_3_digits_on_board.v Line: 7
-    Info (17048): Logic cell "bcd[11]" File: D:/Storage/temp/semestr_6/sw/7/projekty/counter_BCD_3_digits_on_board/counter_BCD_3_digits_on_board.v Line: 7
-    Info (17048): Logic cell "bcd[4]" File: D:/Storage/temp/semestr_6/sw/7/projekty/counter_BCD_3_digits_on_board/counter_BCD_3_digits_on_board.v Line: 7
-    Info (17048): Logic cell "bcd[5]" File: D:/Storage/temp/semestr_6/sw/7/projekty/counter_BCD_3_digits_on_board/counter_BCD_3_digits_on_board.v Line: 7
-    Info (17048): Logic cell "bcd[6]" File: D:/Storage/temp/semestr_6/sw/7/projekty/counter_BCD_3_digits_on_board/counter_BCD_3_digits_on_board.v Line: 7
-    Info (17048): Logic cell "bcd[7]" File: D:/Storage/temp/semestr_6/sw/7/projekty/counter_BCD_3_digits_on_board/counter_BCD_3_digits_on_board.v Line: 7
-    Info (17048): Logic cell "bcd[0]" File: D:/Storage/temp/semestr_6/sw/7/projekty/counter_BCD_3_digits_on_board/counter_BCD_3_digits_on_board.v Line: 7
-    Info (17048): Logic cell "bcd[1]" File: D:/Storage/temp/semestr_6/sw/7/projekty/counter_BCD_3_digits_on_board/counter_BCD_3_digits_on_board.v Line: 7
-    Info (17048): Logic cell "bcd[2]" File: D:/Storage/temp/semestr_6/sw/7/projekty/counter_BCD_3_digits_on_board/counter_BCD_3_digits_on_board.v Line: 7
-    Info (17048): Logic cell "bcd[3]" File: D:/Storage/temp/semestr_6/sw/7/projekty/counter_BCD_3_digits_on_board/counter_BCD_3_digits_on_board.v Line: 7
+    Info (17048): Logic cell "bcd[8]" File: E:/PB/SEM_6/SW/Lab_7/2_ONBOARD/counter_BCD_3_digits_on_board.v Line: 7
+    Info (17048): Logic cell "bcd[9]" File: E:/PB/SEM_6/SW/Lab_7/2_ONBOARD/counter_BCD_3_digits_on_board.v Line: 7
+    Info (17048): Logic cell "bcd[10]" File: E:/PB/SEM_6/SW/Lab_7/2_ONBOARD/counter_BCD_3_digits_on_board.v Line: 7
+    Info (17048): Logic cell "bcd[11]" File: E:/PB/SEM_6/SW/Lab_7/2_ONBOARD/counter_BCD_3_digits_on_board.v Line: 7
+    Info (17048): Logic cell "bcd[4]" File: E:/PB/SEM_6/SW/Lab_7/2_ONBOARD/counter_BCD_3_digits_on_board.v Line: 7
+    Info (17048): Logic cell "bcd[5]" File: E:/PB/SEM_6/SW/Lab_7/2_ONBOARD/counter_BCD_3_digits_on_board.v Line: 7
+    Info (17048): Logic cell "bcd[6]" File: E:/PB/SEM_6/SW/Lab_7/2_ONBOARD/counter_BCD_3_digits_on_board.v Line: 7
+    Info (17048): Logic cell "bcd[7]" File: E:/PB/SEM_6/SW/Lab_7/2_ONBOARD/counter_BCD_3_digits_on_board.v Line: 7
+    Info (17048): Logic cell "bcd[0]" File: E:/PB/SEM_6/SW/Lab_7/2_ONBOARD/counter_BCD_3_digits_on_board.v Line: 7
+    Info (17048): Logic cell "bcd[1]" File: E:/PB/SEM_6/SW/Lab_7/2_ONBOARD/counter_BCD_3_digits_on_board.v Line: 7
+    Info (17048): Logic cell "bcd[2]" File: E:/PB/SEM_6/SW/Lab_7/2_ONBOARD/counter_BCD_3_digits_on_board.v Line: 7
+    Info (17048): Logic cell "bcd[3]" File: E:/PB/SEM_6/SW/Lab_7/2_ONBOARD/counter_BCD_3_digits_on_board.v Line: 7
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Info (21057): Implemented 103 device resources after synthesis - the final resource count might be different
@@ -433,9 +441,9 @@ Info (21057): Implemented 103 device resources after synthesis - the final resou
     Info (21059): Implemented 22 output pins
     Info (21061): Implemented 79 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 2 warnings
-    Info: Peak virtual memory: 4826 megabytes
-    Info: Processing ended: Thu Apr 21 12:19:23 2022
-    Info: Elapsed time: 00:00:22
-    Info: Total CPU time (on all processors): 00:00:34
+    Info: Peak virtual memory: 4903 megabytes
+    Info: Processing ended: Thu Apr 10 12:45:52 2025
+    Info: Elapsed time: 00:00:06
+    Info: Total CPU time (on all processors): 00:00:12
 
 

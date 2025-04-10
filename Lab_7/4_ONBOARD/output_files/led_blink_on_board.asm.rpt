@@ -1,5 +1,5 @@
 Assembler report for led_blink_on_board
-Thu Apr 21 13:15:17 2022
+Thu Apr 10 12:54:40 2025
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -10,7 +10,7 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
   2. Assembler Summary
   3. Assembler Settings
   4. Assembler Generated Files
-  5. Assembler Device Options: D:/Storage/temp/semestr_6/sw/7/projekty/led_blink_on_board/output_files/led_blink_on_board.sof
+  5. Assembler Device Options: E:/PB/SEM_6/SW/Lab_7/4_ONBOARD/output_files/led_blink_on_board.sof
   6. Assembler Messages
 
 
@@ -37,7 +37,7 @@ refer to the applicable agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Thu Apr 21 13:15:17 2022 ;
+; Assembler Status      ; Successful - Thu Apr 10 12:54:40 2025 ;
 ; Revision Name         ; led_blink_on_board                    ;
 ; Top-level Entity Name ; led_blink_on_board                    ;
 ; Family                ; Cyclone V                             ;
@@ -52,23 +52,23 @@ refer to the applicable agreement for further details.
 +--------+---------+---------------+
 
 
-+------------------------------------------------------------------------------------------------+
-; Assembler Generated Files                                                                      ;
-+------------------------------------------------------------------------------------------------+
-; File Name                                                                                      ;
-+------------------------------------------------------------------------------------------------+
-; D:/Storage/temp/semestr_6/sw/7/projekty/led_blink_on_board/output_files/led_blink_on_board.sof ;
-+------------------------------------------------------------------------------------------------+
++--------------------------------------------------------------------+
+; Assembler Generated Files                                          ;
++--------------------------------------------------------------------+
+; File Name                                                          ;
++--------------------------------------------------------------------+
+; E:/PB/SEM_6/SW/Lab_7/4_ONBOARD/output_files/led_blink_on_board.sof ;
++--------------------------------------------------------------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------+
-; Assembler Device Options: D:/Storage/temp/semestr_6/sw/7/projekty/led_blink_on_board/output_files/led_blink_on_board.sof ;
-+----------------+---------------------------------------------------------------------------------------------------------+
-; Option         ; Setting                                                                                                 ;
-+----------------+---------------------------------------------------------------------------------------------------------+
-; JTAG usercode  ; 0x00B021FF                                                                                              ;
-; Checksum       ; 0x00B021FF                                                                                              ;
-+----------------+---------------------------------------------------------------------------------------------------------+
++----------------------------------------------------------------------------------------------+
+; Assembler Device Options: E:/PB/SEM_6/SW/Lab_7/4_ONBOARD/output_files/led_blink_on_board.sof ;
++----------------+-----------------------------------------------------------------------------+
+; Option         ; Setting                                                                     ;
++----------------+-----------------------------------------------------------------------------+
+; JTAG usercode  ; 0x00B021FF                                                                  ;
+; Checksum       ; 0x00B021FF                                                                  ;
++----------------+-----------------------------------------------------------------------------+
 
 
 +--------------------+
@@ -77,14 +77,14 @@ refer to the applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus Prime Assembler
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Thu Apr 21 13:15:06 2022
+    Info: Processing started: Thu Apr 10 12:54:36 2025
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off led_blink_on_board -c led_blink_on_board
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (115030): Assembler is generating device programming files
 Info: Quartus Prime Assembler was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4833 megabytes
-    Info: Processing ended: Thu Apr 21 13:15:17 2022
-    Info: Elapsed time: 00:00:11
-    Info: Total CPU time (on all processors): 00:00:11
+    Info: Peak virtual memory: 4827 megabytes
+    Info: Processing ended: Thu Apr 10 12:54:40 2025
+    Info: Elapsed time: 00:00:04
+    Info: Total CPU time (on all processors): 00:00:04
 
 

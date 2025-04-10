@@ -1,5 +1,5 @@
 Analysis & Synthesis report for real_time_clock_on_board
-Sat Apr 23 00:24:23 2022
+Thu Apr 10 12:47:58 2025
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -56,7 +56,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Sat Apr 23 00:24:23 2022       ;
+; Analysis & Synthesis Status     ; Successful - Thu Apr 10 12:47:58 2025       ;
 ; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                   ; real_time_clock_on_board                    ;
 ; Top-level Entity Name           ; real_time_clock_on_board                    ;
@@ -168,26 +168,29 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 8           ;
-; Maximum allowed            ; 4           ;
+; Number detected on machine ; 16          ;
+; Maximum allowed            ; 16          ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 4           ;
+; Maximum used               ; 16          ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.0%      ;
-;     Processors 3-4         ;   0.0%      ;
+;     Processors 2-16        ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                              ;
-+----------------------------------+-----------------+------------------------+---------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                                                ; Library ;
-+----------------------------------+-----------------+------------------------+---------------------------------------------------------------------------------------------+---------+
-; real_time_clock_on_board.v       ; yes             ; User Verilog HDL File  ; D:/Storage/temp/semestr_6/sw/7/projekty/real_time_clock_on_board/real_time_clock_on_board.v ;         ;
-+----------------------------------+-----------------+------------------------+---------------------------------------------------------------------------------------------+---------+
++---------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                            ;
++----------------------------------+-----------------+------------------------+-----------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                              ; Library ;
++----------------------------------+-----------------+------------------------+-----------------------------------------------------------+---------+
+; real_time_clock_on_board.v       ; yes             ; User Verilog HDL File  ; E:/PB/SEM_6/SW/Lab_7/3_ONBOARD/real_time_clock_on_board.v ;         ;
+; real_time_clock.v                ; yes             ; User Verilog HDL File  ; E:/PB/SEM_6/SW/Lab_7/3_ONBOARD/real_time_clock.v          ;         ;
+; delay_10ms.v                     ; yes             ; User Verilog HDL File  ; E:/PB/SEM_6/SW/Lab_7/3_ONBOARD/delay_10ms.v               ;         ;
+; counter_modulo_k.v               ; yes             ; User Verilog HDL File  ; E:/PB/SEM_6/SW/Lab_7/3_ONBOARD/counter_modulo_k.v         ;         ;
+; decoder_hex_10.v                 ; yes             ; User Verilog HDL File  ; E:/PB/SEM_6/SW/Lab_7/3_ONBOARD/decoder_hex_10.v           ;         ;
++----------------------------------+-----------------+------------------------+-----------------------------------------------------------+---------+
 
 
 +------------------------------------------------------------+
@@ -195,14 +198,14 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+--------------+
 ; Resource                                    ; Usage        ;
 +---------------------------------------------+--------------+
-; Estimate of Logic utilization (ALMs needed) ; 73           ;
+; Estimate of Logic utilization (ALMs needed) ; 79           ;
 ;                                             ;              ;
-; Combinational ALUT usage for logic          ; 143          ;
+; Combinational ALUT usage for logic          ; 154          ;
 ;     -- 7 input functions                    ; 0            ;
 ;     -- 6 input functions                    ; 3            ;
 ;     -- 5 input functions                    ; 4            ;
 ;     -- 4 input functions                    ; 67           ;
-;     -- <=3 input functions                  ; 69           ;
+;     -- <=3 input functions                  ; 80           ;
 ;                                             ;              ;
 ; Dedicated logic registers                   ; 42           ;
 ;                                             ;              ;
@@ -212,8 +215,8 @@ refer to the applicable agreement for further details.
 ;                                             ;              ;
 ; Maximum fan-out node                        ; KEY[1]~input ;
 ; Maximum fan-out                             ; 24           ;
-; Total fan-out                               ; 713          ;
-; Average fan-out                             ; 2.42         ;
+; Total fan-out                               ; 724          ;
+; Average fan-out                             ; 2.37         ;
 +---------------------------------------------+--------------+
 
 
@@ -222,22 +225,22 @@ refer to the applicable agreement for further details.
 +-------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------------------------------------------------------------------------+--------------------------+--------------+
 ; Compilation Hierarchy Node          ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                     ; Entity Name              ; Library Name ;
 +-------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------------------------------------------------------------------------+--------------------------+--------------+
-; |real_time_clock_on_board           ; 143 (0)             ; 42 (0)                    ; 0                 ; 0          ; 55   ; 0            ; |real_time_clock_on_board                                                               ; real_time_clock_on_board ; work         ;
+; |real_time_clock_on_board           ; 154 (0)             ; 42 (0)                    ; 0                 ; 0          ; 55   ; 0            ; |real_time_clock_on_board                                                               ; real_time_clock_on_board ; work         ;
 ;    |decoder_hex_10:d0|              ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |real_time_clock_on_board|decoder_hex_10:d0                                             ; decoder_hex_10           ; work         ;
 ;    |decoder_hex_10:d1|              ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |real_time_clock_on_board|decoder_hex_10:d1                                             ; decoder_hex_10           ; work         ;
 ;    |decoder_hex_10:d2|              ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |real_time_clock_on_board|decoder_hex_10:d2                                             ; decoder_hex_10           ; work         ;
 ;    |decoder_hex_10:d3|              ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |real_time_clock_on_board|decoder_hex_10:d3                                             ; decoder_hex_10           ; work         ;
 ;    |decoder_hex_10:d4|              ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |real_time_clock_on_board|decoder_hex_10:d4                                             ; decoder_hex_10           ; work         ;
 ;    |decoder_hex_10:d5|              ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |real_time_clock_on_board|decoder_hex_10:d5                                             ; decoder_hex_10           ; work         ;
-;    |real_time_clock:rtc|            ; 101 (1)             ; 42 (1)                    ; 0                 ; 0          ; 0    ; 0            ; |real_time_clock_on_board|real_time_clock:rtc                                           ; real_time_clock          ; work         ;
+;    |real_time_clock:rtc|            ; 112 (1)             ; 42 (1)                    ; 0                 ; 0          ; 0    ; 0            ; |real_time_clock_on_board|real_time_clock:rtc                                           ; real_time_clock          ; work         ;
 ;       |counter_modulo_k:count_cs0|  ; 15 (15)             ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |real_time_clock_on_board|real_time_clock:rtc|counter_modulo_k:count_cs0                ; counter_modulo_k         ; work         ;
 ;       |counter_modulo_k:count_cs1|  ; 15 (15)             ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |real_time_clock_on_board|real_time_clock:rtc|counter_modulo_k:count_cs1                ; counter_modulo_k         ; work         ;
 ;       |counter_modulo_k:count_m0|   ; 13 (13)             ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |real_time_clock_on_board|real_time_clock:rtc|counter_modulo_k:count_m0                 ; counter_modulo_k         ; work         ;
 ;       |counter_modulo_k:count_m1|   ; 9 (9)               ; 3 (3)                     ; 0                 ; 0          ; 0    ; 0            ; |real_time_clock_on_board|real_time_clock:rtc|counter_modulo_k:count_m1                 ; counter_modulo_k         ; work         ;
 ;       |counter_modulo_k:count_s0|   ; 15 (15)             ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |real_time_clock_on_board|real_time_clock:rtc|counter_modulo_k:count_s0                 ; counter_modulo_k         ; work         ;
 ;       |counter_modulo_k:count_s1|   ; 10 (10)             ; 3 (3)                     ; 0                 ; 0          ; 0    ; 0            ; |real_time_clock_on_board|real_time_clock:rtc|counter_modulo_k:count_s1                 ; counter_modulo_k         ; work         ;
-;       |delay_10ms:delay|            ; 23 (0)              ; 19 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |real_time_clock_on_board|real_time_clock:rtc|delay_10ms:delay                          ; delay_10ms               ; work         ;
-;          |counter_modulo_k:counter| ; 23 (23)             ; 19 (19)                   ; 0                 ; 0          ; 0    ; 0            ; |real_time_clock_on_board|real_time_clock:rtc|delay_10ms:delay|counter_modulo_k:counter ; counter_modulo_k         ; work         ;
+;       |delay_10ms:delay|            ; 34 (0)              ; 19 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |real_time_clock_on_board|real_time_clock:rtc|delay_10ms:delay                          ; delay_10ms               ; work         ;
+;          |counter_modulo_k:counter| ; 34 (34)             ; 19 (19)                   ; 0                 ; 0          ; 0    ; 0            ; |real_time_clock_on_board|real_time_clock:rtc|delay_10ms:delay|counter_modulo_k:counter ; counter_modulo_k         ; work         ;
 +-------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------------------------------------------------------------------------+--------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -248,7 +251,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
 ; Total registers                              ; 42    ;
-; Number of registers using Synchronous Clear  ; 19    ;
+; Number of registers using Synchronous Clear  ; 8     ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 22    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
@@ -408,22 +411,22 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; arriav_ff             ; 42                          ;
 ;     CLR               ; 18                          ;
 ;     ENA CLR           ; 4                           ;
-;     SCLR              ; 19                          ;
-;     plain             ; 1                           ;
-; arriav_lcell_comb     ; 147                         ;
+;     SCLR              ; 8                           ;
+;     plain             ; 12                          ;
+; arriav_lcell_comb     ; 158                         ;
 ;     arith             ; 19                          ;
 ;         1 data inputs ; 19                          ;
-;     normal            ; 128                         ;
+;     normal            ; 139                         ;
 ;         1 data inputs ; 5                           ;
-;         2 data inputs ; 4                           ;
+;         2 data inputs ; 15                          ;
 ;         3 data inputs ; 45                          ;
 ;         4 data inputs ; 67                          ;
 ;         5 data inputs ; 4                           ;
 ;         6 data inputs ; 3                           ;
 ; boundary_port         ; 55                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 3.00                        ;
-; Average LUT depth     ; 2.38                        ;
+; Max LUT depth         ; 3.80                        ;
+; Average LUT depth     ; 2.63                        ;
 +-----------------------+-----------------------------+
 
 
@@ -432,7 +435,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:01     ;
+; Top            ; 00:00:00     ;
 +----------------+--------------+
 
 
@@ -442,58 +445,68 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Sat Apr 23 00:24:02 2022
+    Info: Processing started: Thu Apr 10 12:47:51 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off real_time_clock_on_board -c real_time_clock_on_board
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
-Info (12021): Found 5 design units, including 5 entities, in source file real_time_clock_on_board.v
-    Info (12023): Found entity 1: real_time_clock_on_board File: D:/Storage/temp/semestr_6/sw/7/projekty/real_time_clock_on_board/real_time_clock_on_board.v Line: 1
-    Info (12023): Found entity 2: decoder_hex_10 File: D:/Storage/temp/semestr_6/sw/7/projekty/real_time_clock_on_board/real_time_clock_on_board.v Line: 19
-    Info (12023): Found entity 3: real_time_clock File: D:/Storage/temp/semestr_6/sw/7/projekty/real_time_clock_on_board/real_time_clock_on_board.v Line: 40
-    Info (12023): Found entity 4: delay_10ms File: D:/Storage/temp/semestr_6/sw/7/projekty/real_time_clock_on_board/real_time_clock_on_board.v Line: 69
-    Info (12023): Found entity 5: counter_modulo_k File: D:/Storage/temp/semestr_6/sw/7/projekty/real_time_clock_on_board/real_time_clock_on_board.v Line: 83
+Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file real_time_clock_on_board.v
+    Info (12023): Found entity 1: real_time_clock_on_board File: E:/PB/SEM_6/SW/Lab_7/3_ONBOARD/real_time_clock_on_board.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file real_time_clock.v
+    Info (12023): Found entity 1: real_time_clock File: E:/PB/SEM_6/SW/Lab_7/3_ONBOARD/real_time_clock.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file delay_10ms.v
+    Info (12023): Found entity 1: delay_10ms File: E:/PB/SEM_6/SW/Lab_7/3_ONBOARD/delay_10ms.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file counter_modulo_k.v
+    Info (12023): Found entity 1: counter_modulo_k File: E:/PB/SEM_6/SW/Lab_7/3_ONBOARD/counter_modulo_k.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file decoder_hex_10.v
+    Info (12023): Found entity 1: decoder_hex_10 File: E:/PB/SEM_6/SW/Lab_7/3_ONBOARD/decoder_hex_10.v Line: 1
 Info (12127): Elaborating entity "real_time_clock_on_board" for the top level hierarchy
-Info (12128): Elaborating entity "real_time_clock" for hierarchy "real_time_clock:rtc" File: D:/Storage/temp/semestr_6/sw/7/projekty/real_time_clock_on_board/real_time_clock_on_board.v Line: 8
-Info (12128): Elaborating entity "delay_10ms" for hierarchy "real_time_clock:rtc|delay_10ms:delay" File: D:/Storage/temp/semestr_6/sw/7/projekty/real_time_clock_on_board/real_time_clock_on_board.v Line: 58
-Info (12128): Elaborating entity "counter_modulo_k" for hierarchy "real_time_clock:rtc|delay_10ms:delay|counter_modulo_k:counter" File: D:/Storage/temp/semestr_6/sw/7/projekty/real_time_clock_on_board/real_time_clock_on_board.v Line: 78
-Info (12128): Elaborating entity "counter_modulo_k" for hierarchy "real_time_clock:rtc|counter_modulo_k:count_cs0" File: D:/Storage/temp/semestr_6/sw/7/projekty/real_time_clock_on_board/real_time_clock_on_board.v Line: 60
-Info (12128): Elaborating entity "counter_modulo_k" for hierarchy "real_time_clock:rtc|counter_modulo_k:count_s1" File: D:/Storage/temp/semestr_6/sw/7/projekty/real_time_clock_on_board/real_time_clock_on_board.v Line: 63
-Info (12128): Elaborating entity "decoder_hex_10" for hierarchy "decoder_hex_10:d0" File: D:/Storage/temp/semestr_6/sw/7/projekty/real_time_clock_on_board/real_time_clock_on_board.v Line: 10
+Info (12128): Elaborating entity "real_time_clock" for hierarchy "real_time_clock:rtc" File: E:/PB/SEM_6/SW/Lab_7/3_ONBOARD/real_time_clock_on_board.v Line: 8
+Info (12128): Elaborating entity "delay_10ms" for hierarchy "real_time_clock:rtc|delay_10ms:delay" File: E:/PB/SEM_6/SW/Lab_7/3_ONBOARD/real_time_clock.v Line: 19
+Info (12128): Elaborating entity "counter_modulo_k" for hierarchy "real_time_clock:rtc|delay_10ms:delay|counter_modulo_k:counter" File: E:/PB/SEM_6/SW/Lab_7/3_ONBOARD/delay_10ms.v Line: 10
+Warning (10230): Verilog HDL assignment warning at counter_modulo_k.v(17): truncated value with size 32 to match size of target (19) File: E:/PB/SEM_6/SW/Lab_7/3_ONBOARD/counter_modulo_k.v Line: 17
+Warning (10230): Verilog HDL assignment warning at counter_modulo_k.v(21): truncated value with size 32 to match size of target (19) File: E:/PB/SEM_6/SW/Lab_7/3_ONBOARD/counter_modulo_k.v Line: 21
+Info (12128): Elaborating entity "counter_modulo_k" for hierarchy "real_time_clock:rtc|counter_modulo_k:count_cs0" File: E:/PB/SEM_6/SW/Lab_7/3_ONBOARD/real_time_clock.v Line: 21
+Warning (10230): Verilog HDL assignment warning at counter_modulo_k.v(17): truncated value with size 32 to match size of target (4) File: E:/PB/SEM_6/SW/Lab_7/3_ONBOARD/counter_modulo_k.v Line: 17
+Warning (10230): Verilog HDL assignment warning at counter_modulo_k.v(21): truncated value with size 32 to match size of target (4) File: E:/PB/SEM_6/SW/Lab_7/3_ONBOARD/counter_modulo_k.v Line: 21
+Info (12128): Elaborating entity "counter_modulo_k" for hierarchy "real_time_clock:rtc|counter_modulo_k:count_s1" File: E:/PB/SEM_6/SW/Lab_7/3_ONBOARD/real_time_clock.v Line: 24
+Warning (10230): Verilog HDL assignment warning at counter_modulo_k.v(17): truncated value with size 32 to match size of target (3) File: E:/PB/SEM_6/SW/Lab_7/3_ONBOARD/counter_modulo_k.v Line: 17
+Warning (10230): Verilog HDL assignment warning at counter_modulo_k.v(21): truncated value with size 32 to match size of target (3) File: E:/PB/SEM_6/SW/Lab_7/3_ONBOARD/counter_modulo_k.v Line: 21
+Info (12128): Elaborating entity "decoder_hex_10" for hierarchy "decoder_hex_10:d0" File: E:/PB/SEM_6/SW/Lab_7/3_ONBOARD/real_time_clock_on_board.v Line: 10
 Warning (12241): 2 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Warning (13004): Presettable and clearable registers converted to equivalent circuits with latches. Registers power-up to an undefined state, and DEVCLRn places the registers in an undefined state.
-    Warning (13310): Register "real_time_clock:rtc|counter_modulo_k:count_m1|Q[1]" is converted into an equivalent circuit using register "real_time_clock:rtc|counter_modulo_k:count_m1|Q[1]~_emulated" and latch "real_time_clock:rtc|counter_modulo_k:count_m1|Q[1]~1" File: D:/Storage/temp/semestr_6/sw/7/projekty/real_time_clock_on_board/real_time_clock_on_board.v Line: 103
-    Warning (13310): Register "real_time_clock:rtc|counter_modulo_k:count_m1|Q[0]" is converted into an equivalent circuit using register "real_time_clock:rtc|counter_modulo_k:count_m1|Q[0]~_emulated" and latch "real_time_clock:rtc|counter_modulo_k:count_m1|Q[0]~5" File: D:/Storage/temp/semestr_6/sw/7/projekty/real_time_clock_on_board/real_time_clock_on_board.v Line: 103
-    Warning (13310): Register "real_time_clock:rtc|counter_modulo_k:count_m1|Q[2]" is converted into an equivalent circuit using register "real_time_clock:rtc|counter_modulo_k:count_m1|Q[2]~_emulated" and latch "real_time_clock:rtc|counter_modulo_k:count_m1|Q[2]~9" File: D:/Storage/temp/semestr_6/sw/7/projekty/real_time_clock_on_board/real_time_clock_on_board.v Line: 103
-    Warning (13310): Register "real_time_clock:rtc|counter_modulo_k:count_m0|Q[0]" is converted into an equivalent circuit using register "real_time_clock:rtc|counter_modulo_k:count_m0|Q[0]~_emulated" and latch "real_time_clock:rtc|counter_modulo_k:count_m0|Q[0]~1" File: D:/Storage/temp/semestr_6/sw/7/projekty/real_time_clock_on_board/real_time_clock_on_board.v Line: 103
-    Warning (13310): Register "real_time_clock:rtc|counter_modulo_k:count_m0|Q[1]" is converted into an equivalent circuit using register "real_time_clock:rtc|counter_modulo_k:count_m0|Q[1]~_emulated" and latch "real_time_clock:rtc|counter_modulo_k:count_m0|Q[1]~5" File: D:/Storage/temp/semestr_6/sw/7/projekty/real_time_clock_on_board/real_time_clock_on_board.v Line: 103
-    Warning (13310): Register "real_time_clock:rtc|counter_modulo_k:count_m0|Q[2]" is converted into an equivalent circuit using register "real_time_clock:rtc|counter_modulo_k:count_m0|Q[2]~_emulated" and latch "real_time_clock:rtc|counter_modulo_k:count_m0|Q[2]~9" File: D:/Storage/temp/semestr_6/sw/7/projekty/real_time_clock_on_board/real_time_clock_on_board.v Line: 103
-    Warning (13310): Register "real_time_clock:rtc|counter_modulo_k:count_m0|Q[3]" is converted into an equivalent circuit using register "real_time_clock:rtc|counter_modulo_k:count_m0|Q[3]~_emulated" and latch "real_time_clock:rtc|counter_modulo_k:count_m0|Q[3]~13" File: D:/Storage/temp/semestr_6/sw/7/projekty/real_time_clock_on_board/real_time_clock_on_board.v Line: 103
-    Warning (13310): Register "real_time_clock:rtc|counter_modulo_k:count_s1|Q[1]" is converted into an equivalent circuit using register "real_time_clock:rtc|counter_modulo_k:count_s1|Q[1]~_emulated" and latch "real_time_clock:rtc|counter_modulo_k:count_s1|Q[1]~1" File: D:/Storage/temp/semestr_6/sw/7/projekty/real_time_clock_on_board/real_time_clock_on_board.v Line: 103
-    Warning (13310): Register "real_time_clock:rtc|counter_modulo_k:count_s1|Q[0]" is converted into an equivalent circuit using register "real_time_clock:rtc|counter_modulo_k:count_s1|Q[0]~_emulated" and latch "real_time_clock:rtc|counter_modulo_k:count_s1|Q[0]~5" File: D:/Storage/temp/semestr_6/sw/7/projekty/real_time_clock_on_board/real_time_clock_on_board.v Line: 103
-    Warning (13310): Register "real_time_clock:rtc|counter_modulo_k:count_s1|Q[2]" is converted into an equivalent circuit using register "real_time_clock:rtc|counter_modulo_k:count_s1|Q[2]~_emulated" and latch "real_time_clock:rtc|counter_modulo_k:count_s1|Q[2]~9" File: D:/Storage/temp/semestr_6/sw/7/projekty/real_time_clock_on_board/real_time_clock_on_board.v Line: 103
-    Warning (13310): Register "real_time_clock:rtc|counter_modulo_k:count_s0|Q[0]" is converted into an equivalent circuit using register "real_time_clock:rtc|counter_modulo_k:count_s0|Q[0]~_emulated" and latch "real_time_clock:rtc|counter_modulo_k:count_s0|Q[0]~1" File: D:/Storage/temp/semestr_6/sw/7/projekty/real_time_clock_on_board/real_time_clock_on_board.v Line: 103
-    Warning (13310): Register "real_time_clock:rtc|counter_modulo_k:count_s0|Q[1]" is converted into an equivalent circuit using register "real_time_clock:rtc|counter_modulo_k:count_s0|Q[1]~_emulated" and latch "real_time_clock:rtc|counter_modulo_k:count_s0|Q[1]~5" File: D:/Storage/temp/semestr_6/sw/7/projekty/real_time_clock_on_board/real_time_clock_on_board.v Line: 103
-    Warning (13310): Register "real_time_clock:rtc|counter_modulo_k:count_s0|Q[2]" is converted into an equivalent circuit using register "real_time_clock:rtc|counter_modulo_k:count_s0|Q[2]~_emulated" and latch "real_time_clock:rtc|counter_modulo_k:count_s0|Q[2]~9" File: D:/Storage/temp/semestr_6/sw/7/projekty/real_time_clock_on_board/real_time_clock_on_board.v Line: 103
-    Warning (13310): Register "real_time_clock:rtc|counter_modulo_k:count_s0|Q[3]" is converted into an equivalent circuit using register "real_time_clock:rtc|counter_modulo_k:count_s0|Q[3]~_emulated" and latch "real_time_clock:rtc|counter_modulo_k:count_s0|Q[3]~13" File: D:/Storage/temp/semestr_6/sw/7/projekty/real_time_clock_on_board/real_time_clock_on_board.v Line: 103
-    Warning (13310): Register "real_time_clock:rtc|counter_modulo_k:count_cs1|Q[0]" is converted into an equivalent circuit using register "real_time_clock:rtc|counter_modulo_k:count_cs1|Q[0]~_emulated" and latch "real_time_clock:rtc|counter_modulo_k:count_cs1|Q[0]~1" File: D:/Storage/temp/semestr_6/sw/7/projekty/real_time_clock_on_board/real_time_clock_on_board.v Line: 103
-    Warning (13310): Register "real_time_clock:rtc|counter_modulo_k:count_cs1|Q[1]" is converted into an equivalent circuit using register "real_time_clock:rtc|counter_modulo_k:count_cs1|Q[1]~_emulated" and latch "real_time_clock:rtc|counter_modulo_k:count_cs1|Q[1]~5" File: D:/Storage/temp/semestr_6/sw/7/projekty/real_time_clock_on_board/real_time_clock_on_board.v Line: 103
-    Warning (13310): Register "real_time_clock:rtc|counter_modulo_k:count_cs1|Q[2]" is converted into an equivalent circuit using register "real_time_clock:rtc|counter_modulo_k:count_cs1|Q[2]~_emulated" and latch "real_time_clock:rtc|counter_modulo_k:count_cs1|Q[2]~9" File: D:/Storage/temp/semestr_6/sw/7/projekty/real_time_clock_on_board/real_time_clock_on_board.v Line: 103
-    Warning (13310): Register "real_time_clock:rtc|counter_modulo_k:count_cs1|Q[3]" is converted into an equivalent circuit using register "real_time_clock:rtc|counter_modulo_k:count_cs1|Q[3]~_emulated" and latch "real_time_clock:rtc|counter_modulo_k:count_cs1|Q[3]~13" File: D:/Storage/temp/semestr_6/sw/7/projekty/real_time_clock_on_board/real_time_clock_on_board.v Line: 103
-    Warning (13310): Register "real_time_clock:rtc|counter_modulo_k:count_cs0|Q[0]" is converted into an equivalent circuit using register "real_time_clock:rtc|counter_modulo_k:count_cs0|Q[0]~_emulated" and latch "real_time_clock:rtc|counter_modulo_k:count_cs0|Q[0]~1" File: D:/Storage/temp/semestr_6/sw/7/projekty/real_time_clock_on_board/real_time_clock_on_board.v Line: 103
-    Warning (13310): Register "real_time_clock:rtc|counter_modulo_k:count_cs0|Q[1]" is converted into an equivalent circuit using register "real_time_clock:rtc|counter_modulo_k:count_cs0|Q[1]~_emulated" and latch "real_time_clock:rtc|counter_modulo_k:count_cs0|Q[1]~5" File: D:/Storage/temp/semestr_6/sw/7/projekty/real_time_clock_on_board/real_time_clock_on_board.v Line: 103
-    Warning (13310): Register "real_time_clock:rtc|counter_modulo_k:count_cs0|Q[2]" is converted into an equivalent circuit using register "real_time_clock:rtc|counter_modulo_k:count_cs0|Q[2]~_emulated" and latch "real_time_clock:rtc|counter_modulo_k:count_cs0|Q[2]~9" File: D:/Storage/temp/semestr_6/sw/7/projekty/real_time_clock_on_board/real_time_clock_on_board.v Line: 103
-    Warning (13310): Register "real_time_clock:rtc|counter_modulo_k:count_cs0|Q[3]" is converted into an equivalent circuit using register "real_time_clock:rtc|counter_modulo_k:count_cs0|Q[3]~_emulated" and latch "real_time_clock:rtc|counter_modulo_k:count_cs0|Q[3]~13" File: D:/Storage/temp/semestr_6/sw/7/projekty/real_time_clock_on_board/real_time_clock_on_board.v Line: 103
+    Warning (13310): Register "real_time_clock:rtc|counter_modulo_k:count_m1|Q[1]" is converted into an equivalent circuit using register "real_time_clock:rtc|counter_modulo_k:count_m1|Q[1]~_emulated" and latch "real_time_clock:rtc|counter_modulo_k:count_m1|Q[1]~1" File: E:/PB/SEM_6/SW/Lab_7/3_ONBOARD/counter_modulo_k.v Line: 20
+    Warning (13310): Register "real_time_clock:rtc|counter_modulo_k:count_m1|Q[0]" is converted into an equivalent circuit using register "real_time_clock:rtc|counter_modulo_k:count_m1|Q[0]~_emulated" and latch "real_time_clock:rtc|counter_modulo_k:count_m1|Q[0]~5" File: E:/PB/SEM_6/SW/Lab_7/3_ONBOARD/counter_modulo_k.v Line: 20
+    Warning (13310): Register "real_time_clock:rtc|counter_modulo_k:count_m1|Q[2]" is converted into an equivalent circuit using register "real_time_clock:rtc|counter_modulo_k:count_m1|Q[2]~_emulated" and latch "real_time_clock:rtc|counter_modulo_k:count_m1|Q[2]~9" File: E:/PB/SEM_6/SW/Lab_7/3_ONBOARD/counter_modulo_k.v Line: 20
+    Warning (13310): Register "real_time_clock:rtc|counter_modulo_k:count_m0|Q[0]" is converted into an equivalent circuit using register "real_time_clock:rtc|counter_modulo_k:count_m0|Q[0]~_emulated" and latch "real_time_clock:rtc|counter_modulo_k:count_m0|Q[0]~1" File: E:/PB/SEM_6/SW/Lab_7/3_ONBOARD/counter_modulo_k.v Line: 20
+    Warning (13310): Register "real_time_clock:rtc|counter_modulo_k:count_m0|Q[1]" is converted into an equivalent circuit using register "real_time_clock:rtc|counter_modulo_k:count_m0|Q[1]~_emulated" and latch "real_time_clock:rtc|counter_modulo_k:count_m0|Q[1]~5" File: E:/PB/SEM_6/SW/Lab_7/3_ONBOARD/counter_modulo_k.v Line: 20
+    Warning (13310): Register "real_time_clock:rtc|counter_modulo_k:count_m0|Q[2]" is converted into an equivalent circuit using register "real_time_clock:rtc|counter_modulo_k:count_m0|Q[2]~_emulated" and latch "real_time_clock:rtc|counter_modulo_k:count_m0|Q[2]~9" File: E:/PB/SEM_6/SW/Lab_7/3_ONBOARD/counter_modulo_k.v Line: 20
+    Warning (13310): Register "real_time_clock:rtc|counter_modulo_k:count_m0|Q[3]" is converted into an equivalent circuit using register "real_time_clock:rtc|counter_modulo_k:count_m0|Q[3]~_emulated" and latch "real_time_clock:rtc|counter_modulo_k:count_m0|Q[3]~13" File: E:/PB/SEM_6/SW/Lab_7/3_ONBOARD/counter_modulo_k.v Line: 20
+    Warning (13310): Register "real_time_clock:rtc|counter_modulo_k:count_s1|Q[1]" is converted into an equivalent circuit using register "real_time_clock:rtc|counter_modulo_k:count_s1|Q[1]~_emulated" and latch "real_time_clock:rtc|counter_modulo_k:count_s1|Q[1]~1" File: E:/PB/SEM_6/SW/Lab_7/3_ONBOARD/counter_modulo_k.v Line: 20
+    Warning (13310): Register "real_time_clock:rtc|counter_modulo_k:count_s1|Q[0]" is converted into an equivalent circuit using register "real_time_clock:rtc|counter_modulo_k:count_s1|Q[0]~_emulated" and latch "real_time_clock:rtc|counter_modulo_k:count_s1|Q[0]~5" File: E:/PB/SEM_6/SW/Lab_7/3_ONBOARD/counter_modulo_k.v Line: 20
+    Warning (13310): Register "real_time_clock:rtc|counter_modulo_k:count_s1|Q[2]" is converted into an equivalent circuit using register "real_time_clock:rtc|counter_modulo_k:count_s1|Q[2]~_emulated" and latch "real_time_clock:rtc|counter_modulo_k:count_s1|Q[2]~9" File: E:/PB/SEM_6/SW/Lab_7/3_ONBOARD/counter_modulo_k.v Line: 20
+    Warning (13310): Register "real_time_clock:rtc|counter_modulo_k:count_s0|Q[0]" is converted into an equivalent circuit using register "real_time_clock:rtc|counter_modulo_k:count_s0|Q[0]~_emulated" and latch "real_time_clock:rtc|counter_modulo_k:count_s0|Q[0]~1" File: E:/PB/SEM_6/SW/Lab_7/3_ONBOARD/counter_modulo_k.v Line: 20
+    Warning (13310): Register "real_time_clock:rtc|counter_modulo_k:count_s0|Q[1]" is converted into an equivalent circuit using register "real_time_clock:rtc|counter_modulo_k:count_s0|Q[1]~_emulated" and latch "real_time_clock:rtc|counter_modulo_k:count_s0|Q[1]~5" File: E:/PB/SEM_6/SW/Lab_7/3_ONBOARD/counter_modulo_k.v Line: 20
+    Warning (13310): Register "real_time_clock:rtc|counter_modulo_k:count_s0|Q[2]" is converted into an equivalent circuit using register "real_time_clock:rtc|counter_modulo_k:count_s0|Q[2]~_emulated" and latch "real_time_clock:rtc|counter_modulo_k:count_s0|Q[2]~9" File: E:/PB/SEM_6/SW/Lab_7/3_ONBOARD/counter_modulo_k.v Line: 20
+    Warning (13310): Register "real_time_clock:rtc|counter_modulo_k:count_s0|Q[3]" is converted into an equivalent circuit using register "real_time_clock:rtc|counter_modulo_k:count_s0|Q[3]~_emulated" and latch "real_time_clock:rtc|counter_modulo_k:count_s0|Q[3]~13" File: E:/PB/SEM_6/SW/Lab_7/3_ONBOARD/counter_modulo_k.v Line: 20
+    Warning (13310): Register "real_time_clock:rtc|counter_modulo_k:count_cs1|Q[0]" is converted into an equivalent circuit using register "real_time_clock:rtc|counter_modulo_k:count_cs1|Q[0]~_emulated" and latch "real_time_clock:rtc|counter_modulo_k:count_cs1|Q[0]~1" File: E:/PB/SEM_6/SW/Lab_7/3_ONBOARD/counter_modulo_k.v Line: 20
+    Warning (13310): Register "real_time_clock:rtc|counter_modulo_k:count_cs1|Q[1]" is converted into an equivalent circuit using register "real_time_clock:rtc|counter_modulo_k:count_cs1|Q[1]~_emulated" and latch "real_time_clock:rtc|counter_modulo_k:count_cs1|Q[1]~5" File: E:/PB/SEM_6/SW/Lab_7/3_ONBOARD/counter_modulo_k.v Line: 20
+    Warning (13310): Register "real_time_clock:rtc|counter_modulo_k:count_cs1|Q[2]" is converted into an equivalent circuit using register "real_time_clock:rtc|counter_modulo_k:count_cs1|Q[2]~_emulated" and latch "real_time_clock:rtc|counter_modulo_k:count_cs1|Q[2]~9" File: E:/PB/SEM_6/SW/Lab_7/3_ONBOARD/counter_modulo_k.v Line: 20
+    Warning (13310): Register "real_time_clock:rtc|counter_modulo_k:count_cs1|Q[3]" is converted into an equivalent circuit using register "real_time_clock:rtc|counter_modulo_k:count_cs1|Q[3]~_emulated" and latch "real_time_clock:rtc|counter_modulo_k:count_cs1|Q[3]~13" File: E:/PB/SEM_6/SW/Lab_7/3_ONBOARD/counter_modulo_k.v Line: 20
+    Warning (13310): Register "real_time_clock:rtc|counter_modulo_k:count_cs0|Q[0]" is converted into an equivalent circuit using register "real_time_clock:rtc|counter_modulo_k:count_cs0|Q[0]~_emulated" and latch "real_time_clock:rtc|counter_modulo_k:count_cs0|Q[0]~1" File: E:/PB/SEM_6/SW/Lab_7/3_ONBOARD/counter_modulo_k.v Line: 20
+    Warning (13310): Register "real_time_clock:rtc|counter_modulo_k:count_cs0|Q[1]" is converted into an equivalent circuit using register "real_time_clock:rtc|counter_modulo_k:count_cs0|Q[1]~_emulated" and latch "real_time_clock:rtc|counter_modulo_k:count_cs0|Q[1]~5" File: E:/PB/SEM_6/SW/Lab_7/3_ONBOARD/counter_modulo_k.v Line: 20
+    Warning (13310): Register "real_time_clock:rtc|counter_modulo_k:count_cs0|Q[2]" is converted into an equivalent circuit using register "real_time_clock:rtc|counter_modulo_k:count_cs0|Q[2]~_emulated" and latch "real_time_clock:rtc|counter_modulo_k:count_cs0|Q[2]~9" File: E:/PB/SEM_6/SW/Lab_7/3_ONBOARD/counter_modulo_k.v Line: 20
+    Warning (13310): Register "real_time_clock:rtc|counter_modulo_k:count_cs0|Q[3]" is converted into an equivalent circuit using register "real_time_clock:rtc|counter_modulo_k:count_cs0|Q[3]~_emulated" and latch "real_time_clock:rtc|counter_modulo_k:count_cs0|Q[3]~13" File: E:/PB/SEM_6/SW/Lab_7/3_ONBOARD/counter_modulo_k.v Line: 20
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 198 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 209 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 13 input pins
     Info (21059): Implemented 42 output pins
-    Info (21061): Implemented 143 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 25 warnings
-    Info: Peak virtual memory: 4844 megabytes
-    Info: Processing ended: Sat Apr 23 00:24:23 2022
-    Info: Elapsed time: 00:00:21
-    Info: Total CPU time (on all processors): 00:00:48
+    Info (21061): Implemented 154 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 31 warnings
+    Info: Peak virtual memory: 4908 megabytes
+    Info: Processing ended: Thu Apr 10 12:47:58 2025
+    Info: Elapsed time: 00:00:07
+    Info: Total CPU time (on all processors): 00:00:12
 
 
