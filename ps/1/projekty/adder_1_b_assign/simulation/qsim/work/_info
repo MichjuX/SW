@@ -1,0 +1,52 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/intelFPGA_lite/projects/adder_1_b_assign/simulation/qsim
+vadder_1_b_assign
+Z1 !s110 1646792597
+!i10b 1
+!s100 MED4[9`JmRdSge5djc3011
+IQEMG0<H:R4LS4U1f1dD060
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1646792596
+8adder_1_b_assign.vo
+Fadder_1_b_assign.vo
+L0 31
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1646792597.000000
+!s107 adder_1_b_assign.vo|
+!s90 -work|work|adder_1_b_assign.vo|
+!i113 1
+Z5 o-work work
+Z6 tCvgOpt 0
+vadder_1_b_assign_vlg_vec_tst
+R1
+!i10b 1
+!s100 IjMoQ<=VzB]Mz0CfaZNKA3
+IooBnifE0id;0n0LVl>PzA1
+R2
+R0
+w1646792593
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+L0 29
+R3
+r1
+!s85 0
+31
+R4
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R5
+R6

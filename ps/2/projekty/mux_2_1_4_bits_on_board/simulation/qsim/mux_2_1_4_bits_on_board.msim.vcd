@@ -1,0 +1,197 @@
+$comment
+	File created using the following command:
+		vcd file mux_2_1_4_bits_on_board.msim.vcd -direction
+$end
+$date
+	Tue Mar 15 02:55:50 2022
+$end
+$version
+	ModelSim Version 10.5b
+$end
+$timescale
+	1ps
+$end
+
+$scope module mux_2_1_4_bits_on_board_vlg_vec_tst $end
+$var reg 1 ! KEY [0:0] $end
+$var reg 8 " SW [7:0] $end
+$var wire 1 # LEDR [3] $end
+$var wire 1 $ LEDR [2] $end
+$var wire 1 % LEDR [1] $end
+$var wire 1 & LEDR [0] $end
+
+$scope module i1 $end
+$var wire 1 ' gnd $end
+$var wire 1 ( vcc $end
+$var wire 1 ) unknown $end
+$var tri1 1 * devclrn $end
+$var tri1 1 + devpor $end
+$var tri1 1 , devoe $end
+$var wire 1 - ~QUARTUS_CREATED_GND~I_combout $end
+$var wire 1 . SW[0]~input_o $end
+$var wire 1 / SW[4]~input_o $end
+$var wire 1 0 KEY[0]~input_o $end
+$var wire 1 1 mux4b|mux0|m~0_combout $end
+$var wire 1 2 SW[1]~input_o $end
+$var wire 1 3 SW[5]~input_o $end
+$var wire 1 4 mux4b|mux1|m~0_combout $end
+$var wire 1 5 SW[2]~input_o $end
+$var wire 1 6 SW[6]~input_o $end
+$var wire 1 7 mux4b|mux2|m~0_combout $end
+$var wire 1 8 SW[7]~input_o $end
+$var wire 1 9 SW[3]~input_o $end
+$var wire 1 : mux4b|mux3|m~0_combout $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b0 !
+b11010001 "
+1&
+0%
+0$
+0#
+0'
+1(
+x)
+1*
+1+
+1,
+0-
+1.
+1/
+00
+11
+02
+03
+04
+05
+16
+07
+18
+09
+0:
+$end
+#5000
+b1010001 "
+b10001 "
+b1 "
+0/
+06
+08
+#10000
+b11 "
+b100011 "
+b1100011 "
+b1110011 "
+12
+1/
+13
+16
+14
+1%
+#15000
+b1010011 "
+03
+#20000
+b1010111 "
+b11010111 "
+b10010111 "
+b10000111 "
+15
+0/
+06
+18
+17
+1$
+#25000
+b10100111 "
+b100111 "
+b110111 "
+1/
+13
+08
+#30000
+b111111 "
+b11111 "
+b10011111 "
+b10001111 "
+19
+0/
+03
+18
+1:
+1#
+#35000
+b10101111 "
+b101111 "
+b111111 "
+1/
+13
+08
+#40000
+b111110 "
+b1 !
+b111100 "
+b11100 "
+b10011100 "
+b10001100 "
+0.
+02
+0/
+03
+18
+10
+07
+04
+01
+0&
+0%
+0$
+#45000
+b10001110 "
+12
+#50000
+b10001010 "
+b11001010 "
+05
+16
+17
+1$
+#55000
+b11001000 "
+b11001100 "
+02
+15
+#60000
+b11000100 "
+b11100100 "
+b11100110 "
+12
+09
+13
+14
+1%
+#65000
+b11101110 "
+b11101100 "
+02
+19
+#70000
+b11101101 "
+b11111101 "
+b11111001 "
+1.
+05
+1/
+11
+1&
+#75000
+b11110001 "
+b11110000 "
+b11110100 "
+0.
+15
+09
+#80000

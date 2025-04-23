@@ -1,0 +1,38 @@
+|ram32x4_array
+address[0] => reg_address[0].DATAIN
+address[0] => memory_array.WADDR
+address[1] => reg_address[1].DATAIN
+address[1] => memory_array.WADDR1
+address[2] => reg_address[2].DATAIN
+address[2] => memory_array.WADDR2
+address[3] => reg_address[3].DATAIN
+address[3] => memory_array.WADDR3
+address[4] => reg_address[4].DATAIN
+address[4] => memory_array.WADDR4
+clk => reg_wren.CLK
+clk => reg_data[0].CLK
+clk => reg_data[1].CLK
+clk => reg_data[2].CLK
+clk => reg_data[3].CLK
+clk => reg_address[0].CLK
+clk => reg_address[1].CLK
+clk => reg_address[2].CLK
+clk => reg_address[3].CLK
+clk => reg_address[4].CLK
+clk => memory_array.CLK0
+data[0] => reg_data[0].DATAIN
+data[0] => memory_array.DATAIN
+data[1] => reg_data[1].DATAIN
+data[1] => memory_array.DATAIN1
+data[2] => reg_data[2].DATAIN
+data[2] => memory_array.DATAIN2
+data[3] => reg_data[3].DATAIN
+data[3] => memory_array.DATAIN3
+wren => reg_wren.DATAIN
+wren => memory_array.WE
+q[0] << memory_array.DATAOUT
+q[1] << memory_array.DATAOUT1
+q[2] << memory_array.DATAOUT2
+q[3] << memory_array.DATAOUT3
+
+

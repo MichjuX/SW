@@ -1,0 +1,9 @@
+vendor_name = ModelSim
+source_file = 1, D:/Storage/temp/semestr_6/sw/5/projekty/latch_D/latch_D.v
+source_file = 1, D:/Storage/temp/semestr_6/sw/5/projekty/latch_D/Waveform.vwf
+source_file = 1, D:/Storage/temp/semestr_6/sw/5/projekty/latch_D/db/latch_D.cbx.xml
+design_name = latch_D
+instance = comp, \Q~output , Q~output, latch_D, 1
+instance = comp, \Clk~input , Clk~input, latch_D, 1
+instance = comp, \D~input , D~input, latch_D, 1
+instance = comp, \Qa~0 , Qa~0, latch_D, 1

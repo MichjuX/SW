@@ -1,0 +1,54 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/Storage/temp/semestr_6/sw/5/projekty/RS_if/simulation/qsim
+vRS_if
+Z1 !s110 1648704525
+!i10b 1
+!s100 ?U]CeifF_Z2n0gfWmc@j40
+INz9N1a_HC0I9iWOB?=T6E3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1648704523
+8RS_if.vo
+FRS_if.vo
+L0 31
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1648704525.000000
+!s107 RS_if.vo|
+!s90 -work|work|RS_if.vo|
+!i113 1
+Z5 o-work work
+Z6 tCvgOpt 0
+n@r@s_if
+vRS_if_vlg_vec_tst
+R1
+!i10b 1
+!s100 Ag8KQ[fbQ_:P<fSIb5>]V0
+IHOni3bzcBIa3I<mczXRIS3
+R2
+R0
+w1648704522
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+L0 29
+R3
+r1
+!s85 0
+31
+R4
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R5
+R6
+n@r@s_if_vlg_vec_tst

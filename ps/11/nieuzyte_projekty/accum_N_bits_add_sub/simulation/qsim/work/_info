@@ -1,0 +1,54 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dD:/Storage/temp/semestr_6/sw/8/accum_N_bits_add_sub/simulation/qsim
+vaccum_N_bits_add_sub
+Z0 !s110 1653509684
+!i10b 1
+!s100 Red4`e=N?oKjK@aJ7TPDZ0
+IcJdSTJKYoI7b`@GB]f@HW0
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dD:/Storage/temp/semestr_6/sw/11/zbedne/accum_N_bits_add_sub/simulation/qsim
+w1653509682
+8accum_N_bits_add_sub.vo
+Faccum_N_bits_add_sub.vo
+L0 31
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1653509684.000000
+!s107 accum_N_bits_add_sub.vo|
+!s90 -work|work|accum_N_bits_add_sub.vo|
+!i113 1
+Z5 o-work work
+Z6 tCvgOpt 0
+naccum_@n_bits_add_sub
+vaccum_N_bits_add_sub_vlg_vec_tst
+R0
+!i10b 1
+!s100 7cPM2hA?5d@@Z3YbCf4>M1
+I306;_dX1oJcoEa7fg;:dK2
+R1
+R2
+w1653509681
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+L0 29
+R3
+r1
+!s85 0
+31
+R4
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R5
+R6
+naccum_@n_bits_add_sub_vlg_vec_tst

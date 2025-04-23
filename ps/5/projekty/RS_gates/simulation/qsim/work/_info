@@ -1,0 +1,54 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/Storage/temp/semestr_6/sw/5/projekty/RS_gates/simulation/qsim
+vRS_gates
+Z1 !s110 1649212458
+!i10b 1
+!s100 EcaifG?kPM9YUNY^k6Rad2
+I5hNz[B>^zV@`fF=]ePF9f0
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1649212457
+8RS_gates.vo
+FRS_gates.vo
+L0 31
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1649212458.000000
+!s107 RS_gates.vo|
+!s90 -work|work|RS_gates.vo|
+!i113 1
+Z5 o-work work
+Z6 tCvgOpt 0
+n@r@s_gates
+vRS_gates_vlg_vec_tst
+R1
+!i10b 1
+!s100 =Y;V8CZDP0oS^]FRZi9MW2
+I6FMU;R7YW6biVPFfSUPH`3
+R2
+R0
+w1649212455
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+L0 29
+R3
+r1
+!s85 0
+31
+R4
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R5
+R6
+n@r@s_gates_vlg_vec_tst

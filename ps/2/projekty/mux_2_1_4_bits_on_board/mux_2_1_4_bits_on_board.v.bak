@@ -1,0 +1,17 @@
+module mux_2_1_4_bits_on_board(
+	input [1:0] SW,
+	input [0:0] KEY,
+	output [0:0] LEDR);
+
+	mux_2_1_1_bit(SW[0], SW[1], KEY[0], LEDR[0]);
+
+endmodule
+
+module mux_2_1_4_bits(
+	input [3:0] x, y,
+	input s,
+	output m);
+
+	assign m = (~s & x) | (s & y);
+
+endmodule

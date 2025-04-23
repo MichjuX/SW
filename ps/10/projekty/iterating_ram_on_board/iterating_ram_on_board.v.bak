@@ -1,0 +1,91 @@
+module iterating_ram_on_board(
+	input CLOCK_50,
+	input [9:0] SW,
+	input [1:0] KEY,
+	output [6:0] HEX0, HEX1, HEX2, HEX3, HEX4, HEX5);
+
+	wire clk_1_sec;
+	wire [4:0] read_addr;
+	wire [3:0] q;
+	delay_1_sec del_1_sec(CLOCK_50, clk_1_sec);
+	iterating_ram ir(CLOCK_50, SW[3:0], SW[8:4], SW[9], KEY[0], read_addr, q);
+	decoder_hex_16 dec_q(q, HEX0);
+	decoder_hex_16 dec_data(SW[3:0], HEX1);
+	decoder_hex_16 dec_read_addr1({3'b000, read_addr[4]}, HEX3);
+	decoder_hex_16 dec_read_addr0(read_addr[3:0], HEX2);
+	decoder_hex_16 dec_write_addr1({3'b000, SW[8]}, HEX5);
+	decoder_hex_16 dec_write_addr0(SW[7:4], HEX4);
+
+endmodule
+
+module iterating_ram(
+	input clk,
+	input [3:0] data,
+	input [4:0] write_addr,
+	input write_enable, reset_counter,
+	output [4:0] read_addr,
+	output [3:0] q);
+
+	wire clk_1_sec;
+	delay_1_sec delay(clock, clk_1_sec);
+	counter_N_bits #(5) address_counter(clk_1_sec, read_addr);
+	ram32x4_2_ports ram(clk, data, read_addr, write_addr, wren, q);
+
+endmodule
+
+module counter_N_bits
+  #(parameter N = 4)(
+  input clock, areset,
+  output reg [N-1:0] state);
+
+  initial state = {N{1'b0}};
+  always @ (posedge clock, negedge areset)
+		if (~areset) state <= {N{1'b0}};
+		else state <= state + 1'b1;
+
+endmodule
+
+module delay_1_sec(
+	input clock,
+	output slow_clock); // zbocze 0 -> 1 w momencie wyzerowania (przekręcenia) licznika
+
+	wire clock_rollover;
+	/* 1 - 1/50000000 s
+	x - 10/1000 s (10 ms)
+	x = (10/1000 s) / (1/50000000 s) = 10/1000 * 50000000 = 500000
+	1 cs (setna sekundy) zmienia się co 500_000 taktów zegara */
+	counter_modulo_k #(3) counter(.clk(clock), .aclr(1'b1), .enable(1'b1), .aload(1'b0), .rollover(clock_rollover));
+	assign slow_clock = ~clock_rollover;
+
+endmodule
+
+module counter_modulo_k
+	#(parameter k = 20)( // okres licznika
+	input clk, aclr, enable, aload,
+	input [N-1:0] data,
+	output reg [N-1:0] Q,
+	output rollover);
+
+	function integer clogb2(input [31:0] v);
+		for (clogb2 = 0; v > 0; clogb2 = clogb2 + 1)
+			v = v >> 1;
+	endfunction
+
+	localparam N = clogb2(k-1); // długość licznika w bitach
+	
+	initial Q = {N{1'b0}};
+	always @ (posedge clk, negedge aclr, posedge aload)
+		if (!aclr) Q <= {N{1'b0}};
+		else if (aload) Q <= data;
+		else begin
+			// zanim sprawdzimy, czy Q == k-1 i ewentualnie wyzerujemy licznik, sprawdzamy, czy na wejściu zezwalającym jest 1
+			if (enable) begin
+				if (Q == k-1) Q <= {N{1'b0}};
+				else Q <= Q + 1'b1;
+			end
+			else Q <= Q;
+		end
+		
+	assign rollover = (Q == k-1);
+
+endmodule

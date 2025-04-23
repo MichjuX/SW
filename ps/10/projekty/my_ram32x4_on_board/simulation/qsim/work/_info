@@ -1,0 +1,52 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/Storage/temp/semestr_6/sw/10/projekty/my_ram32x4_on_board/simulation/qsim
+vmy_ram32x4_on_board
+Z1 !s110 1654104014
+!i10b 1
+!s100 OG4HYKX^=j7MkkCoRle1B2
+Ig1IbVDidmgWAbQFznGH?m2
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1654104007
+8my_ram32x4_on_board.vo
+Fmy_ram32x4_on_board.vo
+L0 31
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1654104013.000000
+!s107 my_ram32x4_on_board.vo|
+!s90 -work|work|my_ram32x4_on_board.vo|
+!i113 1
+Z4 o-work work
+Z5 tCvgOpt 0
+vmy_ram32x4_on_board_vlg_vec_tst
+R1
+!i10b 1
+!s100 4A8M5H`83I=6c7m0llS]j3
+I]0@:FZCe7LU9S7H`M8=X>2
+R2
+R0
+w1654104003
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+L0 29
+R3
+r1
+!s85 0
+31
+!s108 1654104014.000000
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R4
+R5

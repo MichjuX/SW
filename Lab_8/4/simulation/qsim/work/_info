@@ -1,0 +1,54 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/Storage/temp/semestr_6/sw/8/projekty/buffered_multiplier_N_bits/simulation/qsim
+vbuffered_multiplier_N_bits
+Z1 !s110 1651610122
+!i10b 1
+!s100 b74n@HkacWGH[hEd5MdeL2
+I7cDEFZWm`c>FgFbE=o1LT2
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1651610121
+8buffered_multiplier_N_bits.vo
+Fbuffered_multiplier_N_bits.vo
+L0 31
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1651610122.000000
+!s107 buffered_multiplier_N_bits.vo|
+!s90 -work|work|buffered_multiplier_N_bits.vo|
+!i113 1
+Z5 o-work work
+Z6 tCvgOpt 0
+nbuffered_multiplier_@n_bits
+vbuffered_multiplier_N_bits_vlg_vec_tst
+R1
+!i10b 1
+!s100 S8J5?=8a^PG=YBE0`eacj3
+IC91D7TLmEgB>Ub7a[:Q9E0
+R2
+R0
+w1651610119
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+L0 29
+R3
+r1
+!s85 0
+31
+R4
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R5
+R6
+nbuffered_multiplier_@n_bits_vlg_vec_tst

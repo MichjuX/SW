@@ -1,0 +1,52 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/Storage/temp/semestr_6/sw/4/projekty/binary_bcd_4_bits/simulation/qsim
+vbinary_bcd_4_bits
+Z1 !s110 1648763471
+!i10b 1
+!s100 hKjQ>WeRB?j8dNbM??<aC1
+IF]Pj9PG64Ua7jT921@0cf1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1648763464
+8binary_bcd_4_bits.vo
+Fbinary_bcd_4_bits.vo
+L0 31
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1648763470.000000
+!s107 binary_bcd_4_bits.vo|
+!s90 -work|work|binary_bcd_4_bits.vo|
+!i113 1
+Z4 o-work work
+Z5 tCvgOpt 0
+vbinary_bcd_4_bits_vlg_vec_tst
+R1
+!i10b 1
+!s100 T`lC8kiHmKf[YNL0Vk]U41
+I0fRmia_<206f:`fgIFP;21
+R2
+R0
+w1648763462
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+L0 29
+R3
+r1
+!s85 0
+31
+!s108 1648763471.000000
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R4
+R5

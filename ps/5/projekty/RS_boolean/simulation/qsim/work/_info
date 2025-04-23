@@ -1,0 +1,54 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/Storage/temp/semestr_6/sw/5/projekty/RS_boolean/simulation/qsim
+vRS_boolean
+Z1 !s110 1649204333
+!i10b 1
+!s100 G<9HIQTPd]2O8h1@XdECW1
+I=Nn4h`jEc@>dU;hd>g@AF0
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1649204331
+8RS_boolean.vo
+FRS_boolean.vo
+L0 31
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1649204333.000000
+!s107 RS_boolean.vo|
+!s90 -work|work|RS_boolean.vo|
+!i113 1
+Z5 o-work work
+Z6 tCvgOpt 0
+n@r@s_boolean
+vRS_boolean_vlg_vec_tst
+R1
+!i10b 1
+!s100 6eBMhTS@Hi?]VSJ[oEbXf1
+I2XU4XzLcRK37bZlzPEa7C2
+R2
+R0
+w1649204330
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+L0 29
+R3
+r1
+!s85 0
+31
+R4
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R5
+R6
+n@r@s_boolean_vlg_vec_tst

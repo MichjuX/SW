@@ -1,0 +1,39 @@
+|detector_with_shift_reg
+w => w.IN2
+clk => clk.IN2
+aclr => aclr.IN2
+z <= z.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|detector_with_shift_reg|shift_register:sr0
+clock => state[0]~reg0.CLK
+clock => state[1]~reg0.CLK
+clock => state[2]~reg0.CLK
+clock => state[3]~reg0.CLK
+aclr => state[0]~reg0.PRESET
+aclr => state[1]~reg0.PRESET
+aclr => state[2]~reg0.PRESET
+aclr => state[3]~reg0.PRESET
+d_first => state[0]~reg0.DATAIN
+state[0] <= state[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+state[1] <= state[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+state[2] <= state[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+state[3] <= state[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|detector_with_shift_reg|shift_register:sr1
+clock => state[0]~reg0.CLK
+clock => state[1]~reg0.CLK
+clock => state[2]~reg0.CLK
+clock => state[3]~reg0.CLK
+aclr => state[0]~reg0.ACLR
+aclr => state[1]~reg0.ACLR
+aclr => state[2]~reg0.ACLR
+aclr => state[3]~reg0.ACLR
+d_first => state[0]~reg0.DATAIN
+state[0] <= state[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+state[1] <= state[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+state[2] <= state[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+state[3] <= state[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

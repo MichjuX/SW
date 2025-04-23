@@ -1,0 +1,1 @@
+Warning (10268): Verilog HDL information at processor_2_with_RAM_on_board.v(303): always construct contains both blocking and non-blocking assignments File: D:/Storage/temp/semestr_6/sw/12/projekty/processor_2_with_RAM_on_board/processor_2_with_RAM_on_board.v Line: 303

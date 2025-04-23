@@ -1,0 +1,32 @@
+|latch_FFDP_FFDN
+D => D.IN3
+Clock => Clock.IN3
+Qa <= D_latch:latch.port2
+nQa <= D_latch:latch.port3
+Qb <= D_flip_flop_posedge:ffp.port2
+nQb <= D_flip_flop_posedge:ffp.port3
+Qc <= D_flip_flop_negedge:ffn.port2
+nQc <= D_flip_flop_negedge:ffn.port3
+
+
+|latch_FFDP_FFDN|D_latch:latch
+D => Q$latch.DATAIN
+Clk => Q$latch.LATCH_ENABLE
+Q <= Q$latch.DB_MAX_OUTPUT_PORT_TYPE
+nQ <= Q$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|latch_FFDP_FFDN|D_flip_flop_posedge:ffp
+D => Q~reg0.DATAIN
+Clk => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+nQ <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|latch_FFDP_FFDN|D_flip_flop_negedge:ffn
+D => Q~reg0.DATAIN
+Clk => Q~reg0.CLK
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+nQ <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

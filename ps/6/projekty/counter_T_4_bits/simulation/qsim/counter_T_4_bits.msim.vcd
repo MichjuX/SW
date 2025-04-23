@@ -1,0 +1,271 @@
+$comment
+	File created using the following command:
+		vcd file counter_T_4_bits.msim.vcd -direction
+$end
+$date
+	Tue Apr 12 15:57:32 2022
+$end
+$version
+	ModelSim Version 10.5b
+$end
+$timescale
+	1ps
+$end
+
+$scope module counter_T_4_bits_vlg_vec_tst $end
+$var reg 1 ! areset $end
+$var reg 1 " clk $end
+$var reg 1 # enable $end
+$var wire 1 $ Q [3] $end
+$var wire 1 % Q [2] $end
+$var wire 1 & Q [1] $end
+$var wire 1 ' Q [0] $end
+
+$scope module i1 $end
+$var wire 1 ( gnd $end
+$var wire 1 ) vcc $end
+$var wire 1 * unknown $end
+$var tri1 1 + devclrn $end
+$var tri1 1 , devpor $end
+$var tri1 1 - devoe $end
+$var wire 1 . Q[0]~output_o $end
+$var wire 1 / Q[1]~output_o $end
+$var wire 1 0 Q[2]~output_o $end
+$var wire 1 1 Q[3]~output_o $end
+$var wire 1 2 clk~input_o $end
+$var wire 1 3 enable~input_o $end
+$var wire 1 4 fft0|Q~0_combout $end
+$var wire 1 5 areset~input_o $end
+$var wire 1 6 fft0|Q~q $end
+$var wire 1 7 fft1|Q~0_combout $end
+$var wire 1 8 fft1|Q~q $end
+$var wire 1 9 fft2|Q~0_combout $end
+$var wire 1 : fft2|Q~q $end
+$var wire 1 ; fft3|Q~0_combout $end
+$var wire 1 < fft3|Q~q $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+1!
+0"
+1#
+0'
+0&
+0%
+0$
+0(
+1)
+x*
+1+
+1,
+1-
+0.
+0/
+00
+01
+02
+13
+14
+15
+06
+07
+08
+09
+0:
+0;
+0<
+$end
+#5000
+1"
+12
+16
+1.
+1'
+17
+04
+#10000
+0"
+02
+#15000
+1"
+12
+18
+06
+0.
+1/
+1&
+0'
+14
+#20000
+0"
+02
+#23985
+0!
+05
+08
+0/
+0&
+07
+#25000
+1"
+12
+#30000
+0"
+02
+#35000
+1"
+12
+#38493
+1!
+15
+#40000
+0"
+02
+#45000
+1"
+12
+16
+1.
+1'
+17
+04
+#50000
+0"
+02
+#55000
+1"
+12
+18
+06
+0.
+1/
+1&
+0'
+14
+#56043
+0#
+03
+04
+#60000
+0"
+02
+#65000
+1"
+12
+#70000
+0"
+02
+#75000
+1"
+12
+#80000
+1#
+0"
+13
+02
+14
+#85000
+1"
+12
+16
+1.
+1'
+19
+07
+04
+#90000
+0"
+02
+#93951
+0#
+03
+09
+17
+14
+#95000
+1"
+12
+#99099
+0!
+05
+06
+08
+0/
+0.
+0'
+0&
+07
+04
+#100000
+0"
+02
+#102726
+1!
+15
+#105000
+1"
+12
+#110000
+0"
+02
+#115000
+1"
+12
+#120000
+1#
+0"
+13
+02
+14
+#125000
+1"
+12
+16
+1.
+1'
+17
+04
+#130000
+0"
+02
+#135000
+1"
+12
+18
+06
+0.
+1/
+1&
+0'
+14
+#140000
+0"
+02
+#145000
+1"
+12
+16
+1.
+1'
+19
+07
+04
+#150000
+0"
+02
+#155000
+1"
+12
+1:
+08
+06
+0.
+0/
+10
+1%
+0&
+0'
+14
+#160000

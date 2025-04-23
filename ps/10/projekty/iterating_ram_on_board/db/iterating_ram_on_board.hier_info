@@ -1,0 +1,356 @@
+|iterating_ram_on_board
+CLOCK_50 => CLOCK_50.IN1
+SW[0] => SW[0].IN2
+SW[1] => SW[1].IN2
+SW[2] => SW[2].IN2
+SW[3] => SW[3].IN2
+SW[4] => SW[4].IN2
+SW[5] => SW[5].IN2
+SW[6] => SW[6].IN2
+SW[7] => SW[7].IN2
+SW[8] => SW[8].IN2
+SW[9] => SW[9].IN1
+KEY[0] => KEY[0].IN1
+HEX0[0] <= decoder_hex_16:dec_q.port1
+HEX0[1] <= decoder_hex_16:dec_q.port1
+HEX0[2] <= decoder_hex_16:dec_q.port1
+HEX0[3] <= decoder_hex_16:dec_q.port1
+HEX0[4] <= decoder_hex_16:dec_q.port1
+HEX0[5] <= decoder_hex_16:dec_q.port1
+HEX0[6] <= decoder_hex_16:dec_q.port1
+HEX1[0] <= decoder_hex_16:dec_data.port1
+HEX1[1] <= decoder_hex_16:dec_data.port1
+HEX1[2] <= decoder_hex_16:dec_data.port1
+HEX1[3] <= decoder_hex_16:dec_data.port1
+HEX1[4] <= decoder_hex_16:dec_data.port1
+HEX1[5] <= decoder_hex_16:dec_data.port1
+HEX1[6] <= decoder_hex_16:dec_data.port1
+HEX2[0] <= decoder_hex_16:dec_read_addr0.port1
+HEX2[1] <= decoder_hex_16:dec_read_addr0.port1
+HEX2[2] <= decoder_hex_16:dec_read_addr0.port1
+HEX2[3] <= decoder_hex_16:dec_read_addr0.port1
+HEX2[4] <= decoder_hex_16:dec_read_addr0.port1
+HEX2[5] <= decoder_hex_16:dec_read_addr0.port1
+HEX2[6] <= decoder_hex_16:dec_read_addr0.port1
+HEX3[0] <= decoder_hex_16:dec_read_addr1.port1
+HEX3[1] <= decoder_hex_16:dec_read_addr1.port1
+HEX3[2] <= decoder_hex_16:dec_read_addr1.port1
+HEX3[3] <= decoder_hex_16:dec_read_addr1.port1
+HEX3[4] <= decoder_hex_16:dec_read_addr1.port1
+HEX3[5] <= decoder_hex_16:dec_read_addr1.port1
+HEX3[6] <= decoder_hex_16:dec_read_addr1.port1
+HEX4[0] <= decoder_hex_16:dec_write_addr0.port1
+HEX4[1] <= decoder_hex_16:dec_write_addr0.port1
+HEX4[2] <= decoder_hex_16:dec_write_addr0.port1
+HEX4[3] <= decoder_hex_16:dec_write_addr0.port1
+HEX4[4] <= decoder_hex_16:dec_write_addr0.port1
+HEX4[5] <= decoder_hex_16:dec_write_addr0.port1
+HEX4[6] <= decoder_hex_16:dec_write_addr0.port1
+HEX5[0] <= decoder_hex_16:dec_write_addr1.port1
+HEX5[1] <= decoder_hex_16:dec_write_addr1.port1
+HEX5[2] <= decoder_hex_16:dec_write_addr1.port1
+HEX5[3] <= decoder_hex_16:dec_write_addr1.port1
+HEX5[4] <= decoder_hex_16:dec_write_addr1.port1
+HEX5[5] <= decoder_hex_16:dec_write_addr1.port1
+HEX5[6] <= decoder_hex_16:dec_write_addr1.port1
+
+
+|iterating_ram_on_board|iterating_ram:ir
+clk => clk.IN2
+data[0] => data[0].IN1
+data[1] => data[1].IN1
+data[2] => data[2].IN1
+data[3] => data[3].IN1
+write_addr[0] => write_addr[0].IN1
+write_addr[1] => write_addr[1].IN1
+write_addr[2] => write_addr[2].IN1
+write_addr[3] => write_addr[3].IN1
+write_addr[4] => write_addr[4].IN1
+write_enable => write_enable.IN1
+reset_counter => reset_counter.IN1
+read_addr[0] <= read_addr[0].DB_MAX_OUTPUT_PORT_TYPE
+read_addr[1] <= read_addr[1].DB_MAX_OUTPUT_PORT_TYPE
+read_addr[2] <= read_addr[2].DB_MAX_OUTPUT_PORT_TYPE
+read_addr[3] <= read_addr[3].DB_MAX_OUTPUT_PORT_TYPE
+read_addr[4] <= read_addr[4].DB_MAX_OUTPUT_PORT_TYPE
+q[0] <= ram32x4_2_ports:ram.port5
+q[1] <= ram32x4_2_ports:ram.port5
+q[2] <= ram32x4_2_ports:ram.port5
+q[3] <= ram32x4_2_ports:ram.port5
+
+
+|iterating_ram_on_board|iterating_ram:ir|delay_1_sec:delay
+clock => clock.IN1
+slow_clock <= counter_modulo_k:counter.port1
+
+
+|iterating_ram_on_board|iterating_ram:ir|delay_1_sec:delay|counter_modulo_k:counter
+clk => Q[0].CLK
+clk => Q[1].CLK
+clk => Q[2].CLK
+clk => Q[3].CLK
+clk => Q[4].CLK
+clk => Q[5].CLK
+clk => Q[6].CLK
+clk => Q[7].CLK
+clk => Q[8].CLK
+clk => Q[9].CLK
+clk => Q[10].CLK
+clk => Q[11].CLK
+clk => Q[12].CLK
+clk => Q[13].CLK
+clk => Q[14].CLK
+clk => Q[15].CLK
+clk => Q[16].CLK
+clk => Q[17].CLK
+clk => Q[18].CLK
+clk => Q[19].CLK
+clk => Q[20].CLK
+clk => Q[21].CLK
+clk => Q[22].CLK
+clk => Q[23].CLK
+clk => Q[24].CLK
+clk => Q[25].CLK
+rollover <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|iterating_ram_on_board|iterating_ram:ir|counter_N_bits:address_counter
+clock => state[0]~reg0.CLK
+clock => state[1]~reg0.CLK
+clock => state[2]~reg0.CLK
+clock => state[3]~reg0.CLK
+clock => state[4]~reg0.CLK
+areset => state[0]~reg0.ACLR
+areset => state[1]~reg0.ACLR
+areset => state[2]~reg0.ACLR
+areset => state[3]~reg0.ACLR
+areset => state[4]~reg0.ACLR
+state[0] <= state[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+state[1] <= state[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+state[2] <= state[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+state[3] <= state[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+state[4] <= state[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|iterating_ram_on_board|iterating_ram:ir|ram32x4_2_ports:ram
+clock => clock.IN1
+data[0] => data[0].IN1
+data[1] => data[1].IN1
+data[2] => data[2].IN1
+data[3] => data[3].IN1
+rdaddress[0] => rdaddress[0].IN1
+rdaddress[1] => rdaddress[1].IN1
+rdaddress[2] => rdaddress[2].IN1
+rdaddress[3] => rdaddress[3].IN1
+rdaddress[4] => rdaddress[4].IN1
+wraddress[0] => wraddress[0].IN1
+wraddress[1] => wraddress[1].IN1
+wraddress[2] => wraddress[2].IN1
+wraddress[3] => wraddress[3].IN1
+wraddress[4] => wraddress[4].IN1
+wren => wren.IN1
+q[0] <= altsyncram:altsyncram_component.q_b
+q[1] <= altsyncram:altsyncram_component.q_b
+q[2] <= altsyncram:altsyncram_component.q_b
+q[3] <= altsyncram:altsyncram_component.q_b
+
+
+|iterating_ram_on_board|iterating_ram:ir|ram32x4_2_ports:ram|altsyncram:altsyncram_component
+wren_a => altsyncram_hs32:auto_generated.wren_a
+rden_a => ~NO_FANOUT~
+wren_b => ~NO_FANOUT~
+rden_b => ~NO_FANOUT~
+data_a[0] => altsyncram_hs32:auto_generated.data_a[0]
+data_a[1] => altsyncram_hs32:auto_generated.data_a[1]
+data_a[2] => altsyncram_hs32:auto_generated.data_a[2]
+data_a[3] => altsyncram_hs32:auto_generated.data_a[3]
+data_b[0] => ~NO_FANOUT~
+data_b[1] => ~NO_FANOUT~
+data_b[2] => ~NO_FANOUT~
+data_b[3] => ~NO_FANOUT~
+address_a[0] => altsyncram_hs32:auto_generated.address_a[0]
+address_a[1] => altsyncram_hs32:auto_generated.address_a[1]
+address_a[2] => altsyncram_hs32:auto_generated.address_a[2]
+address_a[3] => altsyncram_hs32:auto_generated.address_a[3]
+address_a[4] => altsyncram_hs32:auto_generated.address_a[4]
+address_b[0] => altsyncram_hs32:auto_generated.address_b[0]
+address_b[1] => altsyncram_hs32:auto_generated.address_b[1]
+address_b[2] => altsyncram_hs32:auto_generated.address_b[2]
+address_b[3] => altsyncram_hs32:auto_generated.address_b[3]
+address_b[4] => altsyncram_hs32:auto_generated.address_b[4]
+addressstall_a => ~NO_FANOUT~
+addressstall_b => ~NO_FANOUT~
+clock0 => altsyncram_hs32:auto_generated.clock0
+clock1 => ~NO_FANOUT~
+clocken0 => ~NO_FANOUT~
+clocken1 => ~NO_FANOUT~
+clocken2 => ~NO_FANOUT~
+clocken3 => ~NO_FANOUT~
+aclr0 => ~NO_FANOUT~
+aclr1 => ~NO_FANOUT~
+byteena_a[0] => ~NO_FANOUT~
+byteena_b[0] => ~NO_FANOUT~
+q_a[0] <= <GND>
+q_a[1] <= <GND>
+q_a[2] <= <GND>
+q_a[3] <= <GND>
+q_b[0] <= altsyncram_hs32:auto_generated.q_b[0]
+q_b[1] <= altsyncram_hs32:auto_generated.q_b[1]
+q_b[2] <= altsyncram_hs32:auto_generated.q_b[2]
+q_b[3] <= altsyncram_hs32:auto_generated.q_b[3]
+eccstatus[0] <= <GND>
+eccstatus[1] <= <GND>
+eccstatus[2] <= <GND>
+
+
+|iterating_ram_on_board|iterating_ram:ir|ram32x4_2_ports:ram|altsyncram:altsyncram_component|altsyncram_hs32:auto_generated
+address_a[0] => ram_block1a0.PORTAADDR
+address_a[0] => ram_block1a1.PORTAADDR
+address_a[0] => ram_block1a2.PORTAADDR
+address_a[0] => ram_block1a3.PORTAADDR
+address_a[1] => ram_block1a0.PORTAADDR1
+address_a[1] => ram_block1a1.PORTAADDR1
+address_a[1] => ram_block1a2.PORTAADDR1
+address_a[1] => ram_block1a3.PORTAADDR1
+address_a[2] => ram_block1a0.PORTAADDR2
+address_a[2] => ram_block1a1.PORTAADDR2
+address_a[2] => ram_block1a2.PORTAADDR2
+address_a[2] => ram_block1a3.PORTAADDR2
+address_a[3] => ram_block1a0.PORTAADDR3
+address_a[3] => ram_block1a1.PORTAADDR3
+address_a[3] => ram_block1a2.PORTAADDR3
+address_a[3] => ram_block1a3.PORTAADDR3
+address_a[4] => ram_block1a0.PORTAADDR4
+address_a[4] => ram_block1a1.PORTAADDR4
+address_a[4] => ram_block1a2.PORTAADDR4
+address_a[4] => ram_block1a3.PORTAADDR4
+address_b[0] => ram_block1a0.PORTBADDR
+address_b[0] => ram_block1a1.PORTBADDR
+address_b[0] => ram_block1a2.PORTBADDR
+address_b[0] => ram_block1a3.PORTBADDR
+address_b[1] => ram_block1a0.PORTBADDR1
+address_b[1] => ram_block1a1.PORTBADDR1
+address_b[1] => ram_block1a2.PORTBADDR1
+address_b[1] => ram_block1a3.PORTBADDR1
+address_b[2] => ram_block1a0.PORTBADDR2
+address_b[2] => ram_block1a1.PORTBADDR2
+address_b[2] => ram_block1a2.PORTBADDR2
+address_b[2] => ram_block1a3.PORTBADDR2
+address_b[3] => ram_block1a0.PORTBADDR3
+address_b[3] => ram_block1a1.PORTBADDR3
+address_b[3] => ram_block1a2.PORTBADDR3
+address_b[3] => ram_block1a3.PORTBADDR3
+address_b[4] => ram_block1a0.PORTBADDR4
+address_b[4] => ram_block1a1.PORTBADDR4
+address_b[4] => ram_block1a2.PORTBADDR4
+address_b[4] => ram_block1a3.PORTBADDR4
+clock0 => ram_block1a0.CLK0
+clock0 => ram_block1a0.CLK1
+clock0 => ram_block1a1.CLK0
+clock0 => ram_block1a1.CLK1
+clock0 => ram_block1a2.CLK0
+clock0 => ram_block1a2.CLK1
+clock0 => ram_block1a3.CLK0
+clock0 => ram_block1a3.CLK1
+data_a[0] => ram_block1a0.PORTADATAIN
+data_a[1] => ram_block1a1.PORTADATAIN
+data_a[2] => ram_block1a2.PORTADATAIN
+data_a[3] => ram_block1a3.PORTADATAIN
+q_b[0] <= ram_block1a0.PORTBDATAOUT
+q_b[1] <= ram_block1a1.PORTBDATAOUT
+q_b[2] <= ram_block1a2.PORTBDATAOUT
+q_b[3] <= ram_block1a3.PORTBDATAOUT
+wren_a => ram_block1a0.PORTAWE
+wren_a => ram_block1a0.ENA0
+wren_a => ram_block1a1.PORTAWE
+wren_a => ram_block1a1.ENA0
+wren_a => ram_block1a2.PORTAWE
+wren_a => ram_block1a2.ENA0
+wren_a => ram_block1a3.PORTAWE
+wren_a => ram_block1a3.ENA0
+
+
+|iterating_ram_on_board|decoder_hex_16:dec_q
+binary[0] => Decoder0.IN3
+binary[1] => Decoder0.IN2
+binary[2] => Decoder0.IN1
+binary[3] => Decoder0.IN0
+h[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+h[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+h[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+h[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+h[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+h[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+h[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|iterating_ram_on_board|decoder_hex_16:dec_data
+binary[0] => Decoder0.IN3
+binary[1] => Decoder0.IN2
+binary[2] => Decoder0.IN1
+binary[3] => Decoder0.IN0
+h[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+h[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+h[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+h[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+h[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+h[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+h[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|iterating_ram_on_board|decoder_hex_16:dec_read_addr1
+binary[0] => Decoder0.IN3
+binary[1] => Decoder0.IN2
+binary[2] => Decoder0.IN1
+binary[3] => Decoder0.IN0
+h[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+h[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+h[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+h[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+h[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+h[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+h[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|iterating_ram_on_board|decoder_hex_16:dec_read_addr0
+binary[0] => Decoder0.IN3
+binary[1] => Decoder0.IN2
+binary[2] => Decoder0.IN1
+binary[3] => Decoder0.IN0
+h[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+h[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+h[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+h[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+h[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+h[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+h[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|iterating_ram_on_board|decoder_hex_16:dec_write_addr1
+binary[0] => Decoder0.IN3
+binary[1] => Decoder0.IN2
+binary[2] => Decoder0.IN1
+binary[3] => Decoder0.IN0
+h[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+h[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+h[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+h[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+h[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+h[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+h[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|iterating_ram_on_board|decoder_hex_16:dec_write_addr0
+binary[0] => Decoder0.IN3
+binary[1] => Decoder0.IN2
+binary[2] => Decoder0.IN1
+binary[3] => Decoder0.IN0
+h[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+h[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+h[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+h[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+h[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+h[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+h[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+

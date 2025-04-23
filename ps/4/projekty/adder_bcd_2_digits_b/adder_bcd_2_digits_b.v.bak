@@ -1,0 +1,21 @@
+module adder_bcd_2_digits_b(
+	input [3:0] A, B,
+	input c0,
+	output [3:0] S1, S0);
+
+	wire c1;
+	wire [3:0] T0, Z0;
+	always @ (*) begin
+		if (T0 > 9) begin
+			Z0 = 4'd10;
+			c1 = 1'b1;
+		end
+		else begin
+			Z0 = 4'd0;
+			c1 = 1'b1;
+		end
+	end
+	assign S0 = 
+	assign S1 = 
+
+endmodule

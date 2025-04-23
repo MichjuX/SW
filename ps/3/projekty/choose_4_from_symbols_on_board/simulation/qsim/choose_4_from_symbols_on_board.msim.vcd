@@ -1,0 +1,141 @@
+$comment
+	File created using the following command:
+		vcd file choose_4_from_symbols_on_board.msim.vcd -direction
+$end
+$date
+	Wed Mar 23 15:57:39 2022
+$end
+$version
+	ModelSim Version 10.5b
+$end
+$timescale
+	1ps
+$end
+
+$scope module choose_4_from_symbols_on_board_vlg_vec_tst $end
+$var reg 10 ! SW [9:0] $end
+$var wire 1 " HEX0 [6] $end
+$var wire 1 # HEX0 [5] $end
+$var wire 1 $ HEX0 [4] $end
+$var wire 1 % HEX0 [3] $end
+$var wire 1 & HEX0 [2] $end
+$var wire 1 ' HEX0 [1] $end
+$var wire 1 ( HEX0 [0] $end
+$var wire 1 ) LEDR [9] $end
+$var wire 1 * LEDR [8] $end
+$var wire 1 + LEDR [7] $end
+$var wire 1 , LEDR [6] $end
+$var wire 1 - LEDR [5] $end
+$var wire 1 . LEDR [4] $end
+$var wire 1 / LEDR [3] $end
+$var wire 1 0 LEDR [2] $end
+$var wire 1 1 LEDR [1] $end
+$var wire 1 2 LEDR [0] $end
+
+$scope module i1 $end
+$var wire 1 3 gnd $end
+$var wire 1 4 vcc $end
+$var wire 1 5 unknown $end
+$var tri1 1 6 devclrn $end
+$var tri1 1 7 devpor $end
+$var tri1 1 8 devoe $end
+$var wire 1 9 ~QUARTUS_CREATED_GND~I_combout $end
+$var wire 1 : SW[0]~input_o $end
+$var wire 1 ; SW[1]~input_o $end
+$var wire 1 < SW[2]~input_o $end
+$var wire 1 = SW[3]~input_o $end
+$var wire 1 > SW[4]~input_o $end
+$var wire 1 ? SW[5]~input_o $end
+$var wire 1 @ SW[6]~input_o $end
+$var wire 1 A SW[7]~input_o $end
+$var wire 1 B SW[8]~input_o $end
+$var wire 1 C SW[9]~input_o $end
+$var wire 1 D mux|mux1|mux_uvwx|m~0_combout $end
+$var wire 1 E mux|mux0|mux_uvwx|m~0_combout $end
+$var wire 1 F decoder|h [6] $end
+$var wire 1 G decoder|h [5] $end
+$var wire 1 H decoder|h [4] $end
+$var wire 1 I decoder|h [3] $end
+$var wire 1 J decoder|h [2] $end
+$var wire 1 K decoder|h [1] $end
+$var wire 1 L decoder|h [0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b1001110 !
+1(
+0'
+0&
+0%
+0$
+1#
+0"
+02
+11
+10
+1/
+0.
+0-
+1,
+0+
+0*
+0)
+03
+14
+x5
+16
+17
+18
+09
+0:
+1;
+1<
+1=
+0>
+0?
+1@
+0A
+0B
+0C
+0D
+1E
+zL
+0K
+0J
+zI
+0H
+zG
+zF
+$end
+#40000
+b101001110 !
+1B
+1*
+0E
+1K
+1'
+#80000
+b1101001110 !
+b1001001110 !
+0B
+1C
+1)
+0*
+1E
+1D
+0#
+0(
+1H
+1$
+#120000
+b1101001110 !
+1B
+1*
+0E
+0H
+1J
+1&
+0$
+#160000

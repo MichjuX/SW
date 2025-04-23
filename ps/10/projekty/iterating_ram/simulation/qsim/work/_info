@@ -1,0 +1,52 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/Storage/temp/semestr_6/sw/10/projekty/iterating_ram/simulation/qsim
+viterating_ram
+Z1 !s110 1653251702
+!i10b 1
+!s100 540Kb96CRWz?TNCdRRIIm3
+I_Rd2m1ANbVOY5eNPXblj]1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1653251701
+8iterating_ram.vo
+Fiterating_ram.vo
+L0 31
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1653251702.000000
+!s107 iterating_ram.vo|
+!s90 -work|work|iterating_ram.vo|
+!i113 1
+Z5 o-work work
+Z6 tCvgOpt 0
+viterating_ram_vlg_vec_tst
+R1
+!i10b 1
+!s100 0d>UZdb>Kkl]93YKF;:l=3
+I6[;hcU59_=@c>WFYCehQ^0
+R2
+R0
+w1653251699
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+L0 29
+R3
+r1
+!s85 0
+31
+R4
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R5
+R6

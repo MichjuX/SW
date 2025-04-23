@@ -1,0 +1,52 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/Storage/temp/semestr_6/sw/4/projekty/hex_2_digit/simulation/qsim
+vhex_2_digit
+Z1 !s110 1648725037
+!i10b 1
+!s100 <D33n[XPOoY[1e>WRNRbD2
+I`;[z5zCZJZ1PUABdQ;dQR3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1648725030
+8hex_2_digit.vo
+Fhex_2_digit.vo
+L0 31
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1648725036.000000
+!s107 hex_2_digit.vo|
+!s90 -work|work|hex_2_digit.vo|
+!i113 1
+Z4 o-work work
+Z5 tCvgOpt 0
+vhex_2_digit_vlg_vec_tst
+R1
+!i10b 1
+!s100 ?KMiiGBIe6LF[o=f@nl;i0
+IX7GE<E@`D8H<JVmZO0IeT3
+R2
+R0
+w1648725028
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+L0 29
+R3
+r1
+!s85 0
+31
+!s108 1648725037.000000
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R4
+R5

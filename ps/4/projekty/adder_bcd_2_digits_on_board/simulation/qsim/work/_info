@@ -1,0 +1,52 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/Storage/temp/semestr_6/sw/4/projekty/adder_bcd_2_digits_on_board/simulation/qsim
+vadder_bcd_2_digits_on_board
+Z1 !s110 1648687166
+!i10b 1
+!s100 zad[3o:dV<gHSoj;HV=EQ3
+I;Z;bjeGIVL=LMWznDn1>L1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1648687165
+8adder_bcd_2_digits_on_board.vo
+Fadder_bcd_2_digits_on_board.vo
+L0 31
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1648687166.000000
+!s107 adder_bcd_2_digits_on_board.vo|
+!s90 -work|work|adder_bcd_2_digits_on_board.vo|
+!i113 1
+Z5 o-work work
+Z6 tCvgOpt 0
+vadder_bcd_2_digits_on_board_vlg_vec_tst
+R1
+!i10b 1
+!s100 b8D>dzaZXjK>A7M<S[T0C3
+I7T;MYzG:Y50R^4Zjkm4gk0
+R2
+R0
+w1648687163
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+L0 29
+R3
+r1
+!s85 0
+31
+R4
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R5
+R6

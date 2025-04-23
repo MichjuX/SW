@@ -1,0 +1,54 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/Storage/temp/semestr_6/sw/5/projekty/adder_A_B_8_bits_on_board/simulation/qsim
+vadder_A_B_8_bits_on_board
+!s110 1648699158
+!i10b 1
+!s100 BKnkbMZShz4C67BKH<JR80
+I`Zkc:5628ET_SbV_06SIE1
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1648699157
+8adder_A_B_8_bits_on_board.vo
+Fadder_A_B_8_bits_on_board.vo
+L0 31
+Z2 OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1648699158.000000
+!s107 adder_A_B_8_bits_on_board.vo|
+!s90 -work|work|adder_A_B_8_bits_on_board.vo|
+!i113 1
+Z3 o-work work
+Z4 tCvgOpt 0
+nadder_@a_@b_8_bits_on_board
+vadder_A_B_8_bits_on_board_vlg_vec_tst
+!s110 1648699159
+!i10b 1
+!s100 :f5:c8zUhB97Vm3m:QZA_2
+IjA3ebz>AY4=Y?Noh;ZRTX1
+R1
+R0
+w1648699155
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+L0 29
+R2
+r1
+!s85 0
+31
+!s108 1648699159.000000
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R3
+R4
+nadder_@a_@b_8_bits_on_board_vlg_vec_tst

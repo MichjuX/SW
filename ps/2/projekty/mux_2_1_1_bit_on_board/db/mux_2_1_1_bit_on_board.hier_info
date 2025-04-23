@@ -1,0 +1,15 @@
+|mux_2_1_1_bit_on_board
+SW[0] => SW[0].IN1
+SW[1] => SW[1].IN1
+KEY[0] => KEY[0].IN1
+LEDR[0] <= mux_2_1_1_bit:mux0.port3
+
+
+|mux_2_1_1_bit_on_board|mux_2_1_1_bit:mux0
+x => m.IN0
+y => m.IN0
+s => m.IN1
+s => m.IN1
+m <= m.DB_MAX_OUTPUT_PORT_TYPE
+
+

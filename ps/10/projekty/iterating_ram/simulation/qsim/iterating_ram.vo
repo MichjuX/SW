@@ -1,0 +1,952 @@
+// Copyright (C) 2018  Intel Corporation. All rights reserved.
+// Your use of Intel Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Intel Program License 
+// Subscription Agreement, the Intel Quartus Prime License Agreement,
+// the Intel FPGA IP License Agreement, or other applicable license
+// agreement, including, without limitation, that your use is for
+// the sole purpose of programming logic devices manufactured by
+// Intel and sold by Intel or its authorized distributors.  Please
+// refer to the applicable agreement for further details.
+
+// VENDOR "Altera"
+// PROGRAM "Quartus Prime"
+// VERSION "Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition"
+
+// DATE "05/22/2022 22:35:01"
+
+// 
+// Device: Altera 5CSEMA5F31C6 Package FBGA896
+// 
+
+// 
+// This Verilog file should be used for ModelSim-Altera (Verilog) only
+// 
+
+`timescale 1 ps/ 1 ps
+
+module iterating_ram (
+	clk,
+	data,
+	write_addr,
+	write_enable,
+	reset_counter,
+	read_addr,
+	q);
+input 	clk;
+input 	[3:0] data;
+input 	[4:0] write_addr;
+input 	write_enable;
+input 	reset_counter;
+output 	[4:0] read_addr;
+output 	[3:0] q;
+
+wire gnd;
+wire vcc;
+wire unknown;
+
+assign gnd = 1'b0;
+assign vcc = 1'b1;
+assign unknown = 1'bx;
+
+tri1 devclrn;
+tri1 devpor;
+tri1 devoe;
+wire \read_addr[0]~output_o ;
+wire \read_addr[1]~output_o ;
+wire \read_addr[2]~output_o ;
+wire \read_addr[3]~output_o ;
+wire \read_addr[4]~output_o ;
+wire \q[0]~output_o ;
+wire \q[1]~output_o ;
+wire \q[2]~output_o ;
+wire \q[3]~output_o ;
+wire \clk~input_o ;
+wire \delay|counter|Q~1_combout ;
+wire \delay|counter|Q~0_combout ;
+wire \delay|counter|Equal0~combout ;
+wire \address_counter|state[0]~4_combout ;
+wire \reset_counter~input_o ;
+wire \address_counter|state[1]~0_combout ;
+wire \address_counter|state[2]~1_combout ;
+wire \address_counter|state[3]~2_combout ;
+wire \address_counter|state[4]~3_combout ;
+wire \write_enable~input_o ;
+wire \data[0]~input_o ;
+wire \write_addr[0]~input_o ;
+wire \write_addr[1]~input_o ;
+wire \write_addr[2]~input_o ;
+wire \write_addr[3]~input_o ;
+wire \write_addr[4]~input_o ;
+wire \data[1]~input_o ;
+wire \data[2]~input_o ;
+wire \data[3]~input_o ;
+wire [3:0] \ram|altsyncram_component|auto_generated|q_b ;
+wire [4:0] \address_counter|state ;
+wire [1:0] \delay|counter|Q ;
+
+wire [0:0] \ram|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus ;
+wire [0:0] \ram|altsyncram_component|auto_generated|ram_block1a1_PORTBDATAOUT_bus ;
+wire [0:0] \ram|altsyncram_component|auto_generated|ram_block1a2_PORTBDATAOUT_bus ;
+wire [0:0] \ram|altsyncram_component|auto_generated|ram_block1a3_PORTBDATAOUT_bus ;
+
+assign \ram|altsyncram_component|auto_generated|q_b [0] = \ram|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus [0];
+
+assign \ram|altsyncram_component|auto_generated|q_b [1] = \ram|altsyncram_component|auto_generated|ram_block1a1_PORTBDATAOUT_bus [0];
+
+assign \ram|altsyncram_component|auto_generated|q_b [2] = \ram|altsyncram_component|auto_generated|ram_block1a2_PORTBDATAOUT_bus [0];
+
+assign \ram|altsyncram_component|auto_generated|q_b [3] = \ram|altsyncram_component|auto_generated|ram_block1a3_PORTBDATAOUT_bus [0];
+
+cyclonev_io_obuf \read_addr[0]~output (
+	.i(\address_counter|state [0]),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\read_addr[0]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \read_addr[0]~output .bus_hold = "false";
+defparam \read_addr[0]~output .open_drain_output = "false";
+defparam \read_addr[0]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+cyclonev_io_obuf \read_addr[1]~output (
+	.i(\address_counter|state [1]),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\read_addr[1]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \read_addr[1]~output .bus_hold = "false";
+defparam \read_addr[1]~output .open_drain_output = "false";
+defparam \read_addr[1]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+cyclonev_io_obuf \read_addr[2]~output (
+	.i(\address_counter|state [2]),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\read_addr[2]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \read_addr[2]~output .bus_hold = "false";
+defparam \read_addr[2]~output .open_drain_output = "false";
+defparam \read_addr[2]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+cyclonev_io_obuf \read_addr[3]~output (
+	.i(\address_counter|state [3]),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\read_addr[3]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \read_addr[3]~output .bus_hold = "false";
+defparam \read_addr[3]~output .open_drain_output = "false";
+defparam \read_addr[3]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+cyclonev_io_obuf \read_addr[4]~output (
+	.i(\address_counter|state [4]),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\read_addr[4]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \read_addr[4]~output .bus_hold = "false";
+defparam \read_addr[4]~output .open_drain_output = "false";
+defparam \read_addr[4]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+cyclonev_io_obuf \q[0]~output (
+	.i(\ram|altsyncram_component|auto_generated|q_b [0]),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\q[0]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \q[0]~output .bus_hold = "false";
+defparam \q[0]~output .open_drain_output = "false";
+defparam \q[0]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+cyclonev_io_obuf \q[1]~output (
+	.i(\ram|altsyncram_component|auto_generated|q_b [1]),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\q[1]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \q[1]~output .bus_hold = "false";
+defparam \q[1]~output .open_drain_output = "false";
+defparam \q[1]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+cyclonev_io_obuf \q[2]~output (
+	.i(\ram|altsyncram_component|auto_generated|q_b [2]),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\q[2]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \q[2]~output .bus_hold = "false";
+defparam \q[2]~output .open_drain_output = "false";
+defparam \q[2]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+cyclonev_io_obuf \q[3]~output (
+	.i(\ram|altsyncram_component|auto_generated|q_b [3]),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\q[3]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \q[3]~output .bus_hold = "false";
+defparam \q[3]~output .open_drain_output = "false";
+defparam \q[3]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+cyclonev_io_ibuf \clk~input (
+	.i(clk),
+	.ibar(gnd),
+	.dynamicterminationcontrol(gnd),
+	.o(\clk~input_o ));
+// synopsys translate_off
+defparam \clk~input .bus_hold = "false";
+defparam \clk~input .simulate_z_as = "z";
+// synopsys translate_on
+
+cyclonev_lcell_comb \delay|counter|Q~1 (
+// Equation(s):
+// \delay|counter|Q~1_combout  = (!\delay|counter|Q [0] & \delay|counter|Equal0~combout )
+
+	.dataa(!\delay|counter|Q [0]),
+	.datab(!\delay|counter|Equal0~combout ),
+	.datac(gnd),
+	.datad(gnd),
+	.datae(gnd),
+	.dataf(gnd),
+	.datag(gnd),
+	.cin(gnd),
+	.sharein(gnd),
+	.combout(\delay|counter|Q~1_combout ),
+	.sumout(),
+	.cout(),
+	.shareout());
+// synopsys translate_off
+defparam \delay|counter|Q~1 .extended_lut = "off";
+defparam \delay|counter|Q~1 .lut_mask = 64'h2222222222222222;
+defparam \delay|counter|Q~1 .shared_arith = "off";
+// synopsys translate_on
+
+dffeas \delay|counter|Q[0] (
+	.clk(\clk~input_o ),
+	.d(\delay|counter|Q~1_combout ),
+	.asdata(vcc),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\delay|counter|Q [0]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \delay|counter|Q[0] .is_wysiwyg = "true";
+defparam \delay|counter|Q[0] .power_up = "low";
+// synopsys translate_on
+
+cyclonev_lcell_comb \delay|counter|Q~0 (
+// Equation(s):
+// \delay|counter|Q~0_combout  = (\delay|counter|Equal0~combout  & (!\delay|counter|Q [1] $ (!\delay|counter|Q [0])))
+
+	.dataa(!\delay|counter|Q [1]),
+	.datab(!\delay|counter|Q [0]),
+	.datac(!\delay|counter|Equal0~combout ),
+	.datad(gnd),
+	.datae(gnd),
+	.dataf(gnd),
+	.datag(gnd),
+	.cin(gnd),
+	.sharein(gnd),
+	.combout(\delay|counter|Q~0_combout ),
+	.sumout(),
+	.cout(),
+	.shareout());
+// synopsys translate_off
+defparam \delay|counter|Q~0 .extended_lut = "off";
+defparam \delay|counter|Q~0 .lut_mask = 64'h0606060606060606;
+defparam \delay|counter|Q~0 .shared_arith = "off";
+// synopsys translate_on
+
+dffeas \delay|counter|Q[1] (
+	.clk(\clk~input_o ),
+	.d(\delay|counter|Q~0_combout ),
+	.asdata(vcc),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\delay|counter|Q [1]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \delay|counter|Q[1] .is_wysiwyg = "true";
+defparam \delay|counter|Q[1] .power_up = "low";
+// synopsys translate_on
+
+cyclonev_lcell_comb \delay|counter|Equal0 (
+// Equation(s):
+// \delay|counter|Equal0~combout  = LCELL((!\delay|counter|Q [1]) # (\delay|counter|Q [0]))
+
+	.dataa(!\delay|counter|Q [1]),
+	.datab(!\delay|counter|Q [0]),
+	.datac(gnd),
+	.datad(gnd),
+	.datae(gnd),
+	.dataf(gnd),
+	.datag(gnd),
+	.cin(gnd),
+	.sharein(gnd),
+	.combout(\delay|counter|Equal0~combout ),
+	.sumout(),
+	.cout(),
+	.shareout());
+// synopsys translate_off
+defparam \delay|counter|Equal0 .extended_lut = "off";
+defparam \delay|counter|Equal0 .lut_mask = 64'hBBBBBBBBBBBBBBBB;
+defparam \delay|counter|Equal0 .shared_arith = "off";
+// synopsys translate_on
+
+cyclonev_lcell_comb \address_counter|state[0]~4 (
+// Equation(s):
+// \address_counter|state[0]~4_combout  = !\address_counter|state [0]
+
+	.dataa(!\address_counter|state [0]),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(gnd),
+	.datae(gnd),
+	.dataf(gnd),
+	.datag(gnd),
+	.cin(gnd),
+	.sharein(gnd),
+	.combout(\address_counter|state[0]~4_combout ),
+	.sumout(),
+	.cout(),
+	.shareout());
+// synopsys translate_off
+defparam \address_counter|state[0]~4 .extended_lut = "off";
+defparam \address_counter|state[0]~4 .lut_mask = 64'hAAAAAAAAAAAAAAAA;
+defparam \address_counter|state[0]~4 .shared_arith = "off";
+// synopsys translate_on
+
+cyclonev_io_ibuf \reset_counter~input (
+	.i(reset_counter),
+	.ibar(gnd),
+	.dynamicterminationcontrol(gnd),
+	.o(\reset_counter~input_o ));
+// synopsys translate_off
+defparam \reset_counter~input .bus_hold = "false";
+defparam \reset_counter~input .simulate_z_as = "z";
+// synopsys translate_on
+
+dffeas \address_counter|state[0] (
+	.clk(\delay|counter|Equal0~combout ),
+	.d(\address_counter|state[0]~4_combout ),
+	.asdata(vcc),
+	.clrn(\reset_counter~input_o ),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\address_counter|state [0]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \address_counter|state[0] .is_wysiwyg = "true";
+defparam \address_counter|state[0] .power_up = "low";
+// synopsys translate_on
+
+cyclonev_lcell_comb \address_counter|state[1]~0 (
+// Equation(s):
+// \address_counter|state[1]~0_combout  = !\address_counter|state [0] $ (!\address_counter|state [1])
+
+	.dataa(!\address_counter|state [0]),
+	.datab(!\address_counter|state [1]),
+	.datac(gnd),
+	.datad(gnd),
+	.datae(gnd),
+	.dataf(gnd),
+	.datag(gnd),
+	.cin(gnd),
+	.sharein(gnd),
+	.combout(\address_counter|state[1]~0_combout ),
+	.sumout(),
+	.cout(),
+	.shareout());
+// synopsys translate_off
+defparam \address_counter|state[1]~0 .extended_lut = "off";
+defparam \address_counter|state[1]~0 .lut_mask = 64'h6666666666666666;
+defparam \address_counter|state[1]~0 .shared_arith = "off";
+// synopsys translate_on
+
+dffeas \address_counter|state[1] (
+	.clk(\delay|counter|Equal0~combout ),
+	.d(\address_counter|state[1]~0_combout ),
+	.asdata(vcc),
+	.clrn(\reset_counter~input_o ),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\address_counter|state [1]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \address_counter|state[1] .is_wysiwyg = "true";
+defparam \address_counter|state[1] .power_up = "low";
+// synopsys translate_on
+
+cyclonev_lcell_comb \address_counter|state[2]~1 (
+// Equation(s):
+// \address_counter|state[2]~1_combout  = !\address_counter|state [2] $ (((!\address_counter|state [0]) # (!\address_counter|state [1])))
+
+	.dataa(!\address_counter|state [0]),
+	.datab(!\address_counter|state [1]),
+	.datac(!\address_counter|state [2]),
+	.datad(gnd),
+	.datae(gnd),
+	.dataf(gnd),
+	.datag(gnd),
+	.cin(gnd),
+	.sharein(gnd),
+	.combout(\address_counter|state[2]~1_combout ),
+	.sumout(),
+	.cout(),
+	.shareout());
+// synopsys translate_off
+defparam \address_counter|state[2]~1 .extended_lut = "off";
+defparam \address_counter|state[2]~1 .lut_mask = 64'h1E1E1E1E1E1E1E1E;
+defparam \address_counter|state[2]~1 .shared_arith = "off";
+// synopsys translate_on
+
+dffeas \address_counter|state[2] (
+	.clk(\delay|counter|Equal0~combout ),
+	.d(\address_counter|state[2]~1_combout ),
+	.asdata(vcc),
+	.clrn(\reset_counter~input_o ),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\address_counter|state [2]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \address_counter|state[2] .is_wysiwyg = "true";
+defparam \address_counter|state[2] .power_up = "low";
+// synopsys translate_on
+
+cyclonev_lcell_comb \address_counter|state[3]~2 (
+// Equation(s):
+// \address_counter|state[3]~2_combout  = !\address_counter|state [3] $ (((!\address_counter|state [0]) # ((!\address_counter|state [1]) # (!\address_counter|state [2]))))
+
+	.dataa(!\address_counter|state [0]),
+	.datab(!\address_counter|state [1]),
+	.datac(!\address_counter|state [2]),
+	.datad(!\address_counter|state [3]),
+	.datae(gnd),
+	.dataf(gnd),
+	.datag(gnd),
+	.cin(gnd),
+	.sharein(gnd),
+	.combout(\address_counter|state[3]~2_combout ),
+	.sumout(),
+	.cout(),
+	.shareout());
+// synopsys translate_off
+defparam \address_counter|state[3]~2 .extended_lut = "off";
+defparam \address_counter|state[3]~2 .lut_mask = 64'h01FE01FE01FE01FE;
+defparam \address_counter|state[3]~2 .shared_arith = "off";
+// synopsys translate_on
+
+dffeas \address_counter|state[3] (
+	.clk(\delay|counter|Equal0~combout ),
+	.d(\address_counter|state[3]~2_combout ),
+	.asdata(vcc),
+	.clrn(\reset_counter~input_o ),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\address_counter|state [3]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \address_counter|state[3] .is_wysiwyg = "true";
+defparam \address_counter|state[3] .power_up = "low";
+// synopsys translate_on
+
+cyclonev_lcell_comb \address_counter|state[4]~3 (
+// Equation(s):
+// \address_counter|state[4]~3_combout  = ( \address_counter|state [4] & ( (!\address_counter|state [0]) # ((!\address_counter|state [1]) # ((!\address_counter|state [2]) # (!\address_counter|state [3]))) ) ) # ( !\address_counter|state [4] & ( 
+// (\address_counter|state [0] & (\address_counter|state [1] & (\address_counter|state [2] & \address_counter|state [3]))) ) )
+
+	.dataa(!\address_counter|state [0]),
+	.datab(!\address_counter|state [1]),
+	.datac(!\address_counter|state [2]),
+	.datad(!\address_counter|state [3]),
+	.datae(!\address_counter|state [4]),
+	.dataf(gnd),
+	.datag(gnd),
+	.cin(gnd),
+	.sharein(gnd),
+	.combout(\address_counter|state[4]~3_combout ),
+	.sumout(),
+	.cout(),
+	.shareout());
+// synopsys translate_off
+defparam \address_counter|state[4]~3 .extended_lut = "off";
+defparam \address_counter|state[4]~3 .lut_mask = 64'h0001FFFE0001FFFE;
+defparam \address_counter|state[4]~3 .shared_arith = "off";
+// synopsys translate_on
+
+dffeas \address_counter|state[4] (
+	.clk(\delay|counter|Equal0~combout ),
+	.d(\address_counter|state[4]~3_combout ),
+	.asdata(vcc),
+	.clrn(\reset_counter~input_o ),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\address_counter|state [4]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \address_counter|state[4] .is_wysiwyg = "true";
+defparam \address_counter|state[4] .power_up = "low";
+// synopsys translate_on
+
+cyclonev_io_ibuf \write_enable~input (
+	.i(write_enable),
+	.ibar(gnd),
+	.dynamicterminationcontrol(gnd),
+	.o(\write_enable~input_o ));
+// synopsys translate_off
+defparam \write_enable~input .bus_hold = "false";
+defparam \write_enable~input .simulate_z_as = "z";
+// synopsys translate_on
+
+cyclonev_io_ibuf \data[0]~input (
+	.i(data[0]),
+	.ibar(gnd),
+	.dynamicterminationcontrol(gnd),
+	.o(\data[0]~input_o ));
+// synopsys translate_off
+defparam \data[0]~input .bus_hold = "false";
+defparam \data[0]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+cyclonev_io_ibuf \write_addr[0]~input (
+	.i(write_addr[0]),
+	.ibar(gnd),
+	.dynamicterminationcontrol(gnd),
+	.o(\write_addr[0]~input_o ));
+// synopsys translate_off
+defparam \write_addr[0]~input .bus_hold = "false";
+defparam \write_addr[0]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+cyclonev_io_ibuf \write_addr[1]~input (
+	.i(write_addr[1]),
+	.ibar(gnd),
+	.dynamicterminationcontrol(gnd),
+	.o(\write_addr[1]~input_o ));
+// synopsys translate_off
+defparam \write_addr[1]~input .bus_hold = "false";
+defparam \write_addr[1]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+cyclonev_io_ibuf \write_addr[2]~input (
+	.i(write_addr[2]),
+	.ibar(gnd),
+	.dynamicterminationcontrol(gnd),
+	.o(\write_addr[2]~input_o ));
+// synopsys translate_off
+defparam \write_addr[2]~input .bus_hold = "false";
+defparam \write_addr[2]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+cyclonev_io_ibuf \write_addr[3]~input (
+	.i(write_addr[3]),
+	.ibar(gnd),
+	.dynamicterminationcontrol(gnd),
+	.o(\write_addr[3]~input_o ));
+// synopsys translate_off
+defparam \write_addr[3]~input .bus_hold = "false";
+defparam \write_addr[3]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+cyclonev_io_ibuf \write_addr[4]~input (
+	.i(write_addr[4]),
+	.ibar(gnd),
+	.dynamicterminationcontrol(gnd),
+	.o(\write_addr[4]~input_o ));
+// synopsys translate_off
+defparam \write_addr[4]~input .bus_hold = "false";
+defparam \write_addr[4]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+cyclonev_ram_block \ram|altsyncram_component|auto_generated|ram_block1a0 (
+	.portawe(\write_enable~input_o ),
+	.portare(vcc),
+	.portaaddrstall(gnd),
+	.portbwe(gnd),
+	.portbre(vcc),
+	.portbaddrstall(gnd),
+	.clk0(\clk~input_o ),
+	.clk1(\clk~input_o ),
+	.ena0(\write_enable~input_o ),
+	.ena1(vcc),
+	.ena2(vcc),
+	.ena3(vcc),
+	.clr0(gnd),
+	.clr1(gnd),
+	.nerror(vcc),
+	.portadatain({\data[0]~input_o }),
+	.portaaddr({\write_addr[4]~input_o ,\write_addr[3]~input_o ,\write_addr[2]~input_o ,\write_addr[1]~input_o ,\write_addr[0]~input_o }),
+	.portabyteenamasks(1'b1),
+	.portbdatain(1'b0),
+	.portbaddr({\address_counter|state [4],\address_counter|state [3],\address_counter|state [2],\address_counter|state [1],\address_counter|state [0]}),
+	.portbbyteenamasks(1'b1),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.portadataout(),
+	.portbdataout(\ram|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus ),
+	.eccstatus(),
+	.dftout());
+// synopsys translate_off
+defparam \ram|altsyncram_component|auto_generated|ram_block1a0 .clk0_core_clock_enable = "ena0";
+defparam \ram|altsyncram_component|auto_generated|ram_block1a0 .data_interleave_offset_in_bits = 1;
+defparam \ram|altsyncram_component|auto_generated|ram_block1a0 .data_interleave_width_in_bits = 1;
+defparam \ram|altsyncram_component|auto_generated|ram_block1a0 .init_file = "iterating_ram.mif";
+defparam \ram|altsyncram_component|auto_generated|ram_block1a0 .init_file_layout = "port_b";
+defparam \ram|altsyncram_component|auto_generated|ram_block1a0 .logical_ram_name = "ram32x4_2_ports:ram|altsyncram:altsyncram_component|altsyncram_ev22:auto_generated|ALTSYNCRAM";
+defparam \ram|altsyncram_component|auto_generated|ram_block1a0 .mixed_port_feed_through_mode = "dont_care";
+defparam \ram|altsyncram_component|auto_generated|ram_block1a0 .operation_mode = "dual_port";
+defparam \ram|altsyncram_component|auto_generated|ram_block1a0 .port_a_address_clear = "none";
+defparam \ram|altsyncram_component|auto_generated|ram_block1a0 .port_a_address_width = 5;
+defparam \ram|altsyncram_component|auto_generated|ram_block1a0 .port_a_byte_enable_clock = "none";
+defparam \ram|altsyncram_component|auto_generated|ram_block1a0 .port_a_data_out_clear = "none";
+defparam \ram|altsyncram_component|auto_generated|ram_block1a0 .port_a_data_out_clock = "none";
+defparam \ram|altsyncram_component|auto_generated|ram_block1a0 .port_a_data_width = 1;
+defparam \ram|altsyncram_component|auto_generated|ram_block1a0 .port_a_first_address = 0;
+defparam \ram|altsyncram_component|auto_generated|ram_block1a0 .port_a_first_bit_number = 0;
+defparam \ram|altsyncram_component|auto_generated|ram_block1a0 .port_a_last_address = 31;
+defparam \ram|altsyncram_component|auto_generated|ram_block1a0 .port_a_logical_ram_depth = 32;
+defparam \ram|altsyncram_component|auto_generated|ram_block1a0 .port_a_logical_ram_width = 4;
+defparam \ram|altsyncram_component|auto_generated|ram_block1a0 .port_a_read_during_write_mode = "new_data_no_nbe_read";
+defparam \ram|altsyncram_component|auto_generated|ram_block1a0 .port_b_address_clear = "none";
+defparam \ram|altsyncram_component|auto_generated|ram_block1a0 .port_b_address_clock = "clock1";
+defparam \ram|altsyncram_component|auto_generated|ram_block1a0 .port_b_address_width = 5;
+defparam \ram|altsyncram_component|auto_generated|ram_block1a0 .port_b_data_out_clear = "none";
+defparam \ram|altsyncram_component|auto_generated|ram_block1a0 .port_b_data_out_clock = "none";
+defparam \ram|altsyncram_component|auto_generated|ram_block1a0 .port_b_data_width = 1;
+defparam \ram|altsyncram_component|auto_generated|ram_block1a0 .port_b_first_address = 0;
+defparam \ram|altsyncram_component|auto_generated|ram_block1a0 .port_b_first_bit_number = 0;
+defparam \ram|altsyncram_component|auto_generated|ram_block1a0 .port_b_last_address = 31;
+defparam \ram|altsyncram_component|auto_generated|ram_block1a0 .port_b_logical_ram_depth = 32;
+defparam \ram|altsyncram_component|auto_generated|ram_block1a0 .port_b_logical_ram_width = 4;
+defparam \ram|altsyncram_component|auto_generated|ram_block1a0 .port_b_read_during_write_mode = "new_data_no_nbe_read";
+defparam \ram|altsyncram_component|auto_generated|ram_block1a0 .port_b_read_enable_clock = "clock1";
+defparam \ram|altsyncram_component|auto_generated|ram_block1a0 .ram_block_type = "M20K";
+defparam \ram|altsyncram_component|auto_generated|ram_block1a0 .mem_init0 = "AAAAAAAA";
+// synopsys translate_on
+
+cyclonev_io_ibuf \data[1]~input (
+	.i(data[1]),
+	.ibar(gnd),
+	.dynamicterminationcontrol(gnd),
+	.o(\data[1]~input_o ));
+// synopsys translate_off
+defparam \data[1]~input .bus_hold = "false";
+defparam \data[1]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+cyclonev_ram_block \ram|altsyncram_component|auto_generated|ram_block1a1 (
+	.portawe(\write_enable~input_o ),
+	.portare(vcc),
+	.portaaddrstall(gnd),
+	.portbwe(gnd),
+	.portbre(vcc),
+	.portbaddrstall(gnd),
+	.clk0(\clk~input_o ),
+	.clk1(\clk~input_o ),
+	.ena0(\write_enable~input_o ),
+	.ena1(vcc),
+	.ena2(vcc),
+	.ena3(vcc),
+	.clr0(gnd),
+	.clr1(gnd),
+	.nerror(vcc),
+	.portadatain({\data[1]~input_o }),
+	.portaaddr({\write_addr[4]~input_o ,\write_addr[3]~input_o ,\write_addr[2]~input_o ,\write_addr[1]~input_o ,\write_addr[0]~input_o }),
+	.portabyteenamasks(1'b1),
+	.portbdatain(1'b0),
+	.portbaddr({\address_counter|state [4],\address_counter|state [3],\address_counter|state [2],\address_counter|state [1],\address_counter|state [0]}),
+	.portbbyteenamasks(1'b1),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.portadataout(),
+	.portbdataout(\ram|altsyncram_component|auto_generated|ram_block1a1_PORTBDATAOUT_bus ),
+	.eccstatus(),
+	.dftout());
+// synopsys translate_off
+defparam \ram|altsyncram_component|auto_generated|ram_block1a1 .clk0_core_clock_enable = "ena0";
+defparam \ram|altsyncram_component|auto_generated|ram_block1a1 .data_interleave_offset_in_bits = 1;
+defparam \ram|altsyncram_component|auto_generated|ram_block1a1 .data_interleave_width_in_bits = 1;
+defparam \ram|altsyncram_component|auto_generated|ram_block1a1 .init_file = "iterating_ram.mif";
+defparam \ram|altsyncram_component|auto_generated|ram_block1a1 .init_file_layout = "port_b";
+defparam \ram|altsyncram_component|auto_generated|ram_block1a1 .logical_ram_name = "ram32x4_2_ports:ram|altsyncram:altsyncram_component|altsyncram_ev22:auto_generated|ALTSYNCRAM";
+defparam \ram|altsyncram_component|auto_generated|ram_block1a1 .mixed_port_feed_through_mode = "dont_care";
+defparam \ram|altsyncram_component|auto_generated|ram_block1a1 .operation_mode = "dual_port";
+defparam \ram|altsyncram_component|auto_generated|ram_block1a1 .port_a_address_clear = "none";
+defparam \ram|altsyncram_component|auto_generated|ram_block1a1 .port_a_address_width = 5;
+defparam \ram|altsyncram_component|auto_generated|ram_block1a1 .port_a_byte_enable_clock = "none";
+defparam \ram|altsyncram_component|auto_generated|ram_block1a1 .port_a_data_out_clear = "none";
+defparam \ram|altsyncram_component|auto_generated|ram_block1a1 .port_a_data_out_clock = "none";
+defparam \ram|altsyncram_component|auto_generated|ram_block1a1 .port_a_data_width = 1;
+defparam \ram|altsyncram_component|auto_generated|ram_block1a1 .port_a_first_address = 0;
+defparam \ram|altsyncram_component|auto_generated|ram_block1a1 .port_a_first_bit_number = 1;
+defparam \ram|altsyncram_component|auto_generated|ram_block1a1 .port_a_last_address = 31;
+defparam \ram|altsyncram_component|auto_generated|ram_block1a1 .port_a_logical_ram_depth = 32;
+defparam \ram|altsyncram_component|auto_generated|ram_block1a1 .port_a_logical_ram_width = 4;
+defparam \ram|altsyncram_component|auto_generated|ram_block1a1 .port_a_read_during_write_mode = "new_data_no_nbe_read";
+defparam \ram|altsyncram_component|auto_generated|ram_block1a1 .port_b_address_clear = "none";
+defparam \ram|altsyncram_component|auto_generated|ram_block1a1 .port_b_address_clock = "clock1";
+defparam \ram|altsyncram_component|auto_generated|ram_block1a1 .port_b_address_width = 5;
+defparam \ram|altsyncram_component|auto_generated|ram_block1a1 .port_b_data_out_clear = "none";
+defparam \ram|altsyncram_component|auto_generated|ram_block1a1 .port_b_data_out_clock = "none";
+defparam \ram|altsyncram_component|auto_generated|ram_block1a1 .port_b_data_width = 1;
+defparam \ram|altsyncram_component|auto_generated|ram_block1a1 .port_b_first_address = 0;
+defparam \ram|altsyncram_component|auto_generated|ram_block1a1 .port_b_first_bit_number = 1;
+defparam \ram|altsyncram_component|auto_generated|ram_block1a1 .port_b_last_address = 31;
+defparam \ram|altsyncram_component|auto_generated|ram_block1a1 .port_b_logical_ram_depth = 32;
+defparam \ram|altsyncram_component|auto_generated|ram_block1a1 .port_b_logical_ram_width = 4;
+defparam \ram|altsyncram_component|auto_generated|ram_block1a1 .port_b_read_during_write_mode = "new_data_no_nbe_read";
+defparam \ram|altsyncram_component|auto_generated|ram_block1a1 .port_b_read_enable_clock = "clock1";
+defparam \ram|altsyncram_component|auto_generated|ram_block1a1 .ram_block_type = "M20K";
+defparam \ram|altsyncram_component|auto_generated|ram_block1a1 .mem_init0 = "CCCCCCCC";
+// synopsys translate_on
+
+cyclonev_io_ibuf \data[2]~input (
+	.i(data[2]),
+	.ibar(gnd),
+	.dynamicterminationcontrol(gnd),
+	.o(\data[2]~input_o ));
+// synopsys translate_off
+defparam \data[2]~input .bus_hold = "false";
+defparam \data[2]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+cyclonev_ram_block \ram|altsyncram_component|auto_generated|ram_block1a2 (
+	.portawe(\write_enable~input_o ),
+	.portare(vcc),
+	.portaaddrstall(gnd),
+	.portbwe(gnd),
+	.portbre(vcc),
+	.portbaddrstall(gnd),
+	.clk0(\clk~input_o ),
+	.clk1(\clk~input_o ),
+	.ena0(\write_enable~input_o ),
+	.ena1(vcc),
+	.ena2(vcc),
+	.ena3(vcc),
+	.clr0(gnd),
+	.clr1(gnd),
+	.nerror(vcc),
+	.portadatain({\data[2]~input_o }),
+	.portaaddr({\write_addr[4]~input_o ,\write_addr[3]~input_o ,\write_addr[2]~input_o ,\write_addr[1]~input_o ,\write_addr[0]~input_o }),
+	.portabyteenamasks(1'b1),
+	.portbdatain(1'b0),
+	.portbaddr({\address_counter|state [4],\address_counter|state [3],\address_counter|state [2],\address_counter|state [1],\address_counter|state [0]}),
+	.portbbyteenamasks(1'b1),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.portadataout(),
+	.portbdataout(\ram|altsyncram_component|auto_generated|ram_block1a2_PORTBDATAOUT_bus ),
+	.eccstatus(),
+	.dftout());
+// synopsys translate_off
+defparam \ram|altsyncram_component|auto_generated|ram_block1a2 .clk0_core_clock_enable = "ena0";
+defparam \ram|altsyncram_component|auto_generated|ram_block1a2 .data_interleave_offset_in_bits = 1;
+defparam \ram|altsyncram_component|auto_generated|ram_block1a2 .data_interleave_width_in_bits = 1;
+defparam \ram|altsyncram_component|auto_generated|ram_block1a2 .init_file = "iterating_ram.mif";
+defparam \ram|altsyncram_component|auto_generated|ram_block1a2 .init_file_layout = "port_b";
+defparam \ram|altsyncram_component|auto_generated|ram_block1a2 .logical_ram_name = "ram32x4_2_ports:ram|altsyncram:altsyncram_component|altsyncram_ev22:auto_generated|ALTSYNCRAM";
+defparam \ram|altsyncram_component|auto_generated|ram_block1a2 .mixed_port_feed_through_mode = "dont_care";
+defparam \ram|altsyncram_component|auto_generated|ram_block1a2 .operation_mode = "dual_port";
+defparam \ram|altsyncram_component|auto_generated|ram_block1a2 .port_a_address_clear = "none";
+defparam \ram|altsyncram_component|auto_generated|ram_block1a2 .port_a_address_width = 5;
+defparam \ram|altsyncram_component|auto_generated|ram_block1a2 .port_a_byte_enable_clock = "none";
+defparam \ram|altsyncram_component|auto_generated|ram_block1a2 .port_a_data_out_clear = "none";
+defparam \ram|altsyncram_component|auto_generated|ram_block1a2 .port_a_data_out_clock = "none";
+defparam \ram|altsyncram_component|auto_generated|ram_block1a2 .port_a_data_width = 1;
+defparam \ram|altsyncram_component|auto_generated|ram_block1a2 .port_a_first_address = 0;
+defparam \ram|altsyncram_component|auto_generated|ram_block1a2 .port_a_first_bit_number = 2;
+defparam \ram|altsyncram_component|auto_generated|ram_block1a2 .port_a_last_address = 31;
+defparam \ram|altsyncram_component|auto_generated|ram_block1a2 .port_a_logical_ram_depth = 32;
+defparam \ram|altsyncram_component|auto_generated|ram_block1a2 .port_a_logical_ram_width = 4;
+defparam \ram|altsyncram_component|auto_generated|ram_block1a2 .port_a_read_during_write_mode = "new_data_no_nbe_read";
+defparam \ram|altsyncram_component|auto_generated|ram_block1a2 .port_b_address_clear = "none";
+defparam \ram|altsyncram_component|auto_generated|ram_block1a2 .port_b_address_clock = "clock1";
+defparam \ram|altsyncram_component|auto_generated|ram_block1a2 .port_b_address_width = 5;
+defparam \ram|altsyncram_component|auto_generated|ram_block1a2 .port_b_data_out_clear = "none";
+defparam \ram|altsyncram_component|auto_generated|ram_block1a2 .port_b_data_out_clock = "none";
+defparam \ram|altsyncram_component|auto_generated|ram_block1a2 .port_b_data_width = 1;
+defparam \ram|altsyncram_component|auto_generated|ram_block1a2 .port_b_first_address = 0;
+defparam \ram|altsyncram_component|auto_generated|ram_block1a2 .port_b_first_bit_number = 2;
+defparam \ram|altsyncram_component|auto_generated|ram_block1a2 .port_b_last_address = 31;
+defparam \ram|altsyncram_component|auto_generated|ram_block1a2 .port_b_logical_ram_depth = 32;
+defparam \ram|altsyncram_component|auto_generated|ram_block1a2 .port_b_logical_ram_width = 4;
+defparam \ram|altsyncram_component|auto_generated|ram_block1a2 .port_b_read_during_write_mode = "new_data_no_nbe_read";
+defparam \ram|altsyncram_component|auto_generated|ram_block1a2 .port_b_read_enable_clock = "clock1";
+defparam \ram|altsyncram_component|auto_generated|ram_block1a2 .ram_block_type = "M20K";
+defparam \ram|altsyncram_component|auto_generated|ram_block1a2 .mem_init0 = "F0F0F0F0";
+// synopsys translate_on
+
+cyclonev_io_ibuf \data[3]~input (
+	.i(data[3]),
+	.ibar(gnd),
+	.dynamicterminationcontrol(gnd),
+	.o(\data[3]~input_o ));
+// synopsys translate_off
+defparam \data[3]~input .bus_hold = "false";
+defparam \data[3]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+cyclonev_ram_block \ram|altsyncram_component|auto_generated|ram_block1a3 (
+	.portawe(\write_enable~input_o ),
+	.portare(vcc),
+	.portaaddrstall(gnd),
+	.portbwe(gnd),
+	.portbre(vcc),
+	.portbaddrstall(gnd),
+	.clk0(\clk~input_o ),
+	.clk1(\clk~input_o ),
+	.ena0(\write_enable~input_o ),
+	.ena1(vcc),
+	.ena2(vcc),
+	.ena3(vcc),
+	.clr0(gnd),
+	.clr1(gnd),
+	.nerror(vcc),
+	.portadatain({\data[3]~input_o }),
+	.portaaddr({\write_addr[4]~input_o ,\write_addr[3]~input_o ,\write_addr[2]~input_o ,\write_addr[1]~input_o ,\write_addr[0]~input_o }),
+	.portabyteenamasks(1'b1),
+	.portbdatain(1'b0),
+	.portbaddr({\address_counter|state [4],\address_counter|state [3],\address_counter|state [2],\address_counter|state [1],\address_counter|state [0]}),
+	.portbbyteenamasks(1'b1),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.portadataout(),
+	.portbdataout(\ram|altsyncram_component|auto_generated|ram_block1a3_PORTBDATAOUT_bus ),
+	.eccstatus(),
+	.dftout());
+// synopsys translate_off
+defparam \ram|altsyncram_component|auto_generated|ram_block1a3 .clk0_core_clock_enable = "ena0";
+defparam \ram|altsyncram_component|auto_generated|ram_block1a3 .data_interleave_offset_in_bits = 1;
+defparam \ram|altsyncram_component|auto_generated|ram_block1a3 .data_interleave_width_in_bits = 1;
+defparam \ram|altsyncram_component|auto_generated|ram_block1a3 .init_file = "iterating_ram.mif";
+defparam \ram|altsyncram_component|auto_generated|ram_block1a3 .init_file_layout = "port_b";
+defparam \ram|altsyncram_component|auto_generated|ram_block1a3 .logical_ram_name = "ram32x4_2_ports:ram|altsyncram:altsyncram_component|altsyncram_ev22:auto_generated|ALTSYNCRAM";
+defparam \ram|altsyncram_component|auto_generated|ram_block1a3 .mixed_port_feed_through_mode = "dont_care";
+defparam \ram|altsyncram_component|auto_generated|ram_block1a3 .operation_mode = "dual_port";
+defparam \ram|altsyncram_component|auto_generated|ram_block1a3 .port_a_address_clear = "none";
+defparam \ram|altsyncram_component|auto_generated|ram_block1a3 .port_a_address_width = 5;
+defparam \ram|altsyncram_component|auto_generated|ram_block1a3 .port_a_byte_enable_clock = "none";
+defparam \ram|altsyncram_component|auto_generated|ram_block1a3 .port_a_data_out_clear = "none";
+defparam \ram|altsyncram_component|auto_generated|ram_block1a3 .port_a_data_out_clock = "none";
+defparam \ram|altsyncram_component|auto_generated|ram_block1a3 .port_a_data_width = 1;
+defparam \ram|altsyncram_component|auto_generated|ram_block1a3 .port_a_first_address = 0;
+defparam \ram|altsyncram_component|auto_generated|ram_block1a3 .port_a_first_bit_number = 3;
+defparam \ram|altsyncram_component|auto_generated|ram_block1a3 .port_a_last_address = 31;
+defparam \ram|altsyncram_component|auto_generated|ram_block1a3 .port_a_logical_ram_depth = 32;
+defparam \ram|altsyncram_component|auto_generated|ram_block1a3 .port_a_logical_ram_width = 4;
+defparam \ram|altsyncram_component|auto_generated|ram_block1a3 .port_a_read_during_write_mode = "new_data_no_nbe_read";
+defparam \ram|altsyncram_component|auto_generated|ram_block1a3 .port_b_address_clear = "none";
+defparam \ram|altsyncram_component|auto_generated|ram_block1a3 .port_b_address_clock = "clock1";
+defparam \ram|altsyncram_component|auto_generated|ram_block1a3 .port_b_address_width = 5;
+defparam \ram|altsyncram_component|auto_generated|ram_block1a3 .port_b_data_out_clear = "none";
+defparam \ram|altsyncram_component|auto_generated|ram_block1a3 .port_b_data_out_clock = "none";
+defparam \ram|altsyncram_component|auto_generated|ram_block1a3 .port_b_data_width = 1;
+defparam \ram|altsyncram_component|auto_generated|ram_block1a3 .port_b_first_address = 0;
+defparam \ram|altsyncram_component|auto_generated|ram_block1a3 .port_b_first_bit_number = 3;
+defparam \ram|altsyncram_component|auto_generated|ram_block1a3 .port_b_last_address = 31;
+defparam \ram|altsyncram_component|auto_generated|ram_block1a3 .port_b_logical_ram_depth = 32;
+defparam \ram|altsyncram_component|auto_generated|ram_block1a3 .port_b_logical_ram_width = 4;
+defparam \ram|altsyncram_component|auto_generated|ram_block1a3 .port_b_read_during_write_mode = "new_data_no_nbe_read";
+defparam \ram|altsyncram_component|auto_generated|ram_block1a3 .port_b_read_enable_clock = "clock1";
+defparam \ram|altsyncram_component|auto_generated|ram_block1a3 .ram_block_type = "M20K";
+defparam \ram|altsyncram_component|auto_generated|ram_block1a3 .mem_init0 = "FF00FF00";
+// synopsys translate_on
+
+assign read_addr[0] = \read_addr[0]~output_o ;
+
+assign read_addr[1] = \read_addr[1]~output_o ;
+
+assign read_addr[2] = \read_addr[2]~output_o ;
+
+assign read_addr[3] = \read_addr[3]~output_o ;
+
+assign read_addr[4] = \read_addr[4]~output_o ;
+
+assign q[0] = \q[0]~output_o ;
+
+assign q[1] = \q[1]~output_o ;
+
+assign q[2] = \q[2]~output_o ;
+
+assign q[3] = \q[3]~output_o ;
+
+endmodule

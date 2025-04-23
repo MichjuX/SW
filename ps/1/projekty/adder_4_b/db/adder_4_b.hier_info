@@ -1,0 +1,61 @@
+|adder_4_b
+cin => cin.IN1
+a[0] => a[0].IN1
+a[1] => a[1].IN1
+a[2] => a[2].IN1
+a[3] => a[3].IN1
+b[0] => b[0].IN1
+b[1] => b[1].IN1
+b[2] => b[2].IN1
+b[3] => b[3].IN1
+cout <= adder_1_b:a1_3.port3
+s[0] <= adder_1_b:a1_0.port4
+s[1] <= adder_1_b:a1_1.port4
+s[2] <= adder_1_b:a1_2.port4
+s[3] <= adder_1_b:a1_3.port4
+
+
+|adder_4_b|adder_1_b:a1_0
+cin => s.IN1
+cin => cout.IN1
+a => cout.IN0
+a => cout.IN0
+b => cout.IN1
+b => cout.IN1
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder_4_b|adder_1_b:a1_1
+cin => s.IN1
+cin => cout.IN1
+a => cout.IN0
+a => cout.IN0
+b => cout.IN1
+b => cout.IN1
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder_4_b|adder_1_b:a1_2
+cin => s.IN1
+cin => cout.IN1
+a => cout.IN0
+a => cout.IN0
+b => cout.IN1
+b => cout.IN1
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder_4_b|adder_1_b:a1_3
+cin => s.IN1
+cin => cout.IN1
+a => cout.IN0
+a => cout.IN0
+b => cout.IN1
+b => cout.IN1
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+

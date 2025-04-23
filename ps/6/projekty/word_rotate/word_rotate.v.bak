@@ -1,0 +1,75 @@
+module word_rotate(
+	input clock,
+	output reg [7:0] char_codes);
+
+	initial char_codes = { 2'b00, 2'b01, 2'b10, 2'b11 };
+	
+	wire slow_clock;
+	slow_counter_mod_2 slow_counter(clock, slow_clock);
+	always @ (posedge slow_clock) begin
+		// rejestr przesuwny o długości 4 i szerokości 2-bitów
+		// slow_clock zmienia wartość na przeciwną co 25_000_000 zboczy narastających zegara 50 MHz
+		// więc zbocze narastające slow_clock jest co 50_000_000 zboczy narastających zegara 50 MHz,
+		// czyli co 1 sekundę i wtedy przesuwamy zawartość w prawo
+		char_codes[7:6] <= char_codes[1:0];
+		char_codes[1:0] <= char_codes[3:2];
+		char_codes[3:2] <= char_codes[5:4];
+		char_codes[5:4] <= char_codes[7:6];
+	end
+
+endmodule
+
+module decoder_7_seg(
+	input [1:0] binary,
+	output reg [6:0] h);
+
+	always @ (*)
+		case (binary)
+			2'b00: h = 7'b0100011; // 35; 'o'
+			2'b01: h = 7'b0100001; // 33; 'd'
+			2'b10: h = 7'b0000110; // 6; 'E'
+			2'b11: h = 7'b0010010; // 18; 'S'
+			default: h = 7'b1111111; // 127; ' '
+		endcase
+
+endmodule
+
+module slow_counter_mod_2(
+	input clk,
+	output Q); // ceil(log2(2)) bitów
+
+	// ceil(log2(25_000_000)) bitów
+	wire [24:0] A;
+	// jeżeli zrobimy fast_counter jako licznik mod 10, to slow_counter mod 2
+	// będzie zmieniał wartość na przeciwną co 10 cykli clk, czyli będzie miał zbocze narastające co 20 cykli clk
+	// analogicznie
+	// jeżeli zrobimy fast_counter jako licznik mod 25_000_000, to slow_counter mod 2
+	// będzie zmieniał wartość na przeciwną co 25_000_000 cykli clk, czyli będzie miał zbocze narastające co 50_000_000 cykli clk
+	counter_mod_M #(25_000_000) fast_counter(clk, 1'b1, 1'b1, A);
+	wire e = ~|A; // e = nor(A[0], A[1], ...);
+	counter_mod_M #(2) slow_counter(clk, 1'b1, e, Q);
+
+endmodule
+
+module counter_mod_M
+	#(parameter M = 16)(
+	input clk, aclr, enable,
+	output reg [BITS-1:0] Q);
+
+	localparam BITS = clogb2(M-1);
+	function integer clogb2(input [31:0] v);
+		for (clogb2 = 0; v > 0; clogb2 = clogb2 + 1)
+			v = v >> 1;
+	endfunction
+
+	always @(posedge clk, negedge aclr)
+		if (!aclr) Q <= {BITS{1'b0}};
+		else begin
+			if (enable) begin
+				if (Q == M-1) Q <= {BITS{1'b0}};
+				else Q <= Q + 1'b1;
+			end
+			else Q <= Q;
+		end
+
+endmodule

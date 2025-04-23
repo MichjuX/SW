@@ -1,0 +1,417 @@
+// Copyright (C) 2018  Intel Corporation. All rights reserved.
+// Your use of Intel Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Intel Program License 
+// Subscription Agreement, the Intel Quartus Prime License Agreement,
+// the Intel FPGA IP License Agreement, or other applicable license
+// agreement, including, without limitation, that your use is for
+// the sole purpose of programming logic devices manufactured by
+// Intel and sold by Intel or its authorized distributors.  Please
+// refer to the applicable agreement for further details.
+
+// VENDOR "Altera"
+// PROGRAM "Quartus Prime"
+// VERSION "Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition"
+
+// DATE "04/27/2022 19:07:52"
+
+// 
+// Device: Altera 5CSEMA5F31C6 Package FBGA896
+// 
+
+// 
+// This Verilog file should be used for ModelSim-Altera (Verilog) only
+// 
+
+`timescale 1 ps/ 1 ps
+
+module led_blink (
+	clock,
+	led);
+input 	clock;
+output 	[7:0] led;
+
+wire gnd;
+wire vcc;
+wire unknown;
+
+assign gnd = 1'b0;
+assign vcc = 1'b1;
+assign unknown = 1'bx;
+
+tri1 devclrn;
+tri1 devpor;
+tri1 devoe;
+wire \led[0]~output_o ;
+wire \led[1]~output_o ;
+wire \led[2]~output_o ;
+wire \led[3]~output_o ;
+wire \led[4]~output_o ;
+wire \led[5]~output_o ;
+wire \led[6]~output_o ;
+wire \led[7]~output_o ;
+wire \clock~input_o ;
+wire \t|counter[0]~4_combout ;
+wire \t|counter~1_combout ;
+wire \t|counter~0_combout ;
+wire \t|Add0~0_combout ;
+wire \t|slow_clock~0_combout ;
+wire \t|slow_clock~q ;
+wire [3:0] \t|counter ;
+
+
+cyclonev_io_obuf \led[0]~output (
+	.i(!\t|slow_clock~q ),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\led[0]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \led[0]~output .bus_hold = "false";
+defparam \led[0]~output .open_drain_output = "false";
+defparam \led[0]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+cyclonev_io_obuf \led[1]~output (
+	.i(!\t|slow_clock~q ),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\led[1]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \led[1]~output .bus_hold = "false";
+defparam \led[1]~output .open_drain_output = "false";
+defparam \led[1]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+cyclonev_io_obuf \led[2]~output (
+	.i(!\t|slow_clock~q ),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\led[2]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \led[2]~output .bus_hold = "false";
+defparam \led[2]~output .open_drain_output = "false";
+defparam \led[2]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+cyclonev_io_obuf \led[3]~output (
+	.i(!\t|slow_clock~q ),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\led[3]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \led[3]~output .bus_hold = "false";
+defparam \led[3]~output .open_drain_output = "false";
+defparam \led[3]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+cyclonev_io_obuf \led[4]~output (
+	.i(!\t|slow_clock~q ),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\led[4]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \led[4]~output .bus_hold = "false";
+defparam \led[4]~output .open_drain_output = "false";
+defparam \led[4]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+cyclonev_io_obuf \led[5]~output (
+	.i(!\t|slow_clock~q ),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\led[5]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \led[5]~output .bus_hold = "false";
+defparam \led[5]~output .open_drain_output = "false";
+defparam \led[5]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+cyclonev_io_obuf \led[6]~output (
+	.i(!\t|slow_clock~q ),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\led[6]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \led[6]~output .bus_hold = "false";
+defparam \led[6]~output .open_drain_output = "false";
+defparam \led[6]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+cyclonev_io_obuf \led[7]~output (
+	.i(!\t|slow_clock~q ),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\led[7]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \led[7]~output .bus_hold = "false";
+defparam \led[7]~output .open_drain_output = "false";
+defparam \led[7]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+cyclonev_io_ibuf \clock~input (
+	.i(clock),
+	.ibar(gnd),
+	.dynamicterminationcontrol(gnd),
+	.o(\clock~input_o ));
+// synopsys translate_off
+defparam \clock~input .bus_hold = "false";
+defparam \clock~input .simulate_z_as = "z";
+// synopsys translate_on
+
+cyclonev_lcell_comb \t|counter[0]~4 (
+// Equation(s):
+// \t|counter[0]~4_combout  = !\t|counter [0]
+
+	.dataa(!\t|counter [0]),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(gnd),
+	.datae(gnd),
+	.dataf(gnd),
+	.datag(gnd),
+	.cin(gnd),
+	.sharein(gnd),
+	.combout(\t|counter[0]~4_combout ),
+	.sumout(),
+	.cout(),
+	.shareout());
+// synopsys translate_off
+defparam \t|counter[0]~4 .extended_lut = "off";
+defparam \t|counter[0]~4 .lut_mask = 64'hAAAAAAAAAAAAAAAA;
+defparam \t|counter[0]~4 .shared_arith = "off";
+// synopsys translate_on
+
+dffeas \t|counter[0] (
+	.clk(\clock~input_o ),
+	.d(\t|counter[0]~4_combout ),
+	.asdata(vcc),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\t|counter [0]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \t|counter[0] .is_wysiwyg = "true";
+defparam \t|counter[0] .power_up = "low";
+// synopsys translate_on
+
+cyclonev_lcell_comb \t|counter~1 (
+// Equation(s):
+// \t|counter~1_combout  = (!\t|counter [1] & (\t|counter [0] & ((!\t|counter [3]) # (\t|counter [2])))) # (\t|counter [1] & (((!\t|counter [0]))))
+
+	.dataa(!\t|counter [3]),
+	.datab(!\t|counter [2]),
+	.datac(!\t|counter [1]),
+	.datad(!\t|counter [0]),
+	.datae(gnd),
+	.dataf(gnd),
+	.datag(gnd),
+	.cin(gnd),
+	.sharein(gnd),
+	.combout(\t|counter~1_combout ),
+	.sumout(),
+	.cout(),
+	.shareout());
+// synopsys translate_off
+defparam \t|counter~1 .extended_lut = "off";
+defparam \t|counter~1 .lut_mask = 64'h0FB00FB00FB00FB0;
+defparam \t|counter~1 .shared_arith = "off";
+// synopsys translate_on
+
+dffeas \t|counter[1] (
+	.clk(\clock~input_o ),
+	.d(\t|counter~1_combout ),
+	.asdata(vcc),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\t|counter [1]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \t|counter[1] .is_wysiwyg = "true";
+defparam \t|counter[1] .power_up = "low";
+// synopsys translate_on
+
+cyclonev_lcell_comb \t|counter~0 (
+// Equation(s):
+// \t|counter~0_combout  = (!\t|counter [2] & (!\t|counter [3] & (!\t|counter [1] & \t|counter [0]))) # (\t|counter [2] & (((!\t|counter [0]) # (\t|counter [1]))))
+
+	.dataa(!\t|counter [3]),
+	.datab(!\t|counter [2]),
+	.datac(!\t|counter [1]),
+	.datad(!\t|counter [0]),
+	.datae(gnd),
+	.dataf(gnd),
+	.datag(gnd),
+	.cin(gnd),
+	.sharein(gnd),
+	.combout(\t|counter~0_combout ),
+	.sumout(),
+	.cout(),
+	.shareout());
+// synopsys translate_off
+defparam \t|counter~0 .extended_lut = "off";
+defparam \t|counter~0 .lut_mask = 64'h3383338333833383;
+defparam \t|counter~0 .shared_arith = "off";
+// synopsys translate_on
+
+dffeas \t|counter[2] (
+	.clk(\clock~input_o ),
+	.d(\t|counter~0_combout ),
+	.asdata(vcc),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\t|counter [2]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \t|counter[2] .is_wysiwyg = "true";
+defparam \t|counter[2] .power_up = "low";
+// synopsys translate_on
+
+cyclonev_lcell_comb \t|Add0~0 (
+// Equation(s):
+// \t|Add0~0_combout  = !\t|counter [3] $ ((((!\t|counter [0]) # (\t|counter [1])) # (\t|counter [2])))
+
+	.dataa(!\t|counter [3]),
+	.datab(!\t|counter [2]),
+	.datac(!\t|counter [1]),
+	.datad(!\t|counter [0]),
+	.datae(gnd),
+	.dataf(gnd),
+	.datag(gnd),
+	.cin(gnd),
+	.sharein(gnd),
+	.combout(\t|Add0~0_combout ),
+	.sumout(),
+	.cout(),
+	.shareout());
+// synopsys translate_off
+defparam \t|Add0~0 .extended_lut = "off";
+defparam \t|Add0~0 .lut_mask = 64'h5595559555955595;
+defparam \t|Add0~0 .shared_arith = "off";
+// synopsys translate_on
+
+dffeas \t|counter[3] (
+	.clk(\clock~input_o ),
+	.d(\t|Add0~0_combout ),
+	.asdata(vcc),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\t|counter [3]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \t|counter[3] .is_wysiwyg = "true";
+defparam \t|counter[3] .power_up = "low";
+// synopsys translate_on
+
+cyclonev_lcell_comb \t|slow_clock~0 (
+// Equation(s):
+// \t|slow_clock~0_combout  = ( \t|counter [0] & ( !\t|slow_clock~q  $ (((!\t|counter [3]) # ((\t|counter [1]) # (\t|counter [2])))) ) ) # ( !\t|counter [0] & ( \t|slow_clock~q  ) )
+
+	.dataa(!\t|slow_clock~q ),
+	.datab(!\t|counter [3]),
+	.datac(!\t|counter [2]),
+	.datad(!\t|counter [1]),
+	.datae(!\t|counter [0]),
+	.dataf(gnd),
+	.datag(gnd),
+	.cin(gnd),
+	.sharein(gnd),
+	.combout(\t|slow_clock~0_combout ),
+	.sumout(),
+	.cout(),
+	.shareout());
+// synopsys translate_off
+defparam \t|slow_clock~0 .extended_lut = "off";
+defparam \t|slow_clock~0 .lut_mask = 64'h5555655555556555;
+defparam \t|slow_clock~0 .shared_arith = "off";
+// synopsys translate_on
+
+dffeas \t|slow_clock (
+	.clk(\clock~input_o ),
+	.d(\t|slow_clock~0_combout ),
+	.asdata(vcc),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\t|slow_clock~q ),
+	.prn(vcc));
+// synopsys translate_off
+defparam \t|slow_clock .is_wysiwyg = "true";
+defparam \t|slow_clock .power_up = "low";
+// synopsys translate_on
+
+assign led[0] = \led[0]~output_o ;
+
+assign led[1] = \led[1]~output_o ;
+
+assign led[2] = \led[2]~output_o ;
+
+assign led[3] = \led[3]~output_o ;
+
+assign led[4] = \led[4]~output_o ;
+
+assign led[5] = \led[5]~output_o ;
+
+assign led[6] = \led[6]~output_o ;
+
+assign led[7] = \led[7]~output_o ;
+
+endmodule

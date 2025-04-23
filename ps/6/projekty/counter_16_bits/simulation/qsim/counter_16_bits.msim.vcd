@@ -1,0 +1,399 @@
+$comment
+	File created using the following command:
+		vcd file counter_16_bits.msim.vcd -direction
+$end
+$date
+	Tue Apr 12 15:52:01 2022
+$end
+$version
+	ModelSim Version 10.5b
+$end
+$timescale
+	1ps
+$end
+
+$scope module counter_16_bits_vlg_vec_tst $end
+$var reg 1 ! areset $end
+$var reg 1 " clk $end
+$var reg 1 # enable $end
+$var wire 1 $ Q [15] $end
+$var wire 1 % Q [14] $end
+$var wire 1 & Q [13] $end
+$var wire 1 ' Q [12] $end
+$var wire 1 ( Q [11] $end
+$var wire 1 ) Q [10] $end
+$var wire 1 * Q [9] $end
+$var wire 1 + Q [8] $end
+$var wire 1 , Q [7] $end
+$var wire 1 - Q [6] $end
+$var wire 1 . Q [5] $end
+$var wire 1 / Q [4] $end
+$var wire 1 0 Q [3] $end
+$var wire 1 1 Q [2] $end
+$var wire 1 2 Q [1] $end
+$var wire 1 3 Q [0] $end
+
+$scope module i1 $end
+$var wire 1 4 gnd $end
+$var wire 1 5 vcc $end
+$var wire 1 6 unknown $end
+$var tri1 1 7 devclrn $end
+$var tri1 1 8 devpor $end
+$var tri1 1 9 devoe $end
+$var wire 1 : Q[0]~output_o $end
+$var wire 1 ; Q[1]~output_o $end
+$var wire 1 < Q[2]~output_o $end
+$var wire 1 = Q[3]~output_o $end
+$var wire 1 > Q[4]~output_o $end
+$var wire 1 ? Q[5]~output_o $end
+$var wire 1 @ Q[6]~output_o $end
+$var wire 1 A Q[7]~output_o $end
+$var wire 1 B Q[8]~output_o $end
+$var wire 1 C Q[9]~output_o $end
+$var wire 1 D Q[10]~output_o $end
+$var wire 1 E Q[11]~output_o $end
+$var wire 1 F Q[12]~output_o $end
+$var wire 1 G Q[13]~output_o $end
+$var wire 1 H Q[14]~output_o $end
+$var wire 1 I Q[15]~output_o $end
+$var wire 1 J clk~input_o $end
+$var wire 1 K Q[0]~0_combout $end
+$var wire 1 L areset~input_o $end
+$var wire 1 M enable~input_o $end
+$var wire 1 N Q[0]~reg0_q $end
+$var wire 1 O Add0~1_sumout $end
+$var wire 1 P Q[1]~reg0_q $end
+$var wire 1 Q Add0~2 $end
+$var wire 1 R Add0~5_sumout $end
+$var wire 1 S Q[2]~reg0_q $end
+$var wire 1 T Add0~6 $end
+$var wire 1 U Add0~9_sumout $end
+$var wire 1 V Q[3]~reg0_q $end
+$var wire 1 W Add0~10 $end
+$var wire 1 X Add0~13_sumout $end
+$var wire 1 Y Q[4]~reg0_q $end
+$var wire 1 Z Add0~14 $end
+$var wire 1 [ Add0~17_sumout $end
+$var wire 1 \ Q[5]~reg0_q $end
+$var wire 1 ] Add0~18 $end
+$var wire 1 ^ Add0~21_sumout $end
+$var wire 1 _ Q[6]~reg0_q $end
+$var wire 1 ` Add0~22 $end
+$var wire 1 a Add0~25_sumout $end
+$var wire 1 b Q[7]~reg0_q $end
+$var wire 1 c Add0~26 $end
+$var wire 1 d Add0~29_sumout $end
+$var wire 1 e Q[8]~reg0_q $end
+$var wire 1 f Add0~30 $end
+$var wire 1 g Add0~33_sumout $end
+$var wire 1 h Q[9]~reg0_q $end
+$var wire 1 i Add0~34 $end
+$var wire 1 j Add0~37_sumout $end
+$var wire 1 k Q[10]~reg0_q $end
+$var wire 1 l Add0~38 $end
+$var wire 1 m Add0~41_sumout $end
+$var wire 1 n Q[11]~reg0_q $end
+$var wire 1 o Add0~42 $end
+$var wire 1 p Add0~45_sumout $end
+$var wire 1 q Q[12]~reg0_q $end
+$var wire 1 r Add0~46 $end
+$var wire 1 s Add0~49_sumout $end
+$var wire 1 t Q[13]~reg0_q $end
+$var wire 1 u Add0~50 $end
+$var wire 1 v Add0~53_sumout $end
+$var wire 1 w Q[14]~reg0_q $end
+$var wire 1 x Add0~54 $end
+$var wire 1 y Add0~57_sumout $end
+$var wire 1 z Q[15]~reg0_q $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+1!
+0"
+1#
+03
+02
+01
+00
+0/
+0.
+0-
+0,
+0+
+0*
+0)
+0(
+0'
+0&
+0%
+0$
+04
+15
+x6
+17
+18
+19
+0:
+0;
+0<
+0=
+0>
+0?
+0@
+0A
+0B
+0C
+0D
+0E
+0F
+0G
+0H
+0I
+0J
+1K
+1L
+1M
+0N
+0O
+0P
+0Q
+0R
+0S
+0T
+0U
+0V
+0W
+0X
+0Y
+0Z
+0[
+0\
+0]
+0^
+0_
+0`
+0a
+0b
+0c
+0d
+0e
+0f
+0g
+0h
+0i
+0j
+0k
+0l
+0m
+0n
+0o
+0p
+0q
+0r
+0s
+0t
+0u
+0v
+0w
+0x
+0y
+0z
+$end
+#5000
+1"
+1J
+1N
+1:
+13
+1O
+0K
+#10000
+0"
+0J
+#15000
+1"
+1J
+1P
+0N
+0:
+1;
+12
+03
+1K
+#20000
+0"
+0J
+#23868
+0!
+0L
+0P
+0;
+02
+0O
+#25000
+1"
+1J
+#30000
+0"
+0J
+#35000
+1"
+1J
+#38610
+1!
+1L
+#40000
+0"
+0J
+#45000
+1"
+1J
+1N
+1:
+13
+1O
+0K
+#50000
+0"
+0J
+#55000
+1"
+1J
+1P
+0N
+0:
+1;
+12
+03
+1K
+#55926
+0#
+0M
+#60000
+0"
+0J
+#65000
+1"
+1J
+#70000
+0"
+0J
+#75000
+1"
+1J
+#80000
+1#
+0"
+1M
+0J
+#85000
+1"
+1J
+1N
+1:
+1Q
+13
+0O
+0K
+1R
+#90000
+0"
+0J
+#93951
+0#
+0M
+#95000
+1"
+1J
+#98865
+0!
+0L
+0N
+0P
+0;
+0:
+0Q
+03
+02
+1K
+0R
+#100000
+0"
+0J
+#102492
+1!
+1L
+#105000
+1"
+1J
+#110000
+0"
+0J
+#115000
+1"
+1J
+#120000
+1#
+0"
+1M
+0J
+#125000
+1"
+1J
+1N
+1:
+13
+1O
+0K
+#130000
+0"
+0J
+#135000
+1"
+1J
+1P
+0N
+0:
+1;
+12
+03
+1K
+#140000
+0"
+0J
+#145000
+1"
+1J
+1N
+1:
+1Q
+13
+0O
+0K
+1R
+#150000
+0"
+0J
+#155000
+1"
+1J
+1S
+0P
+0N
+0:
+0;
+1<
+0Q
+1T
+11
+02
+03
+1K
+0R
+0T
+1R
+1U
+0U
+#160000

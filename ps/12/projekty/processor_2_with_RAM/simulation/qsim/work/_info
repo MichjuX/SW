@@ -1,0 +1,75 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/Storage/temp/semestr_6/sw/12/projekty/processor_2_with_RAM/simulation/qsim
+vhard_block
+!s110 1654273650
+!i10b 1
+!s100 ?5nzB^z[<5Yk0Bf392NlC3
+IUgh4@[^OD@2`2ChWi?Fcn1
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1654273648
+Z2 8processor_2_with_RAM.vo
+Z3 Fprocessor_2_with_RAM.vo
+L0 7226
+Z4 OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1654273650.000000
+Z5 !s107 processor_2_with_RAM.vo|
+Z6 !s90 -work|work|processor_2_with_RAM.vo|
+!i113 1
+Z7 o-work work
+Z8 tCvgOpt 0
+vprocessor_2_with_RAM
+Z9 !s110 1654435038
+!i10b 1
+!s100 nKY=UB7d[936NF13;@A<>0
+IE`zhjEm?<Bg^eJSRfC>bW3
+R1
+R0
+w1654435029
+R2
+R3
+L0 31
+R4
+r1
+!s85 0
+31
+!s108 1654435036.000000
+R5
+R6
+!i113 1
+R7
+R8
+nprocessor_2_with_@r@a@m
+vprocessor_2_with_RAM_vlg_vec_tst
+R9
+!i10b 1
+!s100 JfkNRQXzVK^W^ZoE[0^cQ3
+IHfMji?Iz:B8BERb;ifWX53
+R1
+R0
+w1654435027
+8Waveform_cyclone_5.vwf.vt
+FWaveform_cyclone_5.vwf.vt
+L0 29
+R4
+r1
+!s85 0
+31
+!s108 1654435038.000000
+!s107 Waveform_cyclone_5.vwf.vt|
+!s90 -work|work|Waveform_cyclone_5.vwf.vt|
+!i113 1
+R7
+R8
+nprocessor_2_with_@r@a@m_vlg_vec_tst

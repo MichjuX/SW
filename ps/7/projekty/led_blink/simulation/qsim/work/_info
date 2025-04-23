@@ -1,0 +1,52 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/Storage/temp/semestr_6/sw/7/projekty/led_blink/simulation/qsim
+vled_blink
+Z1 !s110 1651079273
+!i10b 1
+!s100 P6fggIF1SE24FHWa7GbgG1
+Il=oXgHFDozMc6ijQWXACP1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1651079272
+8led_blink.vo
+Fled_blink.vo
+L0 31
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1651079273.000000
+!s107 led_blink.vo|
+!s90 -work|work|led_blink.vo|
+!i113 1
+Z5 o-work work
+Z6 tCvgOpt 0
+vled_blink_vlg_vec_tst
+R1
+!i10b 1
+!s100 G=kXDQdPD7]l`e[hGGbGZ0
+I<O3?SjTkeHMc6[9@`m41D0
+R2
+R0
+w1651079270
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+L0 29
+R3
+r1
+!s85 0
+31
+R4
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R5
+R6

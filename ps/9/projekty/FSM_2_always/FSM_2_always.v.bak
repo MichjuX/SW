@@ -1,0 +1,35 @@
+module Moore_style_3(
+	input clk,reset,
+	input [2:0] x,
+	output reg [2:0] y);
+
+	reg [2:0] state, next;
+	localparam [2:0]
+		A = 3'b000,
+		B = 3'b001,
+		C = 3'b010,
+		D = 3'b011,
+		E = 3'b100,
+		F = 3'b101;
+	always @(posedge clk, negedge reset)
+	if (~reset) state <= s0;
+	else state <= next;
+	36
+	always @(*)
+	case (state)
+	s0: begin y = 3'b000; next = s1; end
+	s1: begin y = 3'b011;
+	if (~x[0]) next = s2;
+	else if (~x[1] && x[0]) next = s3;
+	else if (~x[2] && x[1] && x[0]) next = s4;
+	else next = s5;
+	end
+	s2: begin y = 3'b101;
+	if (~x[2]) next = s4;
+	else next = s5;
+	end
+	s3: begin y = 3'b001; next = s4; end
+	s4: begin y = 3'b100; next = s0; end
+	s5: begin y = 3'b010; next = s0; end
+	endcase
+endmodule

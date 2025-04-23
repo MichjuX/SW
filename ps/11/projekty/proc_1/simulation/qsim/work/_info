@@ -1,0 +1,52 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/Storage/temp/semestr_6/sw/11/projekty/proc_1/simulation/qsim
+vproc_1
+Z1 !s110 1653764218
+!i10b 1
+!s100 4cee>b?HRaMJbdRF2biD:2
+I[T3[;@8?`1L?G;EQ6^ZO20
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1653764217
+8proc_1.vo
+Fproc_1.vo
+L0 31
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1653764218.000000
+!s107 proc_1.vo|
+!s90 -work|work|proc_1.vo|
+!i113 1
+Z5 o-work work
+Z6 tCvgOpt 0
+vproc_1_vlg_vec_tst
+R1
+!i10b 1
+!s100 2jcMdk2A`k45L^TPFfYZ;1
+IzC41[IRfMMgePV@0:bcHI0
+R2
+R0
+w1653764215
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+L0 29
+R3
+r1
+!s85 0
+31
+R4
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R5
+R6

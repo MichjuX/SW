@@ -1,0 +1,93 @@
+|adder_bcd_2_digits
+x[0] => LessThan0.IN8
+x[0] => Add0.IN4
+x[1] => LessThan0.IN7
+x[1] => Add0.IN3
+x[2] => LessThan0.IN6
+x[2] => Add0.IN2
+x[3] => LessThan0.IN5
+x[3] => Add0.IN1
+y[0] => LessThan1.IN8
+y[0] => Add0.IN8
+y[1] => LessThan1.IN7
+y[1] => Add0.IN7
+y[2] => LessThan1.IN6
+y[2] => Add0.IN6
+y[3] => LessThan1.IN5
+y[3] => Add0.IN5
+cin => Add1.IN10
+s1[0] <= binary_bcd_5_bits:conv.port1
+s1[1] <= binary_bcd_5_bits:conv.port1
+s1[2] <= binary_bcd_5_bits:conv.port1
+s1[3] <= binary_bcd_5_bits:conv.port1
+s0[0] <= binary_bcd_5_bits:conv.port2
+s0[1] <= binary_bcd_5_bits:conv.port2
+s0[2] <= binary_bcd_5_bits:conv.port2
+s0[3] <= binary_bcd_5_bits:conv.port2
+error <= error.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder_bcd_2_digits|binary_bcd_5_bits:conv
+v[0] => v[0].IN2
+v[1] => v[1].IN1
+v[2] => v[2].IN1
+v[3] => v[3].IN1
+v[4] => v[4].IN1
+d1[0] <= v_greater_than_9.DB_MAX_OUTPUT_PORT_TYPE
+d1[1] <= <GND>
+d1[2] <= <GND>
+d1[3] <= <GND>
+d0[0] <= mux_2_1_4_bits:mux.port3
+d0[1] <= mux_2_1_4_bits:mux.port3
+d0[2] <= mux_2_1_4_bits:mux.port3
+d0[3] <= mux_2_1_4_bits:mux.port3
+
+
+|adder_bcd_2_digits|binary_bcd_5_bits:conv|mux_2_1_4_bits:mux
+x[0] => x[0].IN1
+x[1] => x[1].IN1
+x[2] => x[2].IN1
+x[3] => x[3].IN1
+y[0] => y[0].IN1
+y[1] => y[1].IN1
+y[2] => y[2].IN1
+y[3] => y[3].IN1
+s => s.IN4
+m[0] <= mux_2_1_1_bit:mux0.port3
+m[1] <= mux_2_1_1_bit:mux1.port3
+m[2] <= mux_2_1_1_bit:mux2.port3
+m[3] <= mux_2_1_1_bit:mux3.port3
+
+
+|adder_bcd_2_digits|binary_bcd_5_bits:conv|mux_2_1_4_bits:mux|mux_2_1_1_bit:mux0
+x => m.IN0
+y => m.IN0
+s => m.IN1
+s => m.IN1
+m <= m.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder_bcd_2_digits|binary_bcd_5_bits:conv|mux_2_1_4_bits:mux|mux_2_1_1_bit:mux1
+x => m.IN0
+y => m.IN0
+s => m.IN1
+s => m.IN1
+m <= m.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder_bcd_2_digits|binary_bcd_5_bits:conv|mux_2_1_4_bits:mux|mux_2_1_1_bit:mux2
+x => m.IN0
+y => m.IN0
+s => m.IN1
+s => m.IN1
+m <= m.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder_bcd_2_digits|binary_bcd_5_bits:conv|mux_2_1_4_bits:mux|mux_2_1_1_bit:mux3
+x => m.IN0
+y => m.IN0
+s => m.IN1
+s => m.IN1
+m <= m.DB_MAX_OUTPUT_PORT_TYPE
+
+

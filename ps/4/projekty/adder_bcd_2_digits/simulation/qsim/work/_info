@@ -1,0 +1,52 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/Storage/temp/semestr_6/sw/4/projekty/adder_bcd_2_digits/simulation/qsim
+vadder_bcd_2_digits
+Z1 !s110 1648771634
+!i10b 1
+!s100 j9[iV<aH92DkZGz<GCQHm2
+IU3E[1lZPm[Gl:E0c>Ck;83
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1648771632
+8adder_bcd_2_digits.vo
+Fadder_bcd_2_digits.vo
+L0 31
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1648771634.000000
+!s107 adder_bcd_2_digits.vo|
+!s90 -work|work|adder_bcd_2_digits.vo|
+!i113 1
+Z5 o-work work
+Z6 tCvgOpt 0
+vadder_bcd_2_digits_vlg_vec_tst
+R1
+!i10b 1
+!s100 6RW^z08SOBnAZMK2KDo2G2
+IcNhz3GP>GcN?CleHdm@D01
+R2
+R0
+w1648771631
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+L0 29
+R3
+r1
+!s85 0
+31
+R4
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R5
+R6

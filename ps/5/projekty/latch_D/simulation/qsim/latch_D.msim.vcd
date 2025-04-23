@@ -1,0 +1,83 @@
+$comment
+	File created using the following command:
+		vcd file latch_D.msim.vcd -direction
+$end
+$date
+	Tue Apr 05 23:14:37 2022
+$end
+$version
+	ModelSim Version 10.5b
+$end
+$timescale
+	1ps
+$end
+
+$scope module latch_D_vlg_vec_tst $end
+$var reg 1 ! Clk $end
+$var reg 1 " D $end
+$var wire 1 # Q $end
+
+$scope module i1 $end
+$var wire 1 $ gnd $end
+$var wire 1 % vcc $end
+$var wire 1 & unknown $end
+$var tri1 1 ' devclrn $end
+$var tri1 1 ( devpor $end
+$var tri1 1 ) devoe $end
+$var wire 1 * Q~output_o $end
+$var wire 1 + Clk~input_o $end
+$var wire 1 , D~input_o $end
+$var wire 1 - Qa~0_combout $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+1!
+0"
+0#
+0$
+1%
+x&
+1'
+1(
+1)
+0*
+1+
+0,
+1-
+$end
+#20000
+1"
+0!
+1,
+0+
+#30000
+1!
+1+
+0-
+1*
+1#
+#40000
+0"
+0!
+0,
+0+
+#50000
+1!
+1+
+1-
+0*
+0#
+#60000
+1"
+0!
+1,
+0+
+#70000
+1!
+1+
+0-
+1*
+1#
+#80000

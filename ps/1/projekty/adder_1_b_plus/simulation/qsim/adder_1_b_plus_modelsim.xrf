@@ -1,0 +1,12 @@
+vendor_name = ModelSim
+source_file = 1, D:/intelFPGA_lite/projects/adder_1_b_plus/adder_1_b_plus.v
+source_file = 1, D:/intelFPGA_lite/projects/adder_1_b_plus/db/adder_1_b_plus.cbx.xml
+design_name = adder_1_b_plus
+instance = comp, \cout~output , cout~output, adder_1_b_plus, 1
+instance = comp, \s~output , s~output, adder_1_b_plus, 1
+instance = comp, \cin~input , cin~input, adder_1_b_plus, 1
+instance = comp, \b~input , b~input, adder_1_b_plus, 1
+instance = comp, \a~input , a~input, adder_1_b_plus, 1
+instance = comp, \Add1~0 , Add1~0, adder_1_b_plus, 1
+instance = comp, \Add1~1 , Add1~1, adder_1_b_plus, 1
+instance = comp, \~QUARTUS_CREATED_GND~I , ~QUARTUS_CREATED_GND~I, adder_1_b_plus, 1

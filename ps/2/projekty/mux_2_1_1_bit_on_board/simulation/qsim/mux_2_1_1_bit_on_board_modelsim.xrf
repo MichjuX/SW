@@ -1,0 +1,10 @@
+vendor_name = ModelSim
+source_file = 1, D:/Storage/temp/sw/projekty/mux_2_1_1_bit_on_board/mux_2_1_1_bit_on_board.v
+source_file = 1, D:/Storage/temp/sw/projekty/mux_2_1_1_bit_on_board/db/mux_2_1_1_bit_on_board.cbx.xml
+design_name = mux_2_1_1_bit_on_board
+instance = comp, \LEDR[0]~output , LEDR[0]~output, mux_2_1_1_bit_on_board, 1
+instance = comp, \SW[1]~input , SW[1]~input, mux_2_1_1_bit_on_board, 1
+instance = comp, \SW[0]~input , SW[0]~input, mux_2_1_1_bit_on_board, 1
+instance = comp, \KEY[0]~input , KEY[0]~input, mux_2_1_1_bit_on_board, 1
+instance = comp, \mux0|m~0 , mux0|m~0, mux_2_1_1_bit_on_board, 1
+instance = comp, \~QUARTUS_CREATED_GND~I , ~QUARTUS_CREATED_GND~I, mux_2_1_1_bit_on_board, 1

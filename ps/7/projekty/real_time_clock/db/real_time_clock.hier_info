@@ -1,0 +1,207 @@
+|real_time_clock
+clock => clock.IN1
+toggle_enable => enable.CLK
+m_aload => m_aload.IN2
+s_aload => s_aload.IN2
+cs_aload => cs_aload.IN1
+data[0] => data[0].IN2
+data[1] => data[1].IN2
+data[2] => data[2].IN2
+data[3] => data[3].IN2
+data[4] => data[4].IN3
+data[5] => data[5].IN3
+data[6] => data[6].IN3
+data[7] => data[7].IN1
+m[0] << counter_modulo_k:count_m0.port5
+m[1] << counter_modulo_k:count_m0.port5
+m[2] << counter_modulo_k:count_m0.port5
+m[3] << counter_modulo_k:count_m0.port5
+m[4] << counter_modulo_k:count_m1.port5
+m[5] << counter_modulo_k:count_m1.port5
+m[6] << counter_modulo_k:count_m1.port5
+m[7] << <GND>
+s[0] << counter_modulo_k:count_s0.port5
+s[1] << counter_modulo_k:count_s0.port5
+s[2] << counter_modulo_k:count_s0.port5
+s[3] << counter_modulo_k:count_s0.port5
+s[4] << counter_modulo_k:count_s1.port5
+s[5] << counter_modulo_k:count_s1.port5
+s[6] << counter_modulo_k:count_s1.port5
+s[7] << <GND>
+cs[0] << counter_modulo_k:count_cs0.Q[0]
+cs[1] << counter_modulo_k:count_cs0.Q[1]
+cs[2] << counter_modulo_k:count_cs0.Q[2]
+cs[3] << counter_modulo_k:count_cs0.Q[3]
+cs[4] << counter_modulo_k:count_cs1.port5
+cs[5] << counter_modulo_k:count_cs1.port5
+cs[6] << counter_modulo_k:count_cs1.port5
+cs[7] << counter_modulo_k:count_cs1.port5
+
+
+|real_time_clock|delay_10ms:delay
+clock => clock.IN1
+slow_clock <= counter_modulo_k:counter.rollover
+
+
+|real_time_clock|delay_10ms:delay|counter_modulo_k:counter
+clk => Q[0]~reg0.CLK
+clk => Q[1]~reg0.CLK
+aclr => Q[1].IN0
+aclr => Q[0]~reg0.ACLR
+aclr => Q[1]~reg0.ACLR
+enable => Q[0]~reg0.ENA
+enable => Q[1]~reg0.ENA
+aload => Q[1].IN1
+data[0] => Q[0]~reg0.ADATA
+data[1] => Q[1]~reg0.ADATA
+Q[0] <= Q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= Q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+rollover <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|real_time_clock|counter_modulo_k:count_cs0
+clk => Q[0]~reg0.CLK
+clk => Q[1]~reg0.CLK
+clk => Q[2]~reg0.CLK
+clk => Q[3]~reg0.CLK
+aclr => Q[3].IN0
+aclr => Q[0]~reg0.ACLR
+aclr => Q[1]~reg0.ACLR
+aclr => Q[2]~reg0.ACLR
+aclr => Q[3]~reg0.ACLR
+enable => Q[0]~reg0.ENA
+enable => Q[3]~reg0.ENA
+enable => Q[2]~reg0.ENA
+enable => Q[1]~reg0.ENA
+aload => Q[3].IN1
+data[0] => Q[0]~reg0.ADATA
+data[1] => Q[1]~reg0.ADATA
+data[2] => Q[2]~reg0.ADATA
+data[3] => Q[3]~reg0.ADATA
+Q[0] <= Q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= Q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= Q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= Q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+rollover <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|real_time_clock|counter_modulo_k:count_cs1
+clk => Q[0]~reg0.CLK
+clk => Q[1]~reg0.CLK
+clk => Q[2]~reg0.CLK
+clk => Q[3]~reg0.CLK
+aclr => Q[3].IN0
+aclr => Q[0]~reg0.ACLR
+aclr => Q[1]~reg0.ACLR
+aclr => Q[2]~reg0.ACLR
+aclr => Q[3]~reg0.ACLR
+enable => Q[0]~reg0.ENA
+enable => Q[3]~reg0.ENA
+enable => Q[2]~reg0.ENA
+enable => Q[1]~reg0.ENA
+aload => Q[3].IN1
+data[0] => Q[0]~reg0.ADATA
+data[1] => Q[1]~reg0.ADATA
+data[2] => Q[2]~reg0.ADATA
+data[3] => Q[3]~reg0.ADATA
+Q[0] <= Q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= Q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= Q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= Q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+rollover <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|real_time_clock|counter_modulo_k:count_s0
+clk => Q[0]~reg0.CLK
+clk => Q[1]~reg0.CLK
+clk => Q[2]~reg0.CLK
+clk => Q[3]~reg0.CLK
+aclr => Q[3].IN0
+aclr => Q[0]~reg0.ACLR
+aclr => Q[1]~reg0.ACLR
+aclr => Q[2]~reg0.ACLR
+aclr => Q[3]~reg0.ACLR
+enable => Q[0]~reg0.ENA
+enable => Q[3]~reg0.ENA
+enable => Q[2]~reg0.ENA
+enable => Q[1]~reg0.ENA
+aload => Q[3].IN1
+data[0] => Q[0]~reg0.ADATA
+data[1] => Q[1]~reg0.ADATA
+data[2] => Q[2]~reg0.ADATA
+data[3] => Q[3]~reg0.ADATA
+Q[0] <= Q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= Q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= Q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= Q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+rollover <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|real_time_clock|counter_modulo_k:count_s1
+clk => Q[0]~reg0.CLK
+clk => Q[1]~reg0.CLK
+clk => Q[2]~reg0.CLK
+aclr => Q[2].IN0
+aclr => Q[0]~reg0.ACLR
+aclr => Q[1]~reg0.ACLR
+aclr => Q[2]~reg0.ACLR
+enable => Q[0]~reg0.ENA
+enable => Q[2]~reg0.ENA
+enable => Q[1]~reg0.ENA
+aload => Q[2].IN1
+data[0] => Q[0]~reg0.ADATA
+data[1] => Q[1]~reg0.ADATA
+data[2] => Q[2]~reg0.ADATA
+Q[0] <= Q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= Q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= Q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+rollover <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|real_time_clock|counter_modulo_k:count_m0
+clk => Q[0]~reg0.CLK
+clk => Q[1]~reg0.CLK
+clk => Q[2]~reg0.CLK
+clk => Q[3]~reg0.CLK
+aclr => Q[3].IN0
+aclr => Q[0]~reg0.ACLR
+aclr => Q[1]~reg0.ACLR
+aclr => Q[2]~reg0.ACLR
+aclr => Q[3]~reg0.ACLR
+enable => Q[0]~reg0.ENA
+enable => Q[3]~reg0.ENA
+enable => Q[2]~reg0.ENA
+enable => Q[1]~reg0.ENA
+aload => Q[3].IN1
+data[0] => Q[0]~reg0.ADATA
+data[1] => Q[1]~reg0.ADATA
+data[2] => Q[2]~reg0.ADATA
+data[3] => Q[3]~reg0.ADATA
+Q[0] <= Q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= Q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= Q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= Q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+rollover <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|real_time_clock|counter_modulo_k:count_m1
+clk => Q[0]~reg0.CLK
+clk => Q[1]~reg0.CLK
+clk => Q[2]~reg0.CLK
+aclr => Q[2].IN0
+aclr => Q[0]~reg0.ACLR
+aclr => Q[1]~reg0.ACLR
+aclr => Q[2]~reg0.ACLR
+enable => Q[0]~reg0.ENA
+enable => Q[2]~reg0.ENA
+enable => Q[1]~reg0.ENA
+aload => Q[2].IN1
+data[0] => Q[0]~reg0.ADATA
+data[1] => Q[1]~reg0.ADATA
+data[2] => Q[2]~reg0.ADATA
+Q[0] <= Q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= Q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= Q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+rollover <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+
+

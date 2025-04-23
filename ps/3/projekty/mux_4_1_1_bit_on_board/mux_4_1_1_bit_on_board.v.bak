@@ -1,0 +1,12 @@
+module mux_4_1_1_bit_on_board(
+	input [3:0] SW
+	output )
+	
+endmodule
+
+module mux_4_1_1_bit(
+	input u, v, w, x,
+	s1, s0,
+	output m)
+	
+endmodule

@@ -1,0 +1,207 @@
+|word_rotate_on_board
+CLOCK_50 => CLOCK_50.IN1
+HEX3[0] << decoder_7_seg:dec3.port1
+HEX3[1] << decoder_7_seg:dec3.port1
+HEX3[2] << decoder_7_seg:dec3.port1
+HEX3[3] << decoder_7_seg:dec3.port1
+HEX3[4] << decoder_7_seg:dec3.port1
+HEX3[5] << decoder_7_seg:dec3.port1
+HEX3[6] << decoder_7_seg:dec3.port1
+HEX2[0] << decoder_7_seg:dec2.port1
+HEX2[1] << decoder_7_seg:dec2.port1
+HEX2[2] << decoder_7_seg:dec2.port1
+HEX2[3] << decoder_7_seg:dec2.port1
+HEX2[4] << decoder_7_seg:dec2.port1
+HEX2[5] << decoder_7_seg:dec2.port1
+HEX2[6] << decoder_7_seg:dec2.port1
+HEX1[0] << decoder_7_seg:dec1.port1
+HEX1[1] << decoder_7_seg:dec1.port1
+HEX1[2] << decoder_7_seg:dec1.port1
+HEX1[3] << decoder_7_seg:dec1.port1
+HEX1[4] << decoder_7_seg:dec1.port1
+HEX1[5] << decoder_7_seg:dec1.port1
+HEX1[6] << decoder_7_seg:dec1.port1
+HEX0[0] << decoder_7_seg:dec0.port1
+HEX0[1] << decoder_7_seg:dec0.port1
+HEX0[2] << decoder_7_seg:dec0.port1
+HEX0[3] << decoder_7_seg:dec0.port1
+HEX0[4] << decoder_7_seg:dec0.port1
+HEX0[5] << decoder_7_seg:dec0.port1
+HEX0[6] << decoder_7_seg:dec0.port1
+
+
+|word_rotate_on_board|word_rotate:wr
+clock => clock.IN1
+char_codes[0] <= char_codes[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+char_codes[1] <= char_codes[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+char_codes[2] <= char_codes[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+char_codes[3] <= char_codes[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+char_codes[4] <= char_codes[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+char_codes[5] <= char_codes[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+char_codes[6] <= char_codes[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+char_codes[7] <= char_codes[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|word_rotate_on_board|word_rotate:wr|counter_mod_M:fast_counter
+clk => Q[0]~reg0.CLK
+clk => Q[1]~reg0.CLK
+clk => Q[2]~reg0.CLK
+clk => Q[3]~reg0.CLK
+clk => Q[4]~reg0.CLK
+clk => Q[5]~reg0.CLK
+clk => Q[6]~reg0.CLK
+clk => Q[7]~reg0.CLK
+clk => Q[8]~reg0.CLK
+clk => Q[9]~reg0.CLK
+clk => Q[10]~reg0.CLK
+clk => Q[11]~reg0.CLK
+clk => Q[12]~reg0.CLK
+clk => Q[13]~reg0.CLK
+clk => Q[14]~reg0.CLK
+clk => Q[15]~reg0.CLK
+clk => Q[16]~reg0.CLK
+clk => Q[17]~reg0.CLK
+clk => Q[18]~reg0.CLK
+clk => Q[19]~reg0.CLK
+clk => Q[20]~reg0.CLK
+clk => Q[21]~reg0.CLK
+clk => Q[22]~reg0.CLK
+clk => Q[23]~reg0.CLK
+clk => Q[24]~reg0.CLK
+clk => Q[25]~reg0.CLK
+aclr => Q[0]~reg0.ACLR
+aclr => Q[1]~reg0.ACLR
+aclr => Q[2]~reg0.ACLR
+aclr => Q[3]~reg0.ACLR
+aclr => Q[4]~reg0.ACLR
+aclr => Q[5]~reg0.ACLR
+aclr => Q[6]~reg0.ACLR
+aclr => Q[7]~reg0.ACLR
+aclr => Q[8]~reg0.ACLR
+aclr => Q[9]~reg0.ACLR
+aclr => Q[10]~reg0.ACLR
+aclr => Q[11]~reg0.ACLR
+aclr => Q[12]~reg0.ACLR
+aclr => Q[13]~reg0.ACLR
+aclr => Q[14]~reg0.ACLR
+aclr => Q[15]~reg0.ACLR
+aclr => Q[16]~reg0.ACLR
+aclr => Q[17]~reg0.ACLR
+aclr => Q[18]~reg0.ACLR
+aclr => Q[19]~reg0.ACLR
+aclr => Q[20]~reg0.ACLR
+aclr => Q[21]~reg0.ACLR
+aclr => Q[22]~reg0.ACLR
+aclr => Q[23]~reg0.ACLR
+aclr => Q[24]~reg0.ACLR
+aclr => Q[25]~reg0.ACLR
+enable => Q[0]~reg0.ENA
+enable => Q[25]~reg0.ENA
+enable => Q[24]~reg0.ENA
+enable => Q[23]~reg0.ENA
+enable => Q[22]~reg0.ENA
+enable => Q[21]~reg0.ENA
+enable => Q[20]~reg0.ENA
+enable => Q[19]~reg0.ENA
+enable => Q[18]~reg0.ENA
+enable => Q[17]~reg0.ENA
+enable => Q[16]~reg0.ENA
+enable => Q[15]~reg0.ENA
+enable => Q[14]~reg0.ENA
+enable => Q[13]~reg0.ENA
+enable => Q[12]~reg0.ENA
+enable => Q[11]~reg0.ENA
+enable => Q[10]~reg0.ENA
+enable => Q[9]~reg0.ENA
+enable => Q[8]~reg0.ENA
+enable => Q[7]~reg0.ENA
+enable => Q[6]~reg0.ENA
+enable => Q[5]~reg0.ENA
+enable => Q[4]~reg0.ENA
+enable => Q[3]~reg0.ENA
+enable => Q[2]~reg0.ENA
+enable => Q[1]~reg0.ENA
+Q[0] <= Q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= Q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= Q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= Q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[4] <= Q[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[5] <= Q[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[6] <= Q[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[7] <= Q[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[8] <= Q[8]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[9] <= Q[9]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[10] <= Q[10]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[11] <= Q[11]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[12] <= Q[12]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[13] <= Q[13]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[14] <= Q[14]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[15] <= Q[15]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[16] <= Q[16]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[17] <= Q[17]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[18] <= Q[18]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[19] <= Q[19]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[20] <= Q[20]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[21] <= Q[21]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[22] <= Q[22]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[23] <= Q[23]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[24] <= Q[24]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[25] <= Q[25]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|word_rotate_on_board|decoder_7_seg:dec3
+binary[0] => Decoder0.IN1
+binary[1] => Decoder0.IN0
+binary[1] => h[5].DATAIN
+binary[1] => h[0].DATAIN
+h[0] <= binary[1].DB_MAX_OUTPUT_PORT_TYPE
+h[1] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+h[2] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+h[3] <= <GND>
+h[4] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+h[5] <= binary[1].DB_MAX_OUTPUT_PORT_TYPE
+h[6] <= <GND>
+
+
+|word_rotate_on_board|decoder_7_seg:dec2
+binary[0] => Decoder0.IN1
+binary[1] => Decoder0.IN0
+binary[1] => h[5].DATAIN
+binary[1] => h[0].DATAIN
+h[0] <= binary[1].DB_MAX_OUTPUT_PORT_TYPE
+h[1] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+h[2] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+h[3] <= <GND>
+h[4] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+h[5] <= binary[1].DB_MAX_OUTPUT_PORT_TYPE
+h[6] <= <GND>
+
+
+|word_rotate_on_board|decoder_7_seg:dec1
+binary[0] => Decoder0.IN1
+binary[1] => Decoder0.IN0
+binary[1] => h[5].DATAIN
+binary[1] => h[0].DATAIN
+h[0] <= binary[1].DB_MAX_OUTPUT_PORT_TYPE
+h[1] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+h[2] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+h[3] <= <GND>
+h[4] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+h[5] <= binary[1].DB_MAX_OUTPUT_PORT_TYPE
+h[6] <= <GND>
+
+
+|word_rotate_on_board|decoder_7_seg:dec0
+binary[0] => Decoder0.IN1
+binary[1] => Decoder0.IN0
+binary[1] => h[5].DATAIN
+binary[1] => h[0].DATAIN
+h[0] <= binary[1].DB_MAX_OUTPUT_PORT_TYPE
+h[1] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+h[2] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+h[3] <= <GND>
+h[4] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+h[5] <= binary[1].DB_MAX_OUTPUT_PORT_TYPE
+h[6] <= <GND>
+
+

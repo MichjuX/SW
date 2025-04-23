@@ -1,0 +1,52 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/Storage/temp/semestr_6/sw/7/projekty/real_time_clock/simulation/qsim
+vreal_time_clock
+Z1 !s110 1650916649
+!i10b 1
+!s100 >]=hl]b1=NkSAaE<jD=422
+InF[;EKSl8b2z5WnUo5]QE2
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1650916642
+8real_time_clock.vo
+Freal_time_clock.vo
+L0 31
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1650916648.000000
+!s107 real_time_clock.vo|
+!s90 -work|work|real_time_clock.vo|
+!i113 1
+Z4 o-work work
+Z5 tCvgOpt 0
+vreal_time_clock_vlg_vec_tst
+R1
+!i10b 1
+!s100 >;mYhPh]Y]UHVBZ8b6KoA0
+IlXaeIOQ]c[XDYgV>QO2T>0
+R2
+R0
+w1650916640
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+L0 29
+R3
+r1
+!s85 0
+31
+!s108 1650916649.000000
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R4
+R5

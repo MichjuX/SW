@@ -1,0 +1,9 @@
+vendor_name = ModelSim
+source_file = 1, D:/Storage/temp/semestr_6/sw/5/projekty/RS_boolean/RS_boolean.v
+source_file = 1, D:/Storage/temp/semestr_6/sw/5/projekty/RS_boolean/Waveform.vwf
+source_file = 1, D:/Storage/temp/semestr_6/sw/5/projekty/RS_boolean/db/RS_boolean.cbx.xml
+design_name = RS_boolean
+instance = comp, \Q~output , Q~output, RS_boolean, 1
+instance = comp, \Clk~input , Clk~input, RS_boolean, 1
+instance = comp, \R~input , R~input, RS_boolean, 1
+instance = comp, \S~input , S~input, RS_boolean, 1

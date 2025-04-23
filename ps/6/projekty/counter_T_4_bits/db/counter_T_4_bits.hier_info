@@ -1,0 +1,38 @@
+|counter_T_4_bits
+clk => clk.IN4
+areset => areset.IN4
+enable => enable.IN1
+Q[0] <= FFT_areset:fft0.port3
+Q[1] <= FFT_areset:fft1.port3
+Q[2] <= FFT_areset:fft2.port3
+Q[3] <= FFT_areset:fft3.port3
+
+
+|counter_T_4_bits|FFT_areset:fft0
+T => Q~reg0.ENA
+clk => Q~reg0.CLK
+aclr => Q~reg0.ACLR
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter_T_4_bits|FFT_areset:fft1
+T => Q~reg0.ENA
+clk => Q~reg0.CLK
+aclr => Q~reg0.ACLR
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter_T_4_bits|FFT_areset:fft2
+T => Q~reg0.ENA
+clk => Q~reg0.CLK
+aclr => Q~reg0.ACLR
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter_T_4_bits|FFT_areset:fft3
+T => Q~reg0.ENA
+clk => Q~reg0.CLK
+aclr => Q~reg0.ACLR
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

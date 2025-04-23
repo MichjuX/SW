@@ -1,0 +1,615 @@
+Analysis & Synthesis report for buffered_multiplier_N_bits_on_board
+Thu May 05 12:52:36 2022
+Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. General Register Statistics
+  9. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 10. Parameter Settings for User Entity Instance: buffered_multiplier_N_bits:buf_mul
+ 11. Parameter Settings for User Entity Instance: buffered_multiplier_N_bits:buf_mul|register_N_bits_ena_aclr:r_A
+ 12. Parameter Settings for User Entity Instance: buffered_multiplier_N_bits:buf_mul|register_N_bits_ena_aclr:r_B
+ 13. Parameter Settings for User Entity Instance: buffered_multiplier_N_bits:buf_mul|mux_4_1:mux
+ 14. Parameter Settings for User Entity Instance: buffered_multiplier_N_bits:buf_mul|multiplier_N_bits:mul
+ 15. Parameter Settings for User Entity Instance: buffered_multiplier_N_bits:buf_mul|multiplier_N_bits:mul|adder_N_bits:ad1
+ 16. Parameter Settings for User Entity Instance: buffered_multiplier_N_bits:buf_mul|multiplier_N_bits:mul|adder_N_bits:bl2[2].adi
+ 17. Parameter Settings for User Entity Instance: buffered_multiplier_N_bits:buf_mul|multiplier_N_bits:mul|adder_N_bits:bl2[3].adi
+ 18. Parameter Settings for User Entity Instance: buffered_multiplier_N_bits:buf_mul|multiplier_N_bits:mul|adder_N_bits:bl2[4].adi
+ 19. Parameter Settings for User Entity Instance: buffered_multiplier_N_bits:buf_mul|multiplier_N_bits:mul|adder_N_bits:bl2[5].adi
+ 20. Parameter Settings for User Entity Instance: buffered_multiplier_N_bits:buf_mul|multiplier_N_bits:mul|adder_N_bits:bl2[6].adi
+ 21. Parameter Settings for User Entity Instance: buffered_multiplier_N_bits:buf_mul|multiplier_N_bits:mul|adder_N_bits:bl2[7].adi
+ 22. Parameter Settings for User Entity Instance: buffered_multiplier_N_bits:buf_mul|register_N_bits_ena_aclr:r_P
+ 23. Port Connectivity Checks: "buffered_multiplier_N_bits:buf_mul|register_N_bits_ena_aclr:r_P"
+ 24. Port Connectivity Checks: "buffered_multiplier_N_bits:buf_mul|multiplier_N_bits:mul|adder_N_bits:bl2[7].adi"
+ 25. Port Connectivity Checks: "buffered_multiplier_N_bits:buf_mul|multiplier_N_bits:mul|adder_N_bits:bl2[6].adi"
+ 26. Port Connectivity Checks: "buffered_multiplier_N_bits:buf_mul|multiplier_N_bits:mul|adder_N_bits:bl2[5].adi"
+ 27. Port Connectivity Checks: "buffered_multiplier_N_bits:buf_mul|multiplier_N_bits:mul|adder_N_bits:bl2[4].adi"
+ 28. Port Connectivity Checks: "buffered_multiplier_N_bits:buf_mul|multiplier_N_bits:mul|adder_N_bits:bl2[3].adi"
+ 29. Port Connectivity Checks: "buffered_multiplier_N_bits:buf_mul|multiplier_N_bits:mul|adder_N_bits:bl2[2].adi"
+ 30. Port Connectivity Checks: "buffered_multiplier_N_bits:buf_mul|multiplier_N_bits:mul|adder_N_bits:ad1"
+ 31. Port Connectivity Checks: "buffered_multiplier_N_bits:buf_mul|mux_4_1:mux"
+ 32. Post-Synthesis Netlist Statistics for Top Partition
+ 33. Elapsed Time Per Partition
+ 34. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2018  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+
+
+
++-------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                  ;
++---------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status     ; Successful - Thu May 05 12:52:36 2022       ;
+; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
+; Revision Name                   ; buffered_multiplier_N_bits_on_board         ;
+; Top-level Entity Name           ; buffered_multiplier_N_bits_on_board         ;
+; Family                          ; Cyclone V                                   ;
+; Logic utilization (in ALMs)     ; N/A                                         ;
+; Total registers                 ; 32                                          ;
+; Total pins                      ; 48                                          ;
+; Total virtual pins              ; 0                                           ;
+; Total block memory bits         ; 0                                           ;
+; Total DSP Blocks                ; 0                                           ;
+; Total HSSI RX PCSs              ; 0                                           ;
+; Total HSSI PMA RX Deserializers ; 0                                           ;
+; Total HSSI TX PCSs              ; 0                                           ;
+; Total HSSI PMA TX Serializers   ; 0                                           ;
+; Total PLLs                      ; 0                                           ;
+; Total DLLs                      ; 0                                           ;
++---------------------------------+---------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                                                               ;
++---------------------------------------------------------------------------------+-------------------------------------+-------------------------------------+
+; Option                                                                          ; Setting                             ; Default Value                       ;
++---------------------------------------------------------------------------------+-------------------------------------+-------------------------------------+
+; Device                                                                          ; 5CSEMA5F31C6                        ;                                     ;
+; Top-level entity name                                                           ; buffered_multiplier_N_bits_on_board ; buffered_multiplier_N_bits_on_board ;
+; Family name                                                                     ; Cyclone V                           ; Cyclone V                           ;
+; Use smart compilation                                                           ; Off                                 ; Off                                 ;
+; Enable parallel Assembler and Timing Analyzer during compilation                ; On                                  ; On                                  ;
+; Enable compact report table                                                     ; Off                                 ; Off                                 ;
+; Restructure Multiplexers                                                        ; Auto                                ; Auto                                ;
+; MLAB Add Timing Constraints For Mixed-Port Feed-Through Mode Setting Don't Care ; Off                                 ; Off                                 ;
+; Create Debugging Nodes for IP Cores                                             ; Off                                 ; Off                                 ;
+; Preserve fewer node names                                                       ; On                                  ; On                                  ;
+; Intel FPGA IP Evaluation Mode                                                   ; Enable                              ; Enable                              ;
+; Verilog Version                                                                 ; Verilog_2001                        ; Verilog_2001                        ;
+; VHDL Version                                                                    ; VHDL_1993                           ; VHDL_1993                           ;
+; State Machine Processing                                                        ; Auto                                ; Auto                                ;
+; Safe State Machine                                                              ; Off                                 ; Off                                 ;
+; Extract Verilog State Machines                                                  ; On                                  ; On                                  ;
+; Extract VHDL State Machines                                                     ; On                                  ; On                                  ;
+; Ignore Verilog initial constructs                                               ; Off                                 ; Off                                 ;
+; Iteration limit for constant Verilog loops                                      ; 5000                                ; 5000                                ;
+; Iteration limit for non-constant Verilog loops                                  ; 250                                 ; 250                                 ;
+; Add Pass-Through Logic to Inferred RAMs                                         ; On                                  ; On                                  ;
+; Infer RAMs from Raw Logic                                                       ; On                                  ; On                                  ;
+; Parallel Synthesis                                                              ; On                                  ; On                                  ;
+; DSP Block Balancing                                                             ; Auto                                ; Auto                                ;
+; NOT Gate Push-Back                                                              ; On                                  ; On                                  ;
+; Power-Up Don't Care                                                             ; On                                  ; On                                  ;
+; Remove Redundant Logic Cells                                                    ; Off                                 ; Off                                 ;
+; Remove Duplicate Registers                                                      ; On                                  ; On                                  ;
+; Ignore CARRY Buffers                                                            ; Off                                 ; Off                                 ;
+; Ignore CASCADE Buffers                                                          ; Off                                 ; Off                                 ;
+; Ignore GLOBAL Buffers                                                           ; Off                                 ; Off                                 ;
+; Ignore ROW GLOBAL Buffers                                                       ; Off                                 ; Off                                 ;
+; Ignore LCELL Buffers                                                            ; Off                                 ; Off                                 ;
+; Ignore SOFT Buffers                                                             ; On                                  ; On                                  ;
+; Limit AHDL Integers to 32 Bits                                                  ; Off                                 ; Off                                 ;
+; Optimization Technique                                                          ; Balanced                            ; Balanced                            ;
+; Carry Chain Length                                                              ; 70                                  ; 70                                  ;
+; Auto Carry Chains                                                               ; On                                  ; On                                  ;
+; Auto Open-Drain Pins                                                            ; On                                  ; On                                  ;
+; Perform WYSIWYG Primitive Resynthesis                                           ; Off                                 ; Off                                 ;
+; Auto ROM Replacement                                                            ; On                                  ; On                                  ;
+; Auto RAM Replacement                                                            ; On                                  ; On                                  ;
+; Auto DSP Block Replacement                                                      ; On                                  ; On                                  ;
+; Auto Shift Register Replacement                                                 ; Auto                                ; Auto                                ;
+; Allow Shift Register Merging across Hierarchies                                 ; Auto                                ; Auto                                ;
+; Auto Clock Enable Replacement                                                   ; On                                  ; On                                  ;
+; Strict RAM Replacement                                                          ; Off                                 ; Off                                 ;
+; Allow Synchronous Control Signals                                               ; On                                  ; On                                  ;
+; Force Use of Synchronous Clear Signals                                          ; Off                                 ; Off                                 ;
+; Auto Resource Sharing                                                           ; Off                                 ; Off                                 ;
+; Allow Any RAM Size For Recognition                                              ; Off                                 ; Off                                 ;
+; Allow Any ROM Size For Recognition                                              ; Off                                 ; Off                                 ;
+; Allow Any Shift Register Size For Recognition                                   ; Off                                 ; Off                                 ;
+; Use LogicLock Constraints during Resource Balancing                             ; On                                  ; On                                  ;
+; Ignore translate_off and synthesis_off directives                               ; Off                                 ; Off                                 ;
+; Timing-Driven Synthesis                                                         ; On                                  ; On                                  ;
+; Report Parameter Settings                                                       ; On                                  ; On                                  ;
+; Report Source Assignments                                                       ; On                                  ; On                                  ;
+; Report Connectivity Checks                                                      ; On                                  ; On                                  ;
+; Ignore Maximum Fan-Out Assignments                                              ; Off                                 ; Off                                 ;
+; Synchronization Register Chain Length                                           ; 3                                   ; 3                                   ;
+; Power Optimization During Synthesis                                             ; Normal compilation                  ; Normal compilation                  ;
+; HDL message level                                                               ; Level2                              ; Level2                              ;
+; Suppress Register Optimization Related Messages                                 ; Off                                 ; Off                                 ;
+; Number of Removed Registers Reported in Synthesis Report                        ; 5000                                ; 5000                                ;
+; Number of Swept Nodes Reported in Synthesis Report                              ; 5000                                ; 5000                                ;
+; Number of Inverted Registers Reported in Synthesis Report                       ; 100                                 ; 100                                 ;
+; Clock MUX Protection                                                            ; On                                  ; On                                  ;
+; Auto Gated Clock Conversion                                                     ; Off                                 ; Off                                 ;
+; Block Design Naming                                                             ; Auto                                ; Auto                                ;
+; SDC constraint protection                                                       ; Off                                 ; Off                                 ;
+; Synthesis Effort                                                                ; Auto                                ; Auto                                ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal                    ; On                                  ; On                                  ;
+; Pre-Mapping Resynthesis Optimization                                            ; Off                                 ; Off                                 ;
+; Analysis & Synthesis Message Level                                              ; Medium                              ; Medium                              ;
+; Disable Register Merging Across Hierarchies                                     ; Auto                                ; Auto                                ;
+; Resource Aware Inference For Block RAM                                          ; On                                  ; On                                  ;
+; Automatic Parallel Synthesis                                                    ; On                                  ; On                                  ;
+; Partial Reconfiguration Bitstream ID                                            ; Off                                 ; Off                                 ;
++---------------------------------------------------------------------------------+-------------------------------------+-------------------------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 4           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processors 2-4         ;   0.0%      ;
++----------------------------+-------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                         ;
++---------------------------------------+-----------------+------------------------+-------------------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path      ; Used in Netlist ; File Type              ; File Name with Absolute Path                                                                                      ; Library ;
++---------------------------------------+-----------------+------------------------+-------------------------------------------------------------------------------------------------------------------+---------+
+; buffered_multiplier_N_bits_on_board.v ; yes             ; User Verilog HDL File  ; D:/Storage/temp/semestr_6/sw/8/projekty/buffered_multiplier_N_bits_on_board/buffered_multiplier_N_bits_on_board.v ;         ;
++---------------------------------------+-----------------+------------------------+-------------------------------------------------------------------------------------------------------------------+---------+
+
+
++------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                ;
++---------------------------------------------+--------------+
+; Resource                                    ; Usage        ;
++---------------------------------------------+--------------+
+; Estimate of Logic utilization (ALMs needed) ; 108          ;
+;                                             ;              ;
+; Combinational ALUT usage for logic          ; 172          ;
+;     -- 7 input functions                    ; 0            ;
+;     -- 6 input functions                    ; 42           ;
+;     -- 5 input functions                    ; 22           ;
+;     -- 4 input functions                    ; 47           ;
+;     -- <=3 input functions                  ; 61           ;
+;                                             ;              ;
+; Dedicated logic registers                   ; 32           ;
+;                                             ;              ;
+; I/O pins                                    ; 48           ;
+;                                             ;              ;
+; Total DSP Blocks                            ; 0            ;
+;                                             ;              ;
+; Maximum fan-out node                        ; KEY[1]~input ;
+; Maximum fan-out                             ; 32           ;
+; Total fan-out                               ; 878          ;
+; Average fan-out                             ; 2.93         ;
++---------------------------------------------+--------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                                                               ;
++-----------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------+--------------+
+; Compilation Hierarchy Node              ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                       ; Entity Name                         ; Library Name ;
++-----------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------+--------------+
+; |buffered_multiplier_N_bits_on_board    ; 172 (0)             ; 32 (0)                    ; 0                 ; 0          ; 48   ; 0            ; |buffered_multiplier_N_bits_on_board                                                                                                      ; buffered_multiplier_N_bits_on_board ; work         ;
+;    |buffered_multiplier_N_bits:buf_mul| ; 144 (0)             ; 32 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |buffered_multiplier_N_bits_on_board|buffered_multiplier_N_bits:buf_mul                                                                   ; buffered_multiplier_N_bits          ; work         ;
+;       |multiplier_N_bits:mul|           ; 136 (48)            ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |buffered_multiplier_N_bits_on_board|buffered_multiplier_N_bits:buf_mul|multiplier_N_bits:mul                                             ; multiplier_N_bits                   ; work         ;
+;          |adder_N_bits:ad1|             ; 14 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |buffered_multiplier_N_bits_on_board|buffered_multiplier_N_bits:buf_mul|multiplier_N_bits:mul|adder_N_bits:ad1                            ; adder_N_bits                        ; work         ;
+;             |full_adder:ad[0].fa|       ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |buffered_multiplier_N_bits_on_board|buffered_multiplier_N_bits:buf_mul|multiplier_N_bits:mul|adder_N_bits:ad1|full_adder:ad[0].fa        ; full_adder                          ; work         ;
+;             |full_adder:ad[2].fa|       ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |buffered_multiplier_N_bits_on_board|buffered_multiplier_N_bits:buf_mul|multiplier_N_bits:mul|adder_N_bits:ad1|full_adder:ad[2].fa        ; full_adder                          ; work         ;
+;             |full_adder:ad[3].fa|       ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |buffered_multiplier_N_bits_on_board|buffered_multiplier_N_bits:buf_mul|multiplier_N_bits:mul|adder_N_bits:ad1|full_adder:ad[3].fa        ; full_adder                          ; work         ;
+;             |full_adder:ad[4].fa|       ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |buffered_multiplier_N_bits_on_board|buffered_multiplier_N_bits:buf_mul|multiplier_N_bits:mul|adder_N_bits:ad1|full_adder:ad[4].fa        ; full_adder                          ; work         ;
+;             |full_adder:ad[5].fa|       ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |buffered_multiplier_N_bits_on_board|buffered_multiplier_N_bits:buf_mul|multiplier_N_bits:mul|adder_N_bits:ad1|full_adder:ad[5].fa        ; full_adder                          ; work         ;
+;             |full_adder:ad[6].fa|       ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |buffered_multiplier_N_bits_on_board|buffered_multiplier_N_bits:buf_mul|multiplier_N_bits:mul|adder_N_bits:ad1|full_adder:ad[6].fa        ; full_adder                          ; work         ;
+;             |full_adder:ad[7].fa|       ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |buffered_multiplier_N_bits_on_board|buffered_multiplier_N_bits:buf_mul|multiplier_N_bits:mul|adder_N_bits:ad1|full_adder:ad[7].fa        ; full_adder                          ; work         ;
+;          |adder_N_bits:bl2[2].adi|      ; 13 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |buffered_multiplier_N_bits_on_board|buffered_multiplier_N_bits:buf_mul|multiplier_N_bits:mul|adder_N_bits:bl2[2].adi                     ; adder_N_bits                        ; work         ;
+;             |full_adder:ad[0].fa|       ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |buffered_multiplier_N_bits_on_board|buffered_multiplier_N_bits:buf_mul|multiplier_N_bits:mul|adder_N_bits:bl2[2].adi|full_adder:ad[0].fa ; full_adder                          ; work         ;
+;             |full_adder:ad[2].fa|       ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |buffered_multiplier_N_bits_on_board|buffered_multiplier_N_bits:buf_mul|multiplier_N_bits:mul|adder_N_bits:bl2[2].adi|full_adder:ad[2].fa ; full_adder                          ; work         ;
+;             |full_adder:ad[3].fa|       ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |buffered_multiplier_N_bits_on_board|buffered_multiplier_N_bits:buf_mul|multiplier_N_bits:mul|adder_N_bits:bl2[2].adi|full_adder:ad[3].fa ; full_adder                          ; work         ;
+;             |full_adder:ad[4].fa|       ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |buffered_multiplier_N_bits_on_board|buffered_multiplier_N_bits:buf_mul|multiplier_N_bits:mul|adder_N_bits:bl2[2].adi|full_adder:ad[4].fa ; full_adder                          ; work         ;
+;             |full_adder:ad[5].fa|       ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |buffered_multiplier_N_bits_on_board|buffered_multiplier_N_bits:buf_mul|multiplier_N_bits:mul|adder_N_bits:bl2[2].adi|full_adder:ad[5].fa ; full_adder                          ; work         ;
+;             |full_adder:ad[6].fa|       ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |buffered_multiplier_N_bits_on_board|buffered_multiplier_N_bits:buf_mul|multiplier_N_bits:mul|adder_N_bits:bl2[2].adi|full_adder:ad[6].fa ; full_adder                          ; work         ;
+;             |full_adder:ad[7].fa|       ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |buffered_multiplier_N_bits_on_board|buffered_multiplier_N_bits:buf_mul|multiplier_N_bits:mul|adder_N_bits:bl2[2].adi|full_adder:ad[7].fa ; full_adder                          ; work         ;
+;          |adder_N_bits:bl2[3].adi|      ; 14 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |buffered_multiplier_N_bits_on_board|buffered_multiplier_N_bits:buf_mul|multiplier_N_bits:mul|adder_N_bits:bl2[3].adi                     ; adder_N_bits                        ; work         ;
+;             |full_adder:ad[0].fa|       ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |buffered_multiplier_N_bits_on_board|buffered_multiplier_N_bits:buf_mul|multiplier_N_bits:mul|adder_N_bits:bl2[3].adi|full_adder:ad[0].fa ; full_adder                          ; work         ;
+;             |full_adder:ad[2].fa|       ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |buffered_multiplier_N_bits_on_board|buffered_multiplier_N_bits:buf_mul|multiplier_N_bits:mul|adder_N_bits:bl2[3].adi|full_adder:ad[2].fa ; full_adder                          ; work         ;
+;             |full_adder:ad[3].fa|       ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |buffered_multiplier_N_bits_on_board|buffered_multiplier_N_bits:buf_mul|multiplier_N_bits:mul|adder_N_bits:bl2[3].adi|full_adder:ad[3].fa ; full_adder                          ; work         ;
+;             |full_adder:ad[4].fa|       ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |buffered_multiplier_N_bits_on_board|buffered_multiplier_N_bits:buf_mul|multiplier_N_bits:mul|adder_N_bits:bl2[3].adi|full_adder:ad[4].fa ; full_adder                          ; work         ;
+;             |full_adder:ad[5].fa|       ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |buffered_multiplier_N_bits_on_board|buffered_multiplier_N_bits:buf_mul|multiplier_N_bits:mul|adder_N_bits:bl2[3].adi|full_adder:ad[5].fa ; full_adder                          ; work         ;
+;             |full_adder:ad[6].fa|       ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |buffered_multiplier_N_bits_on_board|buffered_multiplier_N_bits:buf_mul|multiplier_N_bits:mul|adder_N_bits:bl2[3].adi|full_adder:ad[6].fa ; full_adder                          ; work         ;
+;             |full_adder:ad[7].fa|       ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |buffered_multiplier_N_bits_on_board|buffered_multiplier_N_bits:buf_mul|multiplier_N_bits:mul|adder_N_bits:bl2[3].adi|full_adder:ad[7].fa ; full_adder                          ; work         ;
+;          |adder_N_bits:bl2[4].adi|      ; 13 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |buffered_multiplier_N_bits_on_board|buffered_multiplier_N_bits:buf_mul|multiplier_N_bits:mul|adder_N_bits:bl2[4].adi                     ; adder_N_bits                        ; work         ;
+;             |full_adder:ad[0].fa|       ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |buffered_multiplier_N_bits_on_board|buffered_multiplier_N_bits:buf_mul|multiplier_N_bits:mul|adder_N_bits:bl2[4].adi|full_adder:ad[0].fa ; full_adder                          ; work         ;
+;             |full_adder:ad[1].fa|       ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |buffered_multiplier_N_bits_on_board|buffered_multiplier_N_bits:buf_mul|multiplier_N_bits:mul|adder_N_bits:bl2[4].adi|full_adder:ad[1].fa ; full_adder                          ; work         ;
+;             |full_adder:ad[2].fa|       ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |buffered_multiplier_N_bits_on_board|buffered_multiplier_N_bits:buf_mul|multiplier_N_bits:mul|adder_N_bits:bl2[4].adi|full_adder:ad[2].fa ; full_adder                          ; work         ;
+;             |full_adder:ad[3].fa|       ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |buffered_multiplier_N_bits_on_board|buffered_multiplier_N_bits:buf_mul|multiplier_N_bits:mul|adder_N_bits:bl2[4].adi|full_adder:ad[3].fa ; full_adder                          ; work         ;
+;             |full_adder:ad[4].fa|       ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |buffered_multiplier_N_bits_on_board|buffered_multiplier_N_bits:buf_mul|multiplier_N_bits:mul|adder_N_bits:bl2[4].adi|full_adder:ad[4].fa ; full_adder                          ; work         ;
+;             |full_adder:ad[5].fa|       ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |buffered_multiplier_N_bits_on_board|buffered_multiplier_N_bits:buf_mul|multiplier_N_bits:mul|adder_N_bits:bl2[4].adi|full_adder:ad[5].fa ; full_adder                          ; work         ;
+;             |full_adder:ad[6].fa|       ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |buffered_multiplier_N_bits_on_board|buffered_multiplier_N_bits:buf_mul|multiplier_N_bits:mul|adder_N_bits:bl2[4].adi|full_adder:ad[6].fa ; full_adder                          ; work         ;
+;             |full_adder:ad[7].fa|       ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |buffered_multiplier_N_bits_on_board|buffered_multiplier_N_bits:buf_mul|multiplier_N_bits:mul|adder_N_bits:bl2[4].adi|full_adder:ad[7].fa ; full_adder                          ; work         ;
+;          |adder_N_bits:bl2[5].adi|      ; 11 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |buffered_multiplier_N_bits_on_board|buffered_multiplier_N_bits:buf_mul|multiplier_N_bits:mul|adder_N_bits:bl2[5].adi                     ; adder_N_bits                        ; work         ;
+;             |full_adder:ad[0].fa|       ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |buffered_multiplier_N_bits_on_board|buffered_multiplier_N_bits:buf_mul|multiplier_N_bits:mul|adder_N_bits:bl2[5].adi|full_adder:ad[0].fa ; full_adder                          ; work         ;
+;             |full_adder:ad[1].fa|       ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |buffered_multiplier_N_bits_on_board|buffered_multiplier_N_bits:buf_mul|multiplier_N_bits:mul|adder_N_bits:bl2[5].adi|full_adder:ad[1].fa ; full_adder                          ; work         ;
+;             |full_adder:ad[3].fa|       ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |buffered_multiplier_N_bits_on_board|buffered_multiplier_N_bits:buf_mul|multiplier_N_bits:mul|adder_N_bits:bl2[5].adi|full_adder:ad[3].fa ; full_adder                          ; work         ;
+;             |full_adder:ad[4].fa|       ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |buffered_multiplier_N_bits_on_board|buffered_multiplier_N_bits:buf_mul|multiplier_N_bits:mul|adder_N_bits:bl2[5].adi|full_adder:ad[4].fa ; full_adder                          ; work         ;
+;             |full_adder:ad[5].fa|       ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |buffered_multiplier_N_bits_on_board|buffered_multiplier_N_bits:buf_mul|multiplier_N_bits:mul|adder_N_bits:bl2[5].adi|full_adder:ad[5].fa ; full_adder                          ; work         ;
+;             |full_adder:ad[6].fa|       ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |buffered_multiplier_N_bits_on_board|buffered_multiplier_N_bits:buf_mul|multiplier_N_bits:mul|adder_N_bits:bl2[5].adi|full_adder:ad[6].fa ; full_adder                          ; work         ;
+;             |full_adder:ad[7].fa|       ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |buffered_multiplier_N_bits_on_board|buffered_multiplier_N_bits:buf_mul|multiplier_N_bits:mul|adder_N_bits:bl2[5].adi|full_adder:ad[7].fa ; full_adder                          ; work         ;
+;          |adder_N_bits:bl2[6].adi|      ; 11 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |buffered_multiplier_N_bits_on_board|buffered_multiplier_N_bits:buf_mul|multiplier_N_bits:mul|adder_N_bits:bl2[6].adi                     ; adder_N_bits                        ; work         ;
+;             |full_adder:ad[0].fa|       ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |buffered_multiplier_N_bits_on_board|buffered_multiplier_N_bits:buf_mul|multiplier_N_bits:mul|adder_N_bits:bl2[6].adi|full_adder:ad[0].fa ; full_adder                          ; work         ;
+;             |full_adder:ad[1].fa|       ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |buffered_multiplier_N_bits_on_board|buffered_multiplier_N_bits:buf_mul|multiplier_N_bits:mul|adder_N_bits:bl2[6].adi|full_adder:ad[1].fa ; full_adder                          ; work         ;
+;             |full_adder:ad[3].fa|       ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |buffered_multiplier_N_bits_on_board|buffered_multiplier_N_bits:buf_mul|multiplier_N_bits:mul|adder_N_bits:bl2[6].adi|full_adder:ad[3].fa ; full_adder                          ; work         ;
+;             |full_adder:ad[4].fa|       ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |buffered_multiplier_N_bits_on_board|buffered_multiplier_N_bits:buf_mul|multiplier_N_bits:mul|adder_N_bits:bl2[6].adi|full_adder:ad[4].fa ; full_adder                          ; work         ;
+;             |full_adder:ad[5].fa|       ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |buffered_multiplier_N_bits_on_board|buffered_multiplier_N_bits:buf_mul|multiplier_N_bits:mul|adder_N_bits:bl2[6].adi|full_adder:ad[5].fa ; full_adder                          ; work         ;
+;             |full_adder:ad[6].fa|       ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |buffered_multiplier_N_bits_on_board|buffered_multiplier_N_bits:buf_mul|multiplier_N_bits:mul|adder_N_bits:bl2[6].adi|full_adder:ad[6].fa ; full_adder                          ; work         ;
+;          |adder_N_bits:bl2[7].adi|      ; 12 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |buffered_multiplier_N_bits_on_board|buffered_multiplier_N_bits:buf_mul|multiplier_N_bits:mul|adder_N_bits:bl2[7].adi                     ; adder_N_bits                        ; work         ;
+;             |full_adder:ad[0].fa|       ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |buffered_multiplier_N_bits_on_board|buffered_multiplier_N_bits:buf_mul|multiplier_N_bits:mul|adder_N_bits:bl2[7].adi|full_adder:ad[0].fa ; full_adder                          ; work         ;
+;             |full_adder:ad[1].fa|       ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |buffered_multiplier_N_bits_on_board|buffered_multiplier_N_bits:buf_mul|multiplier_N_bits:mul|adder_N_bits:bl2[7].adi|full_adder:ad[1].fa ; full_adder                          ; work         ;
+;             |full_adder:ad[2].fa|       ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |buffered_multiplier_N_bits_on_board|buffered_multiplier_N_bits:buf_mul|multiplier_N_bits:mul|adder_N_bits:bl2[7].adi|full_adder:ad[2].fa ; full_adder                          ; work         ;
+;             |full_adder:ad[3].fa|       ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |buffered_multiplier_N_bits_on_board|buffered_multiplier_N_bits:buf_mul|multiplier_N_bits:mul|adder_N_bits:bl2[7].adi|full_adder:ad[3].fa ; full_adder                          ; work         ;
+;             |full_adder:ad[4].fa|       ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |buffered_multiplier_N_bits_on_board|buffered_multiplier_N_bits:buf_mul|multiplier_N_bits:mul|adder_N_bits:bl2[7].adi|full_adder:ad[4].fa ; full_adder                          ; work         ;
+;             |full_adder:ad[5].fa|       ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |buffered_multiplier_N_bits_on_board|buffered_multiplier_N_bits:buf_mul|multiplier_N_bits:mul|adder_N_bits:bl2[7].adi|full_adder:ad[5].fa ; full_adder                          ; work         ;
+;             |full_adder:ad[6].fa|       ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |buffered_multiplier_N_bits_on_board|buffered_multiplier_N_bits:buf_mul|multiplier_N_bits:mul|adder_N_bits:bl2[7].adi|full_adder:ad[6].fa ; full_adder                          ; work         ;
+;             |full_adder:ad[7].fa|       ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |buffered_multiplier_N_bits_on_board|buffered_multiplier_N_bits:buf_mul|multiplier_N_bits:mul|adder_N_bits:bl2[7].adi|full_adder:ad[7].fa ; full_adder                          ; work         ;
+;       |mux_4_1:mux|                     ; 8 (8)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |buffered_multiplier_N_bits_on_board|buffered_multiplier_N_bits:buf_mul|mux_4_1:mux                                                       ; mux_4_1                             ; work         ;
+;       |register_N_bits_ena_aclr:r_A|    ; 0 (0)               ; 8 (8)                     ; 0                 ; 0          ; 0    ; 0            ; |buffered_multiplier_N_bits_on_board|buffered_multiplier_N_bits:buf_mul|register_N_bits_ena_aclr:r_A                                      ; register_N_bits_ena_aclr            ; work         ;
+;       |register_N_bits_ena_aclr:r_B|    ; 0 (0)               ; 8 (8)                     ; 0                 ; 0          ; 0    ; 0            ; |buffered_multiplier_N_bits_on_board|buffered_multiplier_N_bits:buf_mul|register_N_bits_ena_aclr:r_B                                      ; register_N_bits_ena_aclr            ; work         ;
+;       |register_N_bits_ena_aclr:r_P|    ; 0 (0)               ; 16 (16)                   ; 0                 ; 0          ; 0    ; 0            ; |buffered_multiplier_N_bits_on_board|buffered_multiplier_N_bits:buf_mul|register_N_bits_ena_aclr:r_P                                      ; register_N_bits_ena_aclr            ; work         ;
+;    |decoder_hex_16:dec0|                ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |buffered_multiplier_N_bits_on_board|decoder_hex_16:dec0                                                                                  ; decoder_hex_16                      ; work         ;
+;    |decoder_hex_16:dec1|                ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |buffered_multiplier_N_bits_on_board|decoder_hex_16:dec1                                                                                  ; decoder_hex_16                      ; work         ;
+;    |decoder_hex_16:dec2|                ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |buffered_multiplier_N_bits_on_board|decoder_hex_16:dec2                                                                                  ; decoder_hex_16                      ; work         ;
+;    |decoder_hex_16:dec3|                ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |buffered_multiplier_N_bits_on_board|decoder_hex_16:dec3                                                                                  ; decoder_hex_16                      ; work         ;
++-----------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 32    ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 32    ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 16    ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                                         ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                               ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------------------------------+
+; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |buffered_multiplier_N_bits_on_board|buffered_multiplier_N_bits:buf_mul|mux_4_1:mux|Mux7 ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: buffered_multiplier_N_bits:buf_mul ;
++----------------+-------+--------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                   ;
++----------------+-------+--------------------------------------------------------+
+; N              ; 8     ; Signed Integer                                         ;
++----------------+-------+--------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: buffered_multiplier_N_bits:buf_mul|register_N_bits_ena_aclr:r_A ;
++----------------+-------+-------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                ;
++----------------+-------+-------------------------------------------------------------------------------------+
+; N              ; 8     ; Signed Integer                                                                      ;
++----------------+-------+-------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: buffered_multiplier_N_bits:buf_mul|register_N_bits_ena_aclr:r_B ;
++----------------+-------+-------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                ;
++----------------+-------+-------------------------------------------------------------------------------------+
+; N              ; 8     ; Signed Integer                                                                      ;
++----------------+-------+-------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: buffered_multiplier_N_bits:buf_mul|mux_4_1:mux ;
++----------------+-------+--------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                               ;
++----------------+-------+--------------------------------------------------------------------+
+; N              ; 8     ; Signed Integer                                                     ;
++----------------+-------+--------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: buffered_multiplier_N_bits:buf_mul|multiplier_N_bits:mul ;
++----------------+-------+------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                         ;
++----------------+-------+------------------------------------------------------------------------------+
+; N              ; 8     ; Signed Integer                                                               ;
++----------------+-------+------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: buffered_multiplier_N_bits:buf_mul|multiplier_N_bits:mul|adder_N_bits:ad1 ;
++----------------+-------+-----------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                          ;
++----------------+-------+-----------------------------------------------------------------------------------------------+
+; N              ; 8     ; Signed Integer                                                                                ;
++----------------+-------+-----------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: buffered_multiplier_N_bits:buf_mul|multiplier_N_bits:mul|adder_N_bits:bl2[2].adi ;
++----------------+-------+------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                 ;
++----------------+-------+------------------------------------------------------------------------------------------------------+
+; N              ; 8     ; Signed Integer                                                                                       ;
++----------------+-------+------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: buffered_multiplier_N_bits:buf_mul|multiplier_N_bits:mul|adder_N_bits:bl2[3].adi ;
++----------------+-------+------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                 ;
++----------------+-------+------------------------------------------------------------------------------------------------------+
+; N              ; 8     ; Signed Integer                                                                                       ;
++----------------+-------+------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: buffered_multiplier_N_bits:buf_mul|multiplier_N_bits:mul|adder_N_bits:bl2[4].adi ;
++----------------+-------+------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                 ;
++----------------+-------+------------------------------------------------------------------------------------------------------+
+; N              ; 8     ; Signed Integer                                                                                       ;
++----------------+-------+------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: buffered_multiplier_N_bits:buf_mul|multiplier_N_bits:mul|adder_N_bits:bl2[5].adi ;
++----------------+-------+------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                 ;
++----------------+-------+------------------------------------------------------------------------------------------------------+
+; N              ; 8     ; Signed Integer                                                                                       ;
++----------------+-------+------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: buffered_multiplier_N_bits:buf_mul|multiplier_N_bits:mul|adder_N_bits:bl2[6].adi ;
++----------------+-------+------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                 ;
++----------------+-------+------------------------------------------------------------------------------------------------------+
+; N              ; 8     ; Signed Integer                                                                                       ;
++----------------+-------+------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: buffered_multiplier_N_bits:buf_mul|multiplier_N_bits:mul|adder_N_bits:bl2[7].adi ;
++----------------+-------+------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                 ;
++----------------+-------+------------------------------------------------------------------------------------------------------+
+; N              ; 8     ; Signed Integer                                                                                       ;
++----------------+-------+------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: buffered_multiplier_N_bits:buf_mul|register_N_bits_ena_aclr:r_P ;
++----------------+-------+-------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                ;
++----------------+-------+-------------------------------------------------------------------------------------+
+; N              ; 16    ; Signed Integer                                                                      ;
++----------------+-------+-------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "buffered_multiplier_N_bits:buf_mul|register_N_bits_ena_aclr:r_P" ;
++------+-------+----------+-------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                           ;
++------+-------+----------+-------------------------------------------------------------------+
+; ena  ; Input ; Info     ; Stuck at VCC                                                      ;
++------+-------+----------+-------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "buffered_multiplier_N_bits:buf_mul|multiplier_N_bits:mul|adder_N_bits:bl2[7].adi" ;
++------+-------+----------+------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                            ;
++------+-------+----------+------------------------------------------------------------------------------------+
+; cin  ; Input ; Info     ; Stuck at GND                                                                       ;
++------+-------+----------+------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "buffered_multiplier_N_bits:buf_mul|multiplier_N_bits:mul|adder_N_bits:bl2[6].adi" ;
++------+-------+----------+------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                            ;
++------+-------+----------+------------------------------------------------------------------------------------+
+; cin  ; Input ; Info     ; Stuck at GND                                                                       ;
++------+-------+----------+------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "buffered_multiplier_N_bits:buf_mul|multiplier_N_bits:mul|adder_N_bits:bl2[5].adi" ;
++------+-------+----------+------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                            ;
++------+-------+----------+------------------------------------------------------------------------------------+
+; cin  ; Input ; Info     ; Stuck at GND                                                                       ;
++------+-------+----------+------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "buffered_multiplier_N_bits:buf_mul|multiplier_N_bits:mul|adder_N_bits:bl2[4].adi" ;
++------+-------+----------+------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                            ;
++------+-------+----------+------------------------------------------------------------------------------------+
+; cin  ; Input ; Info     ; Stuck at GND                                                                       ;
++------+-------+----------+------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "buffered_multiplier_N_bits:buf_mul|multiplier_N_bits:mul|adder_N_bits:bl2[3].adi" ;
++------+-------+----------+------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                            ;
++------+-------+----------+------------------------------------------------------------------------------------+
+; cin  ; Input ; Info     ; Stuck at GND                                                                       ;
++------+-------+----------+------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "buffered_multiplier_N_bits:buf_mul|multiplier_N_bits:mul|adder_N_bits:bl2[2].adi" ;
++------+-------+----------+------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                            ;
++------+-------+----------+------------------------------------------------------------------------------------+
+; cin  ; Input ; Info     ; Stuck at GND                                                                       ;
++------+-------+----------+------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "buffered_multiplier_N_bits:buf_mul|multiplier_N_bits:mul|adder_N_bits:ad1" ;
++------+-------+----------+-----------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                     ;
++------+-------+----------+-----------------------------------------------------------------------------+
+; A[7] ; Input ; Info     ; Stuck at GND                                                                ;
+; cin  ; Input ; Info     ; Stuck at GND                                                                ;
++------+-------+----------+-----------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------+
+; Port Connectivity Checks: "buffered_multiplier_N_bits:buf_mul|mux_4_1:mux" ;
++------+-------+----------+--------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                          ;
++------+-------+----------+--------------------------------------------------+
+; inf0 ; Input ; Info     ; Stuck at GND                                     ;
+; inf3 ; Input ; Info     ; Stuck at GND                                     ;
++------+-------+----------+--------------------------------------------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; arriav_ff             ; 32                          ;
+;     CLR               ; 16                          ;
+;     ENA CLR           ; 16                          ;
+; arriav_lcell_comb     ; 176                         ;
+;     normal            ; 176                         ;
+;         1 data inputs ; 4                           ;
+;         2 data inputs ; 51                          ;
+;         3 data inputs ; 10                          ;
+;         4 data inputs ; 47                          ;
+;         5 data inputs ; 22                          ;
+;         6 data inputs ; 42                          ;
+; boundary_port         ; 48                          ;
+;                       ;                             ;
+; Max LUT depth         ; 10.00                       ;
+; Average LUT depth     ; 6.16                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:01     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+    Info: Processing started: Thu May 05 12:52:20 2022
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off buffered_multiplier_N_bits_on_board -c buffered_multiplier_N_bits_on_board
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (12021): Found 8 design units, including 8 entities, in source file buffered_multiplier_n_bits_on_board.v
+    Info (12023): Found entity 1: buffered_multiplier_N_bits_on_board File: D:/Storage/temp/semestr_6/sw/8/projekty/buffered_multiplier_N_bits_on_board/buffered_multiplier_N_bits_on_board.v Line: 1
+    Info (12023): Found entity 2: decoder_hex_16 File: D:/Storage/temp/semestr_6/sw/8/projekty/buffered_multiplier_N_bits_on_board/buffered_multiplier_N_bits_on_board.v Line: 17
+    Info (12023): Found entity 3: buffered_multiplier_N_bits File: D:/Storage/temp/semestr_6/sw/8/projekty/buffered_multiplier_N_bits_on_board/buffered_multiplier_N_bits_on_board.v Line: 43
+    Info (12023): Found entity 4: register_N_bits_ena_aclr File: D:/Storage/temp/semestr_6/sw/8/projekty/buffered_multiplier_N_bits_on_board/buffered_multiplier_N_bits_on_board.v Line: 61
+    Info (12023): Found entity 5: mux_4_1 File: D:/Storage/temp/semestr_6/sw/8/projekty/buffered_multiplier_N_bits_on_board/buffered_multiplier_N_bits_on_board.v Line: 75
+    Info (12023): Found entity 6: multiplier_N_bits File: D:/Storage/temp/semestr_6/sw/8/projekty/buffered_multiplier_N_bits_on_board/buffered_multiplier_N_bits_on_board.v Line: 91
+    Info (12023): Found entity 7: adder_N_bits File: D:/Storage/temp/semestr_6/sw/8/projekty/buffered_multiplier_N_bits_on_board/buffered_multiplier_N_bits_on_board.v Line: 125
+    Info (12023): Found entity 8: full_adder File: D:/Storage/temp/semestr_6/sw/8/projekty/buffered_multiplier_N_bits_on_board/buffered_multiplier_N_bits_on_board.v Line: 147
+Info (12127): Elaborating entity "buffered_multiplier_N_bits_on_board" for the top level hierarchy
+Info (12128): Elaborating entity "buffered_multiplier_N_bits" for hierarchy "buffered_multiplier_N_bits:buf_mul" File: D:/Storage/temp/semestr_6/sw/8/projekty/buffered_multiplier_N_bits_on_board/buffered_multiplier_N_bits_on_board.v Line: 8
+Info (12128): Elaborating entity "register_N_bits_ena_aclr" for hierarchy "buffered_multiplier_N_bits:buf_mul|register_N_bits_ena_aclr:r_A" File: D:/Storage/temp/semestr_6/sw/8/projekty/buffered_multiplier_N_bits_on_board/buffered_multiplier_N_bits_on_board.v Line: 51
+Info (12128): Elaborating entity "mux_4_1" for hierarchy "buffered_multiplier_N_bits:buf_mul|mux_4_1:mux" File: D:/Storage/temp/semestr_6/sw/8/projekty/buffered_multiplier_N_bits_on_board/buffered_multiplier_N_bits_on_board.v Line: 53
+Info (12128): Elaborating entity "multiplier_N_bits" for hierarchy "buffered_multiplier_N_bits:buf_mul|multiplier_N_bits:mul" File: D:/Storage/temp/semestr_6/sw/8/projekty/buffered_multiplier_N_bits_on_board/buffered_multiplier_N_bits_on_board.v Line: 56
+Info (12128): Elaborating entity "adder_N_bits" for hierarchy "buffered_multiplier_N_bits:buf_mul|multiplier_N_bits:mul|adder_N_bits:ad1" File: D:/Storage/temp/semestr_6/sw/8/projekty/buffered_multiplier_N_bits_on_board/buffered_multiplier_N_bits_on_board.v Line: 107
+Info (12128): Elaborating entity "full_adder" for hierarchy "buffered_multiplier_N_bits:buf_mul|multiplier_N_bits:mul|adder_N_bits:ad1|full_adder:ad[0].fa" File: D:/Storage/temp/semestr_6/sw/8/projekty/buffered_multiplier_N_bits_on_board/buffered_multiplier_N_bits_on_board.v Line: 138
+Info (12128): Elaborating entity "register_N_bits_ena_aclr" for hierarchy "buffered_multiplier_N_bits:buf_mul|register_N_bits_ena_aclr:r_P" File: D:/Storage/temp/semestr_6/sw/8/projekty/buffered_multiplier_N_bits_on_board/buffered_multiplier_N_bits_on_board.v Line: 57
+Info (12128): Elaborating entity "decoder_hex_16" for hierarchy "decoder_hex_16:dec3" File: D:/Storage/temp/semestr_6/sw/8/projekty/buffered_multiplier_N_bits_on_board/buffered_multiplier_N_bits_on_board.v Line: 10
+Info (286030): Timing-Driven Synthesis is running
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 236 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 12 input pins
+    Info (21059): Implemented 36 output pins
+    Info (21061): Implemented 188 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 4828 megabytes
+    Info: Processing ended: Thu May 05 12:52:36 2022
+    Info: Elapsed time: 00:00:16
+    Info: Total CPU time (on all processors): 00:00:31
+
+

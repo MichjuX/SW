@@ -1,0 +1,52 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/Storage/temp/semestr_6/sw/6/projekty/counter_16_bits/simulation/qsim
+vcounter_16_bits
+Z1 !s110 1649771520
+!i10b 1
+!s100 z0z0D?2[6NmXY?z@_e9ab2
+Ieo75FHojhn;h`JzPO3G8d3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1649771519
+8counter_16_bits.vo
+Fcounter_16_bits.vo
+L0 31
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1649771520.000000
+!s107 counter_16_bits.vo|
+!s90 -work|work|counter_16_bits.vo|
+!i113 1
+Z5 o-work work
+Z6 tCvgOpt 0
+vcounter_16_bits_vlg_vec_tst
+R1
+!i10b 1
+!s100 FlB5UhN;zI<7HM>V=nYX20
+I0IWTC^zgSmEPVk;@bGlWg3
+R2
+R0
+w1649771517
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+L0 29
+R3
+r1
+!s85 0
+31
+R4
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R5
+R6

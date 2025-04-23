@@ -1,0 +1,173 @@
+// Copyright (C) 2018  Intel Corporation. All rights reserved.
+// Your use of Intel Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Intel Program License 
+// Subscription Agreement, the Intel Quartus Prime License Agreement,
+// the Intel FPGA IP License Agreement, or other applicable license
+// agreement, including, without limitation, that your use is for
+// the sole purpose of programming logic devices manufactured by
+// Intel and sold by Intel or its authorized distributors.  Please
+// refer to the applicable agreement for further details.
+
+// VENDOR "Altera"
+// PROGRAM "Quartus Prime"
+// VERSION "Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition"
+
+// DATE "03/31/2022 07:28:43"
+
+// 
+// Device: Altera 5CSEMA5F31C6 Package FBGA896
+// 
+
+// 
+// This Verilog file should be used for ModelSim-Altera (Verilog) only
+// 
+
+`timescale 1 ps/ 1 ps
+
+module RS_if (
+	Clk,
+	R,
+	S,
+	Q,
+	nQ);
+input 	Clk;
+input 	R;
+input 	S;
+output 	Q;
+output 	nQ;
+
+wire gnd;
+wire vcc;
+wire unknown;
+
+assign gnd = 1'b0;
+assign vcc = 1'b1;
+assign unknown = 1'bx;
+
+tri1 devclrn;
+tri1 devpor;
+tri1 devoe;
+wire \Q~output_o ;
+wire \nQ~output_o ;
+wire \S~input_o ;
+wire \Clk~input_o ;
+wire \R~input_o ;
+wire \Q~0_combout ;
+wire \Q$latch~combout ;
+
+
+cyclonev_io_obuf \Q~output (
+	.i(\Q$latch~combout ),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\Q~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \Q~output .bus_hold = "false";
+defparam \Q~output .open_drain_output = "false";
+defparam \Q~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+cyclonev_io_obuf \nQ~output (
+	.i(!\Q$latch~combout ),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\nQ~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \nQ~output .bus_hold = "false";
+defparam \nQ~output .open_drain_output = "false";
+defparam \nQ~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+cyclonev_io_ibuf \S~input (
+	.i(S),
+	.ibar(gnd),
+	.dynamicterminationcontrol(gnd),
+	.o(\S~input_o ));
+// synopsys translate_off
+defparam \S~input .bus_hold = "false";
+defparam \S~input .simulate_z_as = "z";
+// synopsys translate_on
+
+cyclonev_io_ibuf \Clk~input (
+	.i(Clk),
+	.ibar(gnd),
+	.dynamicterminationcontrol(gnd),
+	.o(\Clk~input_o ));
+// synopsys translate_off
+defparam \Clk~input .bus_hold = "false";
+defparam \Clk~input .simulate_z_as = "z";
+// synopsys translate_on
+
+cyclonev_io_ibuf \R~input (
+	.i(R),
+	.ibar(gnd),
+	.dynamicterminationcontrol(gnd),
+	.o(\R~input_o ));
+// synopsys translate_off
+defparam \R~input .bus_hold = "false";
+defparam \R~input .simulate_z_as = "z";
+// synopsys translate_on
+
+cyclonev_lcell_comb \Q~0 (
+// Equation(s):
+// \Q~0_combout  = (\Clk~input_o  & ((\R~input_o ) # (\S~input_o )))
+
+	.dataa(!\S~input_o ),
+	.datab(!\Clk~input_o ),
+	.datac(!\R~input_o ),
+	.datad(gnd),
+	.datae(gnd),
+	.dataf(gnd),
+	.datag(gnd),
+	.cin(gnd),
+	.sharein(gnd),
+	.combout(\Q~0_combout ),
+	.sumout(),
+	.cout(),
+	.shareout());
+// synopsys translate_off
+defparam \Q~0 .extended_lut = "off";
+defparam \Q~0 .lut_mask = 64'h1313131313131313;
+defparam \Q~0 .shared_arith = "off";
+// synopsys translate_on
+
+cyclonev_lcell_comb Q$latch(
+// Equation(s):
+// \Q$latch~combout  = ( \Q$latch~combout  & ( \Q~0_combout  & ( \S~input_o  ) ) ) # ( !\Q$latch~combout  & ( \Q~0_combout  & ( \S~input_o  ) ) ) # ( \Q$latch~combout  & ( !\Q~0_combout  ) )
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(!\S~input_o ),
+	.datae(!\Q$latch~combout ),
+	.dataf(!\Q~0_combout ),
+	.datag(gnd),
+	.cin(gnd),
+	.sharein(gnd),
+	.combout(\Q$latch~combout ),
+	.sumout(),
+	.cout(),
+	.shareout());
+// synopsys translate_off
+defparam Q$latch.extended_lut = "off";
+defparam Q$latch.lut_mask = 64'h0000FFFF00FF00FF;
+defparam Q$latch.shared_arith = "off";
+// synopsys translate_on
+
+assign Q = \Q~output_o ;
+
+assign nQ = \nQ~output_o ;
+
+endmodule

@@ -1,0 +1,1 @@
+Warning (10268): Verilog HDL information at processor_with_hex_on_board.v(319): always construct contains both blocking and non-blocking assignments File: D:/Storage/temp/semestr_6/sw/13/projekty/processor_with_hex_on_board/processor_with_hex_on_board.v Line: 319

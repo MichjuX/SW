@@ -1,0 +1,43 @@
+|led_blink_on_board
+CLOCK_50 => CLOCK_50.IN1
+LEDR[0] <= timer:t.port1
+LEDR[1] <= timer:t.port1
+LEDR[2] <= timer:t.port1
+LEDR[3] <= timer:t.port1
+LEDR[4] <= timer:t.port1
+LEDR[5] <= timer:t.port1
+LEDR[6] <= timer:t.port1
+LEDR[7] <= timer:t.port1
+
+
+|led_blink_on_board|timer:t
+clock => slow_clock~reg0.CLK
+clock => counter[0].CLK
+clock => counter[1].CLK
+clock => counter[2].CLK
+clock => counter[3].CLK
+clock => counter[4].CLK
+clock => counter[5].CLK
+clock => counter[6].CLK
+clock => counter[7].CLK
+clock => counter[8].CLK
+clock => counter[9].CLK
+clock => counter[10].CLK
+clock => counter[11].CLK
+clock => counter[12].CLK
+clock => counter[13].CLK
+clock => counter[14].CLK
+clock => counter[15].CLK
+clock => counter[16].CLK
+clock => counter[17].CLK
+clock => counter[18].CLK
+clock => counter[19].CLK
+clock => counter[20].CLK
+clock => counter[21].CLK
+clock => counter[22].CLK
+clock => counter[23].CLK
+clock => counter[24].CLK
+clock => counter[25].CLK
+slow_clock <= slow_clock~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

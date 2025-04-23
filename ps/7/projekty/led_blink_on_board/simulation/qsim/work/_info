@@ -1,0 +1,52 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/Storage/temp/semestr_6/sw/7/projekty/led_blink_on_board/simulation/qsim
+vled_blink_on_board
+Z1 !s110 1650503243
+!i10b 1
+!s100 lg`E2iUNmeURf8GUDz1aa2
+I4l9L[D<jS8Fm[>8k9Yf2N2
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1650503241
+8led_blink_on_board.vo
+Fled_blink_on_board.vo
+L0 31
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1650503242.000000
+!s107 led_blink_on_board.vo|
+!s90 -work|work|led_blink_on_board.vo|
+!i113 1
+Z4 o-work work
+Z5 tCvgOpt 0
+vled_blink_on_board_vlg_vec_tst
+R1
+!i10b 1
+!s100 0nIPZz7G1j]:kn9D9XjkF0
+I<;OL]1S37n6BfOPI^c9[71
+R2
+R0
+w1650503240
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+L0 29
+R3
+r1
+!s85 0
+31
+!s108 1650503243.000000
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R4
+R5

@@ -1,0 +1,44 @@
+1. sposób z negacją odjemnika + 1 (zawsze działa)
+A = 13
+1101
+
+B = 5
+0101
+(~B) + 1 = -B
+1011
+
+1101 A
+1011 -B
+1000 A + (-B) = 8
+
+2. sposób z syntezatora w Quartusie (działa tylko w szczególnych przypadkach odjemnika)
+1. przykład
+A = 13
+1101
+Rozszerzamy A o dodatkowy bit z prawej równy 1.
+11011
+
+B = 5
+0101
+Rozszerzamy B o dodatkowy bit z prawej równy 1.
+01011
+Negujemy rozszerzone B.
+10100
+
+11011 rozszerzone A
+10100 zanegowane rozszerzone B
+01111 rozszerzone A + zanegowane rozszerzone B
+
+2. przykład
+A = 7
+0111
+01111
+
+B = 4
+0100
+01001
+10110
+
+01111
+10110
+00101

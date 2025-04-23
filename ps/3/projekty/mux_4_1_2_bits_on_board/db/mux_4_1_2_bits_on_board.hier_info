@@ -1,0 +1,98 @@
+|mux_4_1_2_bits_on_board
+SW[0] => SW[0].IN1
+SW[1] => SW[1].IN1
+SW[2] => SW[2].IN1
+SW[3] => SW[3].IN1
+SW[4] => SW[4].IN1
+SW[5] => SW[5].IN1
+SW[6] => SW[6].IN1
+SW[7] => SW[7].IN1
+KEY[0] => KEY[0].IN1
+KEY[1] => KEY[1].IN1
+LEDR[0] <= mux_4_1_2_bits:mux.port5
+LEDR[1] <= mux_4_1_2_bits:mux.port5
+
+
+|mux_4_1_2_bits_on_board|mux_4_1_2_bits:mux
+u[0] => u[0].IN1
+u[1] => u[1].IN1
+v[0] => v[0].IN1
+v[1] => v[1].IN1
+w[0] => w[0].IN1
+w[1] => w[1].IN1
+x[0] => x[0].IN1
+x[1] => x[1].IN1
+s[0] => s[0].IN2
+s[1] => s[1].IN2
+m[0] <= mux_4_1_1_bit:mux0.port5
+m[1] <= mux_4_1_1_bit:mux1.port5
+
+
+|mux_4_1_2_bits_on_board|mux_4_1_2_bits:mux|mux_4_1_1_bit:mux0
+u => u.IN1
+v => v.IN1
+w => w.IN1
+x => x.IN1
+s[0] => s[0].IN2
+s[1] => s[1].IN1
+m <= mux_2_1_1_bit:mux_uvwx.port3
+
+
+|mux_4_1_2_bits_on_board|mux_4_1_2_bits:mux|mux_4_1_1_bit:mux0|mux_2_1_1_bit:mux_uv
+x => m.IN0
+y => m.IN0
+s => m.IN1
+s => m.IN1
+m <= m.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux_4_1_2_bits_on_board|mux_4_1_2_bits:mux|mux_4_1_1_bit:mux0|mux_2_1_1_bit:mux_wx
+x => m.IN0
+y => m.IN0
+s => m.IN1
+s => m.IN1
+m <= m.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux_4_1_2_bits_on_board|mux_4_1_2_bits:mux|mux_4_1_1_bit:mux0|mux_2_1_1_bit:mux_uvwx
+x => m.IN0
+y => m.IN0
+s => m.IN1
+s => m.IN1
+m <= m.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux_4_1_2_bits_on_board|mux_4_1_2_bits:mux|mux_4_1_1_bit:mux1
+u => u.IN1
+v => v.IN1
+w => w.IN1
+x => x.IN1
+s[0] => s[0].IN2
+s[1] => s[1].IN1
+m <= mux_2_1_1_bit:mux_uvwx.port3
+
+
+|mux_4_1_2_bits_on_board|mux_4_1_2_bits:mux|mux_4_1_1_bit:mux1|mux_2_1_1_bit:mux_uv
+x => m.IN0
+y => m.IN0
+s => m.IN1
+s => m.IN1
+m <= m.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux_4_1_2_bits_on_board|mux_4_1_2_bits:mux|mux_4_1_1_bit:mux1|mux_2_1_1_bit:mux_wx
+x => m.IN0
+y => m.IN0
+s => m.IN1
+s => m.IN1
+m <= m.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux_4_1_2_bits_on_board|mux_4_1_2_bits:mux|mux_4_1_1_bit:mux1|mux_2_1_1_bit:mux_uvwx
+x => m.IN0
+y => m.IN0
+s => m.IN1
+s => m.IN1
+m <= m.DB_MAX_OUTPUT_PORT_TYPE
+
+

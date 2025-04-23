@@ -1,0 +1,80 @@
+-- Copyright (C) 2018  Intel Corporation. All rights reserved.
+-- Your use of Intel Corporation's design tools, logic functions 
+-- and other software and tools, and its AMPP partner logic 
+-- functions, and any output files from any of the foregoing 
+-- (including device programming or simulation files), and any 
+-- associated documentation or information are expressly subject 
+-- to the terms and conditions of the Intel Program License 
+-- Subscription Agreement, the Intel Quartus Prime License Agreement,
+-- the Intel FPGA IP License Agreement, or other applicable license
+-- agreement, including, without limitation, that your use is for
+-- the sole purpose of programming logic devices manufactured by
+-- Intel and sold by Intel or its authorized distributors.  Please
+-- refer to the applicable agreement for further details.
+
+-- Quartus Prime generated Memory Initialization File (.mif)
+
+WIDTH=9;
+DEPTH=128;
+
+ADDRESS_RADIX=UNS;
+DATA_RADIX=BIN;
+
+CONTENT BEGIN
+	% adres 0, do którego wpisujemy "śmieci" - efekt uboczny instrukcji zapisu do DOUT (do LEDów), gdy ADDR[8:0] = 000000000 %
+	0 :  000000000;
+	% start: %
+	1 :  001000000; % mvi R0, #010000000 // adres RS0 %
+	2 :  010000000;
+	3 :  100001000; % ld R1, [R0] // ładujemy wartość rejestru RS0 %
+	4 :  001000000; % mvi R0, #000000000 // adres 0, aby wpisać słowo z RS0 do DOUT i nie nadpisać żadnego adresu z kodem %
+	5 :  000000000;
+	6 :  101001000; % st R1, [R0] // zapisujemy wartość rejestru RS0 w DOUT %
+
+	7 :  001000000; % mvi R0, #2 // zapisujemy w R0 przesunięcie, do którego dodamy adres wywołania, aby przeskoczyć wywołanie funkcji; dodajemy 2, ponieważ chcemy przeskoczyć adresy "mvi R7, #delay" i "delay" %
+	8 :  000000010;
+	9 :  010000111; % add R0, R7 // obliczamy adres następnej instrukcji + 2, aby uzyskać adres powrotu z funkcji opóźniającej %
+	10 : 001111000; % mvi R7, #delay // skok do funkcji opóźniającej %
+	11 : 000011001;
+
+	% adres powrotu z pierwszego wywołania funkcji opóźniającej: %
+	12 : 001000000; % mvi R0, #100000000 // adres RS1 %
+	13 : 100000000;
+	14 : 100001000; % ld R1, [R0] // ładujemy wartość rejestru RS1 %
+	15 : 001000000; % mvi R0, #000000000 // adres 0, aby wpisać słowo z RS1 do DOUT i nie nadpisać żadnego adresu z kodem %
+	16 : 000000000;
+	17 : 101001000; % st R1, [R0] // zapisujemy wartość rejestru RS1 w DOUT %
+
+	18 : 001000000; % mvi R0, #2 // zapisujemy w R0 przesunięcie, do którego dodamy adres wywołania, aby przeskoczyć wywołanie funkcji; dodajemy 2, ponieważ chcemy przeskoczyć adresy "mvi R7, #delay" i "delay" %
+	19 : 000000010;
+	20 : 010000111; % add R0, R7 // obliczamy adres następnej instrukcji + 2, aby uzyskać adres powrotu z funkcji opóźniającej %
+	21 : 001111000; % mvi R7, #delay // skok do funkcji opóźniającej %
+	22 : 000011001;
+	
+	% adres powrotu z drugiego wywołania funkcji opóźniającej: %
+	23 : 001111000; % mvi R7, #start // wracamy do początku %
+	24 : 000000001;
+
+	% delay: funkcja opóźniająca; 511 * 511 * 8 iteracji; adres powrotu musi być w R0 %
+	25 : 001010000; % mvi R2, #1 // do dekrementacji opóźnień %
+	26 : 000000001;
+	27 : 001011000; % mvi R3, #8 // opóźnienie a; jeżeli nie chcemy go używać, to ustawiamy 1 i wówczas pętla a skończy się po 1 iteracji %
+	28 : 000001000;
+	29 : 001100000; % a_loop: mvi R4, #511 // opóźnienie b %
+	30 : 111111111;
+	31 : 001101000; % b_loop: mvi R5, #511 // opóźnienie c %
+	32 : 111111111;
+	33 : 011101010; % c_loop: sub R5, R2 // dekrementacja opóźnienia c %
+	34 : 001110000; % mvi R6, #c_loop %
+	35 : 000100001;
+	36 : 110111110; % mvnz R7, R6 // następna iteracja pętli c, jeżeli opóźnienie c != 0 %
+	37 : 011100010; % sub R4, R2 // dekrementacja opóźnienia b %
+	38 : 001110000; % mvi R6, #b_loop %
+	39 : 000011111;
+	40 : 110111110; % mvnz R7, R6 // następna iteracja pętli b, jeżeli opóźnienie b != 0 %
+	41 : 011011010; % sub R3, R2 // dekrementacja opóźnienia a %
+	42 : 001110000; % mvi R6, #a_loop %
+	43 : 000011101;
+	44 : 110111110; % mvnz R7, R6 // następna iteracja pętli a, jeżeli opóźnienie a != 0 %
+	45 : 000111000; % mv R7, R0 // skok do adresu powrotu %
+END;

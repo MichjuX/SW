@@ -1,0 +1,103 @@
+$comment
+	File created using the following command:
+		vcd file adder_1_b_plus.msim.vcd -direction
+$end
+$date
+	Wed Mar 09 04:05:11 2022
+$end
+$version
+	ModelSim Version 10.5b
+$end
+$timescale
+	1ps
+$end
+
+$scope module adder_1_b_plus_vlg_vec_tst $end
+$var reg 1 ! a $end
+$var reg 1 " b $end
+$var reg 1 # cin $end
+$var wire 1 $ cout $end
+$var wire 1 % s $end
+
+$scope module i1 $end
+$var wire 1 & gnd $end
+$var wire 1 ' vcc $end
+$var wire 1 ( unknown $end
+$var tri1 1 ) devclrn $end
+$var tri1 1 * devpor $end
+$var tri1 1 + devoe $end
+$var wire 1 , ~QUARTUS_CREATED_GND~I_combout $end
+$var wire 1 - cin~input_o $end
+$var wire 1 . b~input_o $end
+$var wire 1 / a~input_o $end
+$var wire 1 0 Add1~0_combout $end
+$var wire 1 1 Add1~1_combout $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0!
+0"
+0#
+0$
+0%
+0&
+1'
+x(
+1)
+1*
+1+
+0,
+0-
+0.
+0/
+00
+01
+$end
+#5000
+1#
+1-
+11
+1%
+#10000
+1!
+0#
+1/
+0-
+#15000
+1#
+1-
+01
+10
+1$
+0%
+#20000
+1"
+0!
+0#
+1.
+0/
+0-
+11
+00
+0$
+1%
+#25000
+1#
+1-
+01
+10
+1$
+0%
+#30000
+1!
+0#
+1/
+0-
+#35000
+1#
+1-
+11
+1%
+#40000

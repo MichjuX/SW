@@ -1,0 +1,136 @@
+0  - 1000000 // 64
+1  - 1111001 // 121
+2  - 0100100 // 36
+3  - 0110000 // 48
+4  - 0011001 // 25
+5  - 0010010 // 18
+6  - 0000010 // 2
+7  - 1111000 // 120
+8  - 0000000 // 0
+9  - 0010000 // 16
+10 - 0001000 // 8; A
+11 - 0000011 // 3; b
+12 - 0100111 // 39; c
+13 - 0100001 // 33; d
+14 - 0000110 // 6; E
+15 - 0001110 // 14; F
+
+o - 0100011 // 35
+d - 0100001 // 33
+E - 0000110 // 6
+S - 0010010 // 18
+' ' - 1111111 // 127; ' '
+
+% adres 0, do którego wpisujemy "śmieci" - efekt uboczny instrukcji zapisu do rejestru HEX0 (gdy ADDR[8:0] = 000000000) %
+000000000;
+% obszar do przechowywania kodów znaków %
+000010010; % S %
+000000110; % E %
+000100001; % d %
+000100011; % o %
+
+% start: %
+mvi R0, #0 // zewnętrzny licznik po adresach rejestrów HEX %
+0
+mvi R1, #1 // delta - wartość, o jaką zmieniamy licznik po rejestrach; może być tylko -1 lub 1
+1
+
+mvi R2, #4 // wewnętrzny licznik po znakach %
+4
+mv R5, R7 // zapisujemy adres następnej instrukcji %
+ld R3, [R2]
+st R3, [R0]
+mvi R3, #010000000 // do inkrementacji licznika po rejestrach %
+010000000
+add R0, R3 // inkrementacja licznika po rejestrach %
+mvi R3, #1 // do dekrementacji licznika po znakach %
+1
+sub R2, R3 // dekrementacja licznika po znakach %
+mvnz R7, R5 // następna iteracja pętli po znakach %
+
+% delay: "funkcja" opóźniająca %
+001010000; % mvi R2, #1 // do dekrementacji opóźnień %
+000000001;
+001011000; % mvi R3, #2 // zewnętrzne opóźnienie %
+000000010;
+000100111; % mv R4, R7 // zapisujemy adres następnej instrukcji %
+001101000; % outer: mvi R5, #2 // wewnętrzne opóźnienie %
+000000010;
+000110111; % mv R6, R7 // zapisujemy adres następnej instrukcji %
+011101010; % inner: sub R5, R2 // dekrementacja wewnętrznego opóźnienia %
+110111110; % mvnz R7, R6 // następna iteracja wewnętrznej pętli, jeżeli R5 !=0 %
+011011010; % sub R3, R2 // dekrementacja zewnętrznego opóźnienia %
+110111100; % mvnz R7, R4 // następna iteracja zewnętrznej pętli, jeżeli R3 !=0 %
+
+% add R0, R1 // inkrementacja licznika po rejestrach, aby pętla po znakach zaczynała wpisywać od rejestru przesuniętego o 1 w prawo lub w lewo zależnie od wartości R1 %
+% mvi R2, #start %
+% mvnz R7, R2 // wracamy do początku, jeżeli licznik po rejestrach nie jest równy 0, czyli nie został przesunięty w prawo z 3 na 0 lub w lewo z 1 na 0 %
+
+% w przeciwnym przypadku %
+% mv R2, R1 // tworzymy kopię delty %
+% mvi R3, #1 // do odjęcia od kopii %
+1
+% sub R2, R3 %
+% mvi R2, #delta == -1 %
+delta == -1
+% mvnz R7, R2 // jeżeli delta nie jest równa 1, to musi być równa -1, więc zamieniamy ją na 1 %
+
+% delta == 1: %
+% mvi R1, #-1 // zmieniamy deltę na -1 (111111111 w kodzie U2) %
+111111111
+% mvi R2, #start %
+start
+% mv R7, R2 // wracamy do początku %
+
+% delta == -1: %
+% mvi R1, #1 // zmieniamy deltę na 1 %
+000000001
+% mvi R2, #start %
+start
+% mv R7, R2 // wracamy do początku %
+
+nieużyte
+
+mv R2, R0 // tworzymy kopię licznika po rejestrach
+mvi R3, #110000000
+110000000
+sub R2, R3 // odejmujemy od kopii adres ostatniego rejestru równy { 2'd3, 7'd0 }
+mvnz R7, 
+sub 
+
+
+001000000; % mvi R0, #'o' // R0 = 'o' %
+000100011;
+# 001001000; % mvi R1, 0 // R1 = 0 %
+# 000000000;
+# 101000001; % st R0, [R1] // ładujemy 'o' do ram[0] i hex[0] %
+001001000; % mvi R1, 0 | 4 %
+000000100;
+101000001; % st R0, [R1] // ładujemy 'o' do ram[4] i hex[0] %
+
+001000000; % mvi R0, #'d' // R0 = 'd' %
+000100001;
+# 001001000; % mvi R1, 1 // R1 = 1 %
+# 010000001;
+# 101000001; % st R0, [R1] // ładujemy 'd' do ram[1] i hex[1] %
+001001000; % mvi R1, 1 | 5 %
+010000101;
+101000101; % st R0, [R1] // ładujemy 'd' do ram[5] i hex[1] %
+
+001000000; % mvi R0, #'E' // R0 = 'E' %
+000000110;
+# 001001000; % mvi R1, 2 // R1 = 2 %
+# 100000010;
+# 101000001; % st R0, [R1] // ładujemy 'E' do ram[2] i hex[2] %
+001001000; % mvi R1, 2 | 6 %
+100000110;
+101000001; % st R0, [R1] // ładujemy 'E' do ram[6] i hex[2] %
+
+001000000; % mvi R0, #'S' // R0 = 'S' %
+000010010;
+# 001001000; % mvi R1, 3 // R1 = 3 %
+# 110000011;
+# 101000001; % st R0, [R1] // ładujemy 'S' do ram[3] i hex[3] %
+001001000; % mvi R1, 3 | 7 %
+110000111;
+101000001; % st R0, [R1] // ładujemy 'S' do ram[7] i hex[3] %

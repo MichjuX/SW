@@ -1,0 +1,41 @@
+module Moore_style_1(
+input clk,reset,
+input [2:0] x,
+output reg [2:0] y);
+reg [2:0] state, next;
+localparam [2:0]
+s0=3'b000,
+s1=3'b001,
+s2=3'b010,
+s3=3'b011,
+s4=3'b100,
+s5=3'b101;
+always @(posedge clk, negedge reset)
+if (~reset) state <= s0;
+else state <= next;
+
+always @(*) // opis funkcji przejść
+case (state)
+s0: next = s1;
+s1: if (~x[0]) next = s2;
+else if (~x[1] && x[0]) next = s3;
+else if (~x[2] && x[1] && x[0]) next = s4;
+else next = s5;
+s2: if (~x[2]) next = s4;
+else next = s5;
+s3: next = s4;
+s4: next = s0;
+s5: next = s0;
+endcase
+
+	always @ (*) // opis funkcji wyjść
+		case (state)
+			s0: y = 3'b000;
+			s1: y = 3'b011;
+			s2: y = 3'b101;
+			s3: y = 3'b001;
+			s4: y = 3'b100;
+			s5: y = 3'b010;
+		endcase
+
+endmodule

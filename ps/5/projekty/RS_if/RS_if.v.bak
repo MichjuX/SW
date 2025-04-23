@@ -1,0 +1,11 @@
+module latch_SR_if(
+	input S,R,
+	output reg Q,
+	output nQ);
+
+	always @(*)
+		if (S) Q = 1'b1;
+		else if (R) Q = 1'b0;
+	assign nQ = ~Q;
+
+endmodule

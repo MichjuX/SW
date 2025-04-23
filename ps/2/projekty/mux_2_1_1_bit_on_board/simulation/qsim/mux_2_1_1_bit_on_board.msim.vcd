@@ -1,0 +1,91 @@
+$comment
+	File created using the following command:
+		vcd file mux_2_1_1_bit_on_board.msim.vcd -direction
+$end
+$date
+	Tue Mar 15 02:24:07 2022
+$end
+$version
+	ModelSim Version 10.5b
+$end
+$timescale
+	1ps
+$end
+
+$scope module mux_2_1_1_bit_on_board_vlg_vec_tst $end
+$var reg 1 ! KEY [0:0] $end
+$var reg 2 " SW [1:0] $end
+$var wire 1 # LEDR [0] $end
+
+$scope module i1 $end
+$var wire 1 $ gnd $end
+$var wire 1 % vcc $end
+$var wire 1 & unknown $end
+$var tri1 1 ' devclrn $end
+$var tri1 1 ( devpor $end
+$var tri1 1 ) devoe $end
+$var wire 1 * ~QUARTUS_CREATED_GND~I_combout $end
+$var wire 1 + SW[1]~input_o $end
+$var wire 1 , SW[0]~input_o $end
+$var wire 1 - KEY[0]~input_o $end
+$var wire 1 . mux0|m~0_combout $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b0 !
+b0 "
+0#
+0$
+1%
+x&
+1'
+1(
+1)
+0*
+0+
+0,
+0-
+0.
+$end
+#5000
+b1 "
+1,
+1.
+1#
+#10000
+b11 "
+b10 "
+0,
+1+
+0.
+0#
+#15000
+b11 "
+1,
+1.
+1#
+#20000
+b1 !
+b1 "
+b0 "
+1-
+0,
+0+
+0.
+0#
+#25000
+b1 "
+1,
+#30000
+b11 "
+b10 "
+0,
+1+
+1.
+1#
+#35000
+b11 "
+1,
+#40000

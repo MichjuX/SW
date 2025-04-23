@@ -1,0 +1,52 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/Storage/temp/semestr_6/sw/3/mux_4_1_1_bit_on_board/simulation/qsim
+vmux_4_1_1_bit_on_board
+Z1 !s110 1648059027
+!i10b 1
+!s100 U6Qi<G7EBKUE:^bI9ZZJ=0
+IMRYhO9FO2L4Lclj[TimaA3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1648059025
+8mux_4_1_1_bit_on_board.vo
+Fmux_4_1_1_bit_on_board.vo
+L0 31
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1648059027.000000
+!s107 mux_4_1_1_bit_on_board.vo|
+!s90 -work|work|mux_4_1_1_bit_on_board.vo|
+!i113 1
+Z5 o-work work
+Z6 tCvgOpt 0
+vmux_4_1_1_bit_on_board_vlg_vec_tst
+R1
+!i10b 1
+!s100 zZb>mi9<?mW^?72zo9WH10
+IX=Vc]UARJIM1RTeSXU?a10
+R2
+R0
+w1648059023
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+L0 29
+R3
+r1
+!s85 0
+31
+R4
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R5
+R6

@@ -1,0 +1,13 @@
+module bcd_2_digit_on_board(
+	input [7:0] SW,
+	output [9:0] LEDR,
+	output [6:0] HEX1, HEX0);
+
+	
+
+endmodule
+
+module bcd_2_digit(
+	input [3:0] a [0:1],
+	output [3:0] error_a [0:1],
+	output 

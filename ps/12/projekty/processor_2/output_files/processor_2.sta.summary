@@ -1,0 +1,117 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1100mV 85C Model Setup 'virt_Clock_out'
+Slack : 3.081
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Setup 'Clock'
+Slack : 10.855
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'Clock'
+Slack : 0.048
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'virt_Clock_out'
+Slack : 6.819
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Recovery 'Clock'
+Slack : 15.208
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Removal 'Clock'
+Slack : 0.881
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'Clock'
+Slack : 9.386
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Setup 'virt_Clock_out'
+Slack : 3.817
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Setup 'Clock'
+Slack : 11.210
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'Clock'
+Slack : -0.145
+TNS   : -0.145
+
+Type  : Slow 1100mV 0C Model Hold 'virt_Clock_out'
+Slack : 6.693
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Recovery 'Clock'
+Slack : 13.014
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Removal 'Clock'
+Slack : 2.941
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'Clock'
+Slack : 9.315
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Setup 'virt_Clock_out'
+Slack : 8.841
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Setup 'Clock'
+Slack : 13.783
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'Clock'
+Slack : 0.055
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'virt_Clock_out'
+Slack : 4.041
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Recovery 'Clock'
+Slack : 14.341
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Removal 'Clock'
+Slack : 2.149
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'Clock'
+Slack : 9.414
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Setup 'virt_Clock_out'
+Slack : 9.262
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Setup 'Clock'
+Slack : 14.112
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'Clock'
+Slack : -0.024
+TNS   : -0.024
+
+Type  : Fast 1100mV 0C Model Hold 'virt_Clock_out'
+Slack : 3.814
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Recovery 'Clock'
+Slack : 16.289
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Removal 'Clock'
+Slack : 0.560
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'Clock'
+Slack : 9.416
+TNS   : 0.000
+
+------------------------------------------------------------

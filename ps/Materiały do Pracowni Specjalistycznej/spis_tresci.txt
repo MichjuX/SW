@@ -1,0 +1,19 @@
+Materiały do Pracowni Specjalistycznej
+
+Instrukcja użytkownika płyty prototypowej DE1-SoC
+DE1-SoC_User_manual_ref.pdf
+
+Instrukcja użytkownika systemu Quartus Prime
+qts-qps-handbook.pdf
+
+Opis standardu IEEE języka Verilog-HDL
+verilog-ieee.pdf
+
+Intel Quartus Prime 18.1 - do pobrania ze strony producenta
+https://www.intel.com/content/www/us/en/collections/products/fpga/software/downloads.html?edition=lite&s=Newest&f:quartusedition=%5BIntel%C2%AE%20Quartus%C2%AE%20Prime%20Design%20Software;Intel%C2%AE%20Quartus%C2%AE%20Prime%20Lite%20Edition%5D
+
+Dokumentacja rodziny układów FPGA Cyclone 5
+https://www.altera.com/products/fpga/cyclone-series/cyclone-v/support.html
+
+Plik konfiguracyjny DE1_SoC.qsf
+DE1_SoC.qsf

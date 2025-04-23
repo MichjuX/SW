@@ -1,0 +1,117 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "reg_value[0]",
+					"strict" : false
+				},
+				{
+					"name" : "reg_value[1]",
+					"strict" : false
+				},
+				{
+					"name" : "reg_value[2]",
+					"strict" : false
+				},
+				{
+					"name" : "reg_value[3]",
+					"strict" : false
+				},
+				{
+					"name" : "reg_value[4]",
+					"strict" : false
+				},
+				{
+					"name" : "reg_value[5]",
+					"strict" : false
+				},
+				{
+					"name" : "reg_value[6]",
+					"strict" : false
+				},
+				{
+					"name" : "reg_value[7]",
+					"strict" : false
+				},
+				{
+					"name" : "cout",
+					"strict" : false
+				},
+				{
+					"name" : "S[0]",
+					"strict" : false
+				},
+				{
+					"name" : "S[1]",
+					"strict" : false
+				},
+				{
+					"name" : "S[2]",
+					"strict" : false
+				},
+				{
+					"name" : "S[3]",
+					"strict" : false
+				},
+				{
+					"name" : "S[4]",
+					"strict" : false
+				},
+				{
+					"name" : "S[5]",
+					"strict" : false
+				},
+				{
+					"name" : "S[6]",
+					"strict" : false
+				},
+				{
+					"name" : "S[7]",
+					"strict" : false
+				},
+				{
+					"name" : "A_B[0]",
+					"strict" : false
+				},
+				{
+					"name" : "reg_clock",
+					"strict" : false
+				},
+				{
+					"name" : "reg_reset",
+					"strict" : false
+				},
+				{
+					"name" : "A_B[1]",
+					"strict" : false
+				},
+				{
+					"name" : "A_B[2]",
+					"strict" : false
+				},
+				{
+					"name" : "A_B[3]",
+					"strict" : false
+				},
+				{
+					"name" : "A_B[4]",
+					"strict" : false
+				},
+				{
+					"name" : "A_B[5]",
+					"strict" : false
+				},
+				{
+					"name" : "A_B[6]",
+					"strict" : false
+				},
+				{
+					"name" : "A_B[7]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,54 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/Storage/temp/semestr_6/sw/9/projekty/FSM_3_always/simulation/qsim
+vFSM_3_always
+Z1 !s110 1652311126
+!i10b 1
+!s100 AATnzzMgQfQRb_5`oG1;_1
+IF9n5WF]d_SiJ3886[YA5e3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1652311124
+8FSM_3_always.vo
+FFSM_3_always.vo
+L0 31
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1652311125.000000
+!s107 FSM_3_always.vo|
+!s90 -work|work|FSM_3_always.vo|
+!i113 1
+Z4 o-work work
+Z5 tCvgOpt 0
+n@f@s@m_3_always
+vFSM_3_always_vlg_vec_tst
+R1
+!i10b 1
+!s100 Hk6kQSHh@T6i<PzQY47nZ0
+IeH7EPH?HM3JUL<QV;LR9J2
+R2
+R0
+w1652311122
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+L0 29
+R3
+r1
+!s85 0
+31
+!s108 1652311126.000000
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R4
+R5
+n@f@s@m_3_always_vlg_vec_tst

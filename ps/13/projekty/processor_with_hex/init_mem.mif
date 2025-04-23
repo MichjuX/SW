@@ -1,0 +1,95 @@
+-- Copyright (C) 2018  Intel Corporation. All rights reserved.
+-- Your use of Intel Corporation's design tools, logic functions 
+-- and other software and tools, and its AMPP partner logic 
+-- functions, and any output files from any of the foregoing 
+-- (including device programming or simulation files), and any 
+-- associated documentation or information are expressly subject 
+-- to the terms and conditions of the Intel Program License 
+-- Subscription Agreement, the Intel Quartus Prime License Agreement,
+-- the Intel FPGA IP License Agreement, or other applicable license
+-- agreement, including, without limitation, that your use is for
+-- the sole purpose of programming logic devices manufactured by
+-- Intel and sold by Intel or its authorized distributors.  Please
+-- refer to the applicable agreement for further details.
+
+-- Quartus Prime generated Memory Initialization File (.mif)
+
+WIDTH=9;
+DEPTH=128;
+
+ADDRESS_RADIX=UNS;
+DATA_RADIX=BIN;
+
+CONTENT BEGIN
+	% adres 0, do którego wpisujemy "śmieci" - efekt uboczny instrukcji zapisu do rejestru HEX0 (gdy ADDR[8:0] = 000000000) %
+	0 :  000000000;
+	% obszar do przechowywania kodów znaków %
+	1 :  000010010; % S %
+	2 :  000000110; % E %
+	3 :  000100001; % d %
+	4 :  000100011; % o %
+	5 :  001000000; % mvi R0, #0 // zewnętrzny licznik po adresach rejestrów HEX %
+	6 :  000000000;
+	7 :  001001000; % mvi R1, #1 // delta - wartość, o jaką zmieniamy licznik po rejestrach; może być tylko 1 (010000000) lub -1 (-010000000 = 110000000 w kodzie U2) %
+	8 :  010000000;
+	% start: %
+	9 :  001010000; % mvi R2, #4 // wewnętrzny licznik po znakach %
+	10 : 000000100;
+	11 : 000101111; % mv R5, R7 // zapisujemy adres następnej instrukcji %
+	12 : 100011010; % ld R3, [R2] // ładujemy znak, na który wskazuje licznik po znakach %
+	13 : 101011000; % st R3, [R0] // zapisujemy znak pod adresem wskazywanym przez licznik po rejestrach %
+	14 : 001011000; % mvi R3, #010000000 // do inkrementacji licznika po rejestrach %
+	15 : 010000000;
+	16 : 010000011; % add R0, R3 // inkrementacja licznika po rejestrach %
+	17 : 001011000; % mvi R3, #1 // do dekrementacji licznika po znakach %
+	18 : 000000001;
+	19 : 011010011; % sub R2, R3 // dekrementacja licznika po znakach %
+	20 : 110111101; % mvnz R7, R5 // następna iteracja pętli po znakach %
+
+	% delay: funkcja opóźniająca; 2 * 2 * 1 iteracji %
+	21 : 001010000; % mvi R2, #1 // do dekrementacji opóźnień %
+	22 : 000000001;
+	23 : 001011000; % mvi R3, #1 // opóźnienie a; jeżeli nie chcemy go używać, to ustawiamy 1 i wówczas pętla a skończy się po 1 iteracji %
+	24 : 000000001;
+	25 : 001100000; % a_loop: mvi R4, #2 // opóźnienie b %
+	26 : 000000010;
+	27 : 001101000; % b_loop: mvi R5, #2 // opóźnienie c %
+	28 : 000000010;
+	29 : 011101010; % c_loop: sub R5, R2 // dekrementacja opóźnienia c %
+	30 : 001110000; % mvi R6, #c_loop %
+	31 : 000011101;
+	32 : 110111110; % mvnz R7, R6 // następna iteracja pętli c, jeżeli opóźnienie c != 0 %
+	33 : 011100010; % sub R4, R2 // dekrementacja opóźnienia b %
+	34 : 001110000; % mvi R6, #b_loop %
+	35 : 000011011;
+	36 : 110111110; % mvnz R7, R6 // następna iteracja pętli b, jeżeli opóźnienie b != 0 %
+	37 : 011011010; % sub R3, R2 // dekrementacja opóźnienia a %
+	38 : 001110000; % mvi R6, #a_loop %
+	39 : 000011001;
+	40 : 110111110; % mvnz R7, R6 // następna iteracja pętli a, jeżeli opóźnienie a != 0 %
+
+	41 : 010000001; % add R0, R1 // inkrementacja licznika po rejestrach, aby pętla po znakach zaczynała wpisywać od rejestru przesuniętego o 1 w prawo lub w lewo zależnie od wartości R1 %
+	42 : 001010000; % mvi R2, #start %
+	43 : 000001001;
+	44 : 110111010; % mvnz R7, R2 // wracamy do początku, jeżeli licznik po rejestrach nie jest równy 0, czyli nie został przesunięty w prawo z 3 (110000000) na 0 lub w lewo z 1 (010000000) na 0 %
+	% w przeciwnym przypadku %
+	45 : 000010001; % mv R2, R1 // tworzymy kopię delty %
+	46 : 001011000; % mvi R3, #010000000 // 1 do odjęcia od kopii %
+	47 : 010000000;
+	48 : 011010011; % sub R2, R3 %
+	49 : 001010000; % mvi R2, #delta == -1 %
+	50 : 000111001;
+	51 : 110111010; % mvnz R7, R2 // jeżeli delta nie jest równa 1, to musi być równa -1, więc zamieniamy ją na 1 %
+	% delta == 1: %
+	52 : 001001000; % mvi R1, #-1 // zmieniamy deltę na -1 (110000000) %
+	53 : 110000000;
+	54 : 001010000; % mvi R2, #start %
+	55 : 000001001;
+	56 : 000111010; % mv R7, R2 // wracamy do początku %
+	% delta == -1: %
+	57 : 001001000; % mvi R1, #1 // zmieniamy deltę na 1 (010000000) %
+	58 : 010000000;
+	59 : 001010000; % mvi R2, #start %
+	60 : 000001001;
+	61 : 000111010; % mv R7, R2 // wracamy do początku %
+END;

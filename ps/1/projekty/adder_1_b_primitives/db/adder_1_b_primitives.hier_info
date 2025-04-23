@@ -1,0 +1,11 @@
+|adder_1_b_primitives
+cin => comb.IN1
+cin => a_xor_b_and_cin.IN1
+a => a_xor_b.IN0
+a => a_and_b.IN0
+b => a_xor_b.IN1
+b => a_and_b.IN1
+cout <= comb.DB_MAX_OUTPUT_PORT_TYPE
+s <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+

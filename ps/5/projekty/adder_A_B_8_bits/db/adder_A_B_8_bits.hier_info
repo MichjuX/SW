@@ -1,0 +1,65 @@
+|adder_A_B_8_bits
+A_B[0] => A_B[0].IN1
+A_B[1] => A_B[1].IN1
+A_B[2] => A_B[2].IN1
+A_B[3] => A_B[3].IN1
+A_B[4] => A_B[4].IN1
+A_B[5] => A_B[5].IN1
+A_B[6] => A_B[6].IN1
+A_B[7] => A_B[7].IN1
+reg_reset => reg_reset.IN1
+reg_clock => reg_clock.IN1
+reg_value[0] << reg_N_bits_with_areset:reg_A.port3
+reg_value[1] << reg_N_bits_with_areset:reg_A.port3
+reg_value[2] << reg_N_bits_with_areset:reg_A.port3
+reg_value[3] << reg_N_bits_with_areset:reg_A.port3
+reg_value[4] << reg_N_bits_with_areset:reg_A.port3
+reg_value[5] << reg_N_bits_with_areset:reg_A.port3
+reg_value[6] << reg_N_bits_with_areset:reg_A.port3
+reg_value[7] << reg_N_bits_with_areset:reg_A.port3
+cout << Add0.DB_MAX_OUTPUT_PORT_TYPE
+S[0] << Add0.DB_MAX_OUTPUT_PORT_TYPE
+S[1] << Add0.DB_MAX_OUTPUT_PORT_TYPE
+S[2] << Add0.DB_MAX_OUTPUT_PORT_TYPE
+S[3] << Add0.DB_MAX_OUTPUT_PORT_TYPE
+S[4] << Add0.DB_MAX_OUTPUT_PORT_TYPE
+S[5] << Add0.DB_MAX_OUTPUT_PORT_TYPE
+S[6] << Add0.DB_MAX_OUTPUT_PORT_TYPE
+S[7] << Add0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder_A_B_8_bits|reg_N_bits_with_areset:reg_A
+reset => Q[0]~reg0.ACLR
+reset => Q[1]~reg0.ACLR
+reset => Q[2]~reg0.ACLR
+reset => Q[3]~reg0.ACLR
+reset => Q[4]~reg0.ACLR
+reset => Q[5]~reg0.ACLR
+reset => Q[6]~reg0.ACLR
+reset => Q[7]~reg0.ACLR
+clk => Q[0]~reg0.CLK
+clk => Q[1]~reg0.CLK
+clk => Q[2]~reg0.CLK
+clk => Q[3]~reg0.CLK
+clk => Q[4]~reg0.CLK
+clk => Q[5]~reg0.CLK
+clk => Q[6]~reg0.CLK
+clk => Q[7]~reg0.CLK
+D[0] => Q[0]~reg0.DATAIN
+D[1] => Q[1]~reg0.DATAIN
+D[2] => Q[2]~reg0.DATAIN
+D[3] => Q[3]~reg0.DATAIN
+D[4] => Q[4]~reg0.DATAIN
+D[5] => Q[5]~reg0.DATAIN
+D[6] => Q[6]~reg0.DATAIN
+D[7] => Q[7]~reg0.DATAIN
+Q[0] <= Q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= Q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= Q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= Q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[4] <= Q[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[5] <= Q[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[6] <= Q[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[7] <= Q[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,54 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dD:/Storage/temp/semestr_6/sw/8/accum_N_bits/simulation/qsim
+vaccum_N_bits
+Z0 !s110 1651537265
+!i10b 1
+!s100 5`2Z>Ig4P00DHGHnW1dc?1
+IM2`>lY;84F<20nKT[V0ZK3
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dD:/Storage/temp/semestr_6/sw/8/projekty/accum_N_bits/simulation/qsim
+w1651537263
+8accum_N_bits.vo
+Faccum_N_bits.vo
+L0 31
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1651537265.000000
+!s107 accum_N_bits.vo|
+!s90 -work|work|accum_N_bits.vo|
+!i113 1
+Z5 o-work work
+Z6 tCvgOpt 0
+naccum_@n_bits
+vaccum_N_bits_vlg_vec_tst
+R0
+!i10b 1
+!s100 gFUinObbUBiLMIdj]o;]I3
+IMO2laao>S1;fC1EU];dzm3
+R1
+R2
+w1651537261
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+L0 29
+R3
+r1
+!s85 0
+31
+R4
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R5
+R6
+naccum_@n_bits_vlg_vec_tst

@@ -1,0 +1,81 @@
+module word_rotate_on_board(
+	input CLOCK_50,
+	output [6:0] HEX3, HEX2, HEX1, HEX0);
+
+	wire [7:0] chars;
+	word_rotate wr(CLOCK_50, chars[7:0]);
+	decoder_7_seg dec3(chars[7:6], HEX3);
+	decoder_7_seg dec2(chars[5:4], HEX2);
+	decoder_7_seg dec1(chars[3:2], HEX1);
+	decoder_7_seg dec0(chars[1:0], HEX0);
+
+endmodule
+
+module decoder_7_seg(
+	input [1:0] binary,
+	output reg [6:0] h);
+
+	always @ (*)
+		case (binary)
+			2'b00: h = 7'b0100011; // 35; 'o'
+			2'b01: h = 7'b0100001; // 33; 'd'
+			2'b10: h = 7'b0000110; // 6; 'E'
+			2'b11: h = 7'b0010010; // 18; 'S'
+			default: h = 7'b1111111; // 127; ' '
+		endcase
+
+endmodule
+
+module word_rotate(
+	input clock,
+	output reg [7:0] char_codes);
+
+	initial char_codes = { 2'b00, 2'b01, 2'b10, 2'b11 };
+
+	function integer clogb2(input [31:0] v);
+		for (clogb2 = 0; v > 0; clogb2 = clogb2 + 1)
+			v = v >> 1;
+	endfunction
+
+	// ceil(log2(50_000_000)) bitów
+	localparam FAST_COUNTER_BITS = clogb2(50_000_000 - 1);
+
+	wire [FAST_COUNTER_BITS-1:0] A;
+	counter_mod_M #(50_000_000) fast_counter(clock, 1'b1, 1'b1, A);
+	// przy zmianie A = 4 -> 0 slow_counter = 1 -> 0
+	// przy zmianie A = 0 -> 1 slow_counter = 0 -> 1
+	wire slow_clock = |A; // e = or(A[0], A[1], ...);
+	// cykliczny rejestr przesuwny o długości 4 i szerokości 2-bitów
+	always @ (posedge slow_clock) begin
+		char_codes[7:6] <= char_codes[1:0];
+		char_codes[1:0] <= char_codes[3:2];
+		char_codes[3:2] <= char_codes[5:4];
+		char_codes[5:4] <= char_codes[7:6];
+	end
+
+endmodule
+
+module counter_mod_M
+	#(parameter M = 16)( // okres licznika
+	input clk, aclr, enable,
+	output reg [BITS-1:0] Q);
+
+	function integer clogb2(input [31:0] v);
+		for (clogb2 = 0; v > 0; clogb2 = clogb2 + 1)
+			v = v >> 1;
+	endfunction
+
+	localparam BITS = clogb2(M-1); // długość licznika w bitach
+
+	always @ (posedge clk, negedge aclr)
+		if (!aclr) Q <= {BITS{1'b0}};
+		else begin
+			// zanim sprawdzimy, czy Q == M-1 i ewentualnie wyzerujemy licznik, sprawdzamy, czy na wejściu zezwalającym jest 1
+			if (enable) begin
+				if (Q == M-1) Q <= {BITS{1'b0}};
+				else Q <= Q + 1'b1;
+			end
+			else Q <= Q;
+		end
+
+endmodule

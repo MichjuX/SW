@@ -1,0 +1,18 @@
+WIDTH=9;
+DEPTH=128;
+
+ADDRESS_RADIX=HEX;
+DATA_RADIX=BIN;
+
+CONTENT BEGIN
+	00 : 001001000; % mvi R1,#5 // inicjalizacja R1 %
+	01 : 000000101;
+	02 : 001011000; % mvi R3,#000000100 // R3 = adres w RAMie %
+	03 : 000000100;
+	04 : 101001011; % st R1,R3 // zapis R1 pod adres z R3 %
+	05 : 100101011; % ld R5,R3 // odczyt do R5 z adresu z R3 %
+	06 : 001011000; % mvi R3,#010000000 // R3 = adres rejestru LEDów %
+	07 : 010000000;
+	08 : 101101011; % st R5,R3 // zapis R5 pod adres z R3 %
+	[09..7F] : 000000000;
+END;

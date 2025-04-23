@@ -1,0 +1,331 @@
+// Copyright (C) 2018  Intel Corporation. All rights reserved.
+// Your use of Intel Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Intel Program License 
+// Subscription Agreement, the Intel Quartus Prime License Agreement,
+// the Intel FPGA IP License Agreement, or other applicable license
+// agreement, including, without limitation, that your use is for
+// the sole purpose of programming logic devices manufactured by
+// Intel and sold by Intel or its authorized distributors.  Please
+// refer to the applicable agreement for further details.
+
+// VENDOR "Altera"
+// PROGRAM "Quartus Prime"
+// VERSION "Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition"
+
+// DATE "04/12/2022 15:57:30"
+
+// 
+// Device: Altera 5CSEMA5F31C6 Package FBGA896
+// 
+
+// 
+// This Verilog file should be used for ModelSim-Altera (Verilog) only
+// 
+
+`timescale 1 ps/ 1 ps
+
+module counter_T_4_bits (
+	clk,
+	areset,
+	enable,
+	Q);
+input 	clk;
+input 	areset;
+input 	enable;
+output 	[3:0] Q;
+
+wire gnd;
+wire vcc;
+wire unknown;
+
+assign gnd = 1'b0;
+assign vcc = 1'b1;
+assign unknown = 1'bx;
+
+tri1 devclrn;
+tri1 devpor;
+tri1 devoe;
+wire \Q[0]~output_o ;
+wire \Q[1]~output_o ;
+wire \Q[2]~output_o ;
+wire \Q[3]~output_o ;
+wire \clk~input_o ;
+wire \enable~input_o ;
+wire \fft0|Q~0_combout ;
+wire \areset~input_o ;
+wire \fft0|Q~q ;
+wire \fft1|Q~0_combout ;
+wire \fft1|Q~q ;
+wire \fft2|Q~0_combout ;
+wire \fft2|Q~q ;
+wire \fft3|Q~0_combout ;
+wire \fft3|Q~q ;
+
+
+cyclonev_io_obuf \Q[0]~output (
+	.i(\fft0|Q~q ),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\Q[0]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \Q[0]~output .bus_hold = "false";
+defparam \Q[0]~output .open_drain_output = "false";
+defparam \Q[0]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+cyclonev_io_obuf \Q[1]~output (
+	.i(\fft1|Q~q ),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\Q[1]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \Q[1]~output .bus_hold = "false";
+defparam \Q[1]~output .open_drain_output = "false";
+defparam \Q[1]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+cyclonev_io_obuf \Q[2]~output (
+	.i(\fft2|Q~q ),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\Q[2]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \Q[2]~output .bus_hold = "false";
+defparam \Q[2]~output .open_drain_output = "false";
+defparam \Q[2]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+cyclonev_io_obuf \Q[3]~output (
+	.i(\fft3|Q~q ),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\Q[3]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \Q[3]~output .bus_hold = "false";
+defparam \Q[3]~output .open_drain_output = "false";
+defparam \Q[3]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+cyclonev_io_ibuf \clk~input (
+	.i(clk),
+	.ibar(gnd),
+	.dynamicterminationcontrol(gnd),
+	.o(\clk~input_o ));
+// synopsys translate_off
+defparam \clk~input .bus_hold = "false";
+defparam \clk~input .simulate_z_as = "z";
+// synopsys translate_on
+
+cyclonev_io_ibuf \enable~input (
+	.i(enable),
+	.ibar(gnd),
+	.dynamicterminationcontrol(gnd),
+	.o(\enable~input_o ));
+// synopsys translate_off
+defparam \enable~input .bus_hold = "false";
+defparam \enable~input .simulate_z_as = "z";
+// synopsys translate_on
+
+cyclonev_lcell_comb \fft0|Q~0 (
+// Equation(s):
+// \fft0|Q~0_combout  = !\fft0|Q~q  $ (!\enable~input_o )
+
+	.dataa(!\fft0|Q~q ),
+	.datab(!\enable~input_o ),
+	.datac(gnd),
+	.datad(gnd),
+	.datae(gnd),
+	.dataf(gnd),
+	.datag(gnd),
+	.cin(gnd),
+	.sharein(gnd),
+	.combout(\fft0|Q~0_combout ),
+	.sumout(),
+	.cout(),
+	.shareout());
+// synopsys translate_off
+defparam \fft0|Q~0 .extended_lut = "off";
+defparam \fft0|Q~0 .lut_mask = 64'h6666666666666666;
+defparam \fft0|Q~0 .shared_arith = "off";
+// synopsys translate_on
+
+cyclonev_io_ibuf \areset~input (
+	.i(areset),
+	.ibar(gnd),
+	.dynamicterminationcontrol(gnd),
+	.o(\areset~input_o ));
+// synopsys translate_off
+defparam \areset~input .bus_hold = "false";
+defparam \areset~input .simulate_z_as = "z";
+// synopsys translate_on
+
+dffeas \fft0|Q (
+	.clk(\clk~input_o ),
+	.d(\fft0|Q~0_combout ),
+	.asdata(vcc),
+	.clrn(\areset~input_o ),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\fft0|Q~q ),
+	.prn(vcc));
+// synopsys translate_off
+defparam \fft0|Q .is_wysiwyg = "true";
+defparam \fft0|Q .power_up = "low";
+// synopsys translate_on
+
+cyclonev_lcell_comb \fft1|Q~0 (
+// Equation(s):
+// \fft1|Q~0_combout  = !\fft1|Q~q  $ (((!\fft0|Q~q ) # (!\enable~input_o )))
+
+	.dataa(!\fft0|Q~q ),
+	.datab(!\fft1|Q~q ),
+	.datac(!\enable~input_o ),
+	.datad(gnd),
+	.datae(gnd),
+	.dataf(gnd),
+	.datag(gnd),
+	.cin(gnd),
+	.sharein(gnd),
+	.combout(\fft1|Q~0_combout ),
+	.sumout(),
+	.cout(),
+	.shareout());
+// synopsys translate_off
+defparam \fft1|Q~0 .extended_lut = "off";
+defparam \fft1|Q~0 .lut_mask = 64'h3636363636363636;
+defparam \fft1|Q~0 .shared_arith = "off";
+// synopsys translate_on
+
+dffeas \fft1|Q (
+	.clk(\clk~input_o ),
+	.d(\fft1|Q~0_combout ),
+	.asdata(vcc),
+	.clrn(\areset~input_o ),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\fft1|Q~q ),
+	.prn(vcc));
+// synopsys translate_off
+defparam \fft1|Q .is_wysiwyg = "true";
+defparam \fft1|Q .power_up = "low";
+// synopsys translate_on
+
+cyclonev_lcell_comb \fft2|Q~0 (
+// Equation(s):
+// \fft2|Q~0_combout  = !\fft2|Q~q  $ (((!\fft0|Q~q ) # ((!\fft1|Q~q ) # (!\enable~input_o ))))
+
+	.dataa(!\fft0|Q~q ),
+	.datab(!\fft1|Q~q ),
+	.datac(!\fft2|Q~q ),
+	.datad(!\enable~input_o ),
+	.datae(gnd),
+	.dataf(gnd),
+	.datag(gnd),
+	.cin(gnd),
+	.sharein(gnd),
+	.combout(\fft2|Q~0_combout ),
+	.sumout(),
+	.cout(),
+	.shareout());
+// synopsys translate_off
+defparam \fft2|Q~0 .extended_lut = "off";
+defparam \fft2|Q~0 .lut_mask = 64'h0F1E0F1E0F1E0F1E;
+defparam \fft2|Q~0 .shared_arith = "off";
+// synopsys translate_on
+
+dffeas \fft2|Q (
+	.clk(\clk~input_o ),
+	.d(\fft2|Q~0_combout ),
+	.asdata(vcc),
+	.clrn(\areset~input_o ),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\fft2|Q~q ),
+	.prn(vcc));
+// synopsys translate_off
+defparam \fft2|Q .is_wysiwyg = "true";
+defparam \fft2|Q .power_up = "low";
+// synopsys translate_on
+
+cyclonev_lcell_comb \fft3|Q~0 (
+// Equation(s):
+// \fft3|Q~0_combout  = ( \enable~input_o  & ( !\fft3|Q~q  $ (((!\fft0|Q~q ) # ((!\fft1|Q~q ) # (!\fft2|Q~q )))) ) ) # ( !\enable~input_o  & ( \fft3|Q~q  ) )
+
+	.dataa(!\fft0|Q~q ),
+	.datab(!\fft1|Q~q ),
+	.datac(!\fft2|Q~q ),
+	.datad(!\fft3|Q~q ),
+	.datae(!\enable~input_o ),
+	.dataf(gnd),
+	.datag(gnd),
+	.cin(gnd),
+	.sharein(gnd),
+	.combout(\fft3|Q~0_combout ),
+	.sumout(),
+	.cout(),
+	.shareout());
+// synopsys translate_off
+defparam \fft3|Q~0 .extended_lut = "off";
+defparam \fft3|Q~0 .lut_mask = 64'h00FF01FE00FF01FE;
+defparam \fft3|Q~0 .shared_arith = "off";
+// synopsys translate_on
+
+dffeas \fft3|Q (
+	.clk(\clk~input_o ),
+	.d(\fft3|Q~0_combout ),
+	.asdata(vcc),
+	.clrn(\areset~input_o ),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\fft3|Q~q ),
+	.prn(vcc));
+// synopsys translate_off
+defparam \fft3|Q .is_wysiwyg = "true";
+defparam \fft3|Q .power_up = "low";
+// synopsys translate_on
+
+assign Q[0] = \Q[0]~output_o ;
+
+assign Q[1] = \Q[1]~output_o ;
+
+assign Q[2] = \Q[2]~output_o ;
+
+assign Q[3] = \Q[3]~output_o ;
+
+endmodule

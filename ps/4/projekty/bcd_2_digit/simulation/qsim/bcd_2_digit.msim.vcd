@@ -1,0 +1,453 @@
+$comment
+	File created using the following command:
+		vcd file bcd_2_digit.msim.vcd -direction
+$end
+$date
+	Wed Mar 30 23:01:17 2022
+$end
+$version
+	ModelSim Version 10.5b
+$end
+$timescale
+	1ps
+$end
+
+$scope module bcd_2_digit_vlg_vec_tst $end
+$var reg 8 ! SW [7:0] $end
+$var wire 1 " HEX0 [6] $end
+$var wire 1 # HEX0 [5] $end
+$var wire 1 $ HEX0 [4] $end
+$var wire 1 % HEX0 [3] $end
+$var wire 1 & HEX0 [2] $end
+$var wire 1 ' HEX0 [1] $end
+$var wire 1 ( HEX0 [0] $end
+$var wire 1 ) HEX1 [6] $end
+$var wire 1 * HEX1 [5] $end
+$var wire 1 + HEX1 [4] $end
+$var wire 1 , HEX1 [3] $end
+$var wire 1 - HEX1 [2] $end
+$var wire 1 . HEX1 [1] $end
+$var wire 1 / HEX1 [0] $end
+$var wire 1 0 LEDR [9] $end
+$var wire 1 1 LEDR [8] $end
+$var wire 1 2 LEDR [7] $end
+$var wire 1 3 LEDR [6] $end
+$var wire 1 4 LEDR [5] $end
+$var wire 1 5 LEDR [4] $end
+$var wire 1 6 LEDR [3] $end
+$var wire 1 7 LEDR [2] $end
+$var wire 1 8 LEDR [1] $end
+$var wire 1 9 LEDR [0] $end
+
+$scope module i1 $end
+$var wire 1 : gnd $end
+$var wire 1 ; vcc $end
+$var wire 1 < unknown $end
+$var tri1 1 = devclrn $end
+$var tri1 1 > devpor $end
+$var tri1 1 ? devoe $end
+$var wire 1 @ ~QUARTUS_CREATED_GND~I_combout $end
+$var wire 1 A SW[0]~input_o $end
+$var wire 1 B SW[1]~input_o $end
+$var wire 1 C SW[2]~input_o $end
+$var wire 1 D SW[3]~input_o $end
+$var wire 1 E SW[4]~input_o $end
+$var wire 1 F SW[5]~input_o $end
+$var wire 1 G SW[6]~input_o $end
+$var wire 1 H SW[7]~input_o $end
+$var wire 1 I dec0|WideOr7~0_combout $end
+$var wire 1 J dec1|WideOr7~0_combout $end
+$var wire 1 K dec1|WideOr6~0_combout $end
+$var wire 1 L dec1|WideOr5~0_combout $end
+$var wire 1 M dec1|WideOr4~0_combout $end
+$var wire 1 N dec1|WideOr3~0_combout $end
+$var wire 1 O dec1|WideOr2~0_combout $end
+$var wire 1 P dec1|WideOr1~0_combout $end
+$var wire 1 Q dec1|WideOr0~0_combout $end
+$var wire 1 R dec0|WideOr6~0_combout $end
+$var wire 1 S dec0|WideOr5~0_combout $end
+$var wire 1 T dec0|WideOr4~0_combout $end
+$var wire 1 U dec0|WideOr3~0_combout $end
+$var wire 1 V dec0|WideOr2~0_combout $end
+$var wire 1 W dec0|WideOr1~0_combout $end
+$var wire 1 X dec0|WideOr0~0_combout $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b1001 !
+0(
+0'
+0&
+0%
+1$
+0#
+0"
+0/
+0.
+0-
+0,
+0+
+0*
+1)
+19
+08
+07
+16
+05
+04
+03
+02
+01
+00
+0:
+1;
+x<
+1=
+1>
+1?
+0@
+1A
+0B
+0C
+1D
+0E
+0F
+0G
+0H
+1I
+1J
+0K
+0L
+0M
+0N
+0O
+0P
+0Q
+0R
+0S
+0T
+0U
+1V
+0W
+1X
+$end
+#10000
+b11001 !
+b11000 !
+0A
+1E
+15
+09
+1P
+1O
+1N
+1K
+0V
+0$
+1/
+1,
+1+
+1*
+#20000
+b111000 !
+b110000 !
+b110100 !
+b110110 !
+b100110 !
+b100111 !
+1A
+1B
+1C
+0D
+0E
+1F
+14
+05
+06
+17
+18
+19
+1Q
+0X
+0O
+0N
+1M
+0K
+1W
+1V
+1U
+1%
+1$
+1#
+0/
+1-
+0,
+0+
+1"
+0)
+#30000
+b110111 !
+b110110 !
+0A
+1E
+15
+09
+1X
+1O
+0M
+0W
+0V
+0U
+1S
+1'
+0%
+0$
+0#
+0-
+1+
+0"
+#40000
+b1110110 !
+b1010110 !
+b1010100 !
+b1000100 !
+b1000101 !
+1A
+0B
+0E
+0F
+1G
+13
+04
+05
+08
+19
+0P
+1N
+1K
+1V
+1$
+1/
+1,
+0*
+#50000
+b1010101 !
+b1010100 !
+0A
+1E
+15
+09
+0N
+1L
+0K
+1U
+0S
+1R
+1(
+0'
+1%
+0/
+1.
+0,
+#60000
+b1010000 !
+b1110000 !
+b1110010 !
+b1100010 !
+b1100011 !
+1A
+1B
+0C
+0E
+1F
+14
+05
+07
+18
+19
+0O
+1W
+0U
+0R
+0(
+0%
+1#
+0+
+#70000
+b1110011 !
+b1110010 !
+0A
+1E
+15
+09
+0Q
+1P
+1O
+1N
+0L
+0V
+1T
+1&
+0$
+0.
+1,
+1+
+1*
+1)
+#80000
+b11110010 !
+b10110010 !
+b10010010 !
+b10010000 !
+b10000000 !
+b10000001 !
+1A
+0B
+0E
+0F
+0G
+1H
+12
+03
+04
+05
+08
+19
+1Q
+0X
+0P
+0O
+0N
+1V
+1U
+0T
+1R
+1(
+0&
+1%
+1$
+0,
+0+
+0*
+1"
+0)
+#90000
+b10010001 !
+b10010000 !
+0A
+1E
+15
+09
+1O
+0W
+0V
+0U
+0R
+0(
+0%
+0$
+0#
+1+
+#100000
+b10011000 !
+b10011100 !
+b10111100 !
+b10111110 !
+b10101110 !
+b10101111 !
+1A
+1B
+1C
+1D
+0E
+1F
+14
+05
+16
+17
+18
+19
+0Q
+0J
+0I
+1P
+1N
+1M
+1L
+1K
+1W
+1V
+1U
+1T
+1S
+1R
+1(
+1'
+1&
+1%
+1$
+1#
+1/
+1.
+1-
+1,
+1*
+11
+10
+1)
+#110000
+b10111111 !
+b10111110 !
+0A
+1E
+15
+09
+#120000
+b11111110 !
+b11011110 !
+b11011100 !
+b11001100 !
+b11001101 !
+1A
+0B
+0E
+0F
+1G
+13
+04
+05
+08
+19
+#130000
+b11011101 !
+b11011100 !
+0A
+1E
+15
+09
+#140000
+b11011000 !
+b11111000 !
+b11111010 !
+b11101010 !
+b11101011 !
+1A
+1B
+0C
+0E
+1F
+14
+05
+07
+18
+19
+#150000
+b11111011 !
+b11111010 !
+0A
+1E
+15
+09
+#160000

@@ -1,0 +1,47 @@
+/* module odejmowanie_sumatorem(
+	input [3:0] A, B,
+	output [4:0] difference);
+
+	assign difference = {1'b0, A} - {1'b0, B};
+
+endmodule */
+
+module odejmowanie_sumatorem
+	#(parameter BITS = 4)(
+	input [BITS-1:0] A, B,
+	output [BITS-1:0] difference);
+
+	wire [BITS-1:0] B_neg_p_1;
+	negacja_plus_1 np1(B, B_neg_p_1);
+	assign difference = A + B_neg_p_1;
+
+endmodule
+
+module negacja_plus_1
+	#(parameter BITS = 4)(
+	input [BITS-1:0] a,
+	output [BITS-1:0] out);
+
+	wire [BITS-2:0] w_1;
+	generate
+		genvar i;
+		for (i = 0; i < BITS; i = i + 1)
+		begin: np1
+			case (i)
+				0: srodkowy_modul_i smi(a[i], 1'b0, out[i], w_1[i]);
+				BITS-1: srodkowy_modul_i smi(a[i], w_1[i-1], out[i],);
+				default: srodkowy_modul_i smi(a[i], w_1[i-1], out[i], w_1[i]);
+			endcase
+		end
+	endgenerate
+
+endmodule
+
+module srodkowy_modul_i(
+	input a_i, was_1_i_minus_1,
+	output out_i, was_1_i);
+
+	assign out_i = a_i ^ was_1_i_minus_1;
+	assign was_1_i = a_i | was_1_i_minus_1;
+
+endmodule

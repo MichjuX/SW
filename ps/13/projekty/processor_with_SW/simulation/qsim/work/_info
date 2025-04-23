@@ -1,0 +1,54 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/Storage/temp/semestr_6/sw/13/projekty/processor_with_SW/simulation/qsim
+vprocessor_with_SW
+Z1 !s110 1655979407
+!i10b 1
+!s100 e<IYiLjc<^Alje<@7YjK73
+INJgi9aHb@omm@E;edUB`:0
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1655979400
+8processor_with_SW.vo
+Fprocessor_with_SW.vo
+L0 31
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1655979406.000000
+!s107 processor_with_SW.vo|
+!s90 -work|work|processor_with_SW.vo|
+!i113 1
+Z4 o-work work
+Z5 tCvgOpt 0
+nprocessor_with_@s@w
+vprocessor_with_SW_vlg_vec_tst
+R1
+!i10b 1
+!s100 cSW0>oXUGj0HnXhlYam?A3
+I8>I:^]TUn;MCcd]gVAgPg2
+R2
+R0
+w1655979399
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+L0 29
+R3
+r1
+!s85 0
+31
+!s108 1655979407.000000
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R4
+R5
+nprocessor_with_@s@w_vlg_vec_tst

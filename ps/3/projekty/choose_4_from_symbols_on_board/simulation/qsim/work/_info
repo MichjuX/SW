@@ -1,0 +1,52 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dD:/Storage/temp/sw/3/choose_4_from_symbols_on_board/simulation/qsim
+vchoose_4_from_symbols_on_board
+Z0 !s110 1648047459
+!i10b 1
+!s100 NZ][6A4hg<fS_X3n;eIYP1
+In0O?zh3gBO8@^Y4HTgBS03
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dD:/Storage/temp/semestr_6/sw/3/choose_4_from_symbols_on_board/simulation/qsim
+w1648047457
+8choose_4_from_symbols_on_board.vo
+Fchoose_4_from_symbols_on_board.vo
+L0 31
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1648047459.000000
+!s107 choose_4_from_symbols_on_board.vo|
+!s90 -work|work|choose_4_from_symbols_on_board.vo|
+!i113 1
+Z5 o-work work
+Z6 tCvgOpt 0
+vchoose_4_from_symbols_on_board_vlg_vec_tst
+R0
+!i10b 1
+!s100 CLn=VJog25RcbIUJNbQo83
+IcHiaQ09no7d3O<haU13UM3
+R1
+R2
+w1648047455
+8Waveform1.vwf.vt
+FWaveform1.vwf.vt
+L0 29
+R3
+r1
+!s85 0
+31
+R4
+!s107 Waveform1.vwf.vt|
+!s90 -work|work|Waveform1.vwf.vt|
+!i113 1
+R5
+R6

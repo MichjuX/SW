@@ -1,0 +1,59 @@
+module FSM_1_always(
+	input w, clk, nclr,
+	output reg z,
+	output [3:0] y);
+
+	always @(posedge clk, negedge reset)
+	if (~reset) state <= s0;
+	else
+	case (state)
+	s0: state = s1;
+	s1: if (~x[0]) state = s2;
+	else if (~x[1] && x[0]) state = s3;
+	else if (~x[2] && x[1] && x[0]) state = s4;
+	else state = s5;
+	s2: if (~x[2]) state = s4;
+	else state = s5;
+	s3: state = s4;
+	s4: state = s0;
+	s5: state = s0;
+	endcase
+
+	assign y = ((state==s0) ? 3'b000:(
+	(state==s1) ? 3'b011:(
+	(state==s2) ? 3'b101:(
+	(state==s3) ? 3'b001:(
+	(state==s4) ? 3'b100:(
+	(state==s5) ? 3'b010: 3'b000))))));
+	
+	reg [3:0] state;
+	assign y = state;
+	localparam [3:0]
+		A = 4'b0000, // 0
+		B = 4'b0001, // 1
+		C = 4'b0010, // 2
+		D = 4'b0011, // 3
+		E = 4'b0100, // 4
+		F = 4'b0101, // 5
+		G = 4'b0110, // 6
+		H = 4'b0111, // 7
+		I = 4'b1000; // 8
+
+	always @ (posedge clk)
+		if (~nclr) state <= A;
+		else
+		case (state)
+			A: begin if (w) begin next = F; z = 1'b0; end
+				else begin next = B; z = 1'b0; end end
+			B: begin z = 1'b0; if (w) next = F; else next = C; end
+			C: begin z = 1'b0; if (w) next = F; else next = D; end
+			D: begin z = 1'b0; if (w) next = F; else next = E; end
+			E: begin z = 1'b1; if (w) next = F; else next = E; end
+			F: begin z = 1'b0; if (w) next = G; else next = B; end
+			G: begin z = 1'b0; if (w) next = H; else next = B; end
+			H: begin z = 1'b0; if (w) next = I; else next = B; end
+			I: begin z = 1'b1; if (w) next = I; else next = B; end
+			default: begin z = 1'b0; next = A; end
+		endcase
+
+endmodule

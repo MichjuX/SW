@@ -1,0 +1,40 @@
+module accumulator(
+	input clock,
+	input [7:0] A,
+	output [7:0] S,
+	output overflow,
+	output carry);
+
+	
+
+endmodule
+
+module accum_N_bits
+	#(parameter N = 8)(
+	input [N-1:0] A,
+	input clk,aclr,
+	output [N-1:0] S);
+
+	wire [N-1:0] A_plus_B;
+	ripple_carry_adder #(N) ad(A,S,1'b0,A_plus_B);
+	register_N_bits_areset #(N) r(A_plus_B,clk,aclr,S);
+
+endmodule
+
+module adder_8_b(
+	input [7:0] a, b,
+	input cin,
+	output );
+
+	
+
+endmodule
+
+module full_adder(
+	input cin, a, b,
+	output cout, s);
+
+	assign s = cin ^ (a ^ b);
+	assign cout = a & b | (a ^ b) & cin;
+
+endmodule

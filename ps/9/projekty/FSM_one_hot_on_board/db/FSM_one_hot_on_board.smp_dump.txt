@@ -1,0 +1,12 @@
+
+State Machine - |FSM_one_hot_on_board|FSM_one_hot:fsm|state
+Name state~12 state~11 state~10 state~9 state~8 state~7 state~6 state~5 state~4 
+state.A 0 0 0 0 0 0 0 0 0 
+state.B 0 0 0 0 0 0 0 1 1 
+state.C 0 0 0 0 0 0 1 0 1 
+state.D 0 0 0 0 0 1 0 0 1 
+state.E 0 0 0 0 1 0 0 0 1 
+state.F 0 0 0 1 0 0 0 0 1 
+state.G 0 0 1 0 0 0 0 0 1 
+state.H 0 1 0 0 0 0 0 0 1 
+state.I 1 0 0 0 0 0 0 0 1 

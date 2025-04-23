@@ -1,0 +1,7 @@
+module array_multiplier_4_bits(
+	input [3:0] A, B,
+	output [7:0] P);
+
+	
+
+endmodule

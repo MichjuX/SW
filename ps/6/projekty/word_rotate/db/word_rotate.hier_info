@@ -1,0 +1,27 @@
+|word_rotate
+clock => clock.IN1
+char_codes[0] <= char_codes[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+char_codes[1] <= char_codes[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+char_codes[2] <= char_codes[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+char_codes[3] <= char_codes[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+char_codes[4] <= char_codes[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+char_codes[5] <= char_codes[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+char_codes[6] <= char_codes[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+char_codes[7] <= char_codes[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|word_rotate|counter_mod_M:fast_counter
+clk => Q[0]~reg0.CLK
+clk => Q[1]~reg0.CLK
+clk => Q[2]~reg0.CLK
+aclr => Q[0]~reg0.ACLR
+aclr => Q[1]~reg0.ACLR
+aclr => Q[2]~reg0.ACLR
+enable => Q[0]~reg0.ENA
+enable => Q[2]~reg0.ENA
+enable => Q[1]~reg0.ENA
+Q[0] <= Q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= Q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= Q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

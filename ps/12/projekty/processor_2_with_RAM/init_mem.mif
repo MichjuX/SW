@@ -1,0 +1,45 @@
+-- Copyright (C) 2018  Intel Corporation. All rights reserved.
+-- Your use of Intel Corporation's design tools, logic functions 
+-- and other software and tools, and its AMPP partner logic 
+-- functions, and any output files from any of the foregoing 
+-- (including device programming or simulation files), and any 
+-- associated documentation or information are expressly subject 
+-- to the terms and conditions of the Intel Program License 
+-- Subscription Agreement, the Intel Quartus Prime License Agreement,
+-- the Intel FPGA IP License Agreement, or other applicable license
+-- agreement, including, without limitation, that your use is for
+-- the sole purpose of programming logic devices manufactured by
+-- Intel and sold by Intel or its authorized distributors.  Please
+-- refer to the applicable agreement for further details.
+
+-- Quartus Prime generated Memory Initialization File (.mif)
+
+WIDTH=9;
+DEPTH=128;
+
+ADDRESS_RADIX=HEX;
+DATA_RADIX=BIN;
+
+CONTENT BEGIN
+	% Ten kod wyświetla licznik (w rejestrze R2) na czerwonych diodach LED. %
+	00 : 001001000; % mvi R1,#1 // inicjalizacja R1 %
+	01 : 000000001;
+	02 : 001010000; % mvi R2,#0 // licznik do wyświetlania na LEDs %
+	03 : 000000000;
+	04 : 001011000; % Loop mvi R3,#010000000 // R3 = adres rejestru LEDs %
+	05 : 010000000;
+	06 : 101010011; % st R2,R3 // zapis do LEDs %
+	07 : 010010001; % add R2,R1 // inkrementacja licznika dla LEDs %
+	08 : 001011000; % mvi R3,#2 // wartość opóźnienia %
+	09 : 000000010;
+	0A : 000101111; % mv R5,R7 // zapis adresu następnej instrukcji %
+	0B : 001100000; % Outer mvi R4,#2 // zagnieżdżony cykl opóźnienia %
+	0C : 000000010;
+	0D : 000000111; % mv R0,R7 // zapis adresu następnej instrukcji %
+	0E : 011100001; % Inner sub R4,R1 // dekrementacja zmiennej opóźnienia cyklu %
+	0F : 110111000; % mvnz R7,R0 // przedłużenie cyklu Inner jeśli R4 !=0 %
+	10 : 011011001; % sub R3,R1 // dekrementacja opóźnienia cyklu Outer %
+	11 : 110111101; % mvnz R7,R5 // przedłużenie cyklu Outer jeśli R3 !=0 %
+	12 : 001111000; % mvi R7,#Loop // ponowne wykonanie %
+	13 : 000000100;
+END;

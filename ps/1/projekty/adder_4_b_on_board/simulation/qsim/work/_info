@@ -1,0 +1,52 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/intelFPGA_lite/projects/adder_4_b_on_board/simulation/qsim
+vadder_4_b_on_board
+!s110 1646700886
+!i10b 1
+!s100 S9eRLWM2NYPYZ:nX[zMlA2
+IN1GAf:9Q;U;TP8?9=BOjO3
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1646700885
+8adder_4_b_on_board.vo
+Fadder_4_b_on_board.vo
+L0 31
+Z2 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z3 !s108 1646700886.000000
+!s107 adder_4_b_on_board.vo|
+!s90 -work|work|adder_4_b_on_board.vo|
+!i113 1
+Z4 o-work work
+Z5 tCvgOpt 0
+vadder_4_b_on_board_vlg_vec_tst
+!s110 1646700887
+!i10b 1
+!s100 ^?LH<KjkZH]imMo3<Ieaf1
+I?H]k?C?FHdm9]eD5Y2Uki3
+R1
+R0
+w1646700883
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+L0 29
+R2
+r1
+!s85 0
+31
+R3
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R4
+R5

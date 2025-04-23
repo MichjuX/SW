@@ -1,0 +1,54 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/Storage/temp/sw/projekty/SW_to_LEDR/simulation/qsim
+vSW_to_LEDR
+Z1 !s110 1647300724
+!i10b 1
+!s100 ijAjJzf6QkH<WV3anD1_I0
+ID<WPT6A_8IMZXzH8m984c0
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1647300723
+8SW_to_LEDR.vo
+FSW_to_LEDR.vo
+L0 31
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1647300724.000000
+!s107 SW_to_LEDR.vo|
+!s90 -work|work|SW_to_LEDR.vo|
+!i113 1
+Z5 o-work work
+Z6 tCvgOpt 0
+n@s@w_to_@l@e@d@r
+vSW_to_LEDR_vlg_vec_tst
+R1
+!i10b 1
+!s100 gd2WzI2PJ>Rea4Of[n8=z2
+IRl3ij7ZW5CCEXSQ<WVQ9T1
+R2
+R0
+w1647300720
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+L0 29
+R3
+r1
+!s85 0
+31
+R4
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R5
+R6
+n@s@w_to_@l@e@d@r_vlg_vec_tst
