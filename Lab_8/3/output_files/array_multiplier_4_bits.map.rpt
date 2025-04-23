@@ -1,5 +1,5 @@
 Analysis & Synthesis report for array_multiplier_4_bits
-Mon May 02 20:46:49 2022
+Wed Apr 23 22:24:24 2025
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -46,7 +46,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Mon May 02 20:46:49 2022       ;
+; Analysis & Synthesis Status     ; Successful - Wed Apr 23 22:24:24 2025       ;
 ; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                   ; array_multiplier_4_bits                     ;
 ; Top-level Entity Name           ; array_multiplier_4_bits                     ;
@@ -158,8 +158,8 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 8           ;
-; Maximum allowed            ; 4           ;
+; Number detected on machine ; 16          ;
+; Maximum allowed            ; 16          ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
 ; Maximum used               ; 1           ;
@@ -169,13 +169,14 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                            ;
-+----------------------------------+-----------------+------------------------+-------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                                              ; Library ;
-+----------------------------------+-----------------+------------------------+-------------------------------------------------------------------------------------------+---------+
-; array_multiplier_4_bits.v        ; yes             ; User Verilog HDL File  ; D:/Storage/temp/semestr_6/sw/8/projekty/array_multiplier_4_bits/array_multiplier_4_bits.v ;         ;
-+----------------------------------+-----------------+------------------------+-------------------------------------------------------------------------------------------+---------+
++------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                   ;
++----------------------------------+-----------------+------------------------+--------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                     ; Library ;
++----------------------------------+-----------------+------------------------+--------------------------------------------------+---------+
+; array_multiplier_4_bits.v        ; yes             ; User Verilog HDL File  ; E:/PB/SEM_6/SW/Lab_8/3/array_multiplier_4_bits.v ;         ;
+; full_adder.v                     ; yes             ; User Verilog HDL File  ; E:/PB/SEM_6/SW/Lab_8/3/full_adder.v              ;         ;
++----------------------------------+-----------------+------------------------+--------------------------------------------------+---------+
 
 
 +----------------------------------------------------------+
@@ -301,7 +302,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:01     ;
+; Top            ; 00:00:00     ;
 +----------------+--------------+
 
 
@@ -311,15 +312,16 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Mon May 02 20:46:29 2022
+    Info: Processing started: Wed Apr 23 22:24:18 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off array_multiplier_4_bits -c array_multiplier_4_bits
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
-Info (12021): Found 2 design units, including 2 entities, in source file array_multiplier_4_bits.v
-    Info (12023): Found entity 1: array_multiplier_4_bits File: D:/Storage/temp/semestr_6/sw/8/projekty/array_multiplier_4_bits/array_multiplier_4_bits.v Line: 1
-    Info (12023): Found entity 2: full_adder File: D:/Storage/temp/semestr_6/sw/8/projekty/array_multiplier_4_bits/array_multiplier_4_bits.v Line: 33
+Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file array_multiplier_4_bits.v
+    Info (12023): Found entity 1: array_multiplier_4_bits File: E:/PB/SEM_6/SW/Lab_8/3/array_multiplier_4_bits.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file full_adder.v
+    Info (12023): Found entity 1: full_adder File: E:/PB/SEM_6/SW/Lab_8/3/full_adder.v Line: 1
 Info (12127): Elaborating entity "array_multiplier_4_bits" for the top level hierarchy
-Info (12128): Elaborating entity "full_adder" for hierarchy "full_adder:fa0" File: D:/Storage/temp/semestr_6/sw/8/projekty/array_multiplier_4_bits/array_multiplier_4_bits.v Line: 16
+Info (12128): Elaborating entity "full_adder" for hierarchy "full_adder:fa0" File: E:/PB/SEM_6/SW/Lab_8/3/array_multiplier_4_bits.v Line: 16
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
@@ -328,9 +330,9 @@ Info (21057): Implemented 38 device resources after synthesis - the final resour
     Info (21059): Implemented 8 output pins
     Info (21061): Implemented 22 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4810 megabytes
-    Info: Processing ended: Mon May 02 20:46:49 2022
-    Info: Elapsed time: 00:00:20
-    Info: Total CPU time (on all processors): 00:00:49
+    Info: Peak virtual memory: 4843 megabytes
+    Info: Processing ended: Wed Apr 23 22:24:24 2025
+    Info: Elapsed time: 00:00:06
+    Info: Total CPU time (on all processors): 00:00:13
 
 

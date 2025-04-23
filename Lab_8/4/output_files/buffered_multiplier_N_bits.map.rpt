@@ -1,5 +1,5 @@
 Analysis & Synthesis report for buffered_multiplier_N_bits
-Tue May 03 22:15:54 2022
+Wed Apr 23 22:29:27 2025
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -65,7 +65,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Tue May 03 22:15:54 2022       ;
+; Analysis & Synthesis Status     ; Successful - Wed Apr 23 22:29:27 2025       ;
 ; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                   ; buffered_multiplier_N_bits                  ;
 ; Top-level Entity Name           ; buffered_multiplier_N_bits                  ;
@@ -177,25 +177,30 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 8           ;
-; Maximum allowed            ; 4           ;
+; Number detected on machine ; 16          ;
+; Maximum allowed            ; 16          ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 4           ;
+; Maximum used               ; 16          ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-4         ;   0.0%      ;
+;     Processors 2-16        ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                  ;
-+----------------------------------+-----------------+------------------------+-------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                                                    ; Library ;
-+----------------------------------+-----------------+------------------------+-------------------------------------------------------------------------------------------------+---------+
-; buffered_multiplier_N_bits.v     ; yes             ; User Verilog HDL File  ; D:/Storage/temp/semestr_6/sw/8/projekty/buffered_multiplier_N_bits/buffered_multiplier_N_bits.v ;         ;
-+----------------------------------+-----------------+------------------------+-------------------------------------------------------------------------------------------------+---------+
++---------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                      ;
++----------------------------------+-----------------+------------------------+-----------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                        ; Library ;
++----------------------------------+-----------------+------------------------+-----------------------------------------------------+---------+
+; buffered_multiplier_N_bits.v     ; yes             ; User Verilog HDL File  ; E:/PB/SEM_6/SW/Lab_8/4/buffered_multiplier_N_bits.v ;         ;
+; register_N_bits_ena_aclr.v       ; yes             ; User Verilog HDL File  ; E:/PB/SEM_6/SW/Lab_8/4/register_N_bits_ena_aclr.v   ;         ;
+; mux_4_1.v                        ; yes             ; User Verilog HDL File  ; E:/PB/SEM_6/SW/Lab_8/4/mux_4_1.v                    ;         ;
+; multiplier_N_bits.v              ; yes             ; User Verilog HDL File  ; E:/PB/SEM_6/SW/Lab_8/4/multiplier_N_bits.v          ;         ;
+; adder_N_bits.v                   ; yes             ; User Verilog HDL File  ; E:/PB/SEM_6/SW/Lab_8/4/adder_N_bits.v               ;         ;
+; full_adder.v                     ; yes             ; User Verilog HDL File  ; E:/PB/SEM_6/SW/Lab_8/4/full_adder.v                 ;         ;
++----------------------------------+-----------------+------------------------+-----------------------------------------------------+---------+
 
 
 +---------------------------------------------------------+
@@ -561,7 +566,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:01     ;
+; Top            ; 00:00:00     ;
 +----------------+--------------+
 
 
@@ -571,24 +576,29 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Tue May 03 22:15:32 2022
+    Info: Processing started: Wed Apr 23 22:29:20 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off buffered_multiplier_N_bits -c buffered_multiplier_N_bits
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
-Info (12021): Found 6 design units, including 6 entities, in source file buffered_multiplier_n_bits.v
-    Info (12023): Found entity 1: buffered_multiplier_N_bits File: D:/Storage/temp/semestr_6/sw/8/projekty/buffered_multiplier_N_bits/buffered_multiplier_N_bits.v Line: 1
-    Info (12023): Found entity 2: register_N_bits_ena_aclr File: D:/Storage/temp/semestr_6/sw/8/projekty/buffered_multiplier_N_bits/buffered_multiplier_N_bits.v Line: 19
-    Info (12023): Found entity 3: mux_4_1 File: D:/Storage/temp/semestr_6/sw/8/projekty/buffered_multiplier_N_bits/buffered_multiplier_N_bits.v Line: 33
-    Info (12023): Found entity 4: multiplier_N_bits File: D:/Storage/temp/semestr_6/sw/8/projekty/buffered_multiplier_N_bits/buffered_multiplier_N_bits.v Line: 49
-    Info (12023): Found entity 5: adder_N_bits File: D:/Storage/temp/semestr_6/sw/8/projekty/buffered_multiplier_N_bits/buffered_multiplier_N_bits.v Line: 83
-    Info (12023): Found entity 6: full_adder File: D:/Storage/temp/semestr_6/sw/8/projekty/buffered_multiplier_N_bits/buffered_multiplier_N_bits.v Line: 105
+Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file buffered_multiplier_n_bits.v
+    Info (12023): Found entity 1: buffered_multiplier_N_bits File: E:/PB/SEM_6/SW/Lab_8/4/buffered_multiplier_N_bits.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file register_n_bits_ena_aclr.v
+    Info (12023): Found entity 1: register_N_bits_ena_aclr File: E:/PB/SEM_6/SW/Lab_8/4/register_N_bits_ena_aclr.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file mux_4_1.v
+    Info (12023): Found entity 1: mux_4_1 File: E:/PB/SEM_6/SW/Lab_8/4/mux_4_1.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file multiplier_n_bits.v
+    Info (12023): Found entity 1: multiplier_N_bits File: E:/PB/SEM_6/SW/Lab_8/4/multiplier_N_bits.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file adder_n_bits.v
+    Info (12023): Found entity 1: adder_N_bits File: E:/PB/SEM_6/SW/Lab_8/4/adder_N_bits.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file full_adder.v
+    Info (12023): Found entity 1: full_adder File: E:/PB/SEM_6/SW/Lab_8/4/full_adder.v Line: 1
 Info (12127): Elaborating entity "buffered_multiplier_N_bits" for the top level hierarchy
-Info (12128): Elaborating entity "register_N_bits_ena_aclr" for hierarchy "register_N_bits_ena_aclr:r_A" File: D:/Storage/temp/semestr_6/sw/8/projekty/buffered_multiplier_N_bits/buffered_multiplier_N_bits.v Line: 9
-Info (12128): Elaborating entity "mux_4_1" for hierarchy "mux_4_1:mux" File: D:/Storage/temp/semestr_6/sw/8/projekty/buffered_multiplier_N_bits/buffered_multiplier_N_bits.v Line: 11
-Info (12128): Elaborating entity "multiplier_N_bits" for hierarchy "multiplier_N_bits:mul" File: D:/Storage/temp/semestr_6/sw/8/projekty/buffered_multiplier_N_bits/buffered_multiplier_N_bits.v Line: 14
-Info (12128): Elaborating entity "adder_N_bits" for hierarchy "multiplier_N_bits:mul|adder_N_bits:ad1" File: D:/Storage/temp/semestr_6/sw/8/projekty/buffered_multiplier_N_bits/buffered_multiplier_N_bits.v Line: 65
-Info (12128): Elaborating entity "full_adder" for hierarchy "multiplier_N_bits:mul|adder_N_bits:ad1|full_adder:ad[0].fa" File: D:/Storage/temp/semestr_6/sw/8/projekty/buffered_multiplier_N_bits/buffered_multiplier_N_bits.v Line: 96
-Info (12128): Elaborating entity "register_N_bits_ena_aclr" for hierarchy "register_N_bits_ena_aclr:r_P" File: D:/Storage/temp/semestr_6/sw/8/projekty/buffered_multiplier_N_bits/buffered_multiplier_N_bits.v Line: 15
+Info (12128): Elaborating entity "register_N_bits_ena_aclr" for hierarchy "register_N_bits_ena_aclr:r_A" File: E:/PB/SEM_6/SW/Lab_8/4/buffered_multiplier_N_bits.v Line: 9
+Info (12128): Elaborating entity "mux_4_1" for hierarchy "mux_4_1:mux" File: E:/PB/SEM_6/SW/Lab_8/4/buffered_multiplier_N_bits.v Line: 11
+Info (12128): Elaborating entity "multiplier_N_bits" for hierarchy "multiplier_N_bits:mul" File: E:/PB/SEM_6/SW/Lab_8/4/buffered_multiplier_N_bits.v Line: 14
+Info (12128): Elaborating entity "adder_N_bits" for hierarchy "multiplier_N_bits:mul|adder_N_bits:ad1" File: E:/PB/SEM_6/SW/Lab_8/4/multiplier_N_bits.v Line: 17
+Info (12128): Elaborating entity "full_adder" for hierarchy "multiplier_N_bits:mul|adder_N_bits:ad1|full_adder:ad[0].fa" File: E:/PB/SEM_6/SW/Lab_8/4/adder_N_bits.v Line: 14
+Info (12128): Elaborating entity "register_N_bits_ena_aclr" for hierarchy "register_N_bits_ena_aclr:r_P" File: E:/PB/SEM_6/SW/Lab_8/4/buffered_multiplier_N_bits.v Line: 15
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
@@ -597,9 +607,9 @@ Info (21057): Implemented 197 device resources after synthesis - the final resou
     Info (21059): Implemented 24 output pins
     Info (21061): Implemented 161 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4824 megabytes
-    Info: Processing ended: Tue May 03 22:15:54 2022
-    Info: Elapsed time: 00:00:22
-    Info: Total CPU time (on all processors): 00:00:50
+    Info: Peak virtual memory: 4884 megabytes
+    Info: Processing ended: Wed Apr 23 22:29:27 2025
+    Info: Elapsed time: 00:00:07
+    Info: Total CPU time (on all processors): 00:00:15
 
 

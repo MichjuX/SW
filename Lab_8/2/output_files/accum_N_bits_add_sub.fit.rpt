@@ -1,5 +1,5 @@
 Fitter report for accum_N_bits_add_sub
-Wed Apr 23 22:14:30 2025
+Wed Apr 23 22:23:06 2025
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -62,7 +62,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Fitter Summary                                                                ;
 +---------------------------------+---------------------------------------------+
-; Fitter Status                   ; Successful - Wed Apr 23 22:14:30 2025       ;
+; Fitter Status                   ; Successful - Wed Apr 23 22:23:06 2025       ;
 ; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                   ; accum_N_bits_add_sub                        ;
 ; Top-level Entity Name           ; accum_N_bits_add_sub                        ;
@@ -150,7 +150,7 @@ refer to the applicable agreement for further details.
 ; Number detected on machine ; 16          ;
 ; Maximum allowed            ; 16          ;
 ;                            ;             ;
-; Average used               ; 1.01        ;
+; Average used               ; 1.02        ;
 ; Maximum used               ; 16          ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
@@ -1824,10 +1824,10 @@ Info (334004): Delay annotation completed successfully
 Info (11801): Fitter post-fit operations ending: elapsed time is 00:00:01
 Info (144001): Generated suppressed messages file E:/PB/SEM_6/SW/Lab_8/2/output_files/accum_N_bits_add_sub.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 5 warnings
-    Info: Peak virtual memory: 7900 megabytes
-    Info: Processing ended: Wed Apr 23 22:14:30 2025
-    Info: Elapsed time: 00:00:28
-    Info: Total CPU time (on all processors): 00:02:07
+    Info: Peak virtual memory: 7891 megabytes
+    Info: Processing ended: Wed Apr 23 22:23:07 2025
+    Info: Elapsed time: 00:00:29
+    Info: Total CPU time (on all processors): 00:02:12
 
 
 +----------------------------+
