@@ -1,8 +1,8 @@
 /*<simulation_settings>
-<ftestbench_cmd>quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off FSM_one_hot -c FSM_one_hot --vector_source="D:/Storage/temp/semestr_6/sw/9/projekty/FSM_one_hot/Waveform.vwf" --testbench_file="D:/Storage/temp/semestr_6/sw/9/projekty/FSM_one_hot/simulation/qsim/Waveform.vwf.vt"</ftestbench_cmd>
-<ttestbench_cmd>quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off FSM_one_hot -c FSM_one_hot --vector_source="D:/Storage/temp/semestr_6/sw/9/projekty/FSM_one_hot/Waveform.vwf" --testbench_file="D:/Storage/temp/semestr_6/sw/9/projekty/FSM_one_hot/simulation/qsim/Waveform.vwf.vt"</ttestbench_cmd>
-<fnetlist_cmd>quartus_eda --write_settings_files=off --simulation --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory="D:/Storage/temp/semestr_6/sw/9/projekty/FSM_one_hot/simulation/qsim/" FSM_one_hot -c FSM_one_hot</fnetlist_cmd>
-<tnetlist_cmd>quartus_eda --write_settings_files=off --simulation --functional=off --flatten_buses=off --timescale=1ps --tool=modelsim_oem --format=verilog --output_directory="D:/Storage/temp/semestr_6/sw/9/projekty/FSM_one_hot/simulation/qsim/" FSM_one_hot -c FSM_one_hot</tnetlist_cmd>
+<ftestbench_cmd>quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off FSM_one_hot -c FSM_one_hot --vector_source="E:/PB/SEM_6/SW/ps/9/projekty/FSM_one_hot/Waveform.vwf" --testbench_file="E:/PB/SEM_6/SW/ps/9/projekty/FSM_one_hot/simulation/qsim/Waveform.vwf.vt"</ftestbench_cmd>
+<ttestbench_cmd>quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off FSM_one_hot -c FSM_one_hot --vector_source="E:/PB/SEM_6/SW/ps/9/projekty/FSM_one_hot/Waveform.vwf" --testbench_file="E:/PB/SEM_6/SW/ps/9/projekty/FSM_one_hot/simulation/qsim/Waveform.vwf.vt"</ttestbench_cmd>
+<fnetlist_cmd>quartus_eda --write_settings_files=off --simulation --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory="E:/PB/SEM_6/SW/ps/9/projekty/FSM_one_hot/simulation/qsim/" FSM_one_hot -c FSM_one_hot</fnetlist_cmd>
+<tnetlist_cmd>quartus_eda --write_settings_files=off --simulation --functional=off --flatten_buses=off --timescale=1ps --tool=modelsim_oem --format=verilog --output_directory="E:/PB/SEM_6/SW/ps/9/projekty/FSM_one_hot/simulation/qsim/" FSM_one_hot -c FSM_one_hot</tnetlist_cmd>
 <modelsim_script>onerror {exit -code 1}
 vlib work
 vlog -work work FSM_one_hot.vo
@@ -20,8 +20,6 @@ proc simTimestamp {} {
 after 2500 simTimestamp
 run -all
 quit -f
-
-
 
 </modelsim_script>
 <modelsim_script_timing>onerror {exit -code 1}
@@ -41,8 +39,6 @@ proc simTimestamp {} {
 after 2500 simTimestamp
 run -all
 quit -f
-
-
 
 </modelsim_script_timing>
 <hdl_lang>verilog</hdl_lang>
@@ -390,7 +386,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "y";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
+	RADIX = Unsigned;
 	TREE_INDEX = 4;
 	TREE_LEVEL = 0;
 	CHILDREN = 5, 6, 7, 8, 9, 10, 11, 12, 13;
@@ -400,7 +396,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "y[8]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
+	RADIX = Unsigned;
 	TREE_INDEX = 5;
 	TREE_LEVEL = 1;
 	PARENT = 4;
@@ -410,7 +406,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "y[7]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
+	RADIX = Unsigned;
 	TREE_INDEX = 6;
 	TREE_LEVEL = 1;
 	PARENT = 4;
@@ -420,7 +416,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "y[6]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
+	RADIX = Unsigned;
 	TREE_INDEX = 7;
 	TREE_LEVEL = 1;
 	PARENT = 4;
@@ -430,7 +426,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "y[5]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
+	RADIX = Unsigned;
 	TREE_INDEX = 8;
 	TREE_LEVEL = 1;
 	PARENT = 4;
@@ -440,7 +436,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "y[4]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
+	RADIX = Unsigned;
 	TREE_INDEX = 9;
 	TREE_LEVEL = 1;
 	PARENT = 4;
@@ -450,7 +446,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "y[3]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
+	RADIX = Unsigned;
 	TREE_INDEX = 10;
 	TREE_LEVEL = 1;
 	PARENT = 4;
@@ -460,7 +456,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "y[2]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
+	RADIX = Unsigned;
 	TREE_INDEX = 11;
 	TREE_LEVEL = 1;
 	PARENT = 4;
@@ -470,7 +466,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "y[1]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
+	RADIX = Unsigned;
 	TREE_INDEX = 12;
 	TREE_LEVEL = 1;
 	PARENT = 4;
@@ -480,7 +476,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "y[0]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
+	RADIX = Unsigned;
 	TREE_INDEX = 13;
 	TREE_LEVEL = 1;
 	PARENT = 4;

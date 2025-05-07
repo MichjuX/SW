@@ -18,7 +18,7 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "05/03/2022 22:35:19"
+// Generated on "04/29/2025 19:31:18"
                                                                                 
 // Verilog Test Bench (with test vectors) for design :                          buffered_multiplier_N_bits
 // 

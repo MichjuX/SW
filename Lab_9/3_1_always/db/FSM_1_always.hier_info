@@ -1,0 +1,18 @@
+|FSM_1_always
+w => Selector2.IN2
+w => state.DATAB
+w => state.DATAB
+w => Selector3.IN1
+w => Selector0.IN1
+w => state.DATAB
+w => state.DATAB
+w => Selector1.IN1
+clk => state~1.DATAIN
+aclr => state~3.DATAIN
+z << z.DB_MAX_OUTPUT_PORT_TYPE
+y[0] << WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+y[1] << WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+y[2] << WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+y[3] << y[3].DB_MAX_OUTPUT_PORT_TYPE
+
+

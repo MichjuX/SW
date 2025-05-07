@@ -1,5 +1,5 @@
 Analysis & Synthesis report for accum_N_bits
-Tue May 03 02:18:52 2022
+Tue Apr 29 19:25:30 2025
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -46,7 +46,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Tue May 03 02:18:52 2022       ;
+; Analysis & Synthesis Status     ; Successful - Tue Apr 29 19:25:30 2025       ;
 ; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                   ; accum_N_bits                                ;
 ; Top-level Entity Name           ; accum_N_bits                                ;
@@ -158,25 +158,25 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 8           ;
-; Maximum allowed            ; 4           ;
+; Number detected on machine ; 16          ;
+; Maximum allowed            ; 16          ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 4           ;
+; Maximum used               ; 16          ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-4         ;   0.0%      ;
+;     Processors 2-16        ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                      ;
-+----------------------------------+-----------------+------------------------+---------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                        ; Library ;
-+----------------------------------+-----------------+------------------------+---------------------------------------------------------------------+---------+
-; accum_N_bits.v                   ; yes             ; User Verilog HDL File  ; D:/Storage/temp/semestr_6/sw/8/projekty/accum_N_bits/accum_N_bits.v ;         ;
-+----------------------------------+-----------------+------------------------+---------------------------------------------------------------------+---------+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                        ;
++----------------------------------+-----------------+------------------------+---------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path          ; Library ;
++----------------------------------+-----------------+------------------------+---------------------------------------+---------+
+; accum_N_bits.v                   ; yes             ; User Verilog HDL File  ; E:/PB/SEM_6/SW/Lab_8/1/accum_N_bits.v ;         ;
++----------------------------------+-----------------+------------------------+---------------------------------------+---------+
 
 
 +---------------------------------------------------------+
@@ -315,19 +315,19 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Tue May 03 02:18:34 2022
+    Info: Processing started: Tue Apr 29 19:25:24 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off accum_N_bits -c accum_N_bits
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
 Info (12021): Found 4 design units, including 4 entities, in source file accum_n_bits.v
-    Info (12023): Found entity 1: accum_N_bits File: D:/Storage/temp/semestr_6/sw/8/projekty/accum_N_bits/accum_N_bits.v Line: 1
-    Info (12023): Found entity 2: ripple_carry_adder File: D:/Storage/temp/semestr_6/sw/8/projekty/accum_N_bits/accum_N_bits.v Line: 27
-    Info (12023): Found entity 3: full_adder File: D:/Storage/temp/semestr_6/sw/8/projekty/accum_N_bits/accum_N_bits.v Line: 49
-    Info (12023): Found entity 4: register_N_bits File: D:/Storage/temp/semestr_6/sw/8/projekty/accum_N_bits/accum_N_bits.v Line: 58
+    Info (12023): Found entity 1: accum_N_bits File: E:/PB/SEM_6/SW/Lab_8/1/accum_N_bits.v Line: 1
+    Info (12023): Found entity 2: ripple_carry_adder File: E:/PB/SEM_6/SW/Lab_8/1/accum_N_bits.v Line: 27
+    Info (12023): Found entity 3: full_adder File: E:/PB/SEM_6/SW/Lab_8/1/accum_N_bits.v Line: 49
+    Info (12023): Found entity 4: register_N_bits File: E:/PB/SEM_6/SW/Lab_8/1/accum_N_bits.v Line: 58
 Info (12127): Elaborating entity "accum_N_bits" for the top level hierarchy
-Info (12128): Elaborating entity "ripple_carry_adder" for hierarchy "ripple_carry_adder:ad" File: D:/Storage/temp/semestr_6/sw/8/projekty/accum_N_bits/accum_N_bits.v Line: 11
-Info (12128): Elaborating entity "full_adder" for hierarchy "ripple_carry_adder:ad|full_adder:ad[0].fa" File: D:/Storage/temp/semestr_6/sw/8/projekty/accum_N_bits/accum_N_bits.v Line: 40
-Info (12128): Elaborating entity "register_N_bits" for hierarchy "register_N_bits:r" File: D:/Storage/temp/semestr_6/sw/8/projekty/accum_N_bits/accum_N_bits.v Line: 12
+Info (12128): Elaborating entity "ripple_carry_adder" for hierarchy "ripple_carry_adder:ad" File: E:/PB/SEM_6/SW/Lab_8/1/accum_N_bits.v Line: 11
+Info (12128): Elaborating entity "full_adder" for hierarchy "ripple_carry_adder:ad|full_adder:ad[0].fa" File: E:/PB/SEM_6/SW/Lab_8/1/accum_N_bits.v Line: 40
+Info (12128): Elaborating entity "register_N_bits" for hierarchy "register_N_bits:r" File: E:/PB/SEM_6/SW/Lab_8/1/accum_N_bits.v Line: 12
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
@@ -336,9 +336,9 @@ Info (21057): Implemented 34 device resources after synthesis - the final resour
     Info (21059): Implemented 10 output pins
     Info (21061): Implemented 14 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4823 megabytes
-    Info: Processing ended: Tue May 03 02:18:52 2022
-    Info: Elapsed time: 00:00:18
-    Info: Total CPU time (on all processors): 00:00:42
+    Info: Peak virtual memory: 4859 megabytes
+    Info: Processing ended: Tue Apr 29 19:25:30 2025
+    Info: Elapsed time: 00:00:06
+    Info: Total CPU time (on all processors): 00:00:13
 
 

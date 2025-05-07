@@ -1,8 +1,8 @@
 /*<simulation_settings>
-<ftestbench_cmd>quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off accum_N_bits_add_sub -c accum_N_bits_add_sub --vector_source="D:/Storage/temp/semestr_6/sw/8/projekty/accum_N_bits_add_sub/Waveform.vwf" --testbench_file="D:/Storage/temp/semestr_6/sw/8/projekty/accum_N_bits_add_sub/simulation/qsim/Waveform.vwf.vt"</ftestbench_cmd>
-<ttestbench_cmd>quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off accum_N_bits_add_sub -c accum_N_bits_add_sub --vector_source="D:/Storage/temp/semestr_6/sw/8/accum_N_bits_add_sub/Waveform.vwf" --testbench_file="D:/Storage/temp/semestr_6/sw/8/accum_N_bits_add_sub/simulation/qsim/Waveform.vwf.vt"</ttestbench_cmd>
-<fnetlist_cmd>quartus_eda --write_settings_files=off --simulation --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory="D:/Storage/temp/semestr_6/sw/8/projekty/accum_N_bits_add_sub/simulation/qsim/" accum_N_bits_add_sub -c accum_N_bits_add_sub</fnetlist_cmd>
-<tnetlist_cmd>quartus_eda --write_settings_files=off --simulation --functional=off --flatten_buses=off --timescale=1ps --tool=modelsim_oem --format=verilog --output_directory="D:/Storage/temp/semestr_6/sw/8/accum_N_bits_add_sub/simulation/qsim/" accum_N_bits_add_sub -c accum_N_bits_add_sub</tnetlist_cmd>
+<ftestbench_cmd>quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off accum_N_bits_add_sub -c accum_N_bits_add_sub --vector_source="E:/PB/SEM_6/SW/Lab_8/2/Waveform.vwf" --testbench_file="E:/PB/SEM_6/SW/Lab_8/2/simulation/qsim/Waveform.vwf.vt"</ftestbench_cmd>
+<ttestbench_cmd>quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off accum_N_bits_add_sub -c accum_N_bits_add_sub --vector_source="E:/PB/SEM_6/SW/Lab_8/2/Waveform.vwf" --testbench_file="E:/PB/SEM_6/SW/Lab_8/2/simulation/qsim/Waveform.vwf.vt"</ttestbench_cmd>
+<fnetlist_cmd>quartus_eda --write_settings_files=off --simulation --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory="E:/PB/SEM_6/SW/Lab_8/2/simulation/qsim/" accum_N_bits_add_sub -c accum_N_bits_add_sub</fnetlist_cmd>
+<tnetlist_cmd>quartus_eda --write_settings_files=off --simulation --functional=off --flatten_buses=off --timescale=1ps --tool=modelsim_oem --format=verilog --output_directory="E:/PB/SEM_6/SW/Lab_8/2/simulation/qsim/" accum_N_bits_add_sub -c accum_N_bits_add_sub</tnetlist_cmd>
 <modelsim_script>onerror {exit -code 1}
 vlib work
 vlog -work work accum_N_bits_add_sub.vo
@@ -20,12 +20,6 @@ proc simTimestamp {} {
 after 2500 simTimestamp
 run -all
 quit -f
-
-
-
-
-
-
 </modelsim_script>
 <modelsim_script_timing>onerror {exit -code 1}
 vlib work
@@ -44,12 +38,6 @@ proc simTimestamp {} {
 after 2500 simTimestamp
 run -all
 quit -f
-
-
-
-
-
-
 </modelsim_script_timing>
 <hdl_lang>verilog</hdl_lang>
 </simulation_settings>*/

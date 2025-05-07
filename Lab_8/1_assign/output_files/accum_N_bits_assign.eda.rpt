@@ -1,5 +1,5 @@
 EDA Netlist Writer report for accum_N_bits_assign
-Tue May 03 03:01:44 2022
+Tue Apr 29 18:23:56 2025
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -36,7 +36,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Tue May 03 03:01:44 2022 ;
+; EDA Netlist Writer Status ; Successful - Tue Apr 29 18:23:56 2025 ;
 ; Revision Name             ; accum_N_bits_assign                   ;
 ; Top-level Entity Name     ; accum_N_bits_assign                   ;
 ; Family                    ; Cyclone V                             ;
@@ -50,8 +50,7 @@ refer to the applicable agreement for further details.
 ; Option                                                                                            ; Setting                   ;
 +---------------------------------------------------------------------------------------------------+---------------------------+
 ; Tool Name                                                                                         ; ModelSim-Altera (Verilog) ;
-; Generate functional simulation netlist                                                            ; Off                       ;
-; Time scale                                                                                        ; 1 ps                      ;
+; Generate functional simulation netlist                                                            ; On                        ;
 ; Truncate long hierarchy paths                                                                     ; Off                       ;
 ; Map illegal HDL characters                                                                        ; Off                       ;
 ; Flatten buses into individual nodes                                                               ; Off                       ;
@@ -66,13 +65,13 @@ refer to the applicable agreement for further details.
 +---------------------------------------------------------------------------------------------------+---------------------------+
 
 
-+-----------------------------------------------------------------------------------------------------+
-; Simulation Generated Files                                                                          ;
-+-----------------------------------------------------------------------------------------------------+
-; Generated Files                                                                                     ;
-+-----------------------------------------------------------------------------------------------------+
-; D:/Storage/temp/semestr_6/sw/8/projekty/accum_N_bits_assign/simulation/qsim//accum_N_bits_assign.vo ;
-+-----------------------------------------------------------------------------------------------------+
++-----------------------------------------------------------------------+
+; Simulation Generated Files                                            ;
++-----------------------------------------------------------------------+
+; Generated Files                                                       ;
++-----------------------------------------------------------------------+
+; E:/PB/SEM_6/SW/Lab_8/1_assign/simulation/qsim//accum_N_bits_assign.vo ;
++-----------------------------------------------------------------------+
 
 
 +-----------------------------+
@@ -94,15 +93,14 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: the sole purpose of programming logic devices manufactured by
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details.
-    Info: Processing started: Tue May 03 03:01:42 2022
-Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=off --flatten_buses=off --timescale=1ps --tool=modelsim_oem --format=verilog --output_directory=D:/Storage/temp/semestr_6/sw/8/projekty/accum_N_bits_assign/simulation/qsim/ accum_N_bits_assign -c accum_N_bits_assign
+    Info: Processing started: Tue Apr 29 18:23:55 2025
+Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=E:/PB/SEM_6/SW/Lab_8/1_assign/simulation/qsim/ accum_N_bits_assign -c accum_N_bits_assign
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Warning (10905): Generated the EDA functional simulation netlist because it is the only supported netlist type for this device.
-Info (204019): Generated file accum_N_bits_assign.vo in folder "D:/Storage/temp/semestr_6/sw/8/projekty/accum_N_bits_assign/simulation/qsim//" for EDA simulation tool
-Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 2 warnings
-    Info: Peak virtual memory: 4729 megabytes
-    Info: Processing ended: Tue May 03 03:01:44 2022
-    Info: Elapsed time: 00:00:02
-    Info: Total CPU time (on all processors): 00:00:02
+Info (204019): Generated file accum_N_bits_assign.vo in folder "E:/PB/SEM_6/SW/Lab_8/1_assign/simulation/qsim//" for EDA simulation tool
+Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 4720 megabytes
+    Info: Processing ended: Tue Apr 29 18:23:56 2025
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
 
 

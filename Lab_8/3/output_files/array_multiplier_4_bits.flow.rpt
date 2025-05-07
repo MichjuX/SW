@@ -1,5 +1,5 @@
 Flow report for array_multiplier_4_bits
-Wed Apr 23 22:25:08 2025
+Tue Apr 29 19:29:51 2025
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -40,7 +40,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Flow Summary                                                                  ;
 +---------------------------------+---------------------------------------------+
-; Flow Status                     ; Successful - Wed Apr 23 22:25:04 2025       ;
+; Flow Status                     ; Successful - Tue Apr 29 19:29:51 2025       ;
 ; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                   ; array_multiplier_4_bits                     ;
 ; Top-level Entity Name           ; array_multiplier_4_bits                     ;
@@ -95,7 +95,11 @@ refer to the applicable agreement for further details.
 ; Fitter               ; 00:00:33     ; 1.0                     ; 7795 MB             ; 00:02:47                           ;
 ; Assembler            ; 00:00:05     ; 1.0                     ; 4831 MB             ; 00:00:04                           ;
 ; Timing Analyzer      ; 00:00:04     ; 1.1                     ; 5283 MB             ; 00:00:03                           ;
-; Total                ; 00:00:48     ; --                      ; --                  ; 00:03:07                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4710 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4719 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4710 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4719 MB             ; 00:00:01                           ;
+; Total                ; 00:00:52     ; --                      ; --                  ; 00:03:11                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -108,6 +112,10 @@ refer to the applicable agreement for further details.
 ; Fitter               ; DESKTOP-BEQUIET  ; Windows 10 ; 10.0       ; x86_64         ;
 ; Assembler            ; DESKTOP-BEQUIET  ; Windows 10 ; 10.0       ; x86_64         ;
 ; Timing Analyzer      ; DESKTOP-BEQUIET  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; DESKTOP-BEQUIET  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; DESKTOP-BEQUIET  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; DESKTOP-BEQUIET  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; DESKTOP-BEQUIET  ; Windows 10 ; 10.0       ; x86_64         ;
 +----------------------+------------------+------------+------------+----------------+
 
 
@@ -118,6 +126,10 @@ quartus_map --read_settings_files=on --write_settings_files=off array_multiplier
 quartus_fit --read_settings_files=off --write_settings_files=off array_multiplier_4_bits -c array_multiplier_4_bits
 quartus_asm --read_settings_files=off --write_settings_files=off array_multiplier_4_bits -c array_multiplier_4_bits
 quartus_sta array_multiplier_4_bits -c array_multiplier_4_bits
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off array_multiplier_4_bits -c array_multiplier_4_bits --vector_source=E:/PB/SEM_6/SW/Lab_8/3/Waveform.vwf --testbench_file=E:/PB/SEM_6/SW/Lab_8/3/simulation/qsim/Waveform.vwf.vt
+quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=E:/PB/SEM_6/SW/Lab_8/3/simulation/qsim/ array_multiplier_4_bits -c array_multiplier_4_bits
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off array_multiplier_4_bits -c array_multiplier_4_bits --vector_source=E:/PB/SEM_6/SW/Lab_8/3/Waveform.vwf --testbench_file=E:/PB/SEM_6/SW/Lab_8/3/simulation/qsim/Waveform.vwf.vt
+quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=E:/PB/SEM_6/SW/Lab_8/3/simulation/qsim/ array_multiplier_4_bits -c array_multiplier_4_bits
 
 
 

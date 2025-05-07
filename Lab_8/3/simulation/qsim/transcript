@@ -1,25 +1,25 @@
 # do array_multiplier_4_bits.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:32:52 on May 03,2022
+# Start time: 19:29:51 on Apr 29,2025
 # vlog -work work array_multiplier_4_bits.vo 
 # -- Compiling module array_multiplier_4_bits
 # 
 # Top level modules:
 # 	array_multiplier_4_bits
-# End time: 03:32:52 on May 03,2022, Elapsed time: 0:00:00
+# End time: 19:29:51 on Apr 29,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:32:52 on May 03,2022
+# Start time: 19:29:51 on Apr 29,2025
 # vlog -work work Waveform.vwf.vt 
 # -- Compiling module array_multiplier_4_bits_vlg_vec_tst
 # 
 # Top level modules:
 # 	array_multiplier_4_bits_vlg_vec_tst
-# End time: 03:32:52 on May 03,2022, Elapsed time: 0:00:00
+# End time: 19:29:51 on Apr 29,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vsim -novopt -c -t 1ps -L cyclonev_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.array_multiplier_4_bits_vlg_vec_tst 
-# Start time: 03:32:52 on May 03,2022
+# Start time: 19:29:51 on Apr 29,2025
 # Loading work.array_multiplier_4_bits_vlg_vec_tst
 # Loading work.array_multiplier_4_bits
 # Loading cyclonev_ver.cyclonev_io_obuf
@@ -30,5 +30,5 @@
 #    Time: 80 ns  Iteration: 0  Instance: /array_multiplier_4_bits_vlg_vec_tst
 # Break in Module array_multiplier_4_bits_vlg_vec_tst at Waveform.vwf.vt line 46
 # Stopped at Waveform.vwf.vt line 46
-# End time: 03:32:53 on May 03,2022, Elapsed time: 0:00:01
+# End time: 19:29:51 on Apr 29,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0

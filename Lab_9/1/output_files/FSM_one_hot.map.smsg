@@ -1,0 +1,1 @@
+Warning (10268): Verilog HDL information at FSM_one_hot.v(20): always construct contains both blocking and non-blocking assignments File: D:/Storage/temp/semestr_6/sw/9/projekty/FSM_one_hot/FSM_one_hot.v Line: 20

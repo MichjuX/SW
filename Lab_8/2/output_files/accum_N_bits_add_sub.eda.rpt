@@ -1,5 +1,5 @@
 EDA Netlist Writer report for accum_N_bits_add_sub
-Tue May 03 04:40:41 2022
+Tue Apr 29 19:28:14 2025
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -36,7 +36,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Tue May 03 04:40:41 2022 ;
+; EDA Netlist Writer Status ; Successful - Tue Apr 29 19:28:14 2025 ;
 ; Revision Name             ; accum_N_bits_add_sub                  ;
 ; Top-level Entity Name     ; accum_N_bits_add_sub                  ;
 ; Family                    ; Cyclone V                             ;
@@ -65,13 +65,13 @@ refer to the applicable agreement for further details.
 +---------------------------------------------------------------------------------------------------+---------------------------+
 
 
-+-------------------------------------------------------------------------------------------------------+
-; Simulation Generated Files                                                                            ;
-+-------------------------------------------------------------------------------------------------------+
-; Generated Files                                                                                       ;
-+-------------------------------------------------------------------------------------------------------+
-; D:/Storage/temp/semestr_6/sw/8/projekty/accum_N_bits_add_sub/simulation/qsim//accum_N_bits_add_sub.vo ;
-+-------------------------------------------------------------------------------------------------------+
++-----------------------------------------------------------------+
+; Simulation Generated Files                                      ;
++-----------------------------------------------------------------+
+; Generated Files                                                 ;
++-----------------------------------------------------------------+
+; E:/PB/SEM_6/SW/Lab_8/2/simulation/qsim//accum_N_bits_add_sub.vo ;
++-----------------------------------------------------------------+
 
 
 +-----------------------------+
@@ -93,14 +93,13 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: the sole purpose of programming logic devices manufactured by
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details.
-    Info: Processing started: Tue May 03 04:40:40 2022
-Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=D:/Storage/temp/semestr_6/sw/8/projekty/accum_N_bits_add_sub/simulation/qsim/ accum_N_bits_add_sub -c accum_N_bits_add_sub
-Info (119006): Selected device 5CSEMA5F31C6 for design "accum_N_bits_add_sub"
+    Info: Processing started: Tue Apr 29 19:28:13 2025
+Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=E:/PB/SEM_6/SW/Lab_8/2/simulation/qsim/ accum_N_bits_add_sub -c accum_N_bits_add_sub
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (204019): Generated file accum_N_bits_add_sub.vo in folder "D:/Storage/temp/semestr_6/sw/8/projekty/accum_N_bits_add_sub/simulation/qsim//" for EDA simulation tool
+Info (204019): Generated file accum_N_bits_add_sub.vo in folder "E:/PB/SEM_6/SW/Lab_8/2/simulation/qsim//" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4712 megabytes
-    Info: Processing ended: Tue May 03 04:40:41 2022
+    Info: Peak virtual memory: 4720 megabytes
+    Info: Processing ended: Tue Apr 29 19:28:14 2025
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 

@@ -1,7 +1,10 @@
 vendor_name = ModelSim
-source_file = 1, D:/Storage/temp/semestr_6/sw/8/projekty/accum_N_bits_assign/accum_N_bits_assign.v
-source_file = 1, D:/Storage/temp/semestr_6/sw/8/projekty/accum_N_bits_assign/Waveform.vwf
-source_file = 1, D:/Storage/temp/semestr_6/sw/8/projekty/accum_N_bits_assign/db/accum_N_bits_assign.cbx.xml
+source_file = 1, E:/PB/SEM_6/SW/Lab_8/1_assign/accum_N_bits_assign.v
+source_file = 1, E:/PB/SEM_6/SW/Lab_8/1_assign/Waveform.vwf
+source_file = 1, E:/PB/SEM_6/SW/Lab_8/1_assign/register_N_bits.v
+source_file = 1, E:/PB/SEM_6/SW/Lab_8/1_assign/decoder_hex_10.v
+source_file = 1, E:/PB/SEM_6/SW/Lab_8/1_assign/accum_N_bits_assign_on_board.v
+source_file = 1, E:/PB/SEM_6/SW/Lab_8/1_assign/db/accum_N_bits_assign.cbx.xml
 design_name = accum_N_bits_assign
 instance = comp, \S[0]~output , S[0]~output, accum_N_bits_assign, 1
 instance = comp, \S[1]~output , S[1]~output, accum_N_bits_assign, 1

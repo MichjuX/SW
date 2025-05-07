@@ -1,0 +1,33 @@
+|FSM_one_hot
+w => next.DATAB
+w => next.DATAB
+w => next.DATAB
+w => next.DATAB
+w => next.DATAB
+w => next.DATAB
+w => next.DATAB
+w => next.DATAB
+w => next.I.DATAB
+w => next.DATAB
+w => next.DATAB
+w => next.DATAB
+w => next.DATAB
+w => next.B.DATAB
+w => next.DATAB
+w => next.DATAB
+w => next.DATAB
+w => next.DATAB
+clk => state~1.DATAIN
+aclr => state~3.DATAIN
+z <= z.DB_MAX_OUTPUT_PORT_TYPE
+y[0] <= y[0].DB_MAX_OUTPUT_PORT_TYPE
+y[1] <= y[1].DB_MAX_OUTPUT_PORT_TYPE
+y[2] <= y[2].DB_MAX_OUTPUT_PORT_TYPE
+y[3] <= y[3].DB_MAX_OUTPUT_PORT_TYPE
+y[4] <= y[4].DB_MAX_OUTPUT_PORT_TYPE
+y[5] <= y[5].DB_MAX_OUTPUT_PORT_TYPE
+y[6] <= y[6].DB_MAX_OUTPUT_PORT_TYPE
+y[7] <= y[7].DB_MAX_OUTPUT_PORT_TYPE
+y[8] <= y[8].DB_MAX_OUTPUT_PORT_TYPE
+
+

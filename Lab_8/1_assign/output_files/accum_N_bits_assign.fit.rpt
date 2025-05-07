@@ -1,5 +1,5 @@
 Fitter report for accum_N_bits_assign
-Wed Apr 23 22:11:55 2025
+Tue Apr 29 18:04:48 2025
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -63,7 +63,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Fitter Summary                                                                ;
 +---------------------------------+---------------------------------------------+
-; Fitter Status                   ; Successful - Wed Apr 23 22:11:55 2025       ;
+; Fitter Status                   ; Successful - Tue Apr 29 18:04:48 2025       ;
 ; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                   ; accum_N_bits_assign                         ;
 ; Top-level Entity Name           ; accum_N_bits_assign                         ;
@@ -2294,19 +2294,19 @@ Info (170195): Router estimated average interconnect usage is 0% of the availabl
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:00
-Info (11888): Total time spent on timing analysis during the Fitter is 0.24 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.25 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
-Info (11801): Fitter post-fit operations ending: elapsed time is 00:00:02
+Info (11801): Fitter post-fit operations ending: elapsed time is 00:00:01
 Warning (171167): Found invalid Fitter assignments. See the Ignored Assignments panel in the Fitter Compilation Report for more information.
 Info (144001): Generated suppressed messages file E:/PB/SEM_6/SW/Lab_8/1_assign/output_files/accum_N_bits_assign.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 265 warnings
-    Info: Peak virtual memory: 7875 megabytes
-    Info: Processing ended: Wed Apr 23 22:11:55 2025
-    Info: Elapsed time: 00:00:28
-    Info: Total CPU time (on all processors): 00:02:11
+    Info: Peak virtual memory: 7895 megabytes
+    Info: Processing ended: Tue Apr 29 18:04:48 2025
+    Info: Elapsed time: 00:00:32
+    Info: Total CPU time (on all processors): 00:02:10
 
 
 +----------------------------+

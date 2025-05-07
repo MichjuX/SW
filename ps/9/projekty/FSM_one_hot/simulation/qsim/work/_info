@@ -7,48 +7,48 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 dD:/Storage/temp/semestr_6/sw/9/projekty/FSM_one_hot/simulation/qsim
+dD:/Storage/temp/semestr_6/sw/9/projekty/FSM_one_hot/simulation/qsim
 vFSM_one_hot
-Z1 !s110 1653232016
+Z0 !s110 1746480279
 !i10b 1
 !s100 Uh<9o`Z]94`>a:CJN;R@82
 IFA4<hG9N=UheCn2_5eY110
-Z2 VDg1SIo80bB@j0V0VzS_@n1
-R0
-w1653232014
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dE:/PB/SEM_6/SW/ps/9/projekty/FSM_one_hot/simulation/qsim
+Z3 w1746480278
 8FSM_one_hot.vo
 FFSM_one_hot.vo
 L0 31
-Z3 OV;L;10.5b;63
+Z4 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z4 !s108 1653232016.000000
+Z5 !s108 1746480279.000000
 !s107 FSM_one_hot.vo|
 !s90 -work|work|FSM_one_hot.vo|
 !i113 1
-Z5 o-work work
-Z6 tCvgOpt 0
+Z6 o-work work
+Z7 tCvgOpt 0
 n@f@s@m_one_hot
 vFSM_one_hot_vlg_vec_tst
-R1
+R0
 !i10b 1
 !s100 7Q:aIZkOoaHURl]f8?Goc0
 IT;S3<NH6[7zS<KWce`[<o3
+R1
 R2
-R0
-w1653232013
+R3
 8Waveform.vwf.vt
 FWaveform.vwf.vt
 L0 29
-R3
+R4
 r1
 !s85 0
 31
-R4
+R5
 !s107 Waveform.vwf.vt|
 !s90 -work|work|Waveform.vwf.vt|
 !i113 1
-R5
 R6
+R7
 n@f@s@m_one_hot_vlg_vec_tst
