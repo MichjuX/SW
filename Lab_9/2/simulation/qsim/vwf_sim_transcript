@@ -25,7 +25,7 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: the sole purpose of programming logic devices manufactured by
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details.
-    Info: Processing started: Mon May 05 23:29:19 2025
+    Info: Processing started: Wed May 07 22:06:47 2025
 Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off FSM_user_coding -c FSM_user_coding --vector_source=E:/PB/SEM_6/SW/ps/9/projekty/FSM_user_coding/Waveform.vwf --testbench_file=E:/PB/SEM_6/SW/ps/9/projekty/FSM_user_coding/simulation/qsim/Waveform.vwf.vt
 Info (119006): Selected device 5CSEMA5F31C6 for design "FSM_user_coding"
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
@@ -54,22 +54,22 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: the sole purpose of programming logic devices manufactured by
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details.
-    Info: Processing started: Mon May 05 23:29:20 2025
+    Info: Processing started: Wed May 07 22:06:47 2025
 Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=E:/PB/SEM_6/SW/ps/9/projekty/FSM_user_coding/simulation/qsim/ FSM_user_coding -c FSM_user_coding
 Info (119006): Selected device 5CSEMA5F31C6 for design "FSM_user_coding"
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (204019): Generated file FSM_user_coding.vo in folder "E:/PB/SEM_6/SW/ps/9/projekty/FSM_user_coding/simulation/qsim//" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4717 megabytes
-    Info: Processing ended: Mon May 05 23:29:20 2025
-    Info: Elapsed time: 00:00:00
+    Info: Peak virtual memory: 4721 megabytes
+    Info: Processing ended: Wed May 07 22:06:48 2025
+    Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
 Completed successfully. 
 
 **** Generating the ModelSim .do script ****
 
-E:/PB/SEM_6/SW/ps/9/projekty/FSM_user_coding/simulation/qsim/FSM_user_coding.do generated.
+E:/PB/SEM_6/SW/Lab_9/2/simulation/qsim/FSM_user_coding.do generated.
 
 Completed successfully. 
 
@@ -81,31 +81,31 @@ Reading C:/intelFPGA_lite/18.1/modelsim_ase/tcl/vsim/pref.tcl
 
 # 10.5b
 
-
 # do FSM_user_coding.do
+
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:29:21 on May 05,2025
+# Start time: 22:06:48 on May 07,2025
 # vlog -work work FSM_user_coding.vo 
 # -- Compiling module FSM_user_coding
 # 
 # Top level modules:
 # 	FSM_user_coding
-# End time: 23:29:21 on May 05,2025, Elapsed time: 0:00:00
+# End time: 22:06:48 on May 07,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:29:21 on May 05,2025
+# Start time: 22:06:48 on May 07,2025
 # vlog -work work Waveform.vwf.vt 
 # -- Compiling module FSM_user_coding_vlg_vec_tst
 # 
 # Top level modules:
 # 	FSM_user_coding_vlg_vec_tst
-# End time: 23:29:21 on May 05,2025, Elapsed time: 0:00:00
+# End time: 22:06:48 on May 07,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 
 # vsim -novopt -c -t 1ps -L cyclonev_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.FSM_user_coding_vlg_vec_tst 
-# Start time: 23:29:21 on May 05,2025
+# Start time: 22:06:48 on May 07,2025
 # Loading work.FSM_user_coding_vlg_vec_tst
 # Loading work.FSM_user_coding
 # Loading cyclonev_ver.cyclonev_io_obuf
@@ -116,20 +116,20 @@ Reading C:/intelFPGA_lite/18.1/modelsim_ase/tcl/vsim/pref.tcl
 # after#25
 # ** Note: $finish    : Waveform.vwf.vt(50)
 #    Time: 90 ns  Iteration: 0  Instance: /FSM_user_coding_vlg_vec_tst
-# End time: 23:29:21 on May 05,2025, Elapsed time: 0:00:00
+# End time: 22:06:49 on May 07,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 
 Completed successfully. 
 
 **** Converting ModelSim VCD to vector waveform ****
 
-Reading E:/PB/SEM_6/SW/ps/9/projekty/FSM_user_coding/Waveform.vwf...
+Reading E:/PB/SEM_6/SW/Lab_9/2/Waveform.vwf...
 
-Reading E:/PB/SEM_6/SW/ps/9/projekty/FSM_user_coding/simulation/qsim/FSM_user_coding.msim.vcd...
+Reading E:/PB/SEM_6/SW/Lab_9/2/simulation/qsim/FSM_user_coding.msim.vcd...
 
 Processing channel transitions... 
 
-Writing the resulting VWF to E:/PB/SEM_6/SW/ps/9/projekty/FSM_user_coding/simulation/qsim/FSM_user_coding_20250505232921.sim.vwf
+Writing the resulting VWF to E:/PB/SEM_6/SW/Lab_9/2/simulation/qsim/FSM_user_coding_20250507220649.sim.vwf
 
 Finished VCD to VWF conversion.
 

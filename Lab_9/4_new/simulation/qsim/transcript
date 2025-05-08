@@ -1,25 +1,25 @@
 # do detector_with_shift_reg.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 18:07:10 on May 07,2025
+# Start time: 22:20:09 on May 07,2025
 # vlog -work work detector_with_shift_reg.vo 
 # -- Compiling module detector_with_shift_reg
 # 
 # Top level modules:
 # 	detector_with_shift_reg
-# End time: 18:07:10 on May 07,2025, Elapsed time: 0:00:00
+# End time: 22:20:09 on May 07,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 18:07:10 on May 07,2025
+# Start time: 22:20:09 on May 07,2025
 # vlog -work work Waveform.vwf.vt 
 # -- Compiling module detector_with_shift_reg_vlg_vec_tst
 # 
 # Top level modules:
 # 	detector_with_shift_reg_vlg_vec_tst
-# End time: 18:07:10 on May 07,2025, Elapsed time: 0:00:00
+# End time: 22:20:09 on May 07,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vsim -novopt -c -t 1ps -L cyclonev_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.detector_with_shift_reg_vlg_vec_tst 
-# Start time: 18:07:10 on May 07,2025
+# Start time: 22:20:09 on May 07,2025
 # Loading work.detector_with_shift_reg_vlg_vec_tst
 # Loading work.detector_with_shift_reg
 # Loading cyclonev_ver.cyclonev_io_obuf
@@ -31,5 +31,5 @@
 # after#25
 # ** Note: $finish    : Waveform.vwf.vt(48)
 #    Time: 80 ns  Iteration: 0  Instance: /detector_with_shift_reg_vlg_vec_tst
-# End time: 18:07:10 on May 07,2025, Elapsed time: 0:00:00
+# End time: 22:20:09 on May 07,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0

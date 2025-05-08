@@ -1,5 +1,5 @@
 Flow report for FSM_user_coding
-Mon May 05 23:29:20 2025
+Wed May 07 22:06:48 2025
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -40,7 +40,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Flow Summary                                                                  ;
 +---------------------------------+---------------------------------------------+
-; Flow Status                     ; Successful - Mon May 05 23:29:20 2025       ;
+; Flow Status                     ; Successful - Wed May 07 22:06:48 2025       ;
 ; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                   ; FSM_user_coding                             ;
 ; Top-level Entity Name           ; FSM_user_coding                             ;
@@ -103,7 +103,9 @@ refer to the applicable agreement for further details.
 ; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4711 MB             ; 00:00:01                           ;
 ; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4713 MB             ; 00:00:00                           ;
 ; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 4717 MB             ; 00:00:01                           ;
-; Total                ; 00:00:24     ; --                      ; --                  ; 00:00:46                           ;
+; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 4713 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4721 MB             ; 00:00:01                           ;
+; Total                ; 00:00:25     ; --                      ; --                  ; 00:00:48                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -119,6 +121,8 @@ refer to the applicable agreement for further details.
 ; EDA Netlist Writer   ; DESKTOP-FN18KBP  ; Windows 10 ; 10.0       ; x86_64         ;
 ; EDA Netlist Writer   ; DESKTOP-BEQUIET  ; Windows 10 ; 10.0       ; x86_64         ;
 ; EDA Netlist Writer   ; DESKTOP-BEQUIET  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; DESKTOP-BEQUIET  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; DESKTOP-BEQUIET  ; Windows 10 ; 10.0       ; x86_64         ;
 +----------------------+------------------+------------+------------+----------------+
 
 
@@ -130,6 +134,8 @@ quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_setting
 quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=D:/Storage/temp/semestr_6/sw/9/projekty/FSM_user_coding/simulation/qsim/ FSM_user_coding -c FSM_user_coding
 quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off FSM_user_coding -c FSM_user_coding --vector_source=D:/Storage/temp/semestr_6/sw/9/projekty/FSM_user_coding/Waveform.vwf --testbench_file=D:/Storage/temp/semestr_6/sw/9/projekty/FSM_user_coding/simulation/qsim/Waveform.vwf.vt
 quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=D:/Storage/temp/semestr_6/sw/9/projekty/FSM_user_coding/simulation/qsim/ FSM_user_coding -c FSM_user_coding
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off FSM_user_coding -c FSM_user_coding --vector_source=E:/PB/SEM_6/SW/ps/9/projekty/FSM_user_coding/Waveform.vwf --testbench_file=E:/PB/SEM_6/SW/ps/9/projekty/FSM_user_coding/simulation/qsim/Waveform.vwf.vt
+quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=E:/PB/SEM_6/SW/ps/9/projekty/FSM_user_coding/simulation/qsim/ FSM_user_coding -c FSM_user_coding
 quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off FSM_user_coding -c FSM_user_coding --vector_source=E:/PB/SEM_6/SW/ps/9/projekty/FSM_user_coding/Waveform.vwf --testbench_file=E:/PB/SEM_6/SW/ps/9/projekty/FSM_user_coding/simulation/qsim/Waveform.vwf.vt
 quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=E:/PB/SEM_6/SW/ps/9/projekty/FSM_user_coding/simulation/qsim/ FSM_user_coding -c FSM_user_coding
 

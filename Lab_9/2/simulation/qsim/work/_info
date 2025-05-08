@@ -9,26 +9,26 @@ z2
 cModel Technology
 dD:/Storage/temp/semestr_6/sw/9/projekty/FSM_user_coding/simulation/qsim
 vFSM_user_coding
-Z0 !s110 1746480561
+Z0 !s110 1746648408
 !i10b 1
 !s100 ndLz`GmbdTEGC@MgX2C9<0
 Iheb5Il`gMREfK36:SMBCT0
 Z1 VDg1SIo80bB@j0V0VzS_@n1
-Z2 dE:/PB/SEM_6/SW/ps/9/projekty/FSM_user_coding/simulation/qsim
-Z3 w1746480560
+Z2 dE:/PB/SEM_6/SW/Lab_9/2/simulation/qsim
+w1746480560
 8FSM_user_coding.vo
 FFSM_user_coding.vo
 L0 31
-Z4 OV;L;10.5b;63
+Z3 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z5 !s108 1746480561.000000
+Z4 !s108 1746648408.000000
 !s107 FSM_user_coding.vo|
 !s90 -work|work|FSM_user_coding.vo|
 !i113 1
-Z6 o-work work
-Z7 tCvgOpt 0
+Z5 o-work work
+Z6 tCvgOpt 0
 n@f@s@m_user_coding
 vFSM_user_coding_vlg_vec_tst
 R0
@@ -37,18 +37,18 @@ R0
 IWFmYOIiXXJ>CO[6hZT^<l3
 R1
 R2
-R3
+w1746648407
 8Waveform.vwf.vt
 FWaveform.vwf.vt
 L0 29
-R4
+R3
 r1
 !s85 0
 31
-R5
+R4
 !s107 Waveform.vwf.vt|
 !s90 -work|work|Waveform.vwf.vt|
 !i113 1
+R5
 R6
-R7
 n@f@s@m_user_coding_vlg_vec_tst

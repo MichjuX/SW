@@ -3,7 +3,7 @@ $comment
 		vcd file FSM_one_hot.msim.vcd -direction
 $end
 $date
-	Wed May 07 17:16:33 2025
+	Wed May 07 21:59:19 2025
 $end
 $version
 	ModelSim Version 10.5b

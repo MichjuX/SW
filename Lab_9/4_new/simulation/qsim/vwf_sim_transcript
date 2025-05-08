@@ -25,7 +25,7 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: the sole purpose of programming logic devices manufactured by
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details.
-    Info: Processing started: Wed May 07 18:07:08 2025
+    Info: Processing started: Wed May 07 22:20:07 2025
 Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off detector_with_shift_reg -c detector_with_shift_reg --vector_source=E:/PB/SEM_6/SW/Lab_9/4_new/Waveform.vwf --testbench_file=E:/PB/SEM_6/SW/Lab_9/4_new/simulation/qsim/Waveform.vwf.vt
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 
@@ -53,14 +53,14 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: the sole purpose of programming logic devices manufactured by
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details.
-    Info: Processing started: Wed May 07 18:07:09 2025
+    Info: Processing started: Wed May 07 22:20:08 2025
 Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=E:/PB/SEM_6/SW/Lab_9/4_new/simulation/qsim/ detector_with_shift_reg -c detector_with_shift_reg
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (204019): Generated file detector_with_shift_reg.vo in folder "E:/PB/SEM_6/SW/Lab_9/4_new/simulation/qsim//" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
     Info: Peak virtual memory: 4720 megabytes
-    Info: Processing ended: Wed May 07 18:07:09 2025
-    Info: Elapsed time: 00:00:00
+    Info: Processing ended: Wed May 07 22:20:09 2025
+    Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
 Completed successfully. 
@@ -80,29 +80,30 @@ Reading C:/intelFPGA_lite/18.1/modelsim_ase/tcl/vsim/pref.tcl
 # 10.5b
 
 # do detector_with_shift_reg.do
-# ** Warning: (vlib-34) Library already exists at "work".
 
+# ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 18:07:10 on May 07,2025
+# Start time: 22:20:09 on May 07,2025
 # vlog -work work detector_with_shift_reg.vo 
 # -- Compiling module detector_with_shift_reg
 # 
 # Top level modules:
 # 	detector_with_shift_reg
-# End time: 18:07:10 on May 07,2025, Elapsed time: 0:00:00
+# End time: 22:20:09 on May 07,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 18:07:10 on May 07,2025
+# Start time: 22:20:09 on May 07,2025
 # vlog -work work Waveform.vwf.vt 
+
 # -- Compiling module detector_with_shift_reg_vlg_vec_tst
 # 
 # Top level modules:
 # 	detector_with_shift_reg_vlg_vec_tst
-# End time: 18:07:10 on May 07,2025, Elapsed time: 0:00:00
+# End time: 22:20:09 on May 07,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 
 # vsim -novopt -c -t 1ps -L cyclonev_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.detector_with_shift_reg_vlg_vec_tst 
-# Start time: 18:07:10 on May 07,2025
+# Start time: 22:20:09 on May 07,2025
 # Loading work.detector_with_shift_reg_vlg_vec_tst
 # Loading work.detector_with_shift_reg
 # Loading cyclonev_ver.cyclonev_io_obuf
@@ -111,11 +112,10 @@ Reading C:/intelFPGA_lite/18.1/modelsim_ase/tcl/vsim/pref.tcl
 # Loading altera_ver.dffeas
 # Loading cyclonev_ver.cyclonev_lcell_comb
 # Loading altera_ver.PRIM_GDFF_LOW
-
 # after#25
 # ** Note: $finish    : Waveform.vwf.vt(48)
 #    Time: 80 ns  Iteration: 0  Instance: /detector_with_shift_reg_vlg_vec_tst
-# End time: 18:07:10 on May 07,2025, Elapsed time: 0:00:00
+# End time: 22:20:09 on May 07,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 
 Completed successfully. 
@@ -128,7 +128,7 @@ Reading E:/PB/SEM_6/SW/Lab_9/4_new/simulation/qsim/detector_with_shift_reg.msim.
 
 Processing channel transitions... 
 
-Writing the resulting VWF to E:/PB/SEM_6/SW/Lab_9/4_new/simulation/qsim/detector_with_shift_reg_20250507180710.sim.vwf
+Writing the resulting VWF to E:/PB/SEM_6/SW/Lab_9/4_new/simulation/qsim/detector_with_shift_reg_20250507222009.sim.vwf
 
 Finished VCD to VWF conversion.
 

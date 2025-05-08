@@ -1,5 +1,5 @@
 Flow report for detector_with_shift_reg
-Wed May 07 18:07:09 2025
+Wed May 07 22:20:09 2025
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -40,7 +40,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Flow Summary                                                                  ;
 +---------------------------------+---------------------------------------------+
-; Flow Status                     ; Successful - Wed May 07 18:07:09 2025       ;
+; Flow Status                     ; Successful - Wed May 07 22:20:09 2025       ;
 ; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                   ; detector_with_shift_reg                     ;
 ; Top-level Entity Name           ; detector_with_shift_reg                     ;
@@ -105,7 +105,9 @@ refer to the applicable agreement for further details.
 ; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4720 MB             ; 00:00:01                           ;
 ; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 4711 MB             ; 00:00:01                           ;
 ; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 4720 MB             ; 00:00:01                           ;
-; Total                ; 00:00:52     ; --                      ; --                  ; 00:03:11                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4711 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4720 MB             ; 00:00:01                           ;
+; Total                ; 00:00:54     ; --                      ; --                  ; 00:03:13                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -118,6 +120,8 @@ refer to the applicable agreement for further details.
 ; Fitter               ; DESKTOP-BEQUIET  ; Windows 10 ; 10.0       ; x86_64         ;
 ; Assembler            ; DESKTOP-BEQUIET  ; Windows 10 ; 10.0       ; x86_64         ;
 ; Timing Analyzer      ; DESKTOP-BEQUIET  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; DESKTOP-BEQUIET  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; DESKTOP-BEQUIET  ; Windows 10 ; 10.0       ; x86_64         ;
 ; EDA Netlist Writer   ; DESKTOP-BEQUIET  ; Windows 10 ; 10.0       ; x86_64         ;
 ; EDA Netlist Writer   ; DESKTOP-BEQUIET  ; Windows 10 ; 10.0       ; x86_64         ;
 ; EDA Netlist Writer   ; DESKTOP-BEQUIET  ; Windows 10 ; 10.0       ; x86_64         ;
@@ -142,6 +146,8 @@ quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_setting
 quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=E:/PB/SEM_6/SW/Lab_9/4_new/simulation/qsim/ detector_with_shift_reg -c detector_with_shift_reg
 quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off detector_with_shift_reg -c detector_with_shift_reg --vector_source=E:/PB/SEM_6/SW/Lab_9/4/Waveform.vwf --testbench_file=E:/PB/SEM_6/SW/Lab_9/4/simulation/qsim/Waveform.vwf.vt
 quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=E:/PB/SEM_6/SW/Lab_9/4/simulation/qsim/ detector_with_shift_reg -c detector_with_shift_reg
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off detector_with_shift_reg -c detector_with_shift_reg --vector_source=E:/PB/SEM_6/SW/Lab_9/4_new/Waveform.vwf --testbench_file=E:/PB/SEM_6/SW/Lab_9/4_new/simulation/qsim/Waveform.vwf.vt
+quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=E:/PB/SEM_6/SW/Lab_9/4_new/simulation/qsim/ detector_with_shift_reg -c detector_with_shift_reg
 quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off detector_with_shift_reg -c detector_with_shift_reg --vector_source=E:/PB/SEM_6/SW/Lab_9/4_new/Waveform.vwf --testbench_file=E:/PB/SEM_6/SW/Lab_9/4_new/simulation/qsim/Waveform.vwf.vt
 quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=E:/PB/SEM_6/SW/Lab_9/4_new/simulation/qsim/ detector_with_shift_reg -c detector_with_shift_reg
 quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off detector_with_shift_reg -c detector_with_shift_reg --vector_source=E:/PB/SEM_6/SW/Lab_9/4_new/Waveform.vwf --testbench_file=E:/PB/SEM_6/SW/Lab_9/4_new/simulation/qsim/Waveform.vwf.vt

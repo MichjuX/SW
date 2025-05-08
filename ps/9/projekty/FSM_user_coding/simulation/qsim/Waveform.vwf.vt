@@ -18,7 +18,7 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "05/05/2025 23:29:20"
+// Generated on "05/07/2025 22:06:47"
                                                                                 
 // Verilog Test Bench (with test vectors) for design :                          FSM_user_coding
 // 
@@ -47,7 +47,7 @@ FSM_user_coding i1 (
 );
 initial 
 begin 
-#90000 $finish;
+#90000 $stop;
 end 
 
 // w

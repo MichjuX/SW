@@ -1,5 +1,5 @@
 EDA Netlist Writer report for FSM_user_coding
-Mon May 05 23:29:20 2025
+Wed May 07 22:06:48 2025
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -36,7 +36,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Mon May 05 23:29:20 2025 ;
+; EDA Netlist Writer Status ; Successful - Wed May 07 22:06:48 2025 ;
 ; Revision Name             ; FSM_user_coding                       ;
 ; Top-level Entity Name     ; FSM_user_coding                       ;
 ; Family                    ; Cyclone V                             ;
@@ -93,15 +93,15 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: the sole purpose of programming logic devices manufactured by
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details.
-    Info: Processing started: Mon May 05 23:29:20 2025
+    Info: Processing started: Wed May 07 22:06:47 2025
 Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=E:/PB/SEM_6/SW/ps/9/projekty/FSM_user_coding/simulation/qsim/ FSM_user_coding -c FSM_user_coding
 Info (119006): Selected device 5CSEMA5F31C6 for design "FSM_user_coding"
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (204019): Generated file FSM_user_coding.vo in folder "E:/PB/SEM_6/SW/ps/9/projekty/FSM_user_coding/simulation/qsim//" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4717 megabytes
-    Info: Processing ended: Mon May 05 23:29:20 2025
-    Info: Elapsed time: 00:00:00
+    Info: Peak virtual memory: 4721 megabytes
+    Info: Processing ended: Wed May 07 22:06:48 2025
+    Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
 

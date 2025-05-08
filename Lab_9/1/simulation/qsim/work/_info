@@ -9,13 +9,13 @@ z2
 cModel Technology
 dD:/Storage/temp/semestr_6/sw/9/projekty/FSM_one_hot/simulation/qsim
 vFSM_one_hot
-Z0 !s110 1746630992
+Z0 !s110 1746647959
 !i10b 1
 !s100 5mgV^CSFVhnzSa7[]lBC<2
 IkHUC]26G698bcR4b]CDX^3
 Z1 VDg1SIo80bB@j0V0VzS_@n1
-Z2 dE:/PB/SEM_6/SW/Lab_9/FSM_one_hot/simulation/qsim
-w1746630992
+Z2 dE:/PB/SEM_6/SW/Lab_9/1/simulation/qsim
+w1746647958
 8FSM_one_hot.vo
 FFSM_one_hot.vo
 L0 31
@@ -23,7 +23,7 @@ Z3 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z4 !s108 1746630992.000000
+Z4 !s108 1746647959.000000
 !s107 FSM_one_hot.vo|
 !s90 -work|work|FSM_one_hot.vo|
 !i113 1
@@ -37,7 +37,7 @@ R0
 IT;S3<NH6[7zS<KWce`[<o3
 R1
 R2
-w1746630991
+w1746647957
 8Waveform.vwf.vt
 FWaveform.vwf.vt
 L0 29

@@ -9,13 +9,13 @@ z2
 cModel Technology
 Z0 dE:/PB/SEM_6/SW/Lab_9/4_new/simulation/qsim
 vdetector_with_shift_reg
-Z1 !s110 1746634030
+Z1 !s110 1746649209
 !i10b 1
 !s100 GV>HC`>`z`AXXKj`3QSL90
 I:N5[P@E`z<gJQFI^jIe4F0
 Z2 VDg1SIo80bB@j0V0VzS_@n1
 R0
-w1746634029
+w1746649209
 8detector_with_shift_reg.vo
 Fdetector_with_shift_reg.vo
 L0 31
@@ -23,7 +23,7 @@ Z3 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z4 !s108 1746634030.000000
+Z4 !s108 1746649209.000000
 !s107 detector_with_shift_reg.vo|
 !s90 -work|work|detector_with_shift_reg.vo|
 !i113 1
@@ -36,7 +36,7 @@ R1
 IEbcG^0L57[3i0e4HnHb4C3
 R2
 R0
-w1746634028
+w1746649208
 8Waveform.vwf.vt
 FWaveform.vwf.vt
 L0 29

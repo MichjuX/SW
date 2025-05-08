@@ -18,7 +18,7 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "05/07/2025 18:07:08"
+// Generated on "05/07/2025 22:20:08"
                                                                                 
 // Verilog Test Bench (with test vectors) for design :                          detector_with_shift_reg
 // 
